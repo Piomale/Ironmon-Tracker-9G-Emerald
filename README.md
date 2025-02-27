@@ -2,6 +2,9 @@
 
 Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
 
+### Pour l'installation
+  https://github.com/Piomale/Ironmon-Tracker-9G-Emerald/releases
+  
 ### Voici ce qui fonctionne:
 - Information sur son pokémon (nom, capacités et stats)
 - Tracking des capacités adverses
