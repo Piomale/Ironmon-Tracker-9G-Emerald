@@ -31,4 +31,4 @@ Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
 - La version de https://github.com/Nax/emerald-em/tree/master doit être 0.3
 - Vous avez bien mis le trackeur en français / en anglais
 - La seed a été généré en français
-- Le problème ne fait pas partie de la liste des chose qui ne fonctionne pas
+- Le problème ne fait pas partie de la liste des choses qui ne fonctionnent pas
