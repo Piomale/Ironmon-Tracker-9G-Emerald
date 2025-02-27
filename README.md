@@ -9,7 +9,7 @@ Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
 - Information sur son pokémon (nom, capacités et stats)
 - Tracking des capacités adverses
 - listes des pokémons rencontrés / des dresseurs affrontés
-- Generation d'une nouvelle seed avec les touches raccourci
+- Generation d'une nouvelle seed avec les touches raccourcis
 - Timer in Game
 - Detection du game over
 - Possibilité de revenir en arriere avec des sauvegardes automatiques (par exemple recommencer un combat après une défaite)
