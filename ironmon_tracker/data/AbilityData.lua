@@ -119,7 +119,7 @@ AbilityData.Abilities = {
 	},
 	{
 		id = 14,
-		name = "Compoundeyes",
+		name = "Compound Eyes",
 	},
 	{
 		id = 15,
@@ -187,7 +187,7 @@ AbilityData.Abilities = {
 	},
 	{
 		id = 31,
-		name = "Lightningrod",
+		name = "Lightning Rod",
 	},
 	{
 		id = 32,
@@ -367,10 +367,942 @@ AbilityData.Abilities = {
 	},
 	{
 		id = 76,
-		name = "Cacophony", -- Unused in game but still takes this slot
+		name = "Air Lock",
 	},
 	{
 		id = 77,
-		name =	"Air Lock",
+		name = "Tangled Feet",
+	},
+	{
+		id = 78,
+		name = "Motor Drive",
+	},
+	{
+		id = 79,
+		name = "Rivalry",
+	},
+	{
+		id = 80,
+		name = "Steadfast",
+	},
+	{
+		id = 81,
+		name = "Snow Cloak",
+	},
+	{
+		id = 82,
+		name = "Gluttony",
+	},
+	{
+		id = 83,
+		name = "Anger Point",
+	},
+	{
+		id = 84,
+		name = "Unburden",
+	},
+	{
+		id = 85,
+		name = "Heatproof",
+	},
+	{
+		id = 86,
+		name = "Simple",
+	},
+	{
+		id = 87,
+		name = "Dry Skin",
+	},
+	{
+		id = 88,
+		name = "Download",
+	},
+	{
+		id = 89,
+		name = "Iron Fist",
+	},
+	{
+		id = 90,
+		name = "Poison Heal",
+	},
+	{
+		id = 91,
+		name = "Adaptability",
+	},
+	{
+		id = 92,
+		name = "Skill Link",
+	},
+	{
+		id = 93,
+		name = "Hydration",
+	},
+	{
+		id = 94,
+		name = "Solar Power",
+	},
+	{
+		id = 95,
+		name = "Quick Feet",
+	},
+	{
+		id = 96,
+		name = "Normalize",
+	},
+	{
+		id = 97,
+		name = "Sniper",
+	},
+	{
+		id = 98,
+		name = "Magic Guard",
+	},
+	{
+		id = 99,
+		name = "No Guard",
+	},
+	{
+		id = 100,
+		name = "Stall",
+	},
+	{
+		id = 101,
+		name = "Technician",
+	},
+	{
+		id = 102,
+		name = "Leaf Guard",
+	},
+	{
+		id = 103,
+		name = "Klutz",
+	},
+	{
+		id = 104,
+		name = "Mold Breaker",
+	},
+	{
+		id = 105,
+		name = "Super Luck",
+	},
+	{
+		id = 106,
+		name = "Aftermath",
+	},
+	{
+		id = 107,
+		name = "Anticipation",
+	},
+	{
+		id = 108,
+		name = "Forewarn",
+	},
+	{
+		id = 109,
+		name = "Unaware",
+	},
+	{
+		id = 110,
+		name = "Tinted Lens",
+	},
+	{
+		id = 111,
+		name = "Filter",
+	},
+	{
+		id = 112,
+		name = "Slow Start",
+	},
+	{
+		id = 113,
+		name = "Scrappy",
+	},
+	{
+		id = 114,
+		name = "Storm Drain",
+	},
+	{
+		id = 115,
+		name = "Ice Body",
+	},
+	{
+		id = 116,
+		name = "Solid Rock",
+	},
+	{
+		id = 117,
+		name = "Snow Warning",
+	},
+	{
+		id = 118,
+		name = "Honey Gather",
+	},
+	{
+		id = 119,
+		name = "Frisk",
+	},
+	{
+		id = 120,
+		name = "Reckless",
+	},
+	{
+		id = 121,
+		name = "Multitype",
+	},
+	{
+		id = 122,
+		name = "Flower Gift",
+	},
+	{
+		id = 123,
+		name = "Bad Dreams",
+	},
+	{
+		id = 124,
+		name = "Pickpocket",
+	},
+	{
+		id = 125,
+		name = "Sheer Force",
+	},
+	{
+		id = 126,
+		name = "Contrary",
+	},
+	{
+		id = 127,
+		name = "Unnerve",
+	},
+	{
+		id = 128,
+		name = "Defiant",
+	},
+	{
+		id = 129,
+		name = "Defeatist",
+	},
+	{
+		id = 130,
+		name = "Cursed Body",
+	},
+	{
+		id = 131,
+		name = "Healer",
+	},
+	{
+		id = 132,
+		name = "Friend Guard",
+	},
+	{
+		id = 133,
+		name = "Weak Armor",
+	},
+	{
+		id = 134,
+		name = "Heavy Metal",
+	},
+	{
+		id = 135,
+		name = "Light Metal",
+	},
+	{
+		id = 136,
+		name = "Multiscale",
+	},
+	{
+		id = 137,
+		name = "Toxic Boost",
+	},
+	{
+		id = 138,
+		name = "Flare Boost",
+	},
+	{
+		id = 139,
+		name = "Harvest",
+	},
+	{
+		id = 140,
+		name = "Telepathy",
+	},
+	{
+		id = 141,
+		name = "Moody",
+	},
+	{
+		id = 142,
+		name = "Overcoat",
+	},
+	{
+		id = 143,
+		name = "Poison Touch",
+	},
+	{
+		id = 144,
+		name = "Regenerator",
+	},
+	{
+		id = 145,
+		name = "Big Pecks",
+	},
+	{
+		id = 146,
+		name = "Sand Rush",
+	},
+	{
+		id = 147,
+		name = "Wonder Skin",
+	},
+	{
+		id = 148,
+		name = "Analytic",
+	},
+	{
+		id = 149,
+		name = "Illusion",
+	},
+	{
+		id = 150,
+		name = "Imposter",
+	},
+	{
+		id = 151,
+		name = "Infiltrator",
+	},
+	{
+		id = 152,
+		name = "Mummy",
+	},
+	{
+		id = 153,
+		name = "Moxie",
+	},
+	{
+		id = 154,
+		name = "Justified",
+	},
+	{
+		id = 155,
+		name = "Rattled",
+	},
+	{
+		id = 156,
+		name = "Magic Bounce",
+	},
+	{
+		id = 157,
+		name = "Sap Sipper",
+	},
+	{
+		id = 158,
+		name = "Prankster",
+	},
+	{
+		id = 159,
+		name = "Sand Force",
+	},
+	{
+		id = 160,
+		name = "Iron Barbs",
+	},
+	{
+		id = 161,
+		name = "Zen Mode",
+	},
+	{
+		id = 162,
+		name = "Victory Star",
+	},
+	{
+		id = 163,
+		name = "Turboblaze",
+	},
+	{
+		id = 164,
+		name = "Teravolt",
+	},
+	{
+		id = 165,
+		name = "Aroma Veil",
+	},
+	{
+		id = 166,
+		name = "Flower Veil",
+	},
+	{
+		id = 167,
+		name = "Cheek Pouch",
+	},
+	{
+		id = 168,
+		name = "Protean",
+	},
+	{
+		id = 169,
+		name = "Fur Coat",
+	},
+	{
+		id = 170,
+		name = "Magician",
+	},
+	{
+		id = 171,
+		name = "Bulletproof",
+	},
+	{
+		id = 172,
+		name = "Competitive",
+	},
+	{
+		id = 173,
+		name = "Strong Jaw",
+	},
+	{
+		id = 174,
+		name = "Refrigerate",
+	},
+	{
+		id = 175,
+		name = "Sweet Veil",
+	},
+	{
+		id = 176,
+		name = "Stance Change",
+	},
+	{
+		id = 177,
+		name = "Gale Wings",
+	},
+	{
+		id = 178,
+		name = "Mega Launcher",
+	},
+	{
+		id = 179,
+		name = "Grass Pelt",
+	},
+	{
+		id = 180,
+		name = "Symbiosis",
+	},
+	{
+		id = 181,
+		name = "Tough Claws",
+	},
+	{
+		id = 182,
+		name = "Pixilate",
+	},
+	{
+		id = 183,
+		name = "Gooey",
+	},
+	{
+		id = 184,
+		name = "Aerilate",
+	},
+	{
+		id = 185,
+		name = "Parental Bond",
+	},
+	{
+		id = 186,
+		name = "Dark Aura",
+	},
+	{
+		id = 187,
+		name = "Fairy Aura",
+	},
+	{
+		id = 188,
+		name = "Aura Break",
+	},
+	{
+		id = 189,
+		name = "Primordial Sea",
+	},
+	{
+		id = 190,
+		name = "Desolate Land",
+	},
+	{
+		id = 191,
+		name = "Delta Stream",
+	},
+	{
+		id = 192,
+		name = "Stamina",
+	},
+	{
+		id = 193,
+		name = "Wimp Out",
+	},
+	{
+		id = 194,
+		name = "Emergency Exit",
+	},
+	{
+		id = 195,
+		name = "Water Compaction",
+	},
+	{
+		id = 196,
+		name = "Merciless",
+	},
+	{
+		id = 197,
+		name = "Shields Down",
+	},
+	{
+		id = 198,
+		name = "Stakeout",
+	},
+	{
+		id = 199,
+		name = "Water Bubble",
+	},
+	{
+		id = 200,
+		name = "Steelworker",
+	},
+	{
+		id = 201,
+		name = "Berserk",
+	},
+	{
+		id = 202,
+		name = "Slush Rush",
+	},
+	{
+		id = 203,
+		name = "Long Reach",
+	},
+	{
+		id = 204,
+		name = "Liquid Voice",
+	},
+	{
+		id = 205,
+		name = "Triage",
+	},
+	{
+		id = 206,
+		name = "Galvanize",
+	},
+	{
+		id = 207,
+		name = "Surge Surfer",
+	},
+	{
+		id = 208,
+		name = "Schooling",
+	},
+	{
+		id = 209,
+		name = "Disguise",
+	},
+	{
+		id = 210,
+		name = "Battle Bond",
+	},
+	{
+		id = 211,
+		name = "Power Construct",
+	},
+	{
+		id = 212,
+		name = "Corrosion",
+	},
+	{
+		id = 213,
+		name = "Comatose",
+	},
+	{
+		id = 214,
+		name = "Queenly Majesty",
+	},
+	{
+		id = 215,
+		name = "Innards Out",
+	},
+	{
+		id = 216,
+		name = "Dancer",
+	},
+	{
+		id = 217,
+		name = "Battery",
+	},
+	{
+		id = 218,
+		name = "Fluffy",
+	},
+	{
+		id = 219,
+		name = "Dazzling",
+	},
+	{
+		id = 220,
+		name = "Soul Heart",
+	},
+	{
+		id = 221,
+		name = "Tangling Hair",
+	},
+	{
+		id = 222,
+		name = "Receiver",
+	},
+	{
+		id = 223,
+		name = "Power Of Alchemy",
+	},
+	{
+		id = 224,
+		name = "Beast Boost",
+	},
+	{
+		id = 225,
+		name = "Rks System",
+	},
+	{
+		id = 226,
+		name = "Electric Surge",
+	},
+	{
+		id = 227,
+		name = "Psychic Surge",
+	},
+	{
+		id = 228,
+		name = "Misty Surge",
+	},
+	{
+		id = 229,
+		name = "Grassy Surge",
+	},
+	{
+		id = 230,
+		name = "Full Metal Body",
+	},
+	{
+		id = 231,
+		name = "Shadow Shield",
+	},
+	{
+		id = 232,
+		name = "Prism Armor",
+	},
+	{
+		id = 233,
+		name = "Neuroforce",
+	},
+	{
+		id = 234,
+		name = "Intrepid Sword",
+	},
+	{
+		id = 235,
+		name = "Dauntless Shield",
+	},
+	{
+		id = 236,
+		name = "Libero",
+	},
+	{
+		id = 237,
+		name = "Ball Fetch",
+	},
+	{
+		id = 238,
+		name = "Cotton Down",
+	},
+	{
+		id = 239,
+		name = "Propeller Tail",
+	},
+	{
+		id = 240,
+		name = "Mirror Armor",
+	},
+	{
+		id = 241,
+		name = "Gulp Missile",
+	},
+	{
+		id = 242,
+		name = "Stalwart",
+	},
+	{
+		id = 243,
+		name = "Steam Engine",
+	},
+	{
+		id = 244,
+		name = "Punk Rock",
+	},
+	{
+		id = 245,
+		name = "Sand Spit",
+	},
+	{
+		id = 246,
+		name = "Ice Scales",
+	},
+	{
+		id = 247,
+		name = "Ripen",
+	},
+	{
+		id = 248,
+		name = "Ice Face",
+	},
+	{
+		id = 249,
+		name = "Power Spot",
+	},
+	{
+		id = 250,
+		name = "Mimicry",
+	},
+	{
+		id = 251,
+		name = "Screen Cleaner",
+	},
+	{
+		id = 252,
+		name = "Steely Spirit",
+	},
+	{
+		id = 253,
+		name = "Perish Body",
+	},
+	{
+		id = 254,
+		name = "Wandering Spirit",
+	},
+	{
+		id = 255,
+		name = "Gorilla Tactics",
+	},
+	{
+		id = 256,
+		name = "Neutralizing Gas",
+	},
+	{
+		id = 257,
+		name = "Pastel Veil",
+	},
+	{
+		id = 258,
+		name = "Hunger Switch",
+	},
+	{
+		id = 259,
+		name = "Quick Draw",
+	},
+	{
+		id = 260,
+		name = "Unseen Fist",
+	},
+	{
+		id = 261,
+		name = "Curious Medicine",
+	},
+	{
+		id = 262,
+		name = "Transistor",
+	},
+	{
+		id = 263,
+		name = "Dragons Maw",
+	},
+	{
+		id = 264,
+		name = "Chilling Neigh",
+	},
+	{
+		id = 265,
+		name = "Grim Neigh",
+	},
+	{
+		id = 266,
+		name = "As One Ice Rider",
+	},
+	{
+		id = 267,
+		name = "As One Shadow Rider",
+	},
+	{
+		id = 268,
+		name = "Lingering Aroma",
+	},
+	{
+		id = 269,
+		name = "Seed Sower",
+	},
+	{
+		id = 270,
+		name = "Thermal Exchange",
+	},
+	{
+		id = 271,
+		name = "Anger Shell",
+	},
+	{
+		id = 272,
+		name = "Purifying Salt",
+	},
+	{
+		id = 273,
+		name = "Well Baked Body",
+	},
+	{
+		id = 274,
+		name = "Wind Rider",
+	},
+	{
+		id = 275,
+		name = "Guard Dog",
+	},
+	{
+		id = 276,
+		name = "Rocky Payload",
+	},
+	{
+		id = 277,
+		name = "Wind Power",
+	},
+	{
+		id = 278,
+		name = "Zero To Hero",
+	},
+	{
+		id = 279,
+		name = "Commander",
+	},
+	{
+		id = 280,
+		name = "Electromorphosis",
+	},
+	{
+		id = 281,
+		name = "Protosynthesis",
+	},
+	{
+		id = 282,
+		name = "Quark Drive",
+	},
+	{
+		id = 283,
+		name = "Good As Gold",
+	},
+	{
+		id = 284,
+		name = "Vessel Of Ruin",
+	},
+	{
+		id = 285,
+		name = "Sword Of Ruin",
+	},
+	{
+		id = 286,
+		name = "Tablets Of Ruin",
+	},
+	{
+		id = 287,
+		name = "Beads Of Ruin",
+	},
+	{
+		id = 288,
+		name = "Orichalcum Pulse",
+	},
+	{
+		id = 289,
+		name = "Hadron Engine",
+	},
+	{
+		id = 290,
+		name = "Opportunist",
+	},
+	{
+		id = 291,
+		name = "Cud Chew",
+	},
+	{
+		id = 292,
+		name = "Sharpness",
+	},
+	{
+		id = 293,
+		name = "Supreme Overlord",
+	},
+	{
+		id = 294,
+		name = "Costar",
+	},
+	{
+		id = 295,
+		name = "Toxic Debris",
+	},
+	{
+		id = 296,
+		name = "Armor Tail",
+	},
+	{
+		id = 297,
+		name = "Earth Eater",
+	},
+	{
+		id = 298,
+		name = "Mycelium Might",
+	},
+	{
+		id = 299,
+		name = "Hospitality",
+	},
+	{
+		id = 300,
+		name = "Minds Eye",
+	},
+	{
+		id = 301,
+		name = "Embody Aspect Teal Mask",
+	},
+	{
+		id = 302,
+		name = "Embody Aspect Hearthflame Mask",
+	},
+	{
+		id = 303,
+		name = "Embody Aspect Wellspring Mask",
+	},
+	{
+		id = 304,
+		name = "Embody Aspect Cornerstone Mask",
+	},
+	{
+		id = 305,
+		name = "Toxic Chain",
+	},
+	{
+		id = 306,
+		name = "Supersweet Syrup",
+	},
+	{
+		id = 307,
+		name = "Tera Shift",
+	},
+	{
+		id = 308,
+		name = "Tera Shell",
+	},
+	{
+		id = 309,
+		name = "Teraform Zero",
+	},
+	{
+		id = 310,
+		name = "Poison Puppeteer",
 	},
 }

@@ -784,7 +784,6 @@ ScreenResources{
 		O_WordForRight = "Word for Right",
 		O_WordForRandom = "Word for Random",
 		O_ShowBallQueueOnStartup = "Show Ball Queue info on startup",
-		-- THE BELOW SCREEN LABELS NEED TRANSLATION
 		TabCommands = "Commands",
 		TabRewards = "Rewards",
 		TabQueue = "Queue",
@@ -1090,6 +1089,7 @@ GameResources{
 		normal = "Normal",
 		fighting = "Combat",
 		flying = "Vol",
+		fairy = "Fée",
 		poison = "Poison",
 		ground = "Sol",
 		rock = "Roche",
@@ -1106,3016 +1106,7980 @@ GameResources{
 		dark = "Ténèbres",
 		unknown = "???", -- For the move "Curse"
 	},
+	-- The list of Pokémon names below must remain in the same order
+	PokemonNames = {
+		"Bulbizarre",
+		"Herbizarre",
+		"Florizarre",
+		"Salamèche",
+		"Reptincel",
+		"Dracaufeu",
+		"Carapuce",
+		"Carabaffe",
+		"Tortank",
+		"Chenipan",
+		"Chrysacier",
+		"Papilusion",
+		"Aspicot",
+		"Coconfort",
+		"Dardargnan",
+		"Roucool",
+		"Roucoups",
+		"Roucarnage",
+		"Rattata",
+		"Rattatac",
+		"Piafabec",
+		"Rapasdepic",
+		"Abo",
+		"Arbok",
+		"Pikachu",
+		"Raichu",
+		"Sabelette",
+		"Sablaireau",
+		"Nidoran♀",
+		"Nidorina",
+		"Nidoqueen",
+		"Nidoran♂",
+		"Nidorino",
+		"Nidoking",
+		"Mélofée",
+		"Mélodelfe",
+		"Goupix",
+		"Feunard",
+		"Rondoudou",
+		"Grodoudou",
+		"Nosferapti",
+		"Nosferalto",
+		"Mystherbe",
+		"Ortide",
+		"Rafflesia",
+		"Paras",
+		"Parasect",
+		"Mimitoss",
+		"Aéromite",
+		"Taupiqueur",
+		"Triopikeur",
+		"Miaouss",
+		"Persian",
+		"Psykokwak",
+		"Akwakwak",
+		"Férosinge",
+		"Colossinge",
+		"Caninos",
+		"Arcanin",
+		"Ptitard",
+		"Têtarte",
+		"Tartard",
+		"Abra",
+		"Kadabra",
+		"Alakazam",
+		"Machoc",
+		"Machopeur",
+		"Mackogneur",
+		"Chétiflor",
+		"Boustiflor",
+		"Empiflor",
+		"Tentacool",
+		"Tentacruel",
+		"Racaillou",
+		"Gravalanch",
+		"Grolem",
+		"Ponyta",
+		"Galopa",
+		"Ramoloss",
+		"Flagadoss",
+		"Magnéti",
+		"Magnéton",
+		"Canarticho",
+		"Doduo",
+		"Dodrio",
+		"Otaria",
+		"Lamantine",
+		"Tadmorv",
+		"Grotadmorv",
+		"Kokiyas",
+		"Crustabri",
+		"Fantominus",
+		"Spectrum",
+		"Ectoplasma",
+		"Onix",
+		"Soporifik",
+		"Hypnomade",
+		"Krabby",
+		"Krabboss",
+		"Voltorbe",
+		"Électrode",
+		"Noeunoeuf",
+		"Noadkoko",
+		"Osselait",
+		"Ossatueur",
+		"Kicklee",
+		"Tygnon",
+		"Excelangue",
+		"Smogo",
+		"Smogogo",
+		"Rhinocorne",
+		"Rhinoféros",
+		"Leveinard",
+		"Saquedeneu",
+		"Kangourex",
+		"Hypotrempe",
+		"Hypocéan",
+		"Poissirène",
+		"Poissoroy",
+		"Stari",
+		"Staross",
+		"M. Mime",
+		"Insécateur",
+		"Lippoutou",
+		"Élektek",
+		"Magmar",
+		"Scarabrute",
+		"Tauros",
+		"Magicarpe",
+		"Léviator",
+		"Lokhlass",
+		"Métamorph",
+		"Évoli",
+		"Aquali",
+		"Voltali",
+		"Pyroli",
+		"Porygon",
+		"Amonita",
+		"Amonistar",
+		"Kabuto",
+		"Kabutops",
+		"Ptéra",
+		"Ronflex",
+		"Artikodin",
+		"Électhor",
+		"Sulfura",
+		"Minidraco",
+		"Draco",
+		"Dracolosse",
+		"Mewtwo",
+		"Mew",
+		"Germignon",
+		"Macronium",
+		"Méganium",
+		"Héricendre",
+		"Feurisson",
+		"Typhlosion",
+		"Kaiminus",
+		"Crocrodil",
+		"Aligatueur",
+		"Fouinette",
+		"Fouinar",
+		"Hoothoot",
+		"Noarfang",
+		"Coxy",
+		"Coxyclaque",
+		"Mimigal",
+		"Migalos",
+		"Nostenfer",
+		"Loupio",
+		"Lanturn",
+		"Pichu",
+		"Mélo",
+		"Toudoudou",
+		"Togepi",
+		"Togetic",
+		"Natu",
+		"Xatu",
+		"Wattouat",
+		"Lainergie",
+		"Pharamp",
+		"Joliflor",
+		"Marill",
+		"Azumarill",
+		"Simularbre",
+		"Tarpaud",
+		"Granivol",
+		"Floravol",
+		"Cotovol",
+		"Capumain",
+		"Tournegrin",
+		"Héliatronc",
+		"Yanma",
+		"Axoloto",
+		"Maraiste",
+		"Mentali",
+		"Noctali",
+		"Cornèbre",
+		"Roigada",
+		"Feuforêve",
+		"Zarbi",
+		"Qulbutoké",
+		"Girafarig",
+		"Pomdepik",
+		"Foretress",
+		"Insolourdo",
+		"Scorplane",
+		"Steelix",
+		"Snubbull",
+		"Granbull",
+		"Qwilfish",
+		"Cizayox",
+		"Caratroc",
+		"Scarhino",
+		"Farfuret",
+		"Teddiursa",
+		"Ursaring",
+		"Limagma",
+		"Volcaropod",
+		"Marcacrin",
+		"Cochignon",
+		"Corayon",
+		"Rémoraid",
+		"Octillery",
+		"Cadoizo",
+		"Démanta",
+		"Airmure",
+		"Malosse",
+		"Démolosse",
+		"Hyporoi",
+		"Phanpy",
+		"Donphan",
+		"Porygon2",
+		"Cerfrousse",
+		"Queulorior",
+		"Debugant",
+		"Kapoera",
+		"Lippouti",
+		"Élekid",
+		"Magby",
+		"Écrémeuh",
+		"Leuphorie",
+		"Raikou",
+		"Entei",
+		"Suicune",
+		"Embrylex",
+		"Ymphect",
+		"Tyranocif",
+		"Lugia",
+		"Ho-Oh",
+		"Celebi",
+		"Arcko",
+		"Massko",
+		"Jungko",
+		"Poussifeu",
+		"Galifeu",
+		"Braségali",
+		"Gobou",
+		"Flobio",
+		"Laggron",
+		"Medhyèna",
+		"Grahyèna",
+		"Zigzaton",
+		"Linéon",
+		"Chenipotte",
+		"Armulys",
+		"Charmillon",
+		"Blindalys",
+		"Papinox",
+		"Nénupiot",
+		"Lombre",
+		"Ludicolo",
+		"Grainipiot",
+		"Pifeuil",
+		"Tengalice",
+		"Nirondelle",
+		"Hélédelle",
+		"Goélise",
+		"Bekipan",
+		"Tarsal",
+		"Kirlia",
+		"Gardevoir",
+		"Arakdo",
+		"Maskadra",
+		"Balignon",
+		"Chapignon",
+		"Parecool",
+		"Vigoroth",
+		"Monaflèmit",
+		"Ningale",
+		"Ninjask",
+		"Munja",
+		"Chuchmur",
+		"Ramboum",
+		"Brouhabam",
+		"Makuhita",
+		"Hariyama",
+		"Azurill",
+		"Tarinor",
+		"Skitty",
+		"Delcatty",
+		"Ténéfix",
+		"Mysdibule",
+		"Galekid",
+		"Galegon",
+		"Galeking",
+		"Méditikka",
+		"Charmina",
+		"Dynavolt",
+		"Élecsprint",
+		"Posipi",
+		"Négapi",
+		"Muciole",
+		"Lumivole",
+		"Rosélia",
+		"Gloupti",
+		"Avaltout",
+		"Carvanha",
+		"Sharpedo",
+		"Wailmer",
+		"Wailord",
+		"Chamallot",
+		"Camérupt",
+		"Chartor",
+		"Spoink",
+		"Groret",
+		"Spinda",
+		"Kraknoix",
+		"Vibraninf",
+		"Libégon",
+		"Cacnea",
+		"Cacturne",
+		"Tylton",
+		"Altaria",
+		"Mangriff",
+		"Séviper",
+		"Séléroc",
+		"Solaroc",
+		"Barloche",
+		"Barbicha",
+		"Écrapince",
+		"Colhomard",
+		"Balbuto",
+		"Kaorine",
+		"Lilia",
+		"Vacilys",
+		"Anorith",
+		"Armaldo",
+		"Barpau",
+		"Milobellus",
+		"Morphéo",
+		"Kecleon",
+		"Polichombr",
+		"Branette",
+		"Skelénox",
+		"Téraclope",
+		"Tropius",
+		"Éoko",
+		"Absol",
+		"Okéoké",
+		"Stalgamin",
+		"Oniglali",
+		"Obalie",
+		"Phogleur",
+		"Kaimorse",
+		"Coquiperl",
+		"Serpang",
+		"Rosabyss",
+		"Relicanth",
+		"Lovdisc",
+		"Draby",
+		"Drackhaus",
+		"Drattak",
+		"Terhal",
+		"Métang",
+		"Métalosse",
+		"Regirock",
+		"Regice",
+		"Registeel",
+		"Latias",
+		"Latios",
+		"Kyogre",
+		"Groudon",
+		"Rayquaza",
+		"Jirachi",
+		"Deoxys",
+		"Tortipouss",
+		"Boskara",
+		"Torterra",
+		"Ouisticram",
+		"Chimpenfeu",
+		"Simiabraz",
+		"Tiplouf",
+		"Prinplouf",
+		"Pingoléon",
+		"Étourmi",
+		"Étourvol",
+		"Étouraptor",
+		"Keunotor",
+		"Castorno",
+		"Crikzik",
+		"Mélokrik",
+		"Lixy",
+		"Luxio",
+		"Luxray",
+		"Rozbouton",
+		"Roserade",
+		"Kranidos",
+		"Charkos",
+		"Dinoclier",
+		"Bastiodon",
+		"Cheniti",
+		"Cheniselle",
+		"Papilord",
+		"Apitrini",
+		"Apireine",
+		"Pachirisu",
+		"Mustébouée",
+		"Mustéflott",
+		"Ceribou",
+		"Ceriflor",
+		"Sancoki",
+		"Tritosor",
+		"Capidextre",
+		"Baudrive",
+		"Grodrive",
+		"Laporeille",
+		"Lockpin",
+		"Magirêve",
+		"Corboss",
+		"Chaglam",
+		"Chaffreux",
+		"Korillon",
+		"Moufouette",
+		"Moufflair",
+		"Archéomire",
+		"Archéodong",
+		"Manzaï",
+		"Mime Jr.",
+		"Ptiravi",
+		"Pijako",
+		"Spiritomb",
+		"Griknot",
+		"Carmache",
+		"Carchacrok",
+		"Goinfrex",
+		"Riolu",
+		"Lucario",
+		"Hippopotas",
+		"Hippodocus",
+		"Rapion",
+		"Drascore",
+		"Cradopaud",
+		"Coatox",
+		"Vortente",
+		"Écayon",
+		"Luminéon",
+		"Babimanta",
+		"Blizzi",
+		"Blizzaroi",
+		"Dimoret",
+		"Magnézone",
+		"Coudlangue",
+		"Rhinastoc",
+		"Bouldeneu",
+		"Élekable",
+		"Maganon",
+		"Togekiss",
+		"Yanméga",
+		"Phyllali",
+		"Givrali",
+		"Scorvol",
+		"Mammochon",
+		"Porygon-Z",
+		"Gallame",
+		"Tarinorme",
+		"Noctunoir",
+		"Momartik",
+		"Motisma",
+		"Créhelf",
+		"Créfollet",
+		"Créfadet",
+		"Dialga",
+		"Palkia",
+		"Heatran",
+		"Regigigas",
+		"Giratina",
+		"Cresselia",
+		"Phione",
+		"Manaphy",
+		"Darkrai",
+		"Shaymin",
+		"Arceus",
+		"Victini",
+		"Vipélierre",
+		"Lianaja",
+		"Majaspic",
+		"Gruikui",
+		"Grotichon",
+		"Roitiflam",
+		"Moustillon",
+		"Mateloutre",
+		"Clamiral",
+		"Ratentif",
+		"Miradar",
+		"Ponchiot",
+		"Ponchien",
+		"Mastouffe",
+		"Chacripan",
+		"Léopardus",
+		"Feuillajou",
+		"Feuiloutan",
+		"Flamajou",
+		"Flamoutan",
+		"Flotajou",
+		"Flotoutan",
+		"Munna",
+		"Mushana",
+		"Poichigeon",
+		"Colombeau",
+		"Déflaisan",
+		"Zébibron",
+		"Zéblitz",
+		"Nodulithe",
+		"Géolithe",
+		"Gigalithe",
+		"Chovsourir",
+		"Rhinolove",
+		"Rototaupe",
+		"Minotaupe",
+		"Nanméouïe",
+		"Charpenti",
+		"Ouvrifier",
+		"Bétochef",
+		"Tritonde",
+		"Batracné",
+		"Crapustule",
+		"Judokrak",
+		"Karaclée",
+		"Larveyette",
+		"Couverdure",
+		"Manternel",
+		"Venipatte",
+		"Scobolide",
+		"Brutapode",
+		"Doudouvet",
+		"Farfaduvet",
+		"Chlorobule",
+		"Fragilady",
+		"Bargantua",
+		"Mascaïman",
+		"Escroco",
+		"Crocorible",
+		"Darumarond",
+		"Darumacho",
+		"Maracachi",
+		"Crabicoque",
+		"Crabaraque",
+		"Baggiguane",
+		"Baggaïd",
+		"Cryptéro",
+		"Tutafeh",
+		"Tutankafer",
+		"Carapagos",
+		"Mégapagos",
+		"Arkéapti",
+		"Aéroptéryx",
+		"Miamiasme",
+		"Miasmax",
+		"Zorua",
+		"Zoroark",
+		"Chinchidou",
+		"Pashmilla",
+		"Scrutella",
+		"Mesmérella",
+		"Sidérella",
+		"Nucléos",
+		"Méios",
+		"Symbios",
+		"Couaneton",
+		"Lakmécygne",
+		"Sorbébé",
+		"Sorboul",
+		"Sorbouboul",
+		"Vivaldaim",
+		"Haydaim",
+		"Emolga",
+		"Carabing",
+		"Lançargot",
+		"Trompignon",
+		"Gaulet",
+		"Viskuse",
+		"Moyade",
+		"Mamanbo",
+		"Statitik",
+		"Mygavolt",
+		"Grindur",
+		"Noacier",
+		"Tic",
+		"Clic",
+		"Cliticlic",
+		"Anchwatt",
+		"Lampéroie",
+		"Ohmassacre",
+		"Lewsor",
+		"Neitram",
+		"Funécire",
+		"Mélancolux",
+		"Lugulabre",
+		"Coupenotte",
+		"Incisache",
+		"Tranchodon",
+		"Polarhume",
+		"Polagriffe",
+		"Hexagel",
+		"Escargaume",
+		"Limaspeed",
+		"Limonde",
+		"Kungfouine",
+		"Shaofouine",
+		"Drakkarmin",
+		"Gringolem",
+		"Golemastoc",
+		"Scalpion",
+		"Scalproie",
+		"Frison",
+		"Furaiglon",
+		"Gueriaigle",
+		"Vostourno",
+		"Vaututrice",
+		"Aflamanoir",
+		"Fermite",
+		"Solochi",
+		"Diamat",
+		"Trioxhydre",
+		"Pyronille",
+		"Pyrax",
+		"Cobaltium",
+		"Terrakium",
+		"Viridium",
+		"Boréas",
+		"Fulguris",
+		"Reshiram",
+		"Zekrom",
+		"Démétéros",
+		"Kyurem",
+		"Keldeo",
+		"Meloetta",
+		"Genesect",
+		"Marisson",
+		"Boguérisse",
+		"Blindépique",
+		"Feunnec",
+		"Roussil",
+		"Goupelin",
+		"Grenousse",
+		"Croâporal",
+		"Amphinobi",
+		"Sapereau",
+		"Excavarenne",
+		"Passerouge",
+		"Braisillon",
+		"Flambusard",
+		"Lépidonille",
+		"Pérégrain",
+		"Prismillon",
+		"Hélionceau",
+		"Némélios",
+		"Flabébé",
+		"Floette",
+		"Florges",
+		"Cabriolaine",
+		"Chevroum",
+		"Pandespiègle",
+		"Pandarbare",
+		"Couafarel",
+		"Psystigri",
+		"Mistigrix",
+		"Monorpale",
+		"Dimoclès",
+		"Exagide",
+		"Fluvetin",
+		"Cocotine",
+		"Sucroquin",
+		"Cupcanaille",
+		"Sepiatop",
+		"Sepiatroce",
+		"Opermine",
+		"Golgopathe",
+		"Venalgue",
+		"Kravarech",
+		"Flingouste",
+		"Gamblast",
+		"Galvaran",
+		"Iguolta",
+		"Ptyranidur",
+		"Rexillius",
+		"Amagara",
+		"Dragmara",
+		"Nymphali",
+		"Brutalibré",
+		"Dedenne",
+		"Strassie",
+		"Mucuscule",
+		"Colimucus",
+		"Muplodocus",
+		"Trousselin",
+		"Brocélôme",
+		"Desséliande",
+		"Pitrouille",
+		"Banshitrouye",
+		"Grelaçon",
+		"Séracrawl",
+		"Sonistrelle",
+		"Bruyverne",
+		"Xerneas",
+		"Yveltal",
+		"Zygarde",
+		"Diancie",
+		"Hoopa",
+		"Volcanion",
+		"Brindibou",
+		"Efflèche",
+		"Archéduc",
+		"Flamiaou",
+		"Matoufeu",
+		"Félinferno",
+		"Otaquin",
+		"Otarlette",
+		"Oratoria",
+		"Picassaut",
+		"Piclairon",
+		"Bazoucan",
+		"Manglouton",
+		"Argouste",
+		"Larvibule",
+		"Chrysapile",
+		"Lucanon",
+		"Crabagarre",
+		"Crabominable",
+		"Plumeline",
+		"Bombydou",
+		"Rubombelle",
+		"Rocabot",
+		"Lougaroc",
+		"Froussardine",
+		"Vorastérie",
+		"Prédastérie",
+		"Tiboudet",
+		"Bourrinos",
+		"Araqua",
+		"Tarenbulle",
+		"Mimantis",
+		"Floramantis",
+		"Spododo",
+		"Lampignon",
+		"Tritox",
+		"Malamandre",
+		"Nounourson",
+		"Chelours",
+		"Croquine",
+		"Candine",
+		"Sucreine",
+		"Guérilande",
+		"Gouroutan",
+		"Quartermac",
+		"Sovkipou",
+		"Sarmuraï",
+		"Bacabouh",
+		"Trépassable",
+		"Concombaffe",
+		"Type:0",
+		"Silvallié",
+		"Météno",
+		"Dodoala",
+		"Boumata",
+		"Togedemaru",
+		"Mimiqui",
+		"Denticrisse",
+		"Draïeul",
+		"Sinistrail",
+		"Bébécaille",
+		"Écaïd",
+		"Ékaïser",
+		"Tokorico",
+		"Tokopiyon",
+		"Tokotoro",
+		"Tokopisco",
+		"Cosmog",
+		"Cosmovum",
+		"Solgaleo",
+		"Lunala",
+		"Zéroïd",
+		"Mouscoto",
+		"Cancrelove",
+		"Câblifère",
+		"Bamboiselle",
+		"Katagami",
+		"Engloutyran",
+		"Necrozma",
+		"Magearna",
+		"Marshadow",
+		"Vémini",
+		"Mandrillon",
+		"Ama-Ama",
+		"Pierroteknik",
+		"Zeraora",
+		"Meltan",
+		"Melmetal",
+		"Ouistempo",
+		"Badabouin",
+		"Gorythmic",
+		"Flambino",
+		"Lapyro",
+		"Pyrobut",
+		"Larméléon",
+		"Arrozard",
+		"Lézargus",
+		"Rongourmand",
+		"Rongrigou",
+		"Minisange",
+		"Bleuseille",
+		"Corvaillus",
+		"Larvadar",
+		"Coléodôme",
+		"Astronelle",
+		"Goupilou",
+		"Roublenard",
+		"Tournicoton",
+		"Blancoton",
+		"Moumouton",
+		"Moumouflon",
+		"Khélocrok",
+		"Torgamord",
+		"Voltoutou",
+		"Fulgudog",
+		"Charbi",
+		"Wagomine",
+		"Monthracite",
+		"Verpom",
+		"Pomdrapi",
+		"Dratatin",
+		"Dunaja",
+		"Dunaconda",
+		"Nigosier",
+		"Embrochet",
+		"Hastacuda",
+		"Toxizap",
+		"Salarsen",
+		"Grillepattes",
+		"Scolocendre",
+		"Poulpaf",
+		"Krakos",
+		"Théffroi",
+		"Polthégeist",
+		"Bibichut",
+		"Chapotus",
+		"Sorcilence",
+		"Grimalin",
+		"Fourbelin",
+		"Angoliath",
+		"Ixon",
+		"Berserkatt",
+		"Corayôme",
+		"Palarticho",
+		"M. Glaquette",
+		"Tutétékri",
+		"Crèmy",
+		"Charmilly",
+		"Hexadron",
+		"Wattapik",
+		"Frissonille",
+		"Beldeneige",
+		"Dolman",
+		"Bekaglaçon",
+		"Wimessir",
+		"Morpeko",
+		"Charibari",
+		"Pachyradjah",
+		"Galvagon",
+		"Galvagla",
+		"Hydragon",
+		"Hydragla",
+		"Duralugon",
+		"Fantyrm",
+		"Dispareptil",
+		"Lanssorien",
+		"Zacian",
+		"Zamazenta",
+		"Éthernatos",
+		"Wushours",
+		"Shifours",
+		"Zarude",
+		"Regieleki",
+		"Regidrago",
+		"Blizzeval",
+		"Spectreval",
+		"Sylveroy",
+		"Cerbyllin",
+		"Hachécateur",
+		"Ursaking",
+		"Paragruel",
+		"Farfurex",
+		"Qwilpik",
+		"Amovénus",
+		"Poussacha",
+		"Matourgeon",
+		"Miascarade",
+		"Chochodile",
+		"Crocogril",
+		"Flâmigator",
+		"Coiffeton",
+		"Canarbello",
+		"Palmaval",
+		"Gourmelet",
+		"Fragroin",
+		"Tissenboule",
+		"Filentrappe",
+		"Lilliterelle",
+		"Gambex",
+		"Pohm",
+		"Pohmotte",
+		"Pohmarmotte",
+		"Compagnol",
+		"Famignol",
+		"Pâtachiot",
+		"Briochien",
+		"Olivini",
+		"Olivado",
+		"Arboliva",
+		"Tapatoès",
+		"Selutin",
+		"Amassel",
+		"Gigansel",
+		"Charbambin",
+		"Carmadura",
+		"Malvalame",
+		"Têtampoule",
+		"Ampibidou",
+		"Zapétrel",
+		"Fulgulairo",
+		"Grondogue",
+		"Dogrino",
+		"Gribouraigne",
+		"Tag-Tag",
+		"Virovent",
+		"Virevorreur",
+		"Terracool",
+		"Terracruel",
+		"Craparoi",
+		"Pimito",
+		"Scovilain",
+		"Léboulérou",
+		"Bérasca",
+		"Flotillon",
+		"Cléopsytra",
+		"Forgerette",
+		"Forgella",
+		"Forgelina",
+		"Taupikeau",
+		"Triopikeau",
+		"Lestombaile",
+		"Dofin",
+		"Superdofin",
+		"Vrombi",
+		"Vrombotor",
+		"Motorizard",
+		"Ferdeter",
+		"Germéclat",
+		"Floréclat",
+		"Toutombe",
+		"Tomberro",
+		"Flamenroule",
+		"Piétacé",
+		"Balbalèze",
+		"Délestin",
+		"Oyacata",
+		"Nigirigon",
+		"Courrousinge",
+		"Terraiste",
+		"Farigiraf",
+		"Deusolourdo",
+		"Scalpereur",
+		"Fort-Ivoire",
+		"Hurle-Queue",
+		"Fongus-Furie",
+		"Flotte-Mèche",
+		"Rampe-Ailes",
+		"Pelage-Sablé",
+		"Roue-de-Fer",
+		"Hotte-de-Fer",
+		"Paume-de-Fer",
+		"Têtes-de-Fer",
+		"Mite-de-Fer",
+		"Épine-de-Fer",
+		"Frigodo",
+		"Cryodo",
+		"Glaivodo",
+		"Mordudor",
+		"Gromago",
+		"Chongjian",
+		"Baojian",
+		"Dinglu",
+		"Yuyu",
+		"Rugit-Lune",
+		"Garde-de-Fer",
+		"Koraidon",
+		"Miraidon",
+		"Serpente-Eau",
+		"Vert-de-Fer",
+		"Pomdramour",
+		"Poltchageist",
+		"Théffroyable",
+		"Félicanis",
+		"Fortusimia",
+		"Favianos",
+		"Ogerpon",
+		"Pondralugon",
+		"Pomdorochi",
+		"Feu-Perçant",
+		"Ire-Foudre",
+		"Roc-de-Fer",
+		"Chef-de-Fer",
+		"Terapagos",
+		"Pêchaminus",
+	},
 	-- The list of Pokémon moves below must remain in the same order
 	MoveNames = {
-		"Ecras'face", --Ecras'face english:Pound
-		"Poing-Karate", --Poing-Karate english:Karate Chop
-		"Torgnoles", --Torgnoles english:DoubleSlap
-		"Poing Comete", --Poing Comete english:Comet Punch
-		"Ultimapoing", --Ultimapoing english:Mega Punch
-		"Jackpot", --Jackpot english:Pay Day
-		"Poing De Feu", --Poing De Feu english:Fire Punch
-		"Poinglace", --Poinglace english:Ice Punch
-		"Poing-Eclair", --Poing-Eclair english:ThunderPunch
-		"Griffe", --Griffe english:Scratch
-		"Force Poigne", --Force Poigne english:ViceGrip
-		"Guillotine", --Guillotine english:Guillotine
-		"Coupe-Vent", --Coupe-Vent english:Razor Wind
-		"Danse-Lames", --Danse-Lames english:Swords Dance
-		"Coupe", --Coupe english:Cut
-		"Tornade", --Tornade english:Gust
-		"Cru-Aile", --Cru-Aile english:Wing Attack
-		"Cyclone", --Cyclone english:Whirlwind
-		"Vol", --Vol english:Fly
-		"Etreinte", --Etreinte english:Bind
-		"Souplesse", --Souplesse english:Slam
-		"Fouet Lianes", --Fouet Lianes english:Vine Whip
-		"Ecrasement", --Ecrasement english:Stomp
-		"Double Pied", --Double Pied english:Double Kick
-		"Ultimawashi", --Ultimawashi english:Mega Kick
-		"Pied Saute", --Pied Saute english:Jump Kick
-		"Mawashi Geri", --Mawashi Geri english:Rolling Kick
-		"Jet De Sable", --Jet De Sable english:Sand-Attack
-		"Coup D'boule", --Coup D'boule english:Headbutt
-		"Koud'korne", --Koud'korne english:Horn Attack
-		"Furie", --Furie english:Fury Attack
-		"Empal'korne", --Empal'korne english:Horn Drill
-		"Charge", --Charge english:Tackle
-		"Plaquage", --Plaquage english:Body Slam
-		"Ligotage", --Ligotage english:Wrap
-		"Belier", --Belier english:Take Down
-		"Mania", --Mania english:Thrash
-		"Damocles", --Damocles english:Double-Edge
-		"Mimi-Queue", --Mimi-Queue english:Tail Whip
-		"Dard-Venin", --Dard-Venin english:Poison Sting
-		"Double-Dard", --Double-Dard english:Twineedle
-		"Dard-Nuee", --Dard-Nuee english:Pin Missile
-		"Groz'yeux", --Groz'yeux english:Leer
-		"Morsure", --Morsure english:Bite
-		"Rugissement", --Rugissement english:Growl
-		"Hurlement", --Hurlement english:Roar
-		"Berceuse", --Berceuse english:Sing
-		"Ultrason", --Ultrason english:Supersonic
-		"Sonicboom", --Sonicboom english:SonicBoom
-		"Entrave", --Entrave english:Disable
-		"Acide", --Acide english:Acid
-		"Flammeche", --Flammeche english:Ember
-		"Lance-Flamme", --Lance-Flamme english:Flamethrower
-		"Brume", --Brume english:Mist
-		"Pistolet A O", --Pistolet A O english:Water Gun
-		"Hydrocanon", --Hydrocanon english:Hydro Pump
-		"Surf", --Surf english:Surf
-		"Laser Glace", --Laser Glace english:Ice Beam
-		"Blizzard", --Blizzard english:Blizzard
-		"Rafale Psy", --Rafale Psy english:Psybeam
-		"Bulles D'o", --Bulles D'o english:BubbleBeam
-		"Onde Boreale", --Onde Boreale english:Aurora Beam
-		"Ultralaser", --Ultralaser english:Hyper Beam
-		"Picpic", --Picpic english:Peck
-		"Bec Vrille", --Bec Vrille english:Drill Peck
-		"Sacrifice", --Sacrifice english:Submission
-		"Balayage", --Balayage english:Low Kick
-		"Riposte", --Riposte english:Counter
-		"Frappe Atlas", --Frappe Atlas english:Seismic Toss
-		"Force", --Force english:Strength
-		"Vol-Vie", --Vol-Vie english:Absorb
-		"Mega-Sangsue", --Mega-Sangsue english:Mega Drain
-		"Vampigraine", --Vampigraine english:Leech Seed
-		"Croissance", --Croissance english:Growth
-		"Tranch'herbe", --Tranch'herbe english:Razor Leaf
-		"Lance-Soleil", --Lance-Soleil english:SolarBeam
-		"Poudre Toxik", --Poudre Toxik english:PoisonPowder
-		"Para-Spore", --Para-Spore english:Stun Spore
-		"Poudre Dodo", --Poudre Dodo english:Sleep Powder
-		"Danse-Fleur", --Danse-Fleur english:Petal Dance
-		"Secretion", --Secretion english:String Shot
-		"Draco-Rage", --Draco-Rage english:Dragon Rage
-		"Danseflamme", --Danseflamme english:Fire Spin
-		"Eclair", --Eclair english:ThunderShock
-		"Tonnerre", --Tonnerre english:Thunderbolt
-		"Cage-Eclair", --Cage-Eclair english:Thunder Wave
-		"Fatal-Foudre", --Fatal-Foudre english:Thunder
-		"Jet-Pierres", --Jet-Pierres english:Rock Throw
-		"Seisme", --Seisme english:Earthquake
-		"Abime", --Abime english:Fissure
-		"Tunnel", --Tunnel english:Dig
-		"Toxik", --Toxik english:Toxic
-		"Choc Mental", --Choc Mental english:Confusion
-		"Psyko", --Psyko english:Psychic
-		"Hypnose", --Hypnose english:Hypnosis
-		"Yoga", --Yoga english:Meditate
-		"Hate", --Hate english:Agility
-		"Vive-Attaque", --Vive-Attaque english:Quick Attack
-		"Frenesie", --Frenesie english:Rage
-		"Teleport", --Teleport english:Teleport
-		"Tenebres", --Tenebres english:Night Shade
-		"Copie", --Copie english:Mimic
-		"Grincement", --Grincement english:Screech
-		"Reflet", --Reflet english:Double Team
-		"Soin", --Soin english:Recover
-		"Armure", --Armure english:Harden
-		"Lilliput", --Lilliput english:Minimize
-		"Brouillard", --Brouillard english:SmokeScreen
-		"Onde Folie", --Onde Folie english:Confuse Ray
-		"Repli", --Repli english:Withdraw
-		"Boul'armure", --Boul'armure english:Defense Curl
-		"Bouclier", --Bouclier english:Barrier
-		"Mur Lumiere", --Mur Lumiere english:Light Screen
-		"Buee Noire", --Buee Noire english:Haze
-		"Protection", --Protection english:Reflect
-		"Puissance", --Puissance english:Focus Energy
-		"Patience", --Patience english:Bide
-		"Metronome", --Metronome english:Metronome
-		"Mimique", --Mimique english:Mirror Move
-		"Destruction", --Destruction english:Selfdestruct
-		"Bomb'oeuf", --Bomb'oeuf english:Egg Bomb
-		"Lechouille", --Lechouille english:Lick
-		"Puredpois", --Puredpois english:Smog
-		"Detritus", --Detritus english:Sludge
-		"Massd'os", --Massd'os english:Bone Club
-		"Deflagration", --Deflagration english:Fire Blast
-		"Cascade", --Cascade english:Waterfall
-		"Claquoir", --Claquoir english:Clamp
-		"Meteores", --Meteores english:Swift
-		"Coud'krane", --Coud'krane english:Skull Bash
-		"Picanon", --Picanon english:Spike Cannon
-		"Constriction", --Constriction english:Constrict
-		"Amnesie", --Amnesie english:Amnesia
-		"Telekinesie", --Telekinesie english:Kinesis
-		"E-Coque", --E-Coque english:Softboiled
-		"Pied Voltige", --Pied Voltige english:Hi Jump Kick
-		"Intimidation", --Intimidation english:Glare
-		"Devoreve", --Devoreve english:Dream Eater
-		"Gaz Toxik", --Gaz Toxik english:Poison Gas
-		"Pilonnage", --Pilonnage english:Barrage
-		"Vampirisme", --Vampirisme english:Leech Life
-		"Grobisou", --Grobisou english:Lovely Kiss
-		"Pique", --Pique english:Sky Attack
-		"Morphing", --Morphing english:Transform
-		"Ecume", --Ecume english:Bubble
-		"Uppercut", --Uppercut english:Dizzy Punch
-		"Spore", --Spore english:Spore
-		"Flash", --Flash english:Flash
-		"Vague Psy", --Vague Psy english:Psywave
-		"Trempette", --Trempette english:Splash
-		"Acidarmure", --Acidarmure english:Acid Armor
-		"Pince-Masse", --Pince-Masse english:Crabhammer
-		"Explosion", --Explosion english:Explosion
-		"Combo-Griffe", --Combo-Griffe english:Fury Swipes
-		"Osmerang", --Osmerang english:Bonemerang
-		"Repos", --Repos english:Rest
-		"Eboulement", --Eboulement english:Rock Slide
-		"Croc De Mort", --Croc De Mort english:Hyper Fang
-		"Affutage", --Affutage english:Sharpen
-		"Adaptation", --Adaptation english:Conversion
-		"Triplattaque", --Triplattaque english:Tri Attack
-		"Croc Fatal", --Croc Fatal english:Super Fang
-		"Tranche", --Tranche english:Slash
-		"Clonage", --Clonage english:Substitute
-		"Lutte", --Lutte english:Struggle
-		"Gribouille", --Gribouille english:Sketch
-		"Triple Pied", --Triple Pied english:Triple Kick
-		"Larcin", --Larcin english:Thief
-		"Toile", --Toile english:Spider Web
-		"Lire-Esprit", --Lire-Esprit english:Mind Reader
-		"Cauchemar", --Cauchemar english:Nightmare
-		"Roue De Feu", --Roue De Feu english:Flame Wheel
-		"Ronflement", --Ronflement english:Snore
-		"Malediction", --Malediction english:Curse
-		"Fleau", --Fleau english:Flail
-		"Conversion 2", --Conversion 2 english:Conversion 2
-		"Aeroblast", --Aeroblast english:Aeroblast
-		"Spore Coton", --Spore Coton english:Cotton Spore
-		"Contre", --Contre english:Reversal
-		"Depit", --Depit english:Spite
-		"Poudreuse", --Poudreuse english:Powder Snow
-		"Abri", --Abri english:Protect
-		"Mach Punch", --Mach Punch english:Mach Punch
-		"Grimace", --Grimace english:Scary Face
-		"Feinte", --Feinte english:Faint Attack
-		"Doux Baiser", --Doux Baiser english:Sweet Kiss
-		"Cognobidon", --Cognobidon english:Belly Drum
-		"Bomb-Beurk", --Bomb-Beurk english:Sludge Bomb
-		"Coud'boue", --Coud'boue english:Mud-Slap
-		"Octazooka", --Octazooka english:Octazooka
-		"Picots", --Picots english:Spikes
-		"Elecanon", --Elecanon english:Zap Cannon
-		"Clairvoyance", --Clairvoyance english:Foresight
-		"Prlvt Destin", --Prlvt Destin english:Destiny Bond
-		"Requiem", --Requiem english:Perish Song
-		"Vent Glace", --Vent Glace english:Icy Wind
-		"Detection", --Detection english:Detect
-		"Charge-Os", --Charge-Os english:Bone Rush
-		"Verrouillage", --Verrouillage english:Lock-On
-		"Colere", --Colere english:Outrage
-		"Tempetesable", --Tempetesable english:Sandstorm
-		"Giga-Sangsue", --Giga-Sangsue english:Giga Drain
-		"Tenacite", --Tenacite english:Endure
-		"Charme", --Charme english:Charm
-		"Roulade", --Roulade english:Rollout
-		"Faux-Chage", --Faux-Chage english:False Swipe
-		"Vantardise", --Vantardise english:Swagger
-		"Lait A Boire", --Lait A Boire english:Milk Drink
-		"Etincelle", --Etincelle english:Spark
-		"Taillade", --Taillade english:Fury Cutter
-		"Aile D'acier", --Aile D'acier english:Steel Wing
-		"Regard Noir", --Regard Noir english:Mean Look
-		"Attraction", --Attraction english:Attract
-		"Blabla Dodo", --Blabla Dodo english:Sleep Talk
-		"Glas De Soin", --Glas De Soin english:Heal Bell
-		"Retour", --Retour english:Return
-		"Cadeau", --Cadeau english:Present
-		"Frustration", --Frustration english:Frustration
-		"Rune Protect", --Rune Protect english:Safeguard
-		"Balance", --Balance english:Pain Split
-		"Feu Sacre", --Feu Sacre english:Sacred Fire
-		"Ampleur", --Ampleur english:Magnitude
-		"Dynamopoing", --Dynamopoing english:DynamicPunch
-		"Megacorne", --Megacorne english:Megahorn
-		"Dracosouffle", --Dracosouffle english:DragonBreath
-		"Relais", --Relais english:Baton Pass
-		"Encore", --Encore english:Encore
-		"Poursuite", --Poursuite english:Pursuit
-		"Tour Rapide", --Tour Rapide english:Rapid Spin
-		"Doux Parfum", --Doux Parfum english:Sweet Scent
-		"Queue De Fer", --Queue De Fer english:Iron Tail
-		"Griffe Acier", --Griffe Acier english:Metal Claw
-		"Corps Perdu", --Corps Perdu english:Vital Throw
-		"Aurore", --Aurore english:Morning Sun
-		"Synthese", --Synthese english:Synthesis
-		"Rayon Lune", --Rayon Lune english:Moonlight
-		"Puis. Cachee", --Puis. Cachee english:Hidden Power
-		"Coup-Croix", --Coup-Croix english:Cross Chop
-		"Ouragan", --Ouragan english:Twister
-		"Danse Pluie", --Danse Pluie english:Rain Dance
-		"Zenith", --Zenith english:Sunny Day
-		"Machouille", --Machouille english:Crunch
-		"Voile Miroir", --Voile Miroir english:Mirror Coat
-		"Boost", --Boost english:Psych Up
-		"Vit.extreme", --Vit.extreme english:ExtremeSpeed
-		"Pouv.antique", --Pouv.antique english:AncientPower
-		"Ball'ombre", --Ball'ombre english:Shadow Ball
-		"Prescience", --Prescience english:Future Sight
-		"Eclate-Roc", --Eclate-Roc english:Rock Smash
-		"Siphon", --Siphon english:Whirlpool
-		"Baston", --Baston english:Beat Up
-		"Bluff", --Bluff english:Fake Out
-		"Brouhaha", --Brouhaha english:Uproar
-		"Stockage", --Stockage english:Stockpile
-		"Relache", --Relache english:Spit Up
-		"Avale", --Avale english:Swallow
-		"Canicule", --Canicule english:Heat Wave
-		"Grele", --Grele english:Hail
-		"Tourmente", --Tourmente english:Torment
-		"Flatterie", --Flatterie english:Flatter
-		"Feu Follet", --Feu Follet english:Will-O-Wisp
-		"Souvenir", --Souvenir english:Memento
-		"Facade", --Facade english:Facade
-		"Mitra-Poing", --Mitra-Poing english:Focus Punch
-		"Stimulant", --Stimulant english:SmellingSalt
-		"Par Ici", --Par Ici english:Follow Me
-		"Force-Nature", --Force-Nature english:Nature Power
-		"Chargeur", --Chargeur english:Charge
-		"Provoc", --Provoc english:Taunt
-		"Coup D'main", --Coup D'main english:Helping Hand
-		"Tourmagik", --Tourmagik english:Trick
-		"Imitation", --Imitation english:Role Play
-		"Voeu", --Voeu english:Wish
-		"Assistance", --Assistance english:Assist
-		"Racines", --Racines english:Ingrain
-		"Surpuissance", --Surpuissance english:Superpower
-		"Reflet Magik", --Reflet Magik english:Magic Coat
-		"Recyclage", --Recyclage english:Recycle
-		"Vendetta", --Vendetta english:Revenge
-		"Casse-Brique", --Casse-Brique english:Brick Break
-		"Baillement", --Baillement english:Yawn
-		"Sabotage", --Sabotage english:Knock Off
-		"Effort", --Effort english:Endeavor
-		"Eruption", --Eruption english:Eruption
-		"Echange", --Echange english:Skill Swap
-		"Possessif", --Possessif english:Imprison
-		"Regeneration", --Regeneration english:Refresh
-		"Rancune", --Rancune english:Grudge
-		"Saisie", --Saisie english:Snatch
-		"Force Cachee", --Force Cachee english:Secret Power
-		"Plongee", --Plongee english:Dive
-		"Cogne", --Cogne english:Arm Thrust
-		"Camouflage", --Camouflage english:Camouflage
-		"Lumiqueue", --Lumiqueue english:Tail Glow
-		"Lumi-Eclat", --Lumi-Eclat english:Luster Purge
-		"Ball'brume", --Ball'brume english:Mist Ball
-		"Danse-Plume", --Danse-Plume english:FeatherDance
-		"Danse-Folle", --Danse-Folle english:Teeter Dance
-		"Pied Bruleur", --Pied Bruleur english:Blaze Kick
-		"Lance-Boue", --Lance-Boue english:Mud Sport
-		"Ball'glace", --Ball'glace english:Ice Ball
-		"Poing Dard", --Poing Dard english:Needle Arm
-		"Paresse", --Paresse english:Slack Off
-		"Megaphone", --Megaphone english:Hyper Voice
-		"Crochetvenin", --Crochetvenin english:Poison Fang
-		"Eclategriffe", --Eclategriffe english:Crush Claw
-		"Rafale Feu", --Rafale Feu english:Blast Burn
-		"Hydroblast", --Hydroblast english:Hydro Cannon
-		"Poing Meteor", --Poing Meteor english:Meteor Mash
-		"Etonnement", --Etonnement english:Astonish
-		"Ball'meteo", --Ball'meteo english:Weather Ball
-		"Aromatherapi", --Aromatherapi english:Aromatherapy
-		"Croco Larme", --Croco Larme english:Fake Tears
-		"Tranch'air", --Tranch'air english:Air Cutter
-		"Surchauffe", --Surchauffe english:Overheat
-		"Flair", --Flair english:Odor Sleuth
-		"Tomberoche", --Tomberoche english:Rock Tomb
-		"Vent Argente", --Vent Argente english:Silver Wind
-		"Strido-Son", --Strido-Son english:Metal Sound
-		"Siffl'herbe", --Siffl'herbe english:GrassWhistle
-		"Chatouille", --Chatouille english:Tickle
-		"Force Cosmik", --Force Cosmik english:Cosmic Power
-		"Gicledo", --Gicledo english:Water Spout
-		"Rayon Signal", --Rayon Signal english:Signal Beam
-		"Poing Ombre", --Poing Ombre english:Shadow Punch
-		"Extrasenseur", --Extrasenseur english:Extrasensory
-		"Stratopercut", --Stratopercut english:Sky Uppercut
-		"Tourbi-Sable", --Tourbi-Sable english:Sand Tomb
-		"Glaciation", --Glaciation english:Sheer Cold
-		"Ocroupi", --Ocroupi english:Muddy Water
-		"Balle Graine", --Balle Graine english:Bullet Seed
-		"Aeropique", --Aeropique english:Aerial Ace
-		"Stalagtite", --Stalagtite english:Icicle Spear
-		"Mur De Fer", --Mur De Fer english:Iron Defense
-		"Barrage", --Barrage english:Block
-		"Grondement", --Grondement english:Howl
-		"Dracogriffe", --Dracogriffe english:Dragon Claw
-		"Vege-Attak", --Vege-Attak english:Frenzy Plant
-		"Gonflette", --Gonflette english:Bulk Up
-		"Rebond", --Rebond english:Bounce
-		"Tir De Boue", --Tir De Boue english:Mud Shot
-		"Queue-Poison", --Queue-Poison english:Poison Tail
-		"Implore", --Implore english:Covet
-		"Electacle", --Electacle english:Volt Tackle
-		"Feuillemagik", --Feuillemagik english:Magical Leaf
-		"Tourniquet", --Tourniquet english:Water Sport
-		"Plenitude", --Plenitude english:Calm Mind
-		"Lame-Feuille", --Lame-Feuille english:Leaf Blade
-		"Danse Draco", --Danse Draco english:Dragon Dance
-		"Boule Roc", --Boule Roc english:Rock Blast
-		"Onde De Choc", --Onde De Choc english:Shock Wave
-		"Vibraqua", --Vibraqua english:Water Pulse
-		"Carnareket", --Carnareket english:Doom Desire
-		"Psycho Boost", --Psycho Boost english:Psycho Boost
+		"Écras'Face",
+		"Poing Karaté",
+		"Torgnoles",
+		"Poing Comète",
+		"Ultimapoing",
+		"Jackpot",
+		"Poing Feu",
+		"Poing Glace",
+		"Poing Éclair",
+		"Griffe",
+		"Force Poigne",
+		"Guillotine",
+		"Coupe-Vent",
+		"Danse Lames",
+		"Coupe",
+		"Tornade",
+		"Cru-Ailes",
+		"Cyclone",
+		"Vol",
+		"Étreinte",
+		"Souplesse",
+		"Fouet Lianes",
+		"Écrasement",
+		"Double Pied",
+		"Ultimawashi",
+		"Pied Sauté",
+		"Mawashi Geri",
+		"Jet de Sable",
+		"Coup d'Boule",
+		"Koud'Korne",
+		"Furie",
+		"Empal'Korne",
+		"Charge",
+		"Plaquage",
+		"Ligotage",
+		"Bélier",
+		"Mania",
+		"Damoclès",
+		"Mimi-Queue",
+		"Dard-Venin",
+		"Double Dard",
+		"Dard-Nuée",
+		"Groz'Yeux",
+		"Morsure",
+		"Rugissement",
+		"Hurlement",
+		"Berceuse",
+		"Ultrason",
+		"Sonic Boom",
+		"Entrave",
+		"Acide",
+		"Flammèche",
+		"Lance-Flammes",
+		"Brume",
+		"Pistolet à O",
+		"Hydrocanon",
+		"Surf",
+		"Laser Glace",
+		"Blizzard",
+		"Rafale Psy",
+		"Bulles d'O",
+		"Onde Boréale",
+		"Ultralaser",
+		"Picpic",
+		"Bec Vrille",
+		"Sacrifice",
+		"Balayage",
+		"Riposte",
+		"Frappe Atlas",
+		"Force",
+		"Vole-Vie",
+		"Méga-Sangsue",
+		"Vampigraine",
+		"Croissance",
+		"Tranch'Herbe",
+		"Lance-Soleil",
+		"Poudre Toxik",
+		"Para-Spore",
+		"Poudre Dodo",
+		"Danse Fleurs",
+		"Sécrétion",
+		"Draco-Rage",
+		"Danse Flammes",
+		"Éclair",
+		"Tonnerre",
+		"Cage Éclair",
+		"Fatal-Foudre",
+		"Jet-Pierres",
+		"Séisme",
+		"Abîme",
+		"Tunnel",
+		"Toxik",
+		"Choc Mental",
+		"Psyko",
+		"Hypnose",
+		"Yoga",
+		"Hâte",
+		"Vive-attaque",
+		"Frénésie",
+		"Téléport",
+		"Ombre Nocturne",
+		"Copie",
+		"Grincement",
+		"Reflet",
+		"Soin",
+		"Armure",
+		"Lilliput",
+		"Brouillard",
+		"Onde Folie",
+		"Repli",
+		"Boul'Armure",
+		"Bouclier",
+		"Mur Lumière",
+		"Buée Noire",
+		"Protection",
+		"Puissance",
+		"Patience",
+		"Métronome",
+		"Mimique",
+		"Destruction",
+		"Bombe Œuf",
+		"Léchouille",
+		"Purédpois",
+		"Détritus",
+		"Massd'Os",
+		"Déflagration",
+		"Cascade",
+		"Claquoir",
+		"Météores",
+		"Coud'Krâne",
+		"Picanon",
+		"Constriction",
+		"Amnésie",
+		"Télékinésie",
+		"E-Coque",
+		"Pied Voltige",
+		"Regard Médusant",
+		"Dévorêve",
+		"Gaz Toxik",
+		"Pilonnage",
+		"Vampirisme",
+		"Grobisou",
+		"Piqué",
+		"Morphing",
+		"Écume",
+		"Uppercut",
+		"Spore",
+		"Flash",
+		"Vague Psy",
+		"Trempette",
+		"Acidarmure",
+		"Pince-Masse",
+		"Explosion",
+		"Combo-Griffe",
+		"Osmerang",
+		"Repos",
+		"Éboulement",
+		"Croc de Mort",
+		"Affûtage",
+		"Conversion",
+		"Triplattaque",
+		"Croc Fatal",
+		"Tranche",
+		"Clonage",
+		"Lutte",
+		"Gribouille",
+		"Triple Pied",
+		"Larcin",
+		"Toile",
+		"Lire-Esprit",
+		"Cauchemar",
+		"Roue de Feu",
+		"Ronflement",
+		"Malédiction",
+		"Gigotage",
+		"Conversion2",
+		"Aéroblast",
+		"Spore Coton",
+		"Contre",
+		"Dépit",
+		"Poudreuse",
+		"Abri",
+		"Mach Punch",
+		"Grimace",
+		"Feinte",
+		"Doux Baiser",
+		"Cognobidon",
+		"Bombe Beurk",
+		"Coud'Boue",
+		"Octazooka",
+		"Picots",
+		"Élecanon",
+		"Clairvoyance",
+		"Lien du Destin",
+		"Requiem",
+		"Vent Glace",
+		"Détection",
+		"Charge Os",
+		"Verrouillage",
+		"Colère",
+		"Tempête de Sable",
+		"Giga-Sangsue",
+		"Ténacité",
+		"Charme",
+		"Roulade",
+		"Faux-Chage",
+		"Vantardise",
+		"Lait à Boire",
+		"Étincelle",
+		"Taillade",
+		"Ailes d'Acier",
+		"Regard Noir",
+		"Attraction",
+		"Blabla Dodo",
+		"Glas de Soin",
+		"Retour",
+		"Cadeau",
+		"Frustration",
+		"Rune Protect",
+		"Balance",
+		"Feu Sacré",
+		"Ampleur",
+		"Dynamo-Poing",
+		"Mégacorne",
+		"Draco-Souffle",
+		"Relais",
+		"Encore",
+		"Poursuite",
+		"Tour Rapide",
+		"Doux Parfum",
+		"Queue de Fer",
+		"Griffe Acier",
+		"Corps Perdu",
+		"Aurore",
+		"Synthèse",
+		"Rayon Lune",
+		"Puissance Cachée",
+		"Coup Croix",
+		"Ouragan",
+		"Danse Pluie",
+		"Zénith",
+		"Mâchouille",
+		"Voile Miroir",
+		"Boost",
+		"Vitesse Extrême",
+		"Pouvoir Antique",
+		"Ball'Ombre",
+		"Prescience",
+		"Éclate-Roc",
+		"Siphon",
+		"Baston",
+		"Bluff",
+		"Brouhaha",
+		"Stockage",
+		"Relâche",
+		"Avale",
+		"Canicule",
+		"Grêle",
+		"Tourmente",
+		"Flatterie",
+		"Feu Follet",
+		"Souvenir",
+		"Façade",
+		"Mitra-Poing",
+		"Stimulant",
+		"Par Ici",
+		"Force Nature",
+		"Chargeur",
+		"Provoc",
+		"Coup d'Main",
+		"Tour de Magie",
+		"Imitation",
+		"Vœu",
+		"Assistance",
+		"Racines",
+		"Surpuissance",
+		"Reflet Magik",
+		"Recyclage",
+		"Vendetta",
+		"Casse-Brique",
+		"Bâillement",
+		"Sabotage",
+		"Effort",
+		"Éruption",
+		"Échange",
+		"Possessif",
+		"Régénération",
+		"Rancune",
+		"Saisie",
+		"Force Cachée",
+		"Plongée",
+		"Cogne",
+		"Camouflage",
+		"Lumi-Queue",
+		"Lumi-Éclat",
+		"Ball'Brume",
+		"Danse Plumes",
+		"Danse Folle",
+		"Pied Brûleur",
+		"Lance-Boue",
+		"Ball'Glace",
+		"Poing Dard",
+		"Paresse",
+		"Mégaphone",
+		"Crochet Venin",
+		"Éclate Griffe",
+		"Rafale Feu",
+		"Hydroblast",
+		"Poing Météore",
+		"Étonnement",
+		"Ball'Météo",
+		"Aromathérapie",
+		"Croco Larme",
+		"Tranch'Air",
+		"Surchauffe",
+		"Flair",
+		"Tomberoche",
+		"Vent Argenté",
+		"Strido-Son",
+		"Siffl'Herbe",
+		"Chatouille",
+		"Force Cosmique",
+		"Giclédo",
+		"Rayon Signal",
+		"Poing Ombre",
+		"Extrasenseur",
+		"Stratopercut",
+		"Tourbi-Sable",
+		"Glaciation",
+		"Ocroupi",
+		"Balle Graine",
+		"Aéropique",
+		"Stalagtite",
+		"Mur de Fer",
+		"Barrage",
+		"Grondement",
+		"Draco-Griffe",
+		"Végé-Attaque",
+		"Gonflette",
+		"Rebond",
+		"Tir de Boue",
+		"Queue-Poison",
+		"Implore",
+		"Électacle",
+		"Feuille Magik",
+		"Tourniquet",
+		"Plénitude",
+		"Lame Feuille",
+		"Danse Draco",
+		"Boule Roc",
+		"Onde de Choc",
+		"Vibraqua",
+		"Vœu Destructeur",
+		"Psycho-Boost",
+		"Atterrissage",
+		"Gravité",
+		"Œil Miracle",
+		"Réveil Forcé",
+		"Marto-Poing",
+		"Gyroballe",
+		"Vœu Soin",
+		"Saumure",
+		"Don Naturel",
+		"Ruse",
+		"Picore",
+		"Vent Arrière",
+		"Acupression",
+		"Fulmifer",
+		"Demi-Tour",
+		"Close Combat",
+		"Représailles",
+		"Assurance",
+		"Embargo",
+		"Dégommage",
+		"Échange Psy",
+		"Atout",
+		"Anti-Soin",
+		"Essorage",
+		"Astuce Force",
+		"Suc Digestif",
+		"Air Veinard",
+		"Moi d'Abord",
+		"Photocopie",
+		"Permuforce",
+		"Permugarde",
+		"Punition",
+		"Dernier Recours",
+		"Soucigraine",
+		"Coup Bas",
+		"Pics Toxik",
+		"Permucœur",
+		"Anneau Hydro",
+		"Vol Magnétik",
+		"Boutefeu",
+		"Forte-Paume",
+		"Aurasphère",
+		"Poliroche",
+		"Direct Toxik",
+		"Vibrobscur",
+		"Tranche-Nuit",
+		"Hydro-Queue",
+		"Canon Graine",
+		"Lame d'Air",
+		"Plaie Croix",
+		"Bourdon",
+		"Draco-Choc",
+		"Draco-Charge",
+		"Rayon Gemme",
+		"Vampi-Poing",
+		"Onde Vide",
+		"Exploforce",
+		"Éco-Sphère",
+		"Rapace",
+		"Telluriforce",
+		"Passe-Passe",
+		"Giga Impact",
+		"Machination",
+		"Pisto-Poing",
+		"Avalanche",
+		"Éclats Glace",
+		"Griffe Ombre",
+		"Crocs Éclair",
+		"Crocs Givre",
+		"Crocs Feu",
+		"Ombre Portée",
+		"Boue-Bombe",
+		"Coupe Psycho",
+		"Psykoud'Boul",
+		"Miroi-Tir",
+		"Luminocanon",
+		"Escalade",
+		"Anti-Brume",
+		"Distorsion",
+		"Draco-Météore",
+		"Coup d'Jus",
+		"Ébullilave",
+		"Tempête Verte",
+		"Mégafouet",
+		"Roc-Boulet",
+		"Poison Croix",
+		"Détricanon",
+		"Tête de Fer",
+		"Bombe Aimant",
+		"Lame de Roc",
+		"Séduction",
+		"Piège de Roc",
+		"Nœud Herbe",
+		"Babil",
+		"Jugement",
+		"Piqûre",
+		"Rayon Chargé",
+		"Martobois",
+		"Aqua-Jet",
+		"Appel Attak",
+		"Appel Défense",
+		"Appel Soins",
+		"Fracass'Tête",
+		"Coup Double",
+		"Hurle-Temps",
+		"Spatio-Rift",
+		"Danse Lune",
+		"Presse",
+		"Vortex Magma",
+		"Trou Noir",
+		"Fulmigraine",
+		"Vent Mauvais",
+		"Revenant",
+		"Aiguisage",
+		"Garde Large",
+		"Partage Garde",
+		"Partage Force",
+		"Zone Étrange",
+		"Choc Psy",
+		"Choc Venin",
+		"Allègement",
+		"Poudre Fureur",
+		"Lévikinésie",
+		"Zone Magique",
+		"Anti-Air",
+		"Yama Arashi",
+		"Rebondifeu",
+		"Cradovague",
+		"Papillodanse",
+		"Tacle Lourd",
+		"Synchropeine",
+		"Boule Élek",
+		"Détrempage",
+		"Nitrocharge",
+		"Enroulement",
+		"Balayette",
+		"Bombe Acide",
+		"Tricherie",
+		"Rayon Simple",
+		"Ten-Danse",
+		"Après Vous",
+		"Chant Canon",
+		"Écho",
+		"Attrition",
+		"Bain de Smog",
+		"Force Ajoutée",
+		"Prévention",
+		"Interversion",
+		"Ébullition",
+		"Exuviation",
+		"Vibra Soin",
+		"Châtiment",
+		"Chute Libre",
+		"Vitesse",
+		"Projection",
+		"Calcination",
+		"À la Queue",
+		"Acrobatie",
+		"Copie-Type",
+		"Vengeance",
+		"Tout ou Rien",
+		"Passe-Cadeau",
+		"Feu d'Enfer",
+		"Aire d'Eau",
+		"Aire de Feu",
+		"Aire d'Herbe",
+		"Change Éclair",
+		"Survinsecte",
+		"Piétisol",
+		"Souffle Glacé",
+		"Draco-Queue",
+		"Rengorgement",
+		"Toile Élek",
+		"Éclair Fou",
+		"Tunnelier",
+		"Double Baffe",
+		"Crèvecœur",
+		"Encornebois",
+		"Lame Sainte",
+		"Coqui-Lame",
+		"Tacle Feu",
+		"Phytomixeur",
+		"Bulldoboule",
+		"Cotogarde",
+		"Explonuit",
+		"Frappe Psy",
+		"Plumo-Queue",
+		"Vent Violent",
+		"Peignée",
+		"Lancécrou",
+		"Incendie",
+		"Techno-Buster",
+		"Chant Antique",
+		"Lame Ouinte",
+		"Ère Glaciaire",
+		"Charge Foudre",
+		"Flamme Bleue",
+		"Danse du Feu",
+		"Éclair Gelé",
+		"Feu Glacé",
+		"Aboiement",
+		"Chute Glace",
+		"Coup Victoire",
+		"Flamme Croix",
+		"Éclair Croix",
+		"Flying Press",
+		"Tatamigaeshi",
+		"Éructation",
+		"Fertilisation",
+		"Toile Gluante",
+		"Dard Mortel",
+		"Hantise",
+		"Halloween",
+		"Râle Mâle",
+		"Déluge Plasmique",
+		"Parabocharge",
+		"Maléfice Sylvain",
+		"Tempête Florale",
+		"Lyophilisation",
+		"Voix Enjôleuse",
+		"Dernier Mot",
+		"Renversement",
+		"Vampibaiser",
+		"Vigilance",
+		"Garde Florale",
+		"Champ Herbu",
+		"Champ Brumeux",
+		"Électrisation",
+		"Câlinerie",
+		"Vent Féérique",
+		"Pouvoir Lunaire",
+		"Bang Sonique",
+		"Verrou Enchanté",
+		"Bouclier Royal",
+		"Camaraderie",
+		"Confidence",
+		"Orage Adamantin",
+		"Jet de Vapeur",
+		"TrouDimensionnel",
+		"Sheauriken",
+		"Feu Ensorcelé",
+		"Pico-Défense",
+		"Brume Capiteuse",
+		"Ondes Étranges",
+		"Piège de Venin",
+		"Nuée de Poudre",
+		"Géo-Contrôle",
+		"Magné-Contrôle",
+		"Étrennes",
+		"Champ Électrifié",
+		"Éclat Magique",
+		"Célébration",
+		"Mains Jointes",
+		"Regard Touchant",
+		"Frotte-Frimousse",
+		"Retenue",
+		"Harcèlement",
+		"Poing Boost",
+		"Mort'Ailes",
+		"Myria-Flèches",
+		"Myria-Vagues",
+		"Force Chtonienne",
+		"Lumière du Néant",
+		"Onde Originelle",
+		"Lame Pangéenne",
+		"Draco-Ascension",
+		"Furie Dimension",
+		"Turbo-Charge Bulldozer",
+		"",
+		"Combo Hyper-Furie",
+		"",
+		"Piqué Supersonique",
+		"",
+		"Déluge Causti-Toxique",
+		"",
+		"Éruption Géo-Sismique",
+		"",
+		"Apocalypse Gigalithique",
+		"",
+		"Cocon Fatal",
+		"",
+		"Appel des Ombres Éternelles",
+		"",
+		"Vrille Maximum",
+		"",
+		"Pyro-Explosion Cataclysmique",
+		"",
+		"Super Tourbillon Abyssal",
+		"",
+		"Pétalexplosion Éblouissante",
+		"",
+		"Fulguro-Lance Gigavolt",
+		"",
+		"Psycho-Pulvérisation EX",
+		"",
+		"Laser Cryogénique",
+		"",
+		"Chaos Draconique",
+		"",
+		"Trou Noir des Ombres",
+		"",
+		"Impact Choupinova",
+		"",
+		"Pikachute Foudroyante",
+		"Amass'Sable",
+		"Escarmouche",
+		"Blockhaus",
+		"Tisse Ombre",
+		"Dark Lariat",
+		"Aria de l'Écume",
+		"Marteau de Glace",
+		"Soin Floral",
+		"Cavalerie Lourde",
+		"Vole-Force",
+		"Lame Solaire",
+		"Feuillage",
+		"Projecteur",
+		"Fil Toxique",
+		"Affilage",
+		"Engrenage",
+		"Exécu-Son",
+		"Boule Pollen",
+		"Ancrage",
+		"Champ Psychique",
+		"Furie-Bond",
+		"Fouet de Feu",
+		"Arrogance",
+		"Flamme Ultime",
+		"Permuvitesse",
+		"Estocorne",
+		"Purification",
+		"Danse Éveil",
+		"Sanction Suprême",
+		"Botte Sucrette",
+		"Sommation",
+		"Bec-Canon",
+		"Vibrécaille",
+		"Draco-Marteau",
+		"Centrifugifle",
+		"Voile Aurore",
+		"Fureur des Plumes Spectrales",
+		"Dark Body Press",
+		"Symphonie des Ondines",
+		"Colère du Gardien d'Alola",
+		"Fauche-Âme des Sept Étoiles",
+		"Électro-Surf Survolté",
+		"Gare au Ronflex",
+		"Neuf pour Un",
+		"Supernova Originelle",
+		"Carapiège",
+		"Canon Floral",
+		"Psycho-Croc",
+		"Trépignement",
+		"Os Ombre",
+		"Vif Roc",
+		"Aqua-Brèche",
+		"Laser Prisme",
+		"Clepto-Mânes",
+		"Choc Météore",
+		"Rayon Spectral",
+		"Larme à l'Œil",
+		"Électrikipik",
+		"Ire de la Nature",
+		"Coup Varia-Type",
+		"Giga-Tonnerre",
+		"Caboche-Kaboum",
+		"Plasma Punch",
+		"Photo-Geyser",
+		"Apocalypsis Luminis",
+		"Hélio-Choc Dévastateur",
+		"Rayons Séléno-Explosifs",
+		"Patati-Patattrape",
+		"Hurlement des Roches-Lames",
+		"Dracacophonie Flamboyante",
+		"Pika-Sprint",
+		"Pika-Splash",
+		"Pika-Piqué",
+		"Pika-Fracas",
+		"Évo-Thalasso",
+		"Évo-Dynamo",
+		"Évo-Flambo",
+		"Évo-Psycho",
+		"Évo-Ténébro",
+		"Évo-Écolo",
+		"Évo-Congélo",
+		"Évo-Fabulo",
+		"Évo-Chardasso",
+		"Écrous d'Poing",
+		"Gardomax",
+		"Canon Dynamax",
+		"Tir de Précision",
+		"Croque Fort",
+		"Garde-à-Joues",
+		"Ultime Bastion",
+		"Goudronnage",
+		"Poudre Magique",
+		"Draco-Flèches",
+		"Thérémonie",
+		"Octoprise",
+		"Prise de Bec",
+		"Branchicrok",
+		"Change-Côté",
+		"Pyromax",
+		"Insectomax",
+		"Fulguromax",
+		"Normalomax",
+		"Pugilomax",
+		"Spectromax",
+		"Cryomax",
+		"Toxinomax",
+		"Hydromax",
+		"Aéromax",
+		"Enchantomax",
+		"Dracomax",
+		"Psychomax",
+		"Lithomax",
+		"Sismomax",
+		"Sinistromax",
+		"Phytomax",
+		"Métallomax",
+		"Dracacophonie",
+		"Big Splash",
+		"Nappage",
+		"Tambour Battant",
+		"Troquenard",
+		"Ballon Brûlant",
+		"Gladius Maximus",
+		"Aegis Maxima",
+		"Roue Libre",
+		"Abattage",
+		"Tapotige",
+		"Overdrive",
+		"Acide Malique",
+		"Force G",
+		"Choc Émotionnel",
+		"Vapeur Féérique",
+		"Fontaine de Vie",
+		"Blocage",
+		"Fourbette",
+		"Joute Astrale",
+		"Laser Infinimax",
+		"Métalaser",
+		"Vaste Pouvoir",
+		"Métalliroue",
+		"Rafale Écailles",
+		"Laser Météore",
+		"Kokiyarme",
+		"Explo-Brume",
+		"Gliss'Herbe",
+		"Monte-Tension",
+		"Champlification",
+		"Ravage Rampant",
+		"Feu Envieux",
+		"Cent Rancunes",
+		"Esprit Frappeur",
+		"Gaz Corrosif",
+		"Coaching",
+		"Eau Revoir",
+		"Triple Axel",
+		"Double Volée",
+		"Sable Ardent",
+		"Selve Salvatrice",
+		"Poing Obscur",
+		"Torrent de Coups",
+		"Voltageôle",
+		"Draco-Énergie",
+		"Regard Glaçant",
+		"Fureur Ardente",
+		"Coup Fulgurant",
+		"Lance de Glace",
+		"Éclat Spectral",
+		"Sort Sinistre",
+		"Griffes Funestes",
+		"Sprint Bouclier",
+		"Échange Force",
+		"Hache de Pierre",
+		"Typhon Passionné",
+		"Force Mystique",
+		"Grand Courroux",
+		"Aquatacle",
+		"Herblast",
+		"Bise Glaciaire",
+		"Danse Victoire",
+		"Assaut Frontal",
+		"Multitoxik",
+		"Ailes Psycho",
+		"Cœur de Rancœur",
+		"Mur Fumigène",
+		"Triple Flèche",
+		"Cortège Funèbre",
+		"Vagues à Lames",
+		"Typhon Hivernal",
+		"Typhon Fulgurant",
+		"Typhon Pyrosable",
+		"Prière Lunaire",
+		"Extravaillance",
+		"Téra Explosion",
+		"Piège de Fil",
+		"Talon-Marteau",
+		"Hommage Posthume",
+		"Lumino-Impact",
+		"Plat du Jour",
+		"Poing Sonique",
+		"Habanerage",
+		"Dérapage",
+		"Prolifération",
+		"Cryo-Pirouette",
+		"Charge Glaive",
+		"Second Souffle",
+		"Salaison",
+		"Triple Plongeon",
+		"Toupie Éclat",
+		"Décalquage",
+		"Décharnement",
+		"Génusection",
+		"Magie Florale",
+		"Chant Flamboyant",
+		"Danse Aquatique",
+		"Taurogne",
+		"Ruée d'Or",
+		"Lame Psychique",
+		"Hydrovapeur",
+		"Cataclysme",
+		"Nitro Crash",
+		"Turbo Volt",
+		"Queulonage",
+		"Neigeux de Mots",
+		"Grand Nettoyage",
+		"Chute de Neige",
+		"Bond",
+		"Désherbaffe",
+		"Douche Froide",
+		"Hyperceuse",
+		"Double Laser",
+		"Poing de Colère",
+		"Canon Blindé",
+		"Lame en Peine",
+		"Double Décharge",
+		"Marteau Mastoc",
+		"Vindicte",
+		"Tranch'Aqua",
+		"Crash Brûlant",
+		"Crash Obscur",
+		"Crash Toxique",
+		"Crash Musclé",
+		"Crash Magique",
+		"Lune Rouge",
+		"Mortier Matcha",
+		"Bombe au Sirop",
+		"Massue Liane",
+		"Fulgurayon",
+		"Pluie Térastrale",
+		"Laser Hasard",
+		"Rempart Brûlant",
+		"Vif Éclair",
+		"Lame Puissante",
+		"Lame Tachyonique",
+		"Pression Extrême",
+		"Cri Draconique",
+		"Voix Envoûtante",
+		"Indignition",
+		"Volt Assaut",
+		"Dissonance Psy",
+		"Prio-Parade",
+		"Chaîne Malsaine",
 	},
 	-- The list below must remain in the same order.
 	-- These are custom hand-written move summaries, only edit the "Description" value
 	MoveDescriptions = {
 		{
 			NameKey = "Pound",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Pound deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Karate Chop",
-			Description = "Deals damage and has an increased critical-hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Karate Chop deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
-			NameKey = "DoubleSlap",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit or trigger a contact ability.", -- NEEDS TRANSLATION
+			NameKey = "Double Slap",
+			Description = "Double Slap hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Comet Punch",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit or trigger a contact ability.", -- NEEDS TRANSLATION
+			Description = "Comet Punch hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Mega Punch",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Mega Punch deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Pay Day",
-			Description = "Scatters coins equal to five times the user's level each time.", -- NEEDS TRANSLATION
+			Description = "Money is earned after the battle. Z-Move effects",
 		},
 		{
 			NameKey = "Fire Punch",
-			Description = "Deals damage and has a 10% chance of burning the opponent.", -- NEEDS TRANSLATION
+			Description = "Fire Punch deals damage and has a 10% chance of burning the target.",
 		},
 		{
 			NameKey = "Ice Punch",
-			Description = "Deals damage and has a 10% chance of freezing the opponent.", -- NEEDS TRANSLATION
+			Description = "Ice Punch deals damage and has a 10% chance of freezing the target.",
 		},
 		{
-			NameKey = "ThunderPunch",
-			Description = "Deals damage and has a 10% chance of paralyzing the opponent.", -- NEEDS TRANSLATION
+			NameKey = "Thunder Punch",
+			Description = "Thunder Punch deals damage and has a 10% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Scratch",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Scratch is one of the most common and basic moves a Pokémon learns. It deals damage with no additional effects.",
 		},
 		{
-			NameKey = "ViceGrip",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			NameKey = "Vise Grip",
+			Description = "Vise Grip deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Guillotine",
-			Description = "A one-hit KO move. This move is 1% more accurate for each level above the target. Fails if target is higher level.", -- NEEDS TRANSLATION
+			Description = "If it hits, Guillotine is guaranteed to make the opponent faint. Its accuracy increases if the user is a higher level than the target Pokémon, but fails if the target is higher level.",
 		},
 		{
 			NameKey = "Razor Wind",
-			Description = "Attacks on the 2nd turn after use. Despite the game description, it does NOT have a high-crit chance.", -- NEEDS TRANSLATION
+			Description = "The user of Razor Wind will whip up a whirlwind on the first turn. On the second turn, Razor Wind deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Swords Dance",
-			Description = "Increases the user's Attack stat by two stages.", -- NEEDS TRANSLATION
+			Description = "Swords Dance raises the user's Attack by two stages.",
 		},
 		{
 			NameKey = "Cut",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Cut deals damage with no additional effect in battle.",
 		},
 		{
 			NameKey = "Gust",
-			Description = "Deals double damage if opponent is using Fly or Bounce.", -- NEEDS TRANSLATION
+			Description = "Gust deals damage and can hit Pokémon during the invulnerable stage of Bounce , Fly or Sky Drop - in which case the power is doubled.",
 		},
 		{
 			NameKey = "Wing Attack",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Wing Attack deals damage with no additional effect, besides being able to hit non-adjacent Pokémon in triple battles.",
 		},
 		{
 			NameKey = "Whirlwind",
-			Description = "Forces target to switch out with another random Pokemon. Fails against Suction Cups or Ingrain.", -- NEEDS TRANSLATION
+			Description = "In the wild, Whirlwind blows the target Pokémon away if they are of a lower level, and the battle ends.",
 		},
 		{
 			NameKey = "Fly",
-			Description = "Attacks on 2nd turn. Can still be hit by Gust, Sky Uppercut, Thunder, Twister, and Whirlwind.", -- NEEDS TRANSLATION
+			Description = "The user of Fly will fly up high on the first turn, disappearing from view and becoming invulnerable to most attacks. On the second turn, Fly deals damage.",
 		},
 		{
 			NameKey = "Bind",
-			Description = "Deals damage and inflicts 1/16 of the target's max HP as damage for 2-5 turns. Prevents the target from switching out or fleeing.", -- NEEDS TRANSLATION
+			Description = "Bind inflicts damage on the first turn then traps the opponent, causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
 		},
 		{
 			NameKey = "Slam",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Slam deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Vine Whip",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Vine Whip deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Stomp",
-			Description = "Deals damage with 30% chance of causing the target to flinch. Damage is doubled against a target that used Minimize.", -- NEEDS TRANSLATION
+			Description = "Stomp deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Double Kick",
-			Description = "Deals damage twice, each hit able to be critical.", -- NEEDS TRANSLATION
+			Description = "Double Kick deals damage and will strike twice (with 30 base power each time).",
 		},
 		{
 			NameKey = "Mega Kick",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Mega Kick deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Jump Kick",
-			Description = "If the move misses, the user is hurt for 1/2 of the damage it would have dealt.", -- NEEDS TRANSLATION
+			Description = "Jump Kick deals damage, however, if it misses the user keeps going and crashes, losing 1/2 of its maximum HP. Jump Kick cannot be used if Gravity is in effect.",
 		},
 		{
 			NameKey = "Rolling Kick",
-			Description = "Deals damage and has a 30% chance of causing the target to flinch.", -- NEEDS TRANSLATION
+			Description = "Rolling Kick deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
-			NameKey = "Sand-Attack",
-			Description = "Lowers the target's accuracy stat by one stage. (100% -> 75% -> 60% -> 50% ...)", -- NEEDS TRANSLATION
+			NameKey = "Sand Attack",
+			Description = "Sand Attack lowers the target's Accuracy by one stage. Although it is a Ground -type move it still affects raised Pokémon. Raised Pokémon are any Flying types or those under the effects of Levitate , Magnet Rise or Telekinesis . Full details in glossary .",
 		},
 		{
 			NameKey = "Headbutt",
-			Description = "Deals damage and has a 30% chance of causing the target to flinch.", -- NEEDS TRANSLATION
+			Description = "Headbutt deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Horn Attack",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Horn Attack deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Fury Attack",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit or trigger a contact ability.", -- NEEDS TRANSLATION
+			Description = "Fury Attack hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Horn Drill",
-			Description = "A one-hit KO move. This move is 1% more accurate for each level above the target. Fails if target is higher level.", -- NEEDS TRANSLATION
+			Description = "If it hits, Horn Drill is guaranteed to make the opponent faint. Its accuracy increases if the user is a higher level than the target Pokémon, but fails if the target is higher level.",
 		},
 		{
 			NameKey = "Tackle",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Tackle is one of the most common and basic moves a Pokémon learns. It deals damage with no additional effects.",
 		},
 		{
 			NameKey = "Body Slam",
-			Description = "Deals damage and has a 30% chance of paralyzing the target.", -- NEEDS TRANSLATION
+			Description = "Body Slam deals damage and has a 30% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Wrap",
-			Description = "Deals damage and inflicts 1/16 of the target's max HP as damage for 2-5 turns. Prevents the target from switching out or fleeing.", -- NEEDS TRANSLATION
+			Description = "Wrap inflicts damage on the first turn then traps the opponent, causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
 		},
 		{
 			NameKey = "Take Down",
-			Description = "The user receives recoil damage equal to 1/4 of the damage dealt.", -- NEEDS TRANSLATION
+			Description = "Take Down deals damage, but the user receives 1/4 of the damage it inflicted in recoil. In other words, if the attack does 100 HP damage to the opponent, the user will lose 25 HP.",
 		},
 		{
 			NameKey = "Thrash",
-			Description = "Deals damage for 2-3 consecutive turns. User becomes confused afterwards.", -- NEEDS TRANSLATION
+			Description = "The user of Thrash attacks for 2-3 turns, during which it cannot switch out, and then becomes confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
 		},
 		{
 			NameKey = "Double-Edge",
-			Description = "The user receives recoil damage equal to 1/3 of the damage dealt.", -- NEEDS TRANSLATION
+			Description = "Double-Edge deals damage, but the user receives 1/3 of the damage it inflicted in recoil. In other words, if the attack does 90 HP damage to the opponent, the user will lose 30 HP.",
 		},
 		{
 			NameKey = "Tail Whip",
-			Description = "Decreases the Defense stat of all adjacent opponents by one stage.", -- NEEDS TRANSLATION
+			Description = "Tail Whip lowers the target's Defense by one stage.",
 		},
 		{
 			NameKey = "Poison Sting",
-			Description = "Deals damage and has a 30% chance of poisoning the target.", -- NEEDS TRANSLATION
+			Description = "Poison Sting deals damage and has a 30% chance of poisoning the target.",
 		},
 		{
 			NameKey = "Twineedle",
-			Description = "Deals damage twice, each hit able to be critical. Final hit has a 20% chance of poisoning the target.", -- NEEDS TRANSLATION
+			Description = "Twineedle deals damage and will strike twice (with 25 base power each time). It has a 20% chance of poisoning the target. Poison or Steel type Pokémon, those with the ability Immunity or those behind a Substitute cannot be poisoned.",
 		},
 		{
 			NameKey = "Pin Missile",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit.", -- NEEDS TRANSLATION
+			Description = "Pin Missile hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Leer",
-			Description = "Decreases the Defense stat of all adjacent opponents by one stage.", -- NEEDS TRANSLATION
+			Description = "Leer lowers the target's Defense by one stage.",
 		},
 		{
 			NameKey = "Bite",
-			Description = "Deals damage and has a 30% chance of causing the target to flinch.", -- NEEDS TRANSLATION
+			Description = "Bite deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Growl",
-			Description = "Decreases the Attack stat of all adjacent opponents by one stage.", -- NEEDS TRANSLATION
+			Description = "Growl lowers the target's Attack by one stage.",
 		},
 		{
 			NameKey = "Roar",
-			Description = "Forces target to switch out with another random Pokemon. Fails against Soundproof, Suction Cups or Ingrain.", -- NEEDS TRANSLATION
+			Description = "In the wild, Roar causes the target Pokémon to flee if they are of a lower level, and the battle ends.",
 		},
 		{
 			NameKey = "Sing",
-			Description = "Puts the target to sleep, lasts 2-5 turns. Fails against Insomnia, Vital Spirit or Soundproof.", -- NEEDS TRANSLATION
+			Description = "Sing puts the target to sleep, if it hits. Sleeping Pokémon cannot move (with some exceptions such as Snore ). Sleep lasts for 1-3 turns.",
 		},
 		{
 			NameKey = "Supersonic",
-			Description = "Causes the target to become confused. Fails against Soundproof or Own Tempo.", -- NEEDS TRANSLATION
+			Description = "Supersonic causes the target to become confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
 		},
 		{
-			NameKey = "SonicBoom",
-			Description = "Always inflicts exactly 20 HP damage if it hits.", -- NEEDS TRANSLATION
+			NameKey = "Sonic Boom",
+			Description = "Sonic Boom always deals 20 HP damage to the target, regardless of typing (although Ghost type Pokémon are still immune). It has no additional effect.",
 		},
 		{
 			NameKey = "Disable",
-			Description = "Disables the last move used by the target for 2-5 turns.", -- NEEDS TRANSLATION
+			Description = "Disable causes the previous move the target used to be disabled for 1-8 turns, which prevents the move's use.",
 		},
 		{
 			NameKey = "Acid",
-			Description = "Deals damage and has a 10% chance of lowering the target's Defense stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Acid deals damage and has a 10% chance of lowering the target's Special Defense by one stage.",
 		},
 		{
 			NameKey = "Ember",
-			Description = "Deals damage and has a 10% chance of burning the target.", -- NEEDS TRANSLATION
+			Description = "Ember deals damage and has a 10% chance of burning the target.",
 		},
 		{
 			NameKey = "Flamethrower",
-			Description = "Deals damage and has a 10% chance of burning the target.", -- NEEDS TRANSLATION
+			Description = "Flamethrower deals damage and has a 10% chance of burning the target.",
 		},
 		{
 			NameKey = "Mist",
-			Description = "For five turns, enemy Pokémon cannot lower stats of Pokémon on your team.", -- NEEDS TRANSLATION
+			Description = "User's stats cannot be changed for a period of time. Z-Move effects",
 		},
 		{
 			NameKey = "Water Gun",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Water Gun deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Hydro Pump",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Hydro Pump deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Surf",
-			Description = "Deals double damage if opponent is using Dive.", -- NEEDS TRANSLATION
+			Description = "Surf deals damage. In double battles it will hit all Pokémon on the field; in triple battles it will hit all adjacent Pokémon.",
 		},
 		{
 			NameKey = "Ice Beam",
-			Description = "Deals damage and has a 10% chance of freezing the target.", -- NEEDS TRANSLATION
+			Description = "Ice Beam deals damage and has a 10% chance of freezing the target.",
 		},
 		{
 			NameKey = "Blizzard",
-			Description = "Deals damage and has a 10% chance of freezing the target.", -- NEEDS TRANSLATION
+			Description = "Blizzard deals damage and has a 10% chance of freezing the target. It will hit both opponents in a double battle or adjacent opponents in a triple battle.",
 		},
 		{
 			NameKey = "Psybeam",
-			Description = "Deals damage and has a 10% chance of confusing the target.", -- NEEDS TRANSLATION
+			Description = "Psybeam deals damage and has a 10% chance of confusing the target.",
 		},
 		{
-			NameKey = "BubbleBeam",
-			Description = "Deals damage and has a 10% chance of lowering the target's Speed stat by one stage.", -- NEEDS TRANSLATION
+			NameKey = "Bubble Beam",
+			Description = "Bubble Beam deals damage and has a 10% chance of lowering the target's Speed by one stage.",
 		},
 		{
 			NameKey = "Aurora Beam",
-			Description = "Deals damage and has a 10% chance of lowering the target's Attack stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Aurora Beam deals damage and has a 10% chance of lowering the target's Attack by one stage.",
 		},
 		{
 			NameKey = "Hyper Beam",
-			Description = "Deals damage and then forces the user to recharge during the next turn.", -- NEEDS TRANSLATION
+			Description = "Hyper Beam deals damage, but the user must recharge on the next turn (bringing its effective power down to 75 per turn).",
 		},
 		{
 			NameKey = "Peck",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Peck deals damage with no additional effect, besides being able to hit non-adjacent Pokémon in triple battles.",
 		},
 		{
 			NameKey = "Drill Peck",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Drill Peck deals damage with no additional effect, besides being able to hit non-adjacent Pokémon in triple battles.",
 		},
 		{
 			NameKey = "Submission",
-			Description = "Deals damage, and the user receives recoil damage equal to 25% of the damage done.", -- NEEDS TRANSLATION
+			Description = "Submission deals damage, but the user receives 1/4 of the damage it inflicts in recoil. In other words, if the attack does 100 HP damage to the opponent, the user will lose 25 HP.",
 		},
 		{
 			NameKey = "Low Kick",
-			Description = "Deals between 20-120 damage dependent on the weight of the target.", -- NEEDS TRANSLATION
+			Description = "Low Kick inflicts greater damage on heavier opponents , as shown in the table.",
 		},
 		{
 			NameKey = "Counter",
-			Description = "If hit by a Physical category move, deals twice the damage received back to the user.", -- NEEDS TRANSLATION
+			Description = "When hit by a Physical Attack, user strikes back with 2x power. Z-Move effects",
 		},
 		{
 			NameKey = "Seismic Toss",
-			Description = "Deals exact damage equal to the user's level.", -- NEEDS TRANSLATION
+			Description = "The damage of Seismic Toss is equal to the user's level. So at level 100 the Pokémon will inflict 100 HP damage.",
 		},
 		{
 			NameKey = "Strength",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Strength deals damage with no additional effect in battle.",
 		},
 		{
 			NameKey = "Absorb",
-			Description = "50% of the damage dealt is restored to the user as HP.", -- NEEDS TRANSLATION
+			Description = "Absorb deals damage and the user will recover 50% of the HP drained.",
 		},
 		{
 			NameKey = "Mega Drain",
-			Description = "50% of the damage dealt is restored to the user as HP.", -- NEEDS TRANSLATION
+			Description = "Mega Drain deals damage and the user will recover 50% of the HP drained.",
 		},
 		{
 			NameKey = "Leech Seed",
-			Description = "Drains 1/8 of the target's HP at the end of each turn.", -- NEEDS TRANSLATION
+			Description = "Leech Seed plants a seed on the target that drains 1/8 of its maximum HP at the end of each turn and restores it to the user, or any Pokémon that takes its place. It does not work on Grass -type Pokémon; it does technically work against Pokémon with the Magic Guard ability, but no HP will be sapped.",
 		},
 		{
 			NameKey = "Growth",
-			Description = "Increases the user's Special Attack stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Growth raises the user's Attack and Special Attack by one stage each. During harsh sunlight it raises each stat by two stages.",
 		},
 		{
 			NameKey = "Razor Leaf",
-			Description = "Deals damage and has an increased critical-hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Razor Leaf deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
-			NameKey = "SolarBeam",
-			Description = "Attacks on the 2nd turn after use, or immediately in sunny weather. Half damage in rain or sandstorm.", -- NEEDS TRANSLATION
+			NameKey = "Solar Beam",
+			Description = "The user of Solar Beam will absorb light on the first turn. On the second turn, Solar Beam deals damage.",
 		},
 		{
-			NameKey = "PoisonPowder",
-			Description = "Poisons the target, losing 1/8 of the their max HP at the end of each turn.", -- NEEDS TRANSLATION
+			NameKey = "Poison Powder",
+			Description = "Poison Powder causes the target to become poisoned. Poisoned Pokémon lose 1/8 of their maximum HP each turn.",
 		},
 		{
 			NameKey = "Stun Spore",
-			Description = "Paralyzes the target, reducing their Speed by 75%, and a 25% chance they will fail to act.", -- NEEDS TRANSLATION
+			Description = "Stun Spore paralyzes the target, if it hits. Paralyzed Pokémon have a 25% chance of not being able to attack, and their Speed is decreased by 50% (75% in Generations 1-6 ).",
 		},
 		{
 			NameKey = "Sleep Powder",
-			Description = "Puts the target to sleep, lasts 2-5 turns. Fails against Insomnia or Vital Spirit.", -- NEEDS TRANSLATION
+			Description = "Sleep Powder puts the target to sleep, if it hits. Sleeping Pokémon cannot move (with some exceptions such as Snore ). Sleep lasts for 1-3 turns.",
 		},
 		{
 			NameKey = "Petal Dance",
-			Description = "Deals damage for 2-3 consecutive turns. User becomes confused afterwards.", -- NEEDS TRANSLATION
+			Description = "The user of Petal Dance attacks for 2-3 turns, during which it cannot switch out, and then becomes confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
 		},
 		{
 			NameKey = "String Shot",
-			Description = "Decreases the targets' Speed stat by one stage.", -- NEEDS TRANSLATION
+			Description = "String Shot lowers the target's Speed by two stages.",
 		},
 		{
 			NameKey = "Dragon Rage",
-			Description = "Always inflicts exactly 40 HP damage if it hits.", -- NEEDS TRANSLATION
+			Description = "Dragon Rage always deals 40 HP damage to the target, regardless of typing. It has no additional effect.",
 		},
 		{
 			NameKey = "Fire Spin",
-			Description = "Deals damage and inflicts 1/16 of the target's max HP as damage for 2-5 turns. Prevents the target from switching out or fleeing.", -- NEEDS TRANSLATION
+			Description = "Fire Spin inflicts damage on the first turn then traps the opponent, causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
 		},
 		{
-			NameKey = "ThunderShock",
-			Description = "Deals damage and has a 10% chance of paralyzing the target.", -- NEEDS TRANSLATION
+			NameKey = "Thunder Shock",
+			Description = "Thunder Shock deals damage and has a 10% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Thunderbolt",
-			Description = "Deals damage and has a 10% chance of paralyzing the target.", -- NEEDS TRANSLATION
+			Description = "Thunderbolt deals damage and has a 10% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Thunder Wave",
-			Description = "Paralyzes the target, reducing their Speed by 75%, and a 25% chance they will fail to act.", -- NEEDS TRANSLATION
+			Description = "Thunder Wave paralyzes the opponent. Paralyzed Pokémon have a 25% chance of not being able to attack, and their Speed is decreased by 50% (75% in Generations 1-6 ).",
 		},
 		{
 			NameKey = "Thunder",
-			Description = "30% chance to paralyze. Can hit Fly and Bounce. Always hits during the rain. Accuracy is 50 when sunny.", -- NEEDS TRANSLATION
+			Description = "Thunder deals damage and has a 30% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Rock Throw",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Rock Throw deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Earthquake",
-			Description = "Deals double damage if opponent is using Dig.", -- NEEDS TRANSLATION
+			Description = "Earthquake deals damage, and will hit with double power if the opponent is underground due to the move Dig .",
 		},
 		{
 			NameKey = "Fissure",
-			Description = "A one-hit KO move. This move is 1% more accurate for each level above the target. Fails if target is higher level. Can hit Pokémon using Dig.", -- NEEDS TRANSLATION
+			Description = "If it hits, Fissure is guaranteed to make the opponent faint. Its accuracy increases if the user is a higher level than the target Pokémon, but fails if the target is higher level.",
 		},
 		{
 			NameKey = "Dig",
-			Description = "Attacks on 2nd turn. Can still be hit by Earthquake, Fissure, and Magnitude. Can be used outside of battle.", -- NEEDS TRANSLATION
+			Description = "The user of Dig will burrow its way underground on the first turn, disappearing from view and becoming invulnerable to most attacks. On the second turn, Dig deals damage.",
 		},
 		{
 			NameKey = "Toxic",
-			Description = "Poisons the target, losing increasing amounts of the their max HP at the end of each turn.", -- NEEDS TRANSLATION
+			Description = "Toxic causes the target to be badly poisoned. Pokémon that are badly poisoned will lose an increasing amount of HP at the end of each turn.",
 		},
 		{
 			NameKey = "Confusion",
-			Description = "Deals damage and has a 10% chance of confusing the target.", -- NEEDS TRANSLATION
+			Description = "Confusion deals damage and has a 10% chance of confusing the target.",
 		},
 		{
 			NameKey = "Psychic",
-			Description = "Deals damage and has a 10% chance of lowering the target's Special Defense by one stage.", -- NEEDS TRANSLATION
+			Description = "Psychic deals damage and has a 10% chance of lowering the target's Special Defense by one stage.",
 		},
 		{
 			NameKey = "Hypnosis",
-			Description = "Puts the target to sleep, lasts 2-5 turns. Fails against Insomnia or Vital Spirit.", -- NEEDS TRANSLATION
+			Description = "Hypnosis puts the target to sleep, if it hits. Sleeping Pokémon cannot move (with some exceptions such as Snore ). Sleep lasts for 1-3 turns.",
 		},
 		{
 			NameKey = "Meditate",
-			Description = "Increases the user's Attack by one stage.", -- NEEDS TRANSLATION
+			Description = "Meditate raises the user's Attack by one stage.",
 		},
 		{
 			NameKey = "Agility",
-			Description = "Increases the user's Speed by two stages.", -- NEEDS TRANSLATION
+			Description = "Agility raises the user's Speed by two stages.",
 		},
 		{
 			NameKey = "Quick Attack",
-			Description = "This is an increased priority move, causing the user to attack before most other moves.", -- NEEDS TRANSLATION
+			Description = "Quick Attack deals damage and has a priority of +1.",
 		},
 		{
 			NameKey = "Rage",
-			Description = "When used consecutively, Attack stat increases by one stage when damaged by an attack.", -- NEEDS TRANSLATION
+			Description = "Rage deals damage, and if the user is hit by a direct attack - any time after Rage is first used but before a different move is used - the user's Attack is raised by one stage. The game will state the Pokémon's rage is building rather than explicitly assert the stat increase. Stats can be raised to a maximum of +6 stages each.",
 		},
 		{
 			NameKey = "Teleport",
-			Description = "Flees from wild Pokémon battles only. Fails if trapped by Block, Mean Look, Spider Web, or Ingrain. Can be used outside of battle.", -- NEEDS TRANSLATION
+			Description = "In Pokémon Let's Go Pikachu/Eevee and Pokémon Sword/Shield, Teleport switches the user out.",
 		},
 		{
 			NameKey = "Night Shade",
-			Description = "Deals exact damage equal to the user's level.", -- NEEDS TRANSLATION
+			Description = "The damage of Night Shade is equal to the user's level. So at level 100 the Pokémon will inflict 100 HP damage.",
 		},
 		{
 			NameKey = "Mimic",
-			Description = "Copies the target's last used move. Fails against Sketch, Transform, Metronome, or a move already learned.", -- NEEDS TRANSLATION
+			Description = "Mimic copies the last move used by the target (replacing Mimic ). The copied move always has 5 PP. The effect only lasts while the user is in battle: if the user switches out or when the battle ends, the move becomes Mimic again.",
 		},
 		{
 			NameKey = "Screech",
-			Description = "Decreases the target's Defense stat by two stat stages. Fails against Soundproof ability.", -- NEEDS TRANSLATION
+			Description = "Screech lowers the target's Defense by two stages.",
 		},
 		{
 			NameKey = "Double Team",
-			Description = "Increases the user's evasion by one stage.", -- NEEDS TRANSLATION
+			Description = "Double Team raises the user's Evasiveness by one stage, thus making the user more difficult to hit.",
 		},
 		{
 			NameKey = "Recover",
-			Description = "Restores up to 50% of the user's max HP.", -- NEEDS TRANSLATION
+			Description = "Recover restores up to 50% of the user's maximum HP.",
 		},
 		{
 			NameKey = "Harden",
-			Description = "Increases the user's Defense stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Harden raises the user's Defense by one stage.",
 		},
 		{
 			NameKey = "Minimize",
-			Description = "Increases evasion by one stage. User will now receive double damage from Stomp, Astonish, Extrasensory, and Needle Arm.", -- NEEDS TRANSLATION
+			Description = "Minimize raises the user's Evasion by two stages, thus making the user more difficult to hit. Stats can be raised to a maximum of +6 stages each.",
 		},
 		{
-			NameKey = "SmokeScreen",
-			Description = "Lowers the target's accuracy stat by one stage. (100% -> 75% -> 60% -> 50% ...)", -- NEEDS TRANSLATION
+			NameKey = "Smokescreen",
+			Description = "Smokescreen lowers the target's Accuracy by one stage.",
 		},
 		{
 			NameKey = "Confuse Ray",
-			Description = "Causes the target to become confused for 2-5 turns. 50% chance to damage self as a 40 power Physical move.", -- NEEDS TRANSLATION
+			Description = "Confuse Ray causes the target to become confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
 		},
 		{
 			NameKey = "Withdraw",
-			Description = "Increases the user's Defense by one stage.", -- NEEDS TRANSLATION
+			Description = "Withdraw raises the user's Defense by one stage.",
 		},
 		{
 			NameKey = "Defense Curl",
-			Description = "Increases the user's Defense by one stage. Also doubles the power of user's Rollout and Ice Ball.", -- NEEDS TRANSLATION
+			Description = "Defense Curl raises the user's Defense by one stage. Stats can be raised to a maximum of +6 stages each.",
 		},
 		{
 			NameKey = "Barrier",
-			Description = "Increases the user's Defense by two stages.", -- NEEDS TRANSLATION
+			Description = "Barrier raises the user's Defense by two stages.",
 		},
 		{
 			NameKey = "Light Screen",
-			Description = "For 5 turns, halves the damage done to user's team by Special moves.", -- NEEDS TRANSLATION
+			Description = "Light Screen reduces damage from Special attacks by 50%, for 5 turns. Its effects apply to all Pokémon on the user's side of the field.",
 		},
 		{
 			NameKey = "Haze",
-			Description = "Resets the stat stages of all active Pokémon on the field to 0.", -- NEEDS TRANSLATION
+			Description = "Resets all stat changes. Z-Move effects",
 		},
 		{
 			NameKey = "Reflect",
-			Description = "For 5 turns, halves the damage done to user's team by Physical moves.", -- NEEDS TRANSLATION
+			Description = "Reflect reduces damage from Physical attacks by 50%, for 5 turns. Its effects apply to all Pokémon on the user's side of the field.",
 		},
 		{
 			NameKey = "Focus Energy",
-			Description = "Increases the user's critical hit ratio by two stages. (+2 stages = 1/4 or 25%)", -- NEEDS TRANSLATION
+			Description = "Increases critical hit ratio. Z-Move effects",
 		},
 		{
 			NameKey = "Bide",
-			Description = "Endures attacks for two consecutive turns. Deals damage equal to twice the damage received.", -- NEEDS TRANSLATION
+			Description = "The user of Bide stores energy for 2 turns. At the end of the second turn the Pokémon unleashes energy , dealing twice the HP damage it received.",
 		},
 		{
 			NameKey = "Metronome",
-			Description = "Randomly selects a move to use, and a random target if necessary.", -- NEEDS TRANSLATION
+			Description = "Metronome uses a random move chosen from nearly all existing moves, even if the user cannot normally learn it.",
 		},
 		{
 			NameKey = "Mirror Move",
-			Description = "Uses the last move targeted at the user by a Pokémon still on the field.", -- NEEDS TRANSLATION
+			Description = "User performs the opponent's last move. Z-Move effects",
 		},
 		{
-			NameKey = "Selfdestruct",
-			Description = "The target's Defense is halved, effectively doubling the power of this move.", -- NEEDS TRANSLATION
+			NameKey = "Self-Destruct",
+			Description = "Self-Destruct deals high damage, but causes the user to faint.",
 		},
 		{
 			NameKey = "Egg Bomb",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Egg Bomb deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Lick",
-			Description = "Deals damage and has a 30% chance of paralyzing the target.", -- NEEDS TRANSLATION
+			Description = "Lick deals damage and has a 30% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Smog",
-			Description = "Deals damage and has a 40% chance of poisoning the target.", -- NEEDS TRANSLATION
+			Description = "Smog deals damage and has a 40% chance of poisoning the target.",
 		},
 		{
 			NameKey = "Sludge",
-			Description = "Deals damage and has a 30% chance of poisoning the target.", -- NEEDS TRANSLATION
+			Description = "Sludge deals damage and has a 30% chance of poisoning the target.",
 		},
 		{
 			NameKey = "Bone Club",
-			Description = "Deals damage and has a 10% chance of causing the target to flinch.", -- NEEDS TRANSLATION
+			Description = "Bone Club deals damage and has a 10% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Fire Blast",
-			Description = "Deals damage and has a 10% chance of burning the target.", -- NEEDS TRANSLATION
+			Description = "Fire Blast deals damage and has a 10% chance of burning the target.",
 		},
 		{
 			NameKey = "Waterfall",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Waterfall deals damage and has a 20% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Clamp",
-			Description = "Deals damage and inflicts 1/16 of the target's max HP as damage for 2-5 turns. Prevents the target from switching out or fleeing.", -- NEEDS TRANSLATION
+			Description = "Clamp inflicts damage on the first turn then traps the opponent, causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
 		},
 		{
 			NameKey = "Swift",
-			Description = "Deals damage and bypasses accuracy checks to always hit, unless the target is in the semi-invulnerable turn of a move such as Dig or Fly.", -- NEEDS TRANSLATION
+			Description = "Swift deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
 		},
 		{
 			NameKey = "Skull Bash",
-			Description = "Raises the user's Defense by one stage. On the following turn, it deals damage.", -- NEEDS TRANSLATION
+			Description = "The user of Skull Bash will tuck in its head on the first turn and raise its Defense by one stage. On the second turn, Skull Bash deals damage.",
 		},
 		{
 			NameKey = "Spike Cannon",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit.", -- NEEDS TRANSLATION
+			Description = "Spike Cannon hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Constrict",
-			Description = "Deals damage and has a 10% chance of lowering the target's Speed by one stage.", -- NEEDS TRANSLATION
+			Description = "Constrict deals damage and has a 10% chance of lowering the target's Speed by one stage.",
 		},
 		{
 			NameKey = "Amnesia",
-			Description = "Increases the user's Special Defense by two stages.", -- NEEDS TRANSLATION
+			Description = "Amnesia raises the user's Special Defense by two stages.",
 		},
 		{
 			NameKey = "Kinesis",
-			Description = "Lowers the target's accuracy stat by one stage. (100% -> 75% -> 60% -> 50% ...)", -- NEEDS TRANSLATION
+			Description = "Kinesis lowers the target's Accuracy by one stage.",
 		},
 		{
-			NameKey = "Softboiled",
-			Description = "Restores up to 50% of the user's max HP. Can be used outside of battle to transfer 20% of max HP to another Pokemon.", -- NEEDS TRANSLATION
+			NameKey = "Soft-Boiled",
+			Description = "Soft-Boiled recovers up to 50% of the user's maximum HP.",
 		},
 		{
-			NameKey = "Hi Jump Kick",
-			Description = "If the move misses, the user is hurt for 1/2 of the damage it would have dealt.", -- NEEDS TRANSLATION
+			NameKey = "High Jump Kick",
+			Description = "High Jump Kick deals damage, however, if it misses the user keeps going and crashes, losing 1/2 of its maximum HP. High Jump Kick cannot be used if Gravity is in effect.",
 		},
 		{
 			NameKey = "Glare",
-			Description = "Paralyzes the target, reducing their Speed by 75%, and a 25% chance they will fail to act. Fails against Ghosts.", -- NEEDS TRANSLATION
+			Description = "Glare paralyzes the target, if it hits. Paralyzed Pokémon have a 25% chance of not being able to attack, and their Speed is decreased by 50% (75% in Generations 1-6 ).",
 		},
 		{
 			NameKey = "Dream Eater",
-			Description = "Fails if target is not asleep. 50% of the damage dealt is restored to the user as HP.", -- NEEDS TRANSLATION
+			Description = "Dream Eater deals damage only on sleeping foes and the user will recover 50% of the HP drained.",
 		},
 		{
 			NameKey = "Poison Gas",
-			Description = "Poisons the target, losing 1/8 of the their max HP at the end of each turn.", -- NEEDS TRANSLATION
+			Description = "Poison Gas causes the target to become poisoned. Poisoned Pokémon lose 1/8 of their maximum HP each turn.",
 		},
 		{
 			NameKey = "Barrage",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit.", -- NEEDS TRANSLATION
+			Description = "Barrage hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Leech Life",
-			Description = "50% of the damage dealt is restored to the user as HP.", -- NEEDS TRANSLATION
+			Description = "Leech Life deals damage and the user will recover 50% of the HP drained.",
 		},
 		{
 			NameKey = "Lovely Kiss",
-			Description = "Puts the target to sleep, lasts 2-5 turns. Fails against Insomnia or Vital Spirit.", -- NEEDS TRANSLATION
+			Description = "Lovely Kiss puts the target to sleep, if it hits. Sleeping Pokémon cannot move (with some exceptions such as Snore ). Sleep lasts for 1-3 turns.",
 		},
 		{
 			NameKey = "Sky Attack",
-			Description = "Attacks on 2nd turn, 30% chance to flinch target. Has increased critical-hit ratio. (+1 stage = 1/8 or 12.5%).", -- NEEDS TRANSLATION
+			Description = "The user of Sky Attack will become cloaked in a harsh light on the first turn. On the second turn, Sky Attack deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).. It also has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Transform",
-			Description = "Turns into the target by copying everything about it (even stat changes), except the current and max HP. Each move's PP will become 5.", -- NEEDS TRANSLATION
+			Description = "User takes on the form and attacks of the opponent. Z-Move effects",
 		},
 		{
 			NameKey = "Bubble",
-			Description = "Deals damage and has a 10% chance of lowering the target's Speed stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Bubble deals damage and has a 10% chance of lowering the target's Speed by one stage.",
 		},
 		{
 			NameKey = "Dizzy Punch",
-			Description = "Deals damage and has a 20% chance of confusing the target.", -- NEEDS TRANSLATION
+			Description = "Dizzy Punch deals damage and has a 20% chance of confusing the target.",
 		},
 		{
 			NameKey = "Spore",
-			Description = "Puts the target to sleep, lasts 2-5 turns. Fails against Insomnia or Vital Spirit.", -- NEEDS TRANSLATION
+			Description = "Spore puts the target to sleep. Sleeping Pokémon cannot move (with some exceptions such as Snore ). Sleep lasts for 1-3 turns.",
 		},
 		{
 			NameKey = "Flash",
-			Description = "Lowers the target's accuracy stat by one stage. (100% -> 75% -> 60% -> 50% ...)", -- NEEDS TRANSLATION
+			Description = "Flash lowers the target's Accuracy by one stage.",
 		},
 		{
 			NameKey = "Psywave",
-			Description = "Deals a random amount of damage, varying between 50% and 150% of the user's level. Minimum of 1 damage.", -- NEEDS TRANSLATION
+			Description = "Psywave inflicts a random amount of HP damage, varying between 50% and 150% of the user's level. In other words, at level 100 the damage will be 50-150 HP .",
 		},
 		{
 			NameKey = "Splash",
-			Description = "Deals no damage and has no effect whatsoever.", -- NEEDS TRANSLATION
+			Description = "Doesn't do ANYTHING. Z-Move effects",
 		},
 		{
 			NameKey = "Acid Armor",
-			Description = "Increases the user's Defense by two stages.", -- NEEDS TRANSLATION
+			Description = "Acid Armor raises the user's Defense by two stages.",
 		},
 		{
 			NameKey = "Crabhammer",
-			Description = "Deals damage and has an increased critical-hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Crabhammer deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Explosion",
-			Description = "The target's Defense is halved, effectively doubling the power of this move.", -- NEEDS TRANSLATION
+			Description = "Explosion deals high damage, but causes the user to faint.",
 		},
 		{
 			NameKey = "Fury Swipes",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit or trigger a contact ability.", -- NEEDS TRANSLATION
+			Description = "Fury Swipes hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Bonemerang",
-			Description = "Deals damage twice, each hit able to be critical.", -- NEEDS TRANSLATION
+			Description = "Bonemerang deals damage and will strike twice (with 50 base power each time).",
 		},
 		{
 			NameKey = "Rest",
-			Description = "Restores HP to full while going to sleep for 2 turns. Fails if user has Insomnia or Vital Spirit.", -- NEEDS TRANSLATION
+			Description = "User sleeps for 2 turns, but user is fully healed. Changes",
 		},
 		{
 			NameKey = "Rock Slide",
-			Description = "Deals damage and has a 30% chance of causing each target to flinch.", -- NEEDS TRANSLATION
+			Description = "Rock Slide deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Hyper Fang",
-			Description = "Deals damage and has a 10% chance of causing the target to flinch.", -- NEEDS TRANSLATION
+			Description = "Hyper Fang deals damage and has a 10% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Sharpen",
-			Description = "Increases the user's Attack stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Sharpen raises the user's Attack by one stage.",
 		},
 		{
 			NameKey = "Conversion",
-			Description = "Changes the user's type to match the type of one of the user's moves (including Conversion itself).", -- NEEDS TRANSLATION
+			Description = "Conversion changes the user's type to the same type as the first move in the Pokémon's move list.",
 		},
 		{
 			NameKey = "Tri Attack",
-			Description = "Deals damage and has a 20% chance of either paralyzing, freezing, or burning the target.", -- NEEDS TRANSLATION
+			Description = "Tri Attack deals damage and has a 20% chance of paralyzing, burning or freezing the target - i.e. a 6.67% chance of each status condition.",
 		},
 		{
 			NameKey = "Super Fang",
-			Description = "Deals exact damage equal to 50% of the target's current HP, minimum of 1.", -- NEEDS TRANSLATION
+			Description = "Always takes off half of the opponent's HP. Z-Move effects",
 		},
 		{
 			NameKey = "Slash",
-			Description = "Deals damage and has an increased critical-hit ratio. (+1 stage = 1/8 or 12.5%).", -- NEEDS TRANSLATION
+			Description = "Slash deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Substitute",
-			Description = "User loses 25% of max HP to hide behind a substitute, which prevents the effects of most attacks.", -- NEEDS TRANSLATION
+			Description = "Uses HP to creates a decoy that takes hits. Z-Move effects",
 		},
 		{
 			NameKey = "Struggle",
-			Description = "Hits as neutral damage, even through Wonder Guard. User receives recoil damage equal to 1/4 of damage dealt.", -- NEEDS TRANSLATION
+			Description = "Only usable when all PP are gone. Hurts the user. Changes",
 		},
 		{
 			NameKey = "Sketch",
-			Description = "User learns the target's last move permanently, replacing Sketch in the process. Fails against some moves, or if user already knows the move.", -- NEEDS TRANSLATION
+			Description = "Permanently copies the opponent's last move. Z-Move effects",
 		},
 		{
 			NameKey = "Triple Kick",
-			Description = "Deals damage three times, each additional hit gains 10 power. Each hit has a separate accuracy check and is able to be critical.", -- NEEDS TRANSLATION
+			Description = "Triple Kick deals damage and will strike three times, with each kick's base power increasing by 10. In other words the blows will be base power 10, 20 and 30 - a total of 60 .",
 		},
 		{
 			NameKey = "Thief",
-			Description = "Steals the target's held item, if it has one. An item cannot be stolen if the user already has an item, or the target has Sticky Hold.", -- NEEDS TRANSLATION
+			Description = "Thief deals damage and steals the target's held item, if the user is not holding an item.",
 		},
 		{
 			NameKey = "Spider Web",
-			Description = "Prevents the target from switching out or fleeing. A Pokémon can still flee if it has Run Away or holding a Smoke Ball.", -- NEEDS TRANSLATION
+			Description = "Opponent cannot escape/switch. Z-Move effects",
 		},
 		{
 			NameKey = "Mind Reader",
-			Description = "Allows the next move used by the user to never miss, even against Bounce, Dig, Dive, and Fly.", -- NEEDS TRANSLATION
+			Description = "User's next attack is guaranteed to hit. Changes",
 		},
 		{
 			NameKey = "Nightmare",
-			Description = "Causes a sleeping target to lose 1/4 of the their max HP at the end of each turn that they remain asleep.", -- NEEDS TRANSLATION
+			Description = "If the target is asleep, Nightmare causes it to lose 1/4 of its maximum HP after each turn. The status condition is cured when the Pokémon wakes up.",
 		},
 		{
 			NameKey = "Flame Wheel",
-			Description = "Deals damage and has a 10% chance of burning the target. This move will first thaw out its user if frozen.", -- NEEDS TRANSLATION
+			Description = "Flame Wheel deals damage and has a 10% chance of burning the target.",
 		},
 		{
 			NameKey = "Snore",
-			Description = "If the user is asleep, deals damage and has a 30% chance of causing the target to flinch. No effect against Soundproof.", -- NEEDS TRANSLATION
+			Description = "Snore deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved). However, it can only be used while the user is asleep (either from a move like Hypnosis or self-induced via Rest ).",
 		},
 		{
 			NameKey = "Curse",
-			Description = "Lowers Speed but raises Attack and Defense. If user is Ghost, instead loses half max HP to curse target, causing them to lose 1/4 of the their max HP at end of each turn.", -- NEEDS TRANSLATION
+			Description = "Curse is a unique move that works differently for Ghost -type Pokémon than other Pokémon.",
 		},
 		{
 			NameKey = "Flail",
-			Description = "Deals more damage the less HP the user has. Important breakpoints: 80 power at 35% hp or lower, and 150 power at 10% hp or lower.", -- NEEDS TRANSLATION
+			Description = "Flail deals more damage the lower the user's HP. The following formula is used:",
 		},
 		{
 			NameKey = "Conversion 2",
-			Description = "Randomly changes the user's type to a new type that resists or is immune to the type of the last damaging move it was hit by.", -- NEEDS TRANSLATION
+			Description = "Conversion 2 changes the user's type to one that is resistant (or immune) to the last move used by the target, randomly.",
 		},
 		{
 			NameKey = "Aeroblast",
-			Description = "Deals damage and has an increased critical-hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Aeroblast deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Cotton Spore",
-			Description = "Lowers the target's Speed stat by two stages.", -- NEEDS TRANSLATION
+			Description = "Cotton Spore lowers the target's Speed by two stages.",
 		},
 		{
 			NameKey = "Reversal",
-			Description = "Deals more damage the less HP the user has. Important breakpoints: 80 power at 35% hp or lower, and 150 power at 10% hp or lower.", -- NEEDS TRANSLATION
+			Description = "Reversal deals more damage the lower the user's HP is, as per the table below.",
 		},
 		{
 			NameKey = "Spite",
-			Description = "Decreases the PP of the target's last used move by 2-5 PP, chosen at random. Spite fails if that move has exactly 1 PP remaining.", -- NEEDS TRANSLATION
+			Description = "The opponent's last move loses 2-5 PP. Z-Move effects",
 		},
 		{
 			NameKey = "Powder Snow",
-			Description = "Deals damage and has a 10% chance of freezing the target.", -- NEEDS TRANSLATION
+			Description = "Powder Snow deals damage and has a 10% chance of freezing the target.",
 		},
 		{
 			NameKey = "Protect",
-			Description = "Protects user from all effects of moves for the turn, including damage. Using this move consecutively halves its success rate each time.", -- NEEDS TRANSLATION
+			Description = "Protect prevents any attacks targeted at the user from striking, for the duration of the turn. It has priority +4 so will activate before most other moves. The move functions identically to Detect .",
 		},
 		{
 			NameKey = "Mach Punch",
-			Description = "This is an increased priority move, causing the user to attack before most other moves.", -- NEEDS TRANSLATION
+			Description = "Mach Punch deals damage and has a priority of +1.",
 		},
 		{
 			NameKey = "Scary Face",
-			Description = "Lowers the target's Speed stat by two stages.", -- NEEDS TRANSLATION
+			Description = "Scary Face lowers the target's Speed by two stages.",
 		},
 		{
-			NameKey = "Faint Attack",
-			Description = "Deals damage and bypasses accuracy checks to always hit, unless the target is in the semi-invulnerable turn of a move such as Dig or Fly.", -- NEEDS TRANSLATION
+			NameKey = "Feint Attack",
+			Description = "Feint Attack deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
 		},
 		{
 			NameKey = "Sweet Kiss",
-			Description = "Causes the target to become confused for 2-5 turns. 50% chance to damage self as a 40 power Physical move.", -- NEEDS TRANSLATION
+			Description = "Sweet Kiss causes the target to become confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
 		},
 		{
 			NameKey = "Belly Drum",
-			Description = "The user loses half of their max HP, and in return raises their Attack stat all the way to +6 stages.", -- NEEDS TRANSLATION
+			Description = "User loses 50% of its max HP, but Attack raises to maximum. Z-Move effects",
 		},
 		{
 			NameKey = "Sludge Bomb",
-			Description = "Deals damage and has a 30% chance of poisoning the target.", -- NEEDS TRANSLATION
+			Description = "Sludge Bomb deals damage and has a 30% chance of poisoning the target.",
 		},
 		{
 			NameKey = "Mud-Slap",
-			Description = "Deals damage and lowers the target's accuracy by one stage.", -- NEEDS TRANSLATION
+			Description = "Mud-Slap deals damage and lowers the target's Accuracy by one stage.",
 		},
 		{
 			NameKey = "Octazooka",
-			Description = "Deals damage and has a 50% chance to lower the target's accuracy by one stage.", -- NEEDS TRANSLATION
+			Description = "Octazooka deals damage and has a 50% chance of lowering the target's Accuracy by one stage.",
 		},
 		{
 			NameKey = "Spikes",
-			Description = "Creates a hazard for the enemy team (can stack 3 times). Switching out deals 1/8, 1/6, or 1/4 max HP in damage to an enemy without Flying or Levitate.", -- NEEDS TRANSLATION
+			Description = "Spikes lays a trap of thorns around the foe, which hurts Pokémon switching in to the opposing field. It can be used up to three times to inflict more damage on incoming Pokémon, equal to a fraction of the Pokémon's HP as shown in the table.",
 		},
 		{
 			NameKey = "Zap Cannon",
-			Description = "Deals damage and paralyzes the target every time it hits.", -- NEEDS TRANSLATION
+			Description = "Zap Cannon deals damage and paralyzes the target, if it hits. Paralyzed Pokémon have a 25% chance of not being able to attack, and their Speed is decreased by 50% (75% in Generations 1-6 ).",
 		},
 		{
 			NameKey = "Foresight",
-			Description = "Neutralizes accuracy checks against the target, and allows Fighting and Normal moves to hit them if they are Ghost.", -- NEEDS TRANSLATION
+			Description = "Resets opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts. Changes",
 		},
 		{
 			NameKey = "Destiny Bond",
-			Description = "If the user faints as the result of a direct attack by an enemy, that Pokémon also faints. Effect ends when user uses another move.", -- NEEDS TRANSLATION
+			Description = "If the user faints, the opponent also faints. Z-Move effects",
 		},
 		{
 			NameKey = "Perish Song",
-			Description = "All Pokémon faint after 3 turns. Switching out or having Soundproof removes this effect.", -- NEEDS TRANSLATION
+			Description = "Any Pokémon in play when this attack is used faints in 3 turns. Z-Move effects",
 		},
 		{
 			NameKey = "Icy Wind",
-			Description = "Deals damage to all adjacent opponents and lowers the Speed of each by one stage.", -- NEEDS TRANSLATION
+			Description = "Icy Wind deals damage and lowers the target's Speed by one stage.",
 		},
 		{
 			NameKey = "Detect",
-			Description = "Protects user from all effects of moves for the turn, including damage. Using this move consecutively halves its success rate each time.", -- NEEDS TRANSLATION
+			Description = "Detect prevents any attacks targeted at the user from striking, for the duration of the turn. It has priority +4 so will activate before most other moves. The move functions identically to Protect .",
 		},
 		{
 			NameKey = "Bone Rush",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit.", -- NEEDS TRANSLATION
+			Description = "Bone Rush hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Lock-On",
-			Description = "Allows the next move used by the user to never miss, even against Bounce, Dig, Dive, and Fly.", -- NEEDS TRANSLATION
+			Description = "User's next attack is guaranteed to hit. Changes",
 		},
 		{
 			NameKey = "Outrage",
-			Description = "Deals damage for 2-3 consecutive turns. User becomes confused afterwards.", -- NEEDS TRANSLATION
+			Description = "The user of Outrage attacks for 2-3 turns, during which it cannot switch out, and then becomes confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
 		},
 		{
 			NameKey = "Sandstorm",
-			Description = "Changes weather to Sandstorm for 5 turns. Pokémon take 1/16 of their max HP in damage, except for Steel, Ground, and Rock types.", -- NEEDS TRANSLATION
+			Description = "Sandstorm creates a sandstorm on the battlefield that lasts for 5 turns and induces these additional effects:",
 		},
 		{
 			NameKey = "Giga Drain",
-			Description = "50% of the damage dealt is restored to the user as HP.", -- NEEDS TRANSLATION
+			Description = "Giga Drain deals damage and the user will recover 50% of the HP drained.",
 		},
 		{
 			NameKey = "Endure",
-			Description = "Allows the user to survive any single attack that would cause it to faint, leaving the user with 1 HP instead.", -- NEEDS TRANSLATION
+			Description = "Endure allows the user to survive all attacks during the turn with at least 1 HP (even if it already has 1 HP remaining). It has priority +4 so will activate before most other moves.",
 		},
 		{
 			NameKey = "Charm",
-			Description = "Lowers the Attack stat of the target by two stages.", -- NEEDS TRANSLATION
+			Description = "Charm lowers the target's Attack by two stages.",
 		},
 		{
 			NameKey = "Rollout",
-			Description = "Deals damage over 5 turns, doubling in power each consecutive hit. Base power is doubled if the user had previously used Defense Curl.", -- NEEDS TRANSLATION
+			Description = "Rollout deals damage for 5 turns, doubling in power each turn. The move stops if it misses on any turn. If it doesn't miss, Rollout will deal 30, 60, 120, 240 and 480 base power damage each turn respectively.",
 		},
 		{
 			NameKey = "False Swipe",
-			Description = "Deals damage, but will always leave the target with 1 HP if it would otherwise cause it to faint.", -- NEEDS TRANSLATION
+			Description = "Always leaves opponent with at least 1 HP. Z-Move effects",
 		},
 		{
 			NameKey = "Swagger",
-			Description = "Raises the target's Attack stat by two stages and confuses it.", -- NEEDS TRANSLATION
+			Description = "Swagger confuses the target and raises its Attack by two stages.",
 		},
 		{
 			NameKey = "Milk Drink",
-			Description = "Restores up to 50% of the user's max HP. Can be used outside of battle to transfer 20% of max HP to another Pokemon.", -- NEEDS TRANSLATION
+			Description = "Milk Drink recovers up to 50% of the user's maximum HP.",
 		},
 		{
 			NameKey = "Spark",
-			Description = "Deals damage and has a 30% chance of paralyzing the target.", -- NEEDS TRANSLATION
+			Description = "Spark deals damage and has a 30% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Fury Cutter",
-			Description = "Each time this move hits successively, its power will double, up to a maximum of 160. Otherwise, it resets to base power.", -- NEEDS TRANSLATION
+			Description = "Fury Cutter deals damage starting at base power 40, and for each successful consecutive hit doubles in power, up to a maximum base power of 160.",
 		},
 		{
 			NameKey = "Steel Wing",
-			Description = "Deals damage and has a 10% chance of raising the user's Defense by one stage.", -- NEEDS TRANSLATION
+			Description = "Steel Wing deals damage and has a 10% chance of raising the user's Defense by one stage.",
 		},
 		{
 			NameKey = "Mean Look",
-			Description = "Prevents the target from switching out or fleeing. A Pokémon can still flee if it has Run Away or holding a Smoke Ball.", -- NEEDS TRANSLATION
+			Description = "Opponent cannot flee or switch. Z-Move effects",
 		},
 		{
 			NameKey = "Attract",
-			Description = "If the user and the target are opposite genders, the target will become infatuated, unable to use moves 50% of the time.", -- NEEDS TRANSLATION
+			Description = "Attract causes Pokémon of the opposite gender to become infatuated. Infatuated Pokémon have a 50% chance of being immobilized by love each turn and unable to attack.",
 		},
 		{
 			NameKey = "Sleep Talk",
-			Description = "If the user is asleep, randomly chooses another one of the user's moves to use.", -- NEEDS TRANSLATION
+			Description = "User performs one of its own moves while sleeping. Z-Move effects",
 		},
 		{
 			NameKey = "Heal Bell",
-			Description = "Cures all Pokémon in the user's party of all major status conditions. Fails against Pokémon with Soundproof.", -- NEEDS TRANSLATION
+			Description = "Heals the user's party's status conditions. Z-Move effects",
 		},
 		{
 			NameKey = "Return",
-			Description = "Power ranges between 1 and 102, strongest at friendship of 255. If the user's friendship is 127 or less, Frustration is stronger.", -- NEEDS TRANSLATION
+			Description = "The power of Return is higher when the user likes its trainer more. The base power varies between 1 (minimum Friendship) and 102 (maximum Friendship). The exact formula is:",
 		},
 		{
 			NameKey = "Present",
-			Description = "40% chance power is 40, 30% chance it's 80, 10% chance it's 120, and 20% chance to heal target by 1/4 their max HP.", -- NEEDS TRANSLATION
+			Description = "Either deals damage or heals. Z-Move effects",
 		},
 		{
 			NameKey = "Frustration",
-			Description = "Power ranges between 1 and 102, strongest at friendship of 0. If the user's friendship is 128 or greater, Return is stronger.", -- NEEDS TRANSLATION
+			Description = "The power of Frustration is higher when the Pokémon likes its trainer less. The base power varies between 1 (maximum Friendship) and 102 (minimum Friendship). The exact formula is:",
 		},
 		{
 			NameKey = "Safeguard",
-			Description = "For 5 turns, protects the user's party from most status effects and confusion.", -- NEEDS TRANSLATION
+			Description = "The user's party is protected from status conditions. Z-Move effects",
 		},
 		{
 			NameKey = "Pain Split",
-			Description = "Equalizes HP of user and target by adding both Pokemon's current HP together, then dividing by two, split among them evenly.", -- NEEDS TRANSLATION
+			Description = "The user's and opponent's HP becomes the average of both. Changes",
 		},
 		{
 			NameKey = "Sacred Fire",
-			Description = "Deals damage and has a 50% chance of burning the target. This move will first thaw out its user if frozen.", -- NEEDS TRANSLATION
+			Description = "Sacred Fire deals damage and has a 50% chance of burning the target.",
 		},
 		{
 			NameKey = "Magnitude",
-			Description = "Power varies based on a random value and probability. Starting at value 4 and power 10, each additional value adds 20 power; 150 power at value 10. Can hit Pokémon using Dig.", -- NEEDS TRANSLATION
+			Description = "The base power of Magnitude is one of 7 random values, with varying probability, as shown in the table.",
 		},
 		{
-			NameKey = "DynamicPunch",
-			Description = "Deals damage and always confuses the target, lasting 2-5 turns.", -- NEEDS TRANSLATION
+			NameKey = "Dynamic Punch",
+			Description = "Dynamic Punch deals damage and confuses the target, if it hits. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
 		},
 		{
 			NameKey = "Megahorn",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Megahorn deals damage with no additional effect.",
 		},
 		{
-			NameKey = "DragonBreath",
-			Description = "Deals damage and has a 30% chance of paralyzing the target.", -- NEEDS TRANSLATION
+			NameKey = "Dragon Breath",
+			Description = "Dragon Breath deals damage and has a 30% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Baton Pass",
-			Description = "Switches out the user, passing all temporary stat stage changes as well as many other effects and conditions, on to the Pokémon that replaces it in battle.", -- NEEDS TRANSLATION
+			Description = "Baton Pass causes the user to switch out for another Pokémon, passing any stat changes to the Pokémon that switches in. These effects are passed:",
 		},
 		{
 			NameKey = "Encore",
-			Description = "Prevents the target from using any move except its last used move, lasts for 2-6 turns.", -- NEEDS TRANSLATION
+			Description = "Encore forces the target to use the previously selected move for 3 turns.",
 		},
 		{
 			NameKey = "Pursuit",
-			Description = "If the target Pokémon attempts to switch out, Pursuit's power will double and hit it first.", -- NEEDS TRANSLATION
+			Description = "Pursuit deals damage, and hits with double power if the target is switching out.",
 		},
 		{
 			NameKey = "Rapid Spin",
-			Description = "Deals damage and removes the effects of any binding moves, Leech Seed, and any entry hazards such as Spikes from the user's field.", -- NEEDS TRANSLATION
+			Description = "Rapid Spin deals damage, raises the user's Speed by one stage, and removes the effects of several trap moves and entry hazards. It fails if the move misses or the target is immune. The effects from the following moves are removed:",
 		},
 		{
 			NameKey = "Sweet Scent",
-			Description = "Lowers the evasion of all adjacent opponents by one stage. Can be used outside of battle to attract a wild Pokemon.", -- NEEDS TRANSLATION
+			Description = "Sweet Scent lowers the target's Evasion by one stage.",
 		},
 		{
 			NameKey = "Iron Tail",
-			Description = "Deals damage and has a 30% chance of lowering the target's Defense stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Iron Tail deals damage and has a 30% chance of lowering the target's Defense by one stage.",
 		},
 		{
 			NameKey = "Metal Claw",
-			Description = "Deals damage and has a 10% chance of raising the user's Attack stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Metal Claw deals damage and has a 10% chance of raising the user's Attack by one stage.",
 		},
 		{
 			NameKey = "Vital Throw",
-			Description = "This is a decreased priority move, causing the user to attack after most other moves.", -- NEEDS TRANSLATION
+			Description = "Vital Throw deals damage with lower priority, so most attacks will take place before it. Vital Throw ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
 		},
 		{
 			NameKey = "Morning Sun",
-			Description = "Restores the user's HP by a percentage based weather: 1/2 in no weather, 2/3 if sunny, and 1/4 during any other weather condition.", -- NEEDS TRANSLATION
+			Description = "User recovers HP. Amount varies with the weather. Z-Move effects",
 		},
 		{
 			NameKey = "Synthesis",
-			Description = "Restores the user's HP by a percentage based weather: 1/2 in no weather, 2/3 if sunny, and 1/4 during any other weather condition.", -- NEEDS TRANSLATION
+			Description = "User recovers HP. Amount varies with the weather. Z-Move effects",
 		},
 		{
 			NameKey = "Moonlight",
-			Description = "Restores the user's HP by a percentage based weather: 1/2 in no weather, 2/3 if sunny, and 1/4 during any other weather condition.", -- NEEDS TRANSLATION
+			Description = "The user restores its own HP. The amount of HP regained varies with the weather.",
 		},
 		{
 			NameKey = "Hidden Power",
-			Description = "Power and type vary with IVs, power ranges from 30 to 70. Counter will always work against this move, but never Mirror Coat.", -- NEEDS TRANSLATION
+			Description = "Hidden Power deals damage, however its type varies for every Pokémon, depending on that Pokémon's Individual Values (IVs). This makes it a useful move for coverage - giving the Pokémon a type of move they don't normally have.",
 		},
 		{
 			NameKey = "Cross Chop",
-			Description = "Deals damage and has an increased critical-hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Cross Chop deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Twister",
-			Description = "Deals damage and has a 20% chance of causing each target to flinch. Hits Pokémon using Bounce or Fly for double damage.", -- NEEDS TRANSLATION
+			Description = "Twister deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Rain Dance",
-			Description = "Changes weather to Rain for 5 turns. Water moves are boosted by 50% and Fire moves are weakened by 50%. Thunder ignores accuracy and evasion.", -- NEEDS TRANSLATION
+			Description = "Rain Dance causes a rain shower that lasts for 5 turns, and induces these additional effects:",
 		},
 		{
 			NameKey = "Sunny Day",
-			Description = "Changes weather to Sunny for 5 turns. Fire moves are boosted by 50% and Water moves are weakened by 50%. Thunder accuracy becomes 50%.", -- NEEDS TRANSLATION
+			Description = "Sunny Day causes bright sunlight that lasts for 5 turns, and induces these additional effects:",
 		},
 		{
 			NameKey = "Crunch",
-			Description = "Deals damage and has a 20% chance of lowering the target's Special Defense stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Crunch deals damage and has a 20% chance of lowering the target's Defense by one stage.",
 		},
 		{
 			NameKey = "Mirror Coat",
-			Description = "If hit by a Special category move, deals twice the damage received back to the user.", -- NEEDS TRANSLATION
+			Description = "When hit by a Special Attack, user strikes back with 2x power. Z-Move effects",
 		},
 		{
 			NameKey = "Psych Up",
-			Description = "Resets the user's stat changes and copies all of the target's stat stages onto the user: ATK DEF SPA SPD SPE ACC EVA.", -- NEEDS TRANSLATION
+			Description = "Copies the opponent's stat changes. Z-Move effects",
 		},
 		{
-			NameKey = "ExtremeSpeed",
-			Description = "This is an increased priority move, causing the user to attack before most other moves.", -- NEEDS TRANSLATION
+			NameKey = "Extreme Speed",
+			Description = "Extreme Speed deals damage and attacks before the majority of other moves (priority of +2).",
 		},
 		{
-			NameKey = "AncientPower",
-			Description = "Deals damage and has a 10% chance of raising the user's Attack, Defense, Special Attack, Special Defense, and Speed by one stage each.", -- NEEDS TRANSLATION
+			NameKey = "Ancient Power",
+			Description = "Ancient Power deals damage and has a 10% chance of raising all the user's stats at once - Attack, Defense, Special Attack, Special Defense and Speed - by one stage each.",
 		},
 		{
 			NameKey = "Shadow Ball",
-			Description = "Deals damage and has a 20% chance of lowering the target's Special Defense by one stage.", -- NEEDS TRANSLATION
+			Description = "Shadow Ball deals damage and has a 20% chance of lowering the target's Special Defense by one stage.",
 		},
 		{
 			NameKey = "Future Sight",
-			Description = "Locks in damage when used based on SpAtk of user and SpDef of target. After 2 turns, deals damage to the current enemy. Attack is typeless: cannot STAB, hits Wonder Guard.", -- NEEDS TRANSLATION
+			Description = "Future Sight deals damage, but does not hit until two turns after the move is used. If the opponent switched Pokémon in the meantime, the new Pokémon gets hit, with their type and stats taken into account.",
 		},
 		{
 			NameKey = "Rock Smash",
-			Description = "Deals damage and has a 50% chance of lowering the target's Defense stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Rock Smash deals damage and has a 50% chance of lowering the target's Defense by one stage.",
 		},
 		{
 			NameKey = "Whirlpool",
-			Description = "Deals damage (doubled if opponent using Dive) and inflicts 1/16 of the target's max HP as damage for 2-5 turns. Prevents the target from switching out or fleeing.", -- NEEDS TRANSLATION
+			Description = "Whirlpool inflicts damage on the first turn then traps the opponent in the vortex , causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
 		},
 		{
 			NameKey = "Beat Up",
-			Description = "Each conscious, non-statused Pokémon in the user's party does an independent attack, each one is typeless with power of 10.", -- NEEDS TRANSLATION
+			Description = "Beat Up deals damage from each Pokémon on your team that does not have a status ailment (nor is fainted). Each strike has a different base power , calculated as:",
 		},
 		{
 			NameKey = "Fake Out",
-			Description = "This is an increased priority move. It always makes the target flinch, but attack will fail if it's not the first move used.", -- NEEDS TRANSLATION
+			Description = "Fake Out attacks with a priority of +3 and causes the target to flinch if it hits. It is only successful on the first turn the Pokémon is in battle, but reset each time the Pokémon switches out and back in.",
 		},
 		{
 			NameKey = "Uproar",
-			Description = "Deals damage for 2-5 consecutive turns. Wakes up sleeping Pokémon and prevents them from falling asleep, except those with Soundproof.", -- NEEDS TRANSLATION
+			Description = "Uproar inflicts damage for 3 turns. During this time, no Pokémon on the field will be able to sleep, and any sleeping Pokémon will be woken up.",
 		},
 		{
 			NameKey = "Stockpile",
-			Description = "Stores up energy, stacks three times. Unleash energy using Spit Up to deal damage or Swallow to heal HP.", -- NEEDS TRANSLATION
+			Description = "Stockpile raises the user's Defense and Special Defense by one stage each and charges up power for use with companion moves Spit Up or Swallow . Stockpile can be used up to three times before its companion moves, which will attack or recover HP respectively.",
 		},
 		{
 			NameKey = "Spit Up",
-			Description = "Consumes energy stored up by Stockpile, 100 power for each stack (0 if none). This move cannot cause a critical hit.", -- NEEDS TRANSLATION
+			Description = "Spit Up deals varying damage depending on how many times the user used Stockpile . The base power is 100, 200 or 300 if the user stockpiled one, two or three times respectively.",
 		},
 		{
 			NameKey = "Swallow",
-			Description = "Consumes energy stored up by Stockpile, healing user for 25%, 50%, or 100% HP based on number of stacks consumed (0% if none).", -- NEEDS TRANSLATION
+			Description = "Swallow recovers a varying amount of HP depending on how many times the user has used Stockpile . It recovers 25%, 50% or 100% of the user's maximum HP if the user stockpiled one, two or three times respectively.",
 		},
 		{
 			NameKey = "Heat Wave",
-			Description = "Deals damage and has a 10% chance of burning the target.", -- NEEDS TRANSLATION
+			Description = "Heat Wave deals damage and has a 10% chance of burning the target.",
 		},
 		{
 			NameKey = "Hail",
-			Description = "Changes weather to Hail for 5 turns. Pokémon take 1/16 of their max HP in damage, except for Ice types.", -- NEEDS TRANSLATION
+			Description = "Hail creates a hailstorm that lasts for 5 turns and induces these additional effects:",
 		},
 		{
 			NameKey = "Torment",
-			Description = "Prevents the target from choosing to use the same move twice in a row. Effect ends when the Pokémon switches out.", -- NEEDS TRANSLATION
+			Description = "Opponent cannot use the same move in a row. Z-Move effects",
 		},
 		{
 			NameKey = "Flatter",
-			Description = "Raises the target's Special Attack stat by one stage and confuses it.", -- NEEDS TRANSLATION
+			Description = "Flatter confuses the target, and raises its Special Attack by one stage.",
 		},
 		{
 			NameKey = "Will-O-Wisp",
-			Description = "Inflicts a burn on the target, ineffective against Fire type Pokemon. Burned Pokémon deal half damage with Physical moves and lose 1/8 max HP each turn.", -- NEEDS TRANSLATION
+			Description = "Will-O-Wisp causes the target to become burned, if it hits. Burned Pokémon lose 1/8 of their maximum HP each turn and their Attack is decreased by 50%.",
 		},
 		{
 			NameKey = "Memento",
-			Description = "User faints to lower the Attack and Special Attack stat of the target by two stages each.", -- NEEDS TRANSLATION
+			Description = "User faints, sharply lowers opponent's Attack and Special Attack. Changes",
 		},
 		{
 			NameKey = "Facade",
-			Description = "Power doubles if the user is poisoned, paralyzed, or burned. The burn's effect of halving the damage done is still applied.", -- NEEDS TRANSLATION
+			Description = "Facade deals damage, and hits with double power (140) if the user is burned, poisoned or paralyzed.",
 		},
 		{
 			NameKey = "Focus Punch",
-			Description = "This is a decreased priority move. This move will fail if the user is dealt direct damage first.", -- NEEDS TRANSLATION
+			Description = "The user of Focus Punch will tighten its focus before any other moves are made. If any regular move (with a higher priority than -3) directly hits the focused Pokémon, it loses its focus and flinches, not carrying out the attack. If no direct hits are made, Focus Punch attacks as normal.",
 		},
 		{
-			NameKey = "SmellingSalt",
-			Description = "Power doubles against a paralyzed target, but it will also cure the target of paralysis.", -- NEEDS TRANSLATION
+			NameKey = "Smelling Salts",
+			Description = "Smelling Salts deals damage, and hits with double power (140) if the target is paralyzed. However, it also cures the paralysis.",
 		},
 		{
 			NameKey = "Follow Me",
-			Description = "This is an increased priority move. The user redirects all targeted moves from enemy Pokémon to itself.", -- NEEDS TRANSLATION
+			Description = "In Double Battle, the user takes all the attacks.",
 		},
 		{
 			NameKey = "Nature Power",
-			Description = "Sand: Earthquake, Building: Swift, Cave: Shadow Ball, Rock: Rock Slide, Tall grass: Stun Spore, Long grass: Razor Leaf, Pond: Bubblebeam, Sea: Surf, Underwater: Hydro Pump.", -- NEEDS TRANSLATION
+			Description = "When Nature Power is used it turns into a different move depending on the current battle terrain, as listed below.",
 		},
 		{
 			NameKey = "Charge",
-			Description = "User charges up, empowering the next move it uses. If that next move is Electric, damage dealt will be doubled.", -- NEEDS TRANSLATION
+			Description = "Charge raises the user's Special Defense by one stage, and if this Pokémon's next move is a damage-dealing Electric-type attack, it will deal double damage.",
 		},
 		{
 			NameKey = "Taunt",
-			Description = "Prevents the target Pokémon from using Status category moves; moves that aren't Physical or Special. Bypasses Substitute. This effect lasts 2 turns.", -- NEEDS TRANSLATION
+			Description = "Taunt prevents the target from using Status-category moves for three turns.",
 		},
 		{
 			NameKey = "Helping Hand",
-			Description = "This is an increased priority move. The user boost its ally's damage done by 50% for this turn only.", -- NEEDS TRANSLATION
+			Description = "In Double Battles, boosts the power of the partner's move. Z-Move effects",
 		},
 		{
 			NameKey = "Trick",
-			Description = "Switches held items with the target. Fails if used by a wild Pokémon, or if both Pokémon don't have items, or against a Substitute.", -- NEEDS TRANSLATION
+			Description = "Trick switches held items with the target. It does not require both Pokémon to be holding an item, in which case the item is simply given to the target or received from it.",
 		},
 		{
 			NameKey = "Role Play",
-			Description = "Replaces the user's ability with the target's. Fails if target ability is Trace or Wonder Guard. Some abilities like Intimidate don't trigger.", -- NEEDS TRANSLATION
+			Description = "Role Play copies the opponent's ability, replacing its own with that of the target's.",
 		},
 		{
 			NameKey = "Wish",
-			Description = "No effect on the turn used. At the end of the next turn, the Pokémon in the user's current position will be healed by half its own max HP.", -- NEEDS TRANSLATION
+			Description = "The user recovers HP in the following turn. Z-Move effects",
 		},
 		{
 			NameKey = "Assist",
-			Description = "Randomly selects an eligible move from all other moves known by Pokémon in the user's party, including fainted Pokemon.", -- NEEDS TRANSLATION
+			Description = "Assist uses a random move known by any of the user's party Pokémon.",
 		},
 		{
 			NameKey = "Ingrain",
-			Description = "Restore 1/16th of its max HP at the end of every turn. Prevents the user from switching out, even from moves like Roar and Whirlwind.", -- NEEDS TRANSLATION
+			Description = "The user of Ingrain plants it roots, which restores 1/16 of its maximum HP at the end of each turn, but prevents switching out.",
 		},
 		{
 			NameKey = "Superpower",
-			Description = "Deals damage, then lowers the user's Attack and Defense stats by one stage each.", -- NEEDS TRANSLATION
+			Description = "Superpower deals damage but lowers the user's Attack and Defense by one stage each after attacking.",
 		},
 		{
 			NameKey = "Magic Coat",
-			Description = "Reflects most Status category moves back at the enemy, most offensive moves that aren't Physical or Special.", -- NEEDS TRANSLATION
+			Description = "Magic Coat reflects any move causing status conditions - for example Thunder Wave or Toxic - back to the attacker. It applies only to the turn it is used.",
 		},
 		{
 			NameKey = "Recycle",
-			Description = "Regains a held item, such as a Berry. Fails if item was lost through Thief or Knock Off.", -- NEEDS TRANSLATION
+			Description = "User's used hold item is restored. Z-Move effects",
 		},
 		{
 			NameKey = "Revenge",
-			Description = "This is a decreased priority move. Power is doubled if user is damaged by the target in the same turn.", -- NEEDS TRANSLATION
+			Description = "Power increases if user was hit first. Z-Move effects",
 		},
 		{
 			NameKey = "Brick Break",
-			Description = "Removes Light Screen and Reflect from the opponent's side of the field, then inflicts damage. Removes those effects even against Ghost Pokemon.", -- NEEDS TRANSLATION
+			Description = "Brick Break deals damage, but removes the effects of Reflect and Light Screen before attacking.",
 		},
 		{
 			NameKey = "Yawn",
-			Description = "Makes the target drowsy. At the end of the next turn, the drowsy Pokémon will fall asleep.", -- NEEDS TRANSLATION
+			Description = "Yawn makes the target drowsy on the turn it is used. If the target is still on the field at the end of the next turn, it falls asleep. Sleeping Pokémon cannot move (with some exceptions such as Snore ). Sleep lasts for 1-3 turns.",
 		},
 		{
 			NameKey = "Knock Off",
-			Description = "Renders the target's held item unusable for the rest of the battle, even if switches out.", -- NEEDS TRANSLATION
+			Description = "Knock Off deals damage and if the target has a held item, damage is increased by 50% (i.e. 97.5 base power) and the item is removed for the remainder of the battle (switching out does not restore the item). All items are restored at the end of a battle.",
 		},
 		{
 			NameKey = "Endeavor",
-			Description = "Causes the target's HP to become equal the user's current HP.", -- NEEDS TRANSLATION
+			Description = "Endeavor reduces the opponent's HP to equal the user's. (It fails if the user's HP is higher than the target's.)",
 		},
 		{
 			NameKey = "Eruption",
-			Description = "Has 150 power at max HP, but its power decreases proportionally to the user's remaining HP. Formula: 150 x currHP / maxHP", -- NEEDS TRANSLATION
+			Description = "Eruption inflicts more damage when the user's HP is higher. At full HP its base power is 150 and it decreases in proportion - i.e. the power is:",
 		},
 		{
 			NameKey = "Skill Swap",
-			Description = "Exchanges the abilities of the user and the target. This information is not shown to the player. Fails against Wonder Guard.", -- NEEDS TRANSLATION
+			Description = "The user swaps Abilities with the opponent. Z-Move effects",
 		},
 		{
 			NameKey = "Imprison",
-			Description = "As long as the user remains in battle, opponents cannot use any move which is also known by the user.", -- NEEDS TRANSLATION
+			Description = "Opponent is unable to use moves that the user also knows. Z-Move effects",
 		},
 		{
 			NameKey = "Refresh",
-			Description = "Cures the user of burns, poison, or paralysis. It cannot cure sleep if it is used by Sleep Talk.", -- NEEDS TRANSLATION
+			Description = "Cures paralysis, poison, and burns. Z-Move effects",
 		},
 		{
 			NameKey = "Grudge",
-			Description = "If the user faints as the result of a direct attack by an enemy, the last used move loses all PP. Effect ends when user uses another move.", -- NEEDS TRANSLATION
+			Description = "If the users faints after using this move, the PP for the opponent's last move is depleted. Z-Move effects",
 		},
 		{
 			NameKey = "Snatch",
-			Description = "This is an increased priority move. If another Pokémon tries to use a beneficial Status category move, the user will use that move instead.", -- NEEDS TRANSLATION
+			Description = "Snatch moves first and steals the effects of the next status move used by the opponent(s) in that turn. If two or more Pokémon use Snatch , the slowest of the Pokémon will gain the effect, because the fastest Pokémon will steal the move first, then the next slowest will steal the move from the snatcher and so on.",
 		},
 		{
 			NameKey = "Secret Power",
-			Description = "30% chance to Sand: --ACC, Building: paralysis, Cave: flinch, Rock: confusion, Tall grass: poison, Long grass: sleep, Pond: --SPD, Sea: --ATK, Underwater: --DEF", -- NEEDS TRANSLATION
+			Description = "Secret Power deals damage and has a 30% chance of inducing a secondary effect on the opponent, depending on the environment. The move's animation also changes, reusing that of a specific attack for each terrain.",
 		},
 		{
 			NameKey = "Dive",
-			Description = "Attacks on 2nd turn. Can still be hit by Surf and Whirlpool and will take double damage.", -- NEEDS TRANSLATION
+			Description = "The user of Dive will hide underwater on the first turn, disappearing from view and becoming invulnerable to most attacks. On the second turn, Dive deals damage.",
 		},
 		{
 			NameKey = "Arm Thrust",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit or trigger a contact ability.", -- NEEDS TRANSLATION
+			Description = "Arm Thrust hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Camouflage",
-			Description = "Change user's type based on terrain. Building: Normal, Sand: Ground, Cave/rock: Rock, Tall/long grass: Grass, Water: Water", -- NEEDS TRANSLATION
+			Description = "Camouflage causes the user to change its type based on the current terrain:",
 		},
 		{
 			NameKey = "Tail Glow",
-			Description = "Increases the user's Special Attack by two stages.", -- NEEDS TRANSLATION
+			Description = "Tail Glow raises the user's Special Attack by three stages.",
 		},
 		{
 			NameKey = "Luster Purge",
-			Description = "Deals damage and has a 50% chance of lowering the target's Special Defense.", -- NEEDS TRANSLATION
+			Description = "Luster Purge deals damage and has a 50% chance of lowering the target's Special Defense by one stage.",
 		},
 		{
 			NameKey = "Mist Ball",
-			Description = "Deals damage and has a 50% chance of lowering the target's Special Attack.", -- NEEDS TRANSLATION
+			Description = "Mist Ball deals damage and has a 50% chance of lowering the target's Special Attack by one stage.",
 		},
 		{
-			NameKey = "FeatherDance",
-			Description = "Lowers the target's Attack stat by two stages.", -- NEEDS TRANSLATION
+			NameKey = "Feather Dance",
+			Description = "Feather Dance lowers the target's Attack by two stages.",
 		},
 		{
 			NameKey = "Teeter Dance",
-			Description = "Causes all other Pokémon to become confused for 2-5 turns. 50% chance to damage self as a 40 power Physical move.", -- NEEDS TRANSLATION
+			Description = "Teeter Dance causes all adjacent Pokémon to become confused. In single battles this is simply the opponent; in double/triple battles it includes all adjacent opponents and teammate(s).",
 		},
 		{
 			NameKey = "Blaze Kick",
-			Description = "Deals damage and has a 10% chance of burning the target. It also has an increased critical hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Blaze Kick deals damage and has a 10% chance of burning the target. It also has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Mud Sport",
-			Description = "Reduces the power of Electric moves by 50% for all Pokémon in the battle. This effect last until the user switches out.", -- NEEDS TRANSLATION
+			Description = "Mud Sport reduces the power of Electric type moves by 50%. The effect applies to the entire field.",
 		},
 		{
 			NameKey = "Ice Ball",
-			Description = "Deals damage over 5 turns, doubling in power each consecutive hit. Base power is doubled if the user had previously used Defense Curl.", -- NEEDS TRANSLATION
+			Description = "Ice Ball deals damage for 5 turns, doubling in power each turn. The move stops if it misses on any turn. If it doesn't miss, Ice Ball will deal 30, 60, 120, 240 and 480 base power damage each turn respectively.",
 		},
 		{
 			NameKey = "Needle Arm",
-			Description = "Deals damage and has a 30% chance of causing the target to flinch. Damage is doubled against a target that used Minimize.", -- NEEDS TRANSLATION
+			Description = "Needle Arm deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Slack Off",
-			Description = "Restores up to 50% of the user's max HP.", -- NEEDS TRANSLATION
+			Description = "Slack Off recovers up to 50% of the user's maximum HP.",
 		},
 		{
 			NameKey = "Hyper Voice",
-			Description = "Deals damage to all adjacent opponents. Pokémon with Soundproof are not affected by this move.", -- NEEDS TRANSLATION
+			Description = "Hyper Voice deals damage with no additional effect, besides targeting multiple foes. Hyper Voice has no effect on Pokémon with the ability Soundproof .",
 		},
 		{
 			NameKey = "Poison Fang",
-			Description = "Deals damage and has a 30% chance of badly poisoning the target.", -- NEEDS TRANSLATION
+			Description = "Poison Fang deals damage and has a 50% chance of badly poisoning the target. Badly poisoned Pokémon will lose an increasing amount of HP at the end of each turn.",
 		},
 		{
 			NameKey = "Crush Claw",
-			Description = "Deals damage and has a 50% chance of lowering the target's Defense stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Crush Claw deals damage and has a 50% chance of lowering the target's Defense by one stage.",
 		},
 		{
 			NameKey = "Blast Burn",
-			Description = "Deals damage and then forces the user to recharge during the next turn.", -- NEEDS TRANSLATION
+			Description = "User must recharge next turn. Z-Move effects",
 		},
 		{
 			NameKey = "Hydro Cannon",
-			Description = "Deals damage and then forces the user to recharge during the next turn.", -- NEEDS TRANSLATION
+			Description = "User must recharge next turn. Z-Move effects",
 		},
 		{
 			NameKey = "Meteor Mash",
-			Description = "Deals damage and has a 20% chance of raising the user's Attack stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Meteor Mash deals damage and has a 20% chance of raising the user's Attack by one stage.",
 		},
 		{
 			NameKey = "Astonish",
-			Description = "Deals damage and has a 30% chance of causing the target to flinch. Damage is doubled against a target that used Minimize.", -- NEEDS TRANSLATION
+			Description = "Astonish deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Weather Ball",
-			Description = "Power doubles in weather and changes type: Fire if sunny, Water if raining, Ice if hailing, Rock if sandstorm.", -- NEEDS TRANSLATION
+			Description = "The power and type of Weather Ball changes with the weather. With no weather condition it is Normal and has a base power of 50. If a weather condition is in effect, its power doubles to 100 and the move becomes a different type:",
 		},
 		{
 			NameKey = "Aromatherapy",
-			Description = "Cures all Pokémon in the user's party of all major status conditions.", -- NEEDS TRANSLATION
+			Description = "Cures all status problems in your party. Z-Move effects",
 		},
 		{
 			NameKey = "Fake Tears",
-			Description = "Lowers the target's Special Defense stat by two stages.", -- NEEDS TRANSLATION
+			Description = "Fake Tears lowers the target's Special Defense by two stages.",
 		},
 		{
 			NameKey = "Air Cutter",
-			Description = "Deals damage and has an increased critical hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Air Cutter deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Overheat",
-			Description = "Deals damage and lowers the user's Special Attack by two stages.", -- NEEDS TRANSLATION
+			Description = "Overheat deals damage but lowers the user's Special Attack by two stages after attacking.",
 		},
 		{
 			NameKey = "Odor Sleuth",
-			Description = "Neutralizes accuracy checks against the target, and allows Fighting and Normal moves to hit them if they are Ghost.", -- NEEDS TRANSLATION
+			Description = "Resets opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts. Changes",
 		},
 		{
 			NameKey = "Rock Tomb",
-			Description = "Deals damage and lowers the opponent's Speed by one stage.", -- NEEDS TRANSLATION
+			Description = "Rock Tomb deals damage and lowers the target's Speed by one stage.",
 		},
 		{
 			NameKey = "Silver Wind",
-			Description = "Deals damage and has a 10% chance of raising the user's Attack, Defense, Special Attack, Special Defense, and Speed by one stage each.", -- NEEDS TRANSLATION
+			Description = "Silver Wind deals damage and has a 10% chance of raising the user's Attack, Defense, Special Attack, Special Defense and Speed by one stage each.",
 		},
 		{
 			NameKey = "Metal Sound",
-			Description = "Lowers the target's Special Defense stat by two stages. Fails against Pokémon with Soundproof.", -- NEEDS TRANSLATION
+			Description = "Metal Sound lowers the target's Special Defense by two stages.",
 		},
 		{
-			NameKey = "GrassWhistle",
-			Description = "Puts the target to sleep, lasts 2-5 turns. Fails against Insomnia, Vital Spirit, or Soundproof.", -- NEEDS TRANSLATION
+			NameKey = "Grass Whistle",
+			Description = "Grass Whistle puts the target to sleep, if it hits. Sleeping Pokémon cannot move (with some exceptions such as Snore ). Sleep lasts for 1-3 turns.",
 		},
 		{
 			NameKey = "Tickle",
-			Description = "Reduces the target's Attack and Defense stats by one stage each. Works even if enemy has a Substitute.", -- NEEDS TRANSLATION
+			Description = "Tickle lowers the target's Attack and Defense by one stage each.",
 		},
 		{
 			NameKey = "Cosmic Power",
-			Description = "Raises the Defense and Special Defense of the user by one stage each.", -- NEEDS TRANSLATION
+			Description = "Cosmic Power raises the user's Defense and Special Defense by one stage each.",
 		},
 		{
 			NameKey = "Water Spout",
-			Description = "Has 150 power at max HP, but its power decreases proportionally to the user's remaining HP. Formula: 150 x currHP / maxHP", -- NEEDS TRANSLATION
+			Description = "Water Spout inflicts more damage when the user's HP is higher. At full HP its base power is 150 and it decreases in proportion - i.e. the power is:",
 		},
 		{
 			NameKey = "Signal Beam",
-			Description = "Deals damage and has a 10% chance of confusing the target.", -- NEEDS TRANSLATION
+			Description = "Signal Beam deals damage and has a 10% chance of confusing the target.",
 		},
 		{
 			NameKey = "Shadow Punch",
-			Description = "Deals damage and bypasses accuracy checks to always hit, unless the target is in the semi-invulnerable turn of a move such as Dig or Fly.", -- NEEDS TRANSLATION
+			Description = "Shadow Punch deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
 		},
 		{
 			NameKey = "Extrasensory",
-			Description = "Deals damage and has a 10% chance of causing the target to flinch. Damage is doubled against a target that used Minimize.", -- NEEDS TRANSLATION
+			Description = "Extrasensory deals damage and has a 10% chance of causing the target to flinch (if the target has not yet moved).",
 		},
 		{
 			NameKey = "Sky Uppercut",
-			Description = "Deals damage and can hit Pokémon during the semi-invulnerable turns of Fly and Bounce.", -- NEEDS TRANSLATION
+			Description = "Sky Uppercut deals damage and can hit Pokémon during the invulnerable stage of Bounce , Fly or Sky Drop .",
 		},
 		{
 			NameKey = "Sand Tomb",
-			Description = "Deals damage and inflicts 1/16 of the target's max HP as damage for 2-5 turns. Prevents the target from switching out or fleeing.", -- NEEDS TRANSLATION
+			Description = "Sand Tomb inflicts damage on the first turn then traps the opponent, causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
 		},
 		{
 			NameKey = "Sheer Cold",
-			Description = "A one-hit KO move. This move is 1% more accurate for each level above the target. Fails if target is higher level.", -- NEEDS TRANSLATION
+			Description = "If it hits, Sheer Cold is guaranteed to make the opponent faint. Its accuracy increases if the user is a higher level than the target Pokémon, but fails if the target is higher level or is Ice type.",
 		},
 		{
 			NameKey = "Muddy Water",
-			Description = "Deals damage and has a 30% chance of lowering each target's accuracy by one stage.", -- NEEDS TRANSLATION
+			Description = "Muddy Water deals damage and has a 30% chance of lowering the target's Accuracy by one stage.",
 		},
 		{
 			NameKey = "Bullet Seed",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit.", -- NEEDS TRANSLATION
+			Description = "Bullet Seed hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Aerial Ace",
-			Description = "Deals damage and bypasses accuracy checks to always hit, unless the target is in the semi-invulnerable turn of a move such as Dig or Fly.", -- NEEDS TRANSLATION
+			Description = "Aerial Ace deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Shadow Force or Sky Drop .",
 		},
 		{
 			NameKey = "Icicle Spear",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit.", -- NEEDS TRANSLATION
+			Description = "Icicle Spear hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Iron Defense",
-			Description = "Raises the user's Defense stat by two stages.", -- NEEDS TRANSLATION
+			Description = "Iron Defense raises the user's Defense by two stages.",
 		},
 		{
 			NameKey = "Block",
-			Description = "Prevents the target from switching out or fleeing. A Pokémon can still flee if it has Run Away or holding a Smoke Ball.", -- NEEDS TRANSLATION
+			Description = "Opponent cannot flee or switch. Z-Move effects",
 		},
 		{
 			NameKey = "Howl",
-			Description = "Raises the user's Attack stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Howl raises the Attack of the user and its teammates by one stage.",
 		},
 		{
 			NameKey = "Dragon Claw",
-			Description = "Deals damage and has no secondary effect.", -- NEEDS TRANSLATION
+			Description = "Dragon Claw deals damage with no additional effect.",
 		},
 		{
 			NameKey = "Frenzy Plant",
-			Description = "Deals damage and then forces the user to recharge during the next turn.", -- NEEDS TRANSLATION
+			Description = "User must recharge next turn. Z-Move effects",
 		},
 		{
 			NameKey = "Bulk Up",
-			Description = "Raises the user's Attack stat and Defense stat by one stage each.", -- NEEDS TRANSLATION
+			Description = "Bulk Up raises the user's Attack and Defense by one stage each.",
 		},
 		{
 			NameKey = "Bounce",
-			Description = "Attacks on 2nd turn with a 30% chance of paralyzing target. Can still be hit by Gust, Sky Uppercut, Thunder, and Twister.", -- NEEDS TRANSLATION
+			Description = "The user of Bounce will spring up on the first turn, disappearing from view and becoming invulnerable to most attacks. On the second turn, Bounce deals damage and has a 30% chance of paralyzing the target.",
 		},
 		{
 			NameKey = "Mud Shot",
-			Description = "Deals damage and then lowers the target's Speed stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Mud Shot deals damage and lowers the target's Speed by one stage.",
 		},
 		{
 			NameKey = "Poison Tail",
-			Description = "Deals damage and has a 10% chance of poisoning the target. It also has an increased critical hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Poison Tail deals damage and has a 10% chance of poisoning the target. It also has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Covet",
-			Description = "Steals the target's held item, if it has one. An item cannot be stolen if the target has Sticky Hold.", -- NEEDS TRANSLATION
+			Description = "Covet deals damage and steals the target's held item, if the user is not already holding an item.",
 		},
 		{
 			NameKey = "Volt Tackle",
-			Description = "The user receives recoil damage equal to 1/3 of the damage dealt.", -- NEEDS TRANSLATION
+			Description = "Volt Tackle deals damage and has a 10% chance of paralyzing the target, but the user receives 1/3 of the damage it inflicted in recoil. In other words, if the attack does 90 HP damage to the opponent, the user will lose 30 HP.",
 		},
 		{
 			NameKey = "Magical Leaf",
-			Description = "Deals damage and bypasses accuracy checks to always hit, unless the target is in the semi-invulnerable turn of a move such as Dig or Fly.", -- NEEDS TRANSLATION
+			Description = "Magical Leaf deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
 		},
 		{
 			NameKey = "Water Sport",
-			Description = "Reduces the power of Fire moves by 50% for all Pokémon in the battle. This effect last until the user switches out.", -- NEEDS TRANSLATION
+			Description = "Water Sport reduces the power of Fire -type moves by 50%. The effect applies to the entire field.",
 		},
 		{
 			NameKey = "Calm Mind",
-			Description = "Raises the user's Special Attack and Special Defense stats by one stage each.", -- NEEDS TRANSLATION
+			Description = "Calm Mind raises the user's Special Attack and Special Defense by one stage each.",
 		},
 		{
 			NameKey = "Leaf Blade",
-			Description = "Deals damage and has an increased critical hit ratio. (+1 stage = 1/8 or 12.5%)", -- NEEDS TRANSLATION
+			Description = "Leaf Blade deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
 		},
 		{
 			NameKey = "Dragon Dance",
-			Description = "Raises the user's Attack stat and Speed stat by one stage each.", -- NEEDS TRANSLATION
+			Description = "Dragon Dance raises the user's Attack and Speed by one stage each.",
 		},
 		{
 			NameKey = "Rock Blast",
-			Description = "Hits 2-5 times in one turn. Two: 37.5%, Three: 37.5%, Four: 12.5%, Five: 12.5%. Any of the hits can be a critical hit.", -- NEEDS TRANSLATION
+			Description = "Rock Blast hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
 		},
 		{
 			NameKey = "Shock Wave",
-			Description = "Deals damage and bypasses accuracy checks to always hit, unless the target is in the semi-invulnerable turn of a move such as Dig or Fly.", -- NEEDS TRANSLATION
+			Description = "Shock Wave deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
 		},
 		{
 			NameKey = "Water Pulse",
-			Description = "Deals damage and has a 20% chance of confusing the target.", -- NEEDS TRANSLATION
+			Description = "Water Pulse deals damage and has a 20% chance of confusing the target.",
 		},
 		{
 			NameKey = "Doom Desire",
-			Description = "Locks in damage when used based on Atk of user and Def of target. After 2 turns, deals damage to the current enemy. Attack is typeless: cannot STAB, hits Wonder Guard.", -- NEEDS TRANSLATION
+			Description = "Two turns after the move is selected, Doom Desire will deal damage. If the opponent switched Pokémon in the meantime, the damage dealt will depend on the Special Defense of the Pokémon the move hits, not the Pokémon it was originally targeted at.",
 		},
 		{
 			NameKey = "Psycho Boost",
-			Description = "Deals damage and lowers the user's Special Attack stat by two stages.", -- NEEDS TRANSLATION
+			Description = "Psycho Boost deals damage but lowers the user's Special Attack by two stages after attacking.",
+		},
+		{
+			NameKey = "Roost",
+			Description = "User recovers half of its max HP and loses the Flying type temporarily. Changes",
+		},
+		{
+			NameKey = "Gravity",
+			Description = "Prevents moves like Fly and Bounce and the Ability Levitate for 5 turns. Z-Move effects",
+		},
+		{
+			NameKey = "Miracle Eye",
+			Description = "Resets opponent's Evasiveness, removes Dark's Psychic immunity. Z-Move effects",
+		},
+		{
+			NameKey = "Wake-Up Slap",
+			Description = "Wake-Up Slap deals damage, and hits with double power (140) if the target is asleep. However, it also wakes up the target.",
+		},
+		{
+			NameKey = "Hammer Arm",
+			Description = "Hammer Arm deals damage but lowers the user's Speed by one stage after attacking.",
+		},
+		{
+			NameKey = "Gyro Ball",
+			Description = "Gyro Ball inflicts varying damage: the slower the user compared to the opponent, the higher the damage, up to a maximum base power of 150 . The base power is calculated as:",
+		},
+		{
+			NameKey = "Healing Wish",
+			Description = "The user faints and the next Pokémon released is fully healed. Z-Move effects",
+		},
+		{
+			NameKey = "Brine",
+			Description = "Power doubles if opponent's HP is less than 50%. Z-Move effects",
+		},
+		{
+			NameKey = "Natural Gift",
+			Description = "Natural Gift deals damage with no additional effects. However, its type and base power vary depending on the user's held Berry. The grid below shows which Berries provide which power and type.",
+		},
+		{
+			NameKey = "Feint",
+			Description = "Feint only hits if the target used Protect or Detect in the same turn. It also cancels Protect/Detect for the remainder of the turn, so subsequent moves in the same turn (in double/triple battles) can still hit.",
+		},
+		{
+			NameKey = "Pluck",
+			Description = "If the opponent is holding a berry, its effect is stolen by user. Z-Move effects",
+		},
+		{
+			NameKey = "Tailwind",
+			Description = "Tailwind doubles the speed of all Pokémon in the user's party for 4 turns.",
+		},
+		{
+			NameKey = "Acupressure",
+			Description = "Acupressure raises a random stat - Attack, Defense, Speed, Special Attack, Special Defense, Accuracy or Evasion - by two stages. It will always choose a stat that is not already maximized.",
+		},
+		{
+			NameKey = "Metal Burst",
+			Description = "Deals damage equal to 1.5x opponent's attack. Z-Move effects",
+		},
+		{
+			NameKey = "U-turn",
+			Description = "User switches out immediately after attacking. Z-Move effects",
+		},
+		{
+			NameKey = "Close Combat",
+			Description = "Close Combat deals damage but lowers the user's Defense and Special Defense by one stage each after attacking.",
+		},
+		{
+			NameKey = "Payback",
+			Description = "Power doubles if the user was attacked first. Z-Move effects",
+		},
+		{
+			NameKey = "Assurance",
+			Description = "Assurance deals damage, and if the target has already taken damage in this turn its power doubles to 120.",
+		},
+		{
+			NameKey = "Embargo",
+			Description = "Embargo prevents the target using any items for five turns. This includes both held items and items used by the trainer such as medicines.",
+		},
+		{
+			NameKey = "Fling",
+			Description = "Power depends on held item. Z-Move effects",
+		},
+		{
+			NameKey = "Psycho Shift",
+			Description = "Psycho Shift transfers any major status condition the user has (Poison, Burn, Paralysis, Sleep, Freeze) to the target, if the target does not already have a status condition.",
+		},
+		{
+			NameKey = "Trump Card",
+			Description = "Trump Card inflicts more damage when fewer PP are left, as per the table. The power is calculated based on the PP remaining after the move has been used; this is to account for the ability Pressure which deducts 2 PP for each move.",
+		},
+		{
+			NameKey = "Heal Block",
+			Description = "Prevents the opponent from restoring HP for 5 turns. Z-Move effects",
+		},
+		{
+			NameKey = "Wring Out",
+			Description = "Wring Out inflicts more damage when the opponent's HP is higher. At full HP its base power is 120 and it decreases in proportion - i.e. the power is:",
+		},
+		{
+			NameKey = "Power Trick",
+			Description = "User's own Attack and Defense switch. Z-Move effects",
+		},
+		{
+			NameKey = "Gastro Acid",
+			Description = "Cancels out the effect of the opponent's Ability. Z-Move effects",
+		},
+		{
+			NameKey = "Lucky Chant",
+			Description = "Opponent cannot land critical hits for 5 turns. Z-Move effects",
+		},
+		{
+			NameKey = "Me First",
+			Description = "If the opponent is readying a direct attack, the user of Me First will try to copy it and attack with 50% more power. The move only works if the user is faster than the opponent or otherwise able to move first (for example a Quick Claw activating).",
+		},
+		{
+			NameKey = "Copycat",
+			Description = "Copies opponent's last move. Z-Move effects",
+		},
+		{
+			NameKey = "Power Swap",
+			Description = "User and opponent swap Attack and Special Attack. Z-Move effects",
+		},
+		{
+			NameKey = "Guard Swap",
+			Description = "User and opponent swap Defense and Special Defense. Z-Move effects",
+		},
+		{
+			NameKey = "Punishment",
+			Description = "Punishment deals varying damage based on the opponent's stat increases. It starts at base power 60 and increases by 20 for every net stat boost of the opponent, up to a maximum of 200 (7 boosts). In other words the power is:",
+		},
+		{
+			NameKey = "Last Resort",
+			Description = "Last Resort deals high damage, but will fail if the user has not used each of its other moves at least once (or has no other moves). If the user switches out, the move gets reset and when it switches back in, will need to use each of its other moves at least once in order to use Last Resort again.",
+		},
+		{
+			NameKey = "Worry Seed",
+			Description = "Worry Seed changes the target's ability to Insomnia , which prevents the Pokémon from falling asleep. If the move is used on a sleeping Pokémon, it will wake up on its next turn.",
+		},
+		{
+			NameKey = "Sucker Punch",
+			Description = "Sucker Punch deals damage and has a priority of +1. However, the move only works if the target uses a direct attack in the same turn. If the target is not preparing an attack, Sucker Punch will fail.",
+		},
+		{
+			NameKey = "Toxic Spikes",
+			Description = "Toxic Spikes lays a trap of poisonous spikes around the foe, which poison Pokémon switching in to the opposing field. If used more than once, incoming Pokémon will be badly poisoned.",
+		},
+		{
+			NameKey = "Heart Swap",
+			Description = "Stat changes are swapped with the opponent. Z-Move effects",
+		},
+		{
+			NameKey = "Aqua Ring",
+			Description = "The user of Aqua Ring surrounds itself with a veil of water, which restores 1/16 of its maximum HP at the end of each turn.",
+		},
+		{
+			NameKey = "Magnet Rise",
+			Description = "User becomes immune to Ground-type moves for 5 turns. Z-Move effects",
+		},
+		{
+			NameKey = "Flare Blitz",
+			Description = "Flare Blitz deals damage and has a 10% chance of burning the target, but the user receives 1/3 of the damage it inflicted in recoil. In other words, if the attack does 90 HP damage to the opponent, the user will lose 30 HP.",
+		},
+		{
+			NameKey = "Force Palm",
+			Description = "Force Palm deals damage and has a 30% chance of paralyzing the target.",
+		},
+		{
+			NameKey = "Aura Sphere",
+			Description = "Aura Sphere deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
+		},
+		{
+			NameKey = "Rock Polish",
+			Description = "Rock Polish raises the user's Speed by two stages.",
+		},
+		{
+			NameKey = "Poison Jab",
+			Description = "Poison Jab deals damage and has a 30% chance of poisoning the target.",
+		},
+		{
+			NameKey = "Dark Pulse",
+			Description = "Dark Pulse deals damage and has a 20% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Night Slash",
+			Description = "Night Slash deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Aqua Tail",
+			Description = "Aqua Tail deals damage with no additional effect.",
+		},
+		{
+			NameKey = "Seed Bomb",
+			Description = "Seed Bomb deals damage with no additional effect.",
+		},
+		{
+			NameKey = "Air Slash",
+			Description = "Air Slash deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "X-Scissor",
+			Description = "X-Scissor deals damage with no additional effect.",
+		},
+		{
+			NameKey = "Bug Buzz",
+			Description = "Bug Buzz deals damage and has a 10% chance of lowering the target's Special Defense by one stage.",
+		},
+		{
+			NameKey = "Dragon Pulse",
+			Description = "Dragon Pulse deals damage with no additional effect.",
+		},
+		{
+			NameKey = "Dragon Rush",
+			Description = "Dragon Rush deals damage and has a 20% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Power Gem",
+			Description = "Power Gem deals damage with no additional effect.",
+		},
+		{
+			NameKey = "Drain Punch",
+			Description = "Drain Punch deals damage and the user will recover 50% of the HP drained.",
+		},
+		{
+			NameKey = "Vacuum Wave",
+			Description = "Vacuum Wave deals damage and has a priority of +1.",
+		},
+		{
+			NameKey = "Focus Blast",
+			Description = "Focus Blast deals damage and has a 10% chance of lowering the target's Special Defense by one stage.",
+		},
+		{
+			NameKey = "Energy Ball",
+			Description = "Energy Ball deals damage and has a 10% chance of lowering the target's Special Defense by one stage.",
+		},
+		{
+			NameKey = "Brave Bird",
+			Description = "Brave Bird deals damage, but the user receives 1/3 of the damage it inflicted in recoil. In other words, if the attack does 90 HP damage to the opponent, the user will lose 30 HP.",
+		},
+		{
+			NameKey = "Earth Power",
+			Description = "Earth Power deals damage and has a 10% chance of lowering the target's Special Defense by one stage.",
+		},
+		{
+			NameKey = "Switcheroo",
+			Description = "Switcheroo switches held items with the target. It does not require both Pokémon to be holding an item, in which case the item is simply given to the target or received from it.",
+		},
+		{
+			NameKey = "Giga Impact",
+			Description = "Giga Impact deals damage, but the user must recharge on the next turn (bringing its effective power down to 75 per turn).",
+		},
+		{
+			NameKey = "Nasty Plot",
+			Description = "Nasty Plot raises the user's Special Attack by two stages.",
+		},
+		{
+			NameKey = "Bullet Punch",
+			Description = "Bullet Punch deals damage and has a priority of +1.",
+		},
+		{
+			NameKey = "Avalanche",
+			Description = "Power doubles if user took damage first. Z-Move effects",
+		},
+		{
+			NameKey = "Ice Shard",
+			Description = "Ice Shard deals damage and has a priority of +1.",
+		},
+		{
+			NameKey = "Shadow Claw",
+			Description = "Shadow Claw deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Thunder Fang",
+			Description = "Thunder Fang deals damage, has a 10% chance of paralyzing the target, and has a 10% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Ice Fang",
+			Description = "Ice Fang deals damage, has a 10% chance of freezing the target and has a 10% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Fire Fang",
+			Description = "Fire Fang deals damage, has a 10% chance of burning the target and has a 10% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Shadow Sneak",
+			Description = "Shadow Sneak deals damage and has a priority of +1.",
+		},
+		{
+			NameKey = "Mud Bomb",
+			Description = "Mud Bomb deals damage and has a 30% chance of lowering the target's Accuracy by one stage.",
+		},
+		{
+			NameKey = "Psycho Cut",
+			Description = "Psycho Cut deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Zen Headbutt",
+			Description = "Zen Headbutt deals damage and has a 20% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Mirror Shot",
+			Description = "Mirror Shot deals damage and has a 30% chance of lowering the target's Accuracy by one stage.",
+		},
+		{
+			NameKey = "Flash Cannon",
+			Description = "Flash Cannon deals damage and has a 10% chance of lowering the target's Special Defense by one stage.",
+		},
+		{
+			NameKey = "Rock Climb",
+			Description = "Rock Climb deals damage and has a 20% chance of confusing the target.",
+		},
+		{
+			NameKey = "Defog",
+			Description = "Defog lowers the target's Evasion by one stage and removes entry hazards and barriers on both sides of the field. The moves affected are: Light Screen , Reflect , Mist , Safeguard , Spikes , Stealth Rock , Sticky Web and Toxic Spikes .",
+		},
+		{
+			NameKey = "Trick Room",
+			Description = "Slower Pokémon move first in the turn for 5 turns. Z-Move effects",
+		},
+		{
+			NameKey = "Draco Meteor",
+			Description = "Draco Meteor deals damage but lowers the user's Special Attack by two stages after attacking.",
+		},
+		{
+			NameKey = "Discharge",
+			Description = "Discharge deals damage and has a 30% chance of paralyzing the target(s).",
+		},
+		{
+			NameKey = "Lava Plume",
+			Description = "Lava Plume deals damage and has a 30% chance of burning the target.",
+		},
+		{
+			NameKey = "Leaf Storm",
+			Description = "Leaf Storm deals damage but lowers the user's Special Attack by two stages after attacking.",
+		},
+		{
+			NameKey = "Power Whip",
+			Description = "Power Whip deals damage with no additional effect.",
+		},
+		{
+			NameKey = "Rock Wrecker",
+			Description = "User must recharge next turn. Z-Move effects",
+		},
+		{
+			NameKey = "Cross Poison",
+			Description = "Cross Poison deals damage and has a 10% chance of poisoning the target. It also has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Gunk Shot",
+			Description = "Gunk Shot deals damage and has a 30% chance of poisoning the target.",
+		},
+		{
+			NameKey = "Iron Head",
+			Description = "Iron Head deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Magnet Bomb",
+			Description = "Magnet Bomb deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Phantom Force , Shadow Force or Sky Drop .",
+		},
+		{
+			NameKey = "Stone Edge",
+			Description = "Stone Edge deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Captivate",
+			Description = "Captivate lowers the Special Attack of the target by two stages, if they are of the opposite gender to the user. Stats can be lowered to a minimum of -6 stages each.",
+		},
+		{
+			NameKey = "Stealth Rock",
+			Description = "Stealth Rock lays a trap of stones around the foe, which hurts Pokémon switching in to the opposing field. The rocks inflict variable damage — a fraction of the Pokémon's maximum HP, based on its susceptibility to the Rock type, as shown in the table.",
+		},
+		{
+			NameKey = "Grass Knot",
+			Description = "Grass Knot inflicts greater damage on heavier opponents , as shown in the table.",
+		},
+		{
+			NameKey = "Chatter",
+			Description = "Chatter deals damage and causes the target to become confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
+		},
+		{
+			NameKey = "Judgment",
+			Description = "Type depends on the Arceus Plate being held. Z-Move effects",
+		},
+		{
+			NameKey = "Bug Bite",
+			Description = "Bug Bite deals damage, and if the target is holding a Berry, the user eats it and gains its effect. For example, if the target is holding a Sitrus Berry the user will recover 1/4 of its HP.",
+		},
+		{
+			NameKey = "Charge Beam",
+			Description = "Charge Beam deals damage and has a 70% chance of raising the user's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Wood Hammer",
+			Description = "Wood Hammer deals damage, but the user receives 1/3 of the damage it inflicted in recoil. In other words, if the attack does 90 HP damage to the opponent, the user will lose 30 HP.",
+		},
+		{
+			NameKey = "Aqua Jet",
+			Description = "Aqua Jet deals damage and has a priority of +1.",
+		},
+		{
+			NameKey = "Attack Order",
+			Description = "Attack Order deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Defend Order",
+			Description = "Defend Order raises the user's Defense and Special Defense by one stage each.",
+		},
+		{
+			NameKey = "Heal Order",
+			Description = "Heal Order recovers up to 50% of the user's maximum HP.",
+		},
+		{
+			NameKey = "Head Smash",
+			Description = "Head Smash deals damage, but the user receives 1/2 of the damage it inflicts in recoil. In other words, if the attack does 100 HP damage to the opponent, the user will lose 50 HP.",
+		},
+		{
+			NameKey = "Double Hit",
+			Description = "Double Hit deals damage and will strike twice (with 35 base power each time).",
+		},
+		{
+			NameKey = "Roar of Time",
+			Description = "User must recharge next turn. Z-Move effects",
+		},
+		{
+			NameKey = "Spacial Rend",
+			Description = "Spacial Rend deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Lunar Dance",
+			Description = "The user faints but the next Pokémon released is fully healed. Z-Move effects",
+		},
+		{
+			NameKey = "Crush Grip",
+			Description = "Crush Grip inflicts more damage when the opponent's HP is higher. At full HP its base power is 120 and it decreases in proportion - i.e. the power is:",
+		},
+		{
+			NameKey = "Magma Storm",
+			Description = "Magma Storm inflicts damage on the first turn then traps the opponent, causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
+		},
+		{
+			NameKey = "Dark Void",
+			Description = "Dark Void puts the target(s) to sleep. It can only be used by Darkrai .",
+		},
+		{
+			NameKey = "Seed Flare",
+			Description = "Seed Flare deals damage and has a 40% chance of lowering the target's Special Defense by two stages.",
+		},
+		{
+			NameKey = "Ominous Wind",
+			Description = "Ominous Wind deals damage and has a 10% chance of raising the user's Attack, Defense, Special Attack, Special Defense and Speed by one stage each.",
+		},
+		{
+			NameKey = "Shadow Force",
+			Description = "The user of Shadow Force will vanish instantly on the first turn, disappearing from view and becoming invulnerable to most attacks. On the second turn, Shadow Force deals damage and can hit Pokémon using Protect or Detect . It also removes their effect for the rest of the turn (in double and triple battles).",
+		},
+		{
+			NameKey = "Hone Claws",
+			Description = "Hone Claws raises the user's Attack and Accuracy by one stage each.",
+		},
+		{
+			NameKey = "Wide Guard",
+			Description = "Wide Guard protects the user's team from all multi-target moves (such as Surf or Rock Slide ), for the duration of the turn. It has priority +3 so will activate before most other moves.",
+		},
+		{
+			NameKey = "Guard Split",
+			Description = "Guard Split averages the user's Defense and Special Defense with those of the target. Stat boosts are not taken into account.",
+		},
+		{
+			NameKey = "Power Split",
+			Description = "Power Split averages the user's Attack and Special Attack with those of the target. Stat boosts are not taken into account. The effect lasts until the battle ends or the Pokémon switches out.",
+		},
+		{
+			NameKey = "Wonder Room",
+			Description = "Wonder Room switches the Defense and Special Defense of all Pokémon in battle, for 5 turns.",
+		},
+		{
+			NameKey = "Psyshock",
+			Description = "Inflicts damage based on the target's Defense, not Special Defense. Z-Move effects",
+		},
+		{
+			NameKey = "Venoshock",
+			Description = "Inflicts double damage if the target is poisoned. Z-Move effects",
+		},
+		{
+			NameKey = "Autotomize",
+			Description = "Autotomize raises the user's Speed by two stages and reduces its weight by 100kg (to a minimum of 0.1kg). Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Rage Powder",
+			Description = "Rage Powder redirects all single-target moves used by opponents to itself. It is only useful in double or triple battles.",
+		},
+		{
+			NameKey = "Telekinesis",
+			Description = "Telekinesis raises the target into the air for three turns, guaranteeing that all attacks against the target (except OHKO moves) will hit, regardless of Accuracy or Evasion.",
+		},
+		{
+			NameKey = "Magic Room",
+			Description = "Magic Room suppresses the effects of held items for all Pokémon for five turns.",
+		},
+		{
+			NameKey = "Smack Down",
+			Description = "Smack Down deals damage and knocks the target to the ground. Any raised Pokémon now become susceptible to Ground moves and Arena Trap . Raised Pokémon are any Flying types or those under the effects of Levitate , Magnet Rise or Telekinesis . Full details in glossary .",
+		},
+		{
+			NameKey = "Storm Throw",
+			Description = "Storm Throw deals damage and always results in a critical hit, increasing its power to 90 .",
+		},
+		{
+			NameKey = "Flame Burst",
+			Description = "Flame Burst deals damage and will also cause splash damage to any Pokémon adjacent to the target (including the user if Flame Burst is targeted at an ally).",
+		},
+		{
+			NameKey = "Sludge Wave",
+			Description = "Sludge Wave deals damage and has a 10% chance of poisoning the target.",
+		},
+		{
+			NameKey = "Quiver Dance",
+			Description = "Quiver Dance raises the user's Special Attack, Special Defense and Speed by one stage each.",
+		},
+		{
+			NameKey = "Heavy Slam",
+			Description = "Heavy Slam inflicts more damage the heavier the user compared to the opponent. The table shows the different base powers for each ratio, where r = UserWeight ÷ TargetWeight",
+		},
+		{
+			NameKey = "Synchronoise",
+			Description = "Synchronoise hits all adjacent Pokémon that share a type with the user. Dual type Pokémon match either of their types, so for example a Normal/Flying Pokémon using Synchronoise will hit a Flying/Dragon type.",
+		},
+		{
+			NameKey = "Electro Ball",
+			Description = "Electro Ball inflicts more damage the faster the user is compared to the opponent. The table shows the different base powers for each ratio, where r = UserSpeed ÷ TargetSpeed",
+		},
+		{
+			NameKey = "Soak",
+			Description = "Soak changes the target's type to Water . It does not work on Pokémon with the ability Multitype .",
+		},
+		{
+			NameKey = "Flame Charge",
+			Description = "Flame Charge deals damage and raises the user's Speed by one stage.",
+		},
+		{
+			NameKey = "Coil",
+			Description = "Coil raises the user's Attack, Defense and Accuracy by one stage each.",
+		},
+		{
+			NameKey = "Low Sweep",
+			Description = "Low Sweep deals damage and lowers the target's Speed by one stage.",
+		},
+		{
+			NameKey = "Acid Spray",
+			Description = "Acid Spray inflicts damage and lowers the target's Special Defense by two stages.",
+		},
+		{
+			NameKey = "Foul Play",
+			Description = "Foul Play uses the opponent's Attack stat instead of the user's in damage calculation. In other words, the move acts as if the target is attacking themselves, and thus is more powerful when the opponent has higher Attack.",
+		},
+		{
+			NameKey = "Simple Beam",
+			Description = "Simple Beam changes the target's ability to Simple .",
+		},
+		{
+			NameKey = "Entrainment",
+			Description = "Entrainment makes the target's ability the same as the user's.",
+		},
+		{
+			NameKey = "After You",
+			Description = "After You forces the target to attack first in the next turn. It can be targeted at opponents or team-mates.",
+		},
+		{
+			NameKey = "Round",
+			Description = "Round deals damage. If multiple Pokémon on the same team use it in the same turn, the power doubles to 120 and the slower Pokémon move immediately after the fastest Pokémon uses it, regardless of their Speed.",
+		},
+		{
+			NameKey = "Echoed Voice",
+			Description = "Echoed Voice deals damage starting at base power 40, and increases by 40 each turn if used by any Pokémon on the field, up to a maximum base power of 200.",
+		},
+		{
+			NameKey = "Chip Away",
+			Description = "Chip Away deals damage, but ignores changes to the target's stats (i.e. Defense and Evasion in this case).",
+		},
+		{
+			NameKey = "Clear Smog",
+			Description = "Removes all of the target's stat changes. Z-Move effects",
+		},
+		{
+			NameKey = "Stored Power",
+			Description = "Stored Power deals varying damage based on the user's stat increases. It starts at base power 20 and increases by 20 for each net stat boost the user has received, including Evasion and Accuracy. In other words the power is:",
+		},
+		{
+			NameKey = "Quick Guard",
+			Description = "Quick Guard protects the user's team from all increased priority moves (such as Extreme Speed or Bullet Punch ), for the duration of the turn. It has priority +3 so will activate before most other moves.",
+		},
+		{
+			NameKey = "Ally Switch",
+			Description = "Ally Switch swaps the user with its teammate. In triple battles the user must be on either end, not in the middle.",
+		},
+		{
+			NameKey = "Scald",
+			Description = "Scald deals damage and has a 30% chance of burning the target.",
+		},
+		{
+			NameKey = "Shell Smash",
+			Description = "Shell Smash lowers the user's Defense and Special Defense by one stage each, while also raising Attack, Special Attack and Speed by two stages each.",
+		},
+		{
+			NameKey = "Heal Pulse",
+			Description = "Heal Pulse restores half of the target's maximum HP. It can be used on team-mates but not on itself.",
+		},
+		{
+			NameKey = "Hex",
+			Description = "Hex inflicts damage, but if the target has a major status ailment (i.e. is burned, poisoned, paralyzed, asleep or frozen) it will double in power to 130.",
+		},
+		{
+			NameKey = "Sky Drop",
+			Description = "Sky Drop takes the target into the air on the first turn, then drops them on the second turn, wherein they receive damage.",
+		},
+		{
+			NameKey = "Shift Gear",
+			Description = "Shift Gear raises the user's Attack by one stage and Speed by two stages.",
+		},
+		{
+			NameKey = "Circle Throw",
+			Description = "In battles, the opponent switches. In the wild, the Pokémon runs. Z-Move effects",
+		},
+		{
+			NameKey = "Incinerate",
+			Description = "Incinerate deals damage and if the target is holding a Berry, it is burnt and becomes no longer usable.",
+		},
+		{
+			NameKey = "Quash",
+			Description = "Quash forces the target Pokémon to move last in the current turn.",
+		},
+		{
+			NameKey = "Acrobatics",
+			Description = "Acrobatics deals damage, however, if the user is not holding an item, its power doubles to 110 .",
+		},
+		{
+			NameKey = "Reflect Type",
+			Description = "Reflect Type changes the user's type to match the type(s) of the target.",
+		},
+		{
+			NameKey = "Retaliate",
+			Description = "Inflicts double damage if a teammate fainted on the last turn. Z-Move effects",
+		},
+		{
+			NameKey = "Final Gambit",
+			Description = "Inflicts damage equal to the user's remaining HP. User faints. Z-Move effects",
+		},
+		{
+			NameKey = "Bestow",
+			Description = "Bestow gives the user's held item to the target.",
+		},
+		{
+			NameKey = "Inferno",
+			Description = "Inferno deals damage and burns the target, if it hits. Burned Pokémon lose 1/8 of their maximum HP each turn and their Attack is decreased by 50%.",
+		},
+		{
+			NameKey = "Water Pledge",
+			Description = "Water Pledge deals damage at base power 80 . If a teammate uses Grass Pledge or Fire Pledge in the same turn, the moves combine into one attack of base power 160 and added effects appear.",
+		},
+		{
+			NameKey = "Fire Pledge",
+			Description = "Fire Pledge deals damage at base power 80 . If a teammate uses Grass Pledge or Water Pledge in the same turn, the moves combine into one attack of base power 160 and added effects appear.",
+		},
+		{
+			NameKey = "Grass Pledge",
+			Description = "Grass Pledge deals damage at base power 80 . If a teammate uses Fire Pledge or Water Pledge in the same turn, the moves combine into one attack of base power 160 and added effects appear.",
+		},
+		{
+			NameKey = "Volt Switch",
+			Description = "User must switch out after attacking. Z-Move effects",
+		},
+		{
+			NameKey = "Struggle Bug",
+			Description = "Struggle Bug deals damage and lowers the target's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Bulldoze",
+			Description = "Bulldoze deals damage and lowers the target's Speed by one stage.",
+		},
+		{
+			NameKey = "Frost Breath",
+			Description = "Frost Breath deals damage and always results in a critical hit, increasing its power to 90 .",
+		},
+		{
+			NameKey = "Dragon Tail",
+			Description = "In battles, the opponent switches. In the wild, the Pokémon runs. Z-Move effects",
+		},
+		{
+			NameKey = "Work Up",
+			Description = "Work Up raises the user's Attack and Special Attack by one stage each.",
+		},
+		{
+			NameKey = "Electroweb",
+			Description = "Electroweb deals damage and lowers the target's Speed by one stage.",
+		},
+		{
+			NameKey = "Wild Charge",
+			Description = "Wild Charge deals damage, but the user receives 1/4 of the damage it inflicted in recoil. In other words, if the attack does 100 HP damage to the opponent, the user will lose 25 HP.",
+		},
+		{
+			NameKey = "Drill Run",
+			Description = "Drill Run deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Dual Chop",
+			Description = "Dual Chop deals damage and will strike twice (with 40 base power each time).",
+		},
+		{
+			NameKey = "Heart Stamp",
+			Description = "Heart Stamp deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Horn Leech",
+			Description = "Horn Leech deals damage and the user will recover 50% of the HP drained.",
+		},
+		{
+			NameKey = "Sacred Sword",
+			Description = "Sacred Sword deals damage, but ignores changes to the target's stats (i.e. Defense and Evasion in this case).",
+		},
+		{
+			NameKey = "Razor Shell",
+			Description = "Razor Shell deals damage and has a 50% chance of lowering the target's Defense by one stage.",
+		},
+		{
+			NameKey = "Heat Crash",
+			Description = "Heat Crash inflicts more damage the heavier the user compared to the opponent. The table shows the different base powers for each ratio, where r = UserWeight ÷ TargetWeight",
+		},
+		{
+			NameKey = "Leaf Tornado",
+			Description = "Leaf Tornado deals damage and has a 30% chance of lowering the target's Accuracy by one stage.",
+		},
+		{
+			NameKey = "Steamroller",
+			Description = "Steamroller deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Cotton Guard",
+			Description = "Cotton Guard raises the user's Defense by three stages.",
+		},
+		{
+			NameKey = "Night Daze",
+			Description = "Night Daze deals damage and has a 40% chance of lowering the target's Accuracy by one stage.",
+		},
+		{
+			NameKey = "Psystrike",
+			Description = "Inflicts damage based on the target's Defense, not Special Defense. Z-Move effects",
+		},
+		{
+			NameKey = "Tail Slap",
+			Description = "Tail Slap hits 2-5 times per turn used. The probability of each interval is shown in the table, with the total power after each hit.",
+		},
+		{
+			NameKey = "Hurricane",
+			Description = "Hurricane deals damage and has a 30% chance of confusing the target.",
+		},
+		{
+			NameKey = "Head Charge",
+			Description = "Head Charge deals damage, but the user receives 1/4 of the damage it inflicts in recoil. In other words, if the attack does 100 HP damage to the opponent, the user will lose 25 HP.",
+		},
+		{
+			NameKey = "Gear Grind",
+			Description = "Gear Grind deals damage and will strike twice (with 50 base power each time).",
+		},
+		{
+			NameKey = "Searing Shot",
+			Description = "Searing Shot deals damage and has a 30% chance of burning the target.",
+		},
+		{
+			NameKey = "Techno Blast",
+			Description = "Techno Blast deals damage. Its type changes depending on the held Drive:",
+		},
+		{
+			NameKey = "Relic Song",
+			Description = "May put the target to sleep.(10% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Secret Sword",
+			Description = "Inflicts damage based on the target's Defense, not Special Defense. Z-Move effects",
+		},
+		{
+			NameKey = "Glaciate",
+			Description = "Glaciate deals damage and lowers the target's Speed by one stage.",
+		},
+		{
+			NameKey = "Bolt Strike",
+			Description = "Bolt Strike deals damage and has a 20% chance of paralyzing the target.",
+		},
+		{
+			NameKey = "Blue Flare",
+			Description = "Blue Flare deals damage and has a 20% chance of burning the target.",
+		},
+		{
+			NameKey = "Fiery Dance",
+			Description = "Fiery Dance deals damage and has a 50% chance of raising the user's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Freeze Shock",
+			Description = "The user of Freeze Shock will charge on the first turn. On the second turn, it deals damage and has a 30% chance of paralyzing the target.",
+		},
+		{
+			NameKey = "Ice Burn",
+			Description = "The user of Ice Burn will charge on the first turn. On the second turn, it deals damage and has a 30% chance of burning the target.",
+		},
+		{
+			NameKey = "Snarl",
+			Description = "Snarl deals damage and lowers the target's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Icicle Crash",
+			Description = "Icicle Crash deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "V-create",
+			Description = "V-create deals damage but lowers the user's Defense, Special Defense and Speed by one stage each after attacking.",
+		},
+		{
+			NameKey = "Fusion Flare",
+			Description = "Fusion Flare deals damage, and its power doubles to 200 if Fusion Bolt has been used before it in the same turn. If this happens Fusion Flare's animation will change to look more epic.",
+		},
+		{
+			NameKey = "Fusion Bolt",
+			Description = "Fusion Bolt deals damage, and its power doubles to 200 if Fusion Flare has been used before it in the same turn. If this happens Fusion Bolt's animation will change to look more epic.",
+		},
+		{
+			NameKey = "Flying Press",
+			Description = "Flying Press deals damage. It is a Fighting type move, but deals a combination of Fighting and Flying type damage. This in effect gives the move its own type chart, as shown below.",
+		},
+		{
+			NameKey = "Mat Block",
+			Description = "Mat Block protects the user's team from Physical or Special category moves, but not Status moves. It only works on the first turn the user is in battle.",
+		},
+		{
+			NameKey = "Belch",
+			Description = "Belch deals damage, but only works if the user has previously consumed a Berry during the battle. Manually feeding a Berry from the bag does not count.",
+		},
+		{
+			NameKey = "Rototiller",
+			Description = "Rototiller raises the Attack and Special Attack of any Grass-type Pokémon on the field by one stage each.",
+		},
+		{
+			NameKey = "Sticky Web",
+			Description = "Sticky Web sets up a sticky net around the opposing team, which lowers the Speed of Pokémon switching into battle by one stage.",
+		},
+		{
+			NameKey = "Fell Stinger",
+			Description = "Fell Stinger deals damage, and if the target is knocked out by this move, the user's Attack is raised by three stages.",
+		},
+		{
+			NameKey = "Phantom Force",
+			Description = "Phantom Force causes the user to disappear on the first turn, becoming invulnerable to most attacks. On the second turn, it deals damage and can hit Pokémon using Protect or Detect .",
+		},
+		{
+			NameKey = "Trick-or-Treat",
+			Description = "Trick-or-Treat adds the Ghost type to the target. If the target is dual-typed they essentially become a triple-typed Pokémon.",
+		},
+		{
+			NameKey = "Noble Roar",
+			Description = "Noble Roar lowers the target's Attack and Special Attack by one stage each.",
+		},
+		{
+			NameKey = "Ion Deluge",
+			Description = "Ion Deluge changes Normal-type moves to Electric-type for all Pokémon on the field, for the remainder of the turn.",
+		},
+		{
+			NameKey = "Parabolic Charge",
+			Description = "Parabolic Charge deals damage and the user will recover 50% of the HP drained. It targets all adjacent Pokémon.",
+		},
+		{
+			NameKey = "Forest's Curse",
+			Description = "Forest's Curse adds the Grass type to the target. If the target is dual-typed they essentially become a triple-typed Pokémon.",
+		},
+		{
+			NameKey = "Petal Blizzard",
+			Description = "Petal Blizzard deals damage with no additional effect.",
+		},
+		{
+			NameKey = "Freeze-Dry",
+			Description = "Freeze-Dry deals damage and has a 10% change of freezing the target. In addition to Ice's usual type advantages, Freeze-Dry is also super-effective against the Water type. This in effect gives the move its own (slightly different) type chart, as shown below:",
+		},
+		{
+			NameKey = "Disarming Voice",
+			Description = "Disarming Voice deals damage and ignores changes to the Accuracy and Evasion stats. However, it will not hit Pokémon during the invulnerable stage of Bounce , Dig , Dive , Fly , Shadow Force or Sky Drop .",
+		},
+		{
+			NameKey = "Parting Shot",
+			Description = "Parting Shot lowers the opponent's Attack and Special Attack by one stage each, then the user switches out of battle.",
+		},
+		{
+			NameKey = "Topsy-Turvy",
+			Description = "Topsy-Turvy reverses the stat changes of the target Pokémon.",
+		},
+		{
+			NameKey = "Draining Kiss",
+			Description = "Draining Kiss deals damage and the user will recover 75% of the HP drained.",
+		},
+		{
+			NameKey = "Crafty Shield",
+			Description = "Crafty Shield protects the user's team from any Status category move targeted at them, for the duration of the turn. It has priority +3 so will activate before most other moves.",
+		},
+		{
+			NameKey = "Flower Shield",
+			Description = "Flower Shield raises the Defense of all Grass-type Pokémon in battle (including opponents) by one stage.",
+		},
+		{
+			NameKey = "Grassy Terrain",
+			Description = "Grassy Terrain creates a low-lying grassy field lasting 5 turns, that restores the HP of grounded Pokémon each turn, by 1/16 of their maximum HP. The power of Grass type moves also increases by 50% while in effect, and the moves Earthquake , Magnitude , and Bulldoze halve in power.",
+		},
+		{
+			NameKey = "Misty Terrain",
+			Description = "Misty Terrain creates a low-lying mist lasting 5 turns, that protects all grounded Pokémon from status conditions (including confusion). It also halves the power of Dragon type moves while in effect.",
+		},
+		{
+			NameKey = "Electrify",
+			Description = "Electrify causes the target's move to become Electric type, if it has yet to attack during that turn.",
+		},
+		{
+			NameKey = "Play Rough",
+			Description = "Play Rough deals damage and has a 10% chance of lowering the target's Attack by one stage.",
+		},
+		{
+			NameKey = "Fairy Wind",
+			Description = "Fairy Wind deals damage with no added effects.",
+		},
+		{
+			NameKey = "Moonblast",
+			Description = "Moonblast deals damage and has a 30% chance of lowering the target's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Boomburst",
+			Description = "Boomburst deals massive damage and targets all adjacent Pokémon in battle, including allies.",
+		},
+		{
+			NameKey = "Fairy Lock",
+			Description = "Fairy Lock prevents all Pokémon on the field from fleeing during the following turn.",
+		},
+		{
+			NameKey = "King's Shield",
+			Description = "King's Shield prevents any Physical or Special attacks targeted at the user from striking, for the duration of the turn. If a contact move is targeted at the King's Shield user, the opponent's Attack is lowered by two stages. It has priority +4 so will activate before most other moves.",
+		},
+		{
+			NameKey = "Play Nice",
+			Description = "Play Nice lowers the target's Attack by one stage. The move always hits, even if the target used a Protect -like move.",
+		},
+		{
+			NameKey = "Confide",
+			Description = "Confide lowers the target's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Diamond Storm",
+			Description = "Diamond Storm deals damage and has a 50% chance of raising the user's Defense by two stages.",
+		},
+		{
+			NameKey = "Steam Eruption",
+			Description = "Steam Eruption deals damage and has a 30% chance of burning the target.",
+		},
+		{
+			NameKey = "Hyperspace Hole",
+			Description = "Hyperspace Hole deals damage and always hits, even if the target used a Protect -like move.",
+		},
+		{
+			NameKey = "Water Shuriken",
+			Description = "Water Shuriken attacks with increased priority.",
+		},
+		{
+			NameKey = "Mystical Fire",
+			Description = "Mystical Fire deals damage and lowers the target's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Spiky Shield",
+			Description = "Spiky Shield prevents any attacks targeted at the user from striking, for the duration of the turn. If a contact move is targeted at the Spiky Shield user on that turn, the attacker receives damage of 1/8 their maximum HP. It has priority +4 so will activate before most other moves.",
+		},
+		{
+			NameKey = "Aromatic Mist",
+			Description = "Aromatic Mist raises the Special Defense of a teammate by one stage.",
+		},
+		{
+			NameKey = "Eerie Impulse",
+			Description = "Eerie Impulse lowers the target's Special Attack by two stages.",
+		},
+		{
+			NameKey = "Venom Drench",
+			Description = "If the target is poisoned, Venom Drench lowers its Attack, Special Attack and Speed by one stage each.",
+		},
+		{
+			NameKey = "Powder",
+			Description = "Powder moves with priority and covers the target in a powder that lasts for the rest of the current turn only. It damages the target if they use a Fire type move in that turn, and prevents the Fire move from working.",
+		},
+		{
+			NameKey = "Geomancy",
+			Description = "Geomancy charges on the first turn. On the second turn it raises the user's Special Attack, Special Defense and Speed by two stages each.",
+		},
+		{
+			NameKey = "Magnetic Flux",
+			Description = "Magnetic Flux raises the Defense and Special Defense of any Pokémon on the user's team that has the Plus or Minus ability.",
+		},
+		{
+			NameKey = "Happy Hour",
+			Description = "Happy Hour has no battle effect. Instead, it doubles the prize money awarded to the player at the end of the battle. If the Amulet Coin or Luck Incense is held by any Pokémon in battle, and any Pokémon uses Happy Hour during the battle, the prize money is quadrupled.",
+		},
+		{
+			NameKey = "Electric Terrain",
+			Description = "Electric Terrain creates a low-lying electric field lasting 5 turns, that prevents grounded Pokémon from falling asleep. The power of Electric type moves also increases by 50% while in effect.",
+		},
+		{
+			NameKey = "Dazzling Gleam",
+			Description = "Dazzling Gleam deals damage and hits all adjacent opponents in double/triple battles.",
+		},
+		{
+			NameKey = "Celebrate",
+			Description = "The Pokémon congratulates you on your special day. No battle effect. Z-Move effects",
+		},
+		{
+			NameKey = "Hold Hands",
+			Description = "Makes the user and an ally very happy. Z-Move effects",
+		},
+		{
+			NameKey = "Baby-Doll Eyes",
+			Description = "Baby-Doll Eyes lowers the target's Attack by one stage, with increased priority.",
+		},
+		{
+			NameKey = "Nuzzle",
+			Description = "Nuzzle deals damage and paralyzes the target. Paralyzed Pokémon have a 25% chance of not being able to attack, and their Speed is decreased by 50% (75% in Generations 1-6 ).",
+		},
+		{
+			NameKey = "Hold Back",
+			Description = "Always leaves opponent with at least 1 HP. Z-Move effects",
+		},
+		{
+			NameKey = "Infestation",
+			Description = "Infestation inflicts damage on the first turn then traps the opponent, causing them to lose 1/8 of their maximum HP after each turn, for 4-5 turns.",
+		},
+		{
+			NameKey = "Power-Up Punch",
+			Description = "Power-Up Punch deals damage and raises the user's Attack by one stage.",
+		},
+		{
+			NameKey = "Oblivion Wing",
+			Description = "Oblivion Wing deals damage and the user will recover 75% of the HP drained.",
+		},
+		{
+			NameKey = "Thousand Arrows",
+			Description = "Thousand Arrows deals damage and knocks the target(s) to the ground. Any raised Pokémon now become susceptible to Ground moves and Arena Trap . Raised Pokémon are any Flying types or those under the effects of Levitate , Magnet Rise or Telekinesis . Full details in glossary .",
+		},
+		{
+			NameKey = "Thousand Waves",
+			Description = "Thousand Waves deals damage and prevents the target(s) from fleeing or switching out, as long as the user remains in battle.",
+		},
+		{
+			NameKey = "Land's Wrath",
+			Description = "Land's Wrath deals damage with no additional effects.",
+		},
+		{
+			NameKey = "Light of Ruin",
+			Description = "Light of Ruin deals damage, but the user receives 1/2 of the damage it inflicted in recoil. In other words, if the attack does 100 HP damage to the opponent, the user will lose 50 HP.",
+		},
+		{
+			NameKey = "Origin Pulse",
+			Description = "Origin Pulse deals damage and hits all adjacent opponents in double/triple battles.",
+		},
+		{
+			NameKey = "Precipice Blades",
+			Description = "Precipice Blades deals damage and hits all adjacent opponents in double/triple battles.",
+		},
+		{
+			NameKey = "Dragon Ascent",
+			Description = "Dragon Ascent deals damage but lowers the user's Defense and Special Defense by one stage each after attacking.",
+		},
+		{
+			NameKey = "Hyperspace Fury",
+			Description = "Hyperspace Fury deals damage but lowers the user's Defense by one stage after attacking. The move always hits, even if the target used a Protect -like move.",
+		},
+		{
+			NameKey = "Breakneck Blitz",
+			Description = "Breakneck Blitz is the Normal type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "All-Out Pummeling",
+			Description = "All-Out Pummeling is the Fighting type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Supersonic Skystrike",
+			Description = "Supersonic Skystrike is the Flying type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Acid Downpour",
+			Description = "Acid Downpour is the Poison type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Tectonic Rage",
+			Description = "Tectonic Rage is the Ground type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Continental Crush",
+			Description = "Continental Crush is the Rock type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Savage Spin-Out",
+			Description = "Savage Spin-Out is the Bug type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Never-Ending Nightmare",
+			Description = "Never-Ending Nightmare is the Ghost type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Corkscrew Crash",
+			Description = "Corkscrew Crash is the Steel type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Inferno Overdrive",
+			Description = "Inferno Overdrive is the Fire type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Hydro Vortex",
+			Description = "Hydro Vortex is the Water type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Bloom Doom",
+			Description = "Bloom Doom is the Grass type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Gigavolt Havoc",
+			Description = "Gigavolt Havoc is the Electric type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Shattered Psyche",
+			Description = "Shattered Psyche is the Psychic type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Subzero Slammer",
+			Description = "Subzero Slammer is the Ice type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Devastating Drake",
+			Description = "Devastating Drake is the Dragon type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Black Hole Eclipse",
+			Description = "Black Hole Eclipse is the Dark type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Twinkle Tackle",
+			Description = "Twinkle Tackle is the Fairy type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "Catastropika",
+			Description = "Catastropika is a Z-Move exclusive to Pikachu. It can only be used with Volt Tackle .",
+		},
+		{
+			NameKey = "Shore Up",
+			Description = "The user regains up to half of its max HP. It restores more HP in a sandstorm. Changes",
+		},
+		{
+			NameKey = "First Impression",
+			Description = "Although this move has great power, it only works the first turn the user is in battle. Z-Move effects",
+		},
+		{
+			NameKey = "Baneful Bunker",
+			Description = "Baneful Bunker prevents any attacks targeted at the user from striking, for the duration of the turn. If a contact move is targeted at the Baneful Bunker user on that turn, the attacker becomes poisoned. It has priority +4 so will activate before most other moves.",
+		},
+		{
+			NameKey = "Spirit Shackle",
+			Description = "Spirit Shackle deals damage and prevents the target from switching out, while the user remains in battle.",
+		},
+		{
+			NameKey = "Darkest Lariat",
+			Description = "Darkest Lariat deals damage, but ignores changes to the target's stats (i.e. Defense and Evasion in this case).",
+		},
+		{
+			NameKey = "Sparkling Aria",
+			Description = "Sparkling Aria deals damage, and if the target is burned, heals it.",
+		},
+		{
+			NameKey = "Ice Hammer",
+			Description = "The user swings and hits with its strong, heavy fist. It lowers the user's Speed, however.(100% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Floral Healing",
+			Description = "The user restores the target's HP by up to half of its max HP. It restores more HP when the terrain is grass. Z-Move effects",
+		},
+		{
+			NameKey = "High Horsepower",
+			Description = "The user fiercely attacks the target using its entire body. Z-Move effects",
+		},
+		{
+			NameKey = "Strength Sap",
+			Description = "The user restores its HP by the same amount as the target's Attack stat. It also lowers the target's Attack stat.(100% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Solar Blade",
+			Description = "The user of Solar Blade will absorb light on the first turn. On the second turn, Solar Blade deals damage.",
+		},
+		{
+			NameKey = "Leafage",
+			Description = "Strikes opponent with leaves. Z-Move effects",
+		},
+		{
+			NameKey = "Spotlight",
+			Description = "The user shines a spotlight on the target so that only the target will be attacked during the turn. Z-Move effects",
+		},
+		{
+			NameKey = "Toxic Thread",
+			Description = "Toxic Thread poisons the target, and lowers its Speed by one stage.",
+		},
+		{
+			NameKey = "Laser Focus",
+			Description = "User's next attack is guaranteed to result in a critical hit. Z-Move effects",
+		},
+		{
+			NameKey = "Gear Up",
+			Description = "The user engages its gears to raise the Attack and Sp. Atk stats of ally Pokémon with the Plus or Minus Ability. Z-Move effects",
+		},
+		{
+			NameKey = "Throat Chop",
+			Description = "Throat Chop deals damage and prevents the target from using sound-based moves such as Hyper Voice for two turns.",
+		},
+		{
+			NameKey = "Pollen Puff",
+			Description = "Deals damage to opponent or restores HP of teammate. Z-Move effects",
+		},
+		{
+			NameKey = "Anchor Shot",
+			Description = "The user entangles the target with its anchor chain while attacking. The target becomes unable to flee. Z-Move effects",
+		},
+		{
+			NameKey = "Psychic Terrain",
+			Description = "Psychic Terrain creates a low-lying psychic field lasting 5 turns, that prevents grounded Pokémon from being hit by high-priority moves (such as Quick Attack or Sucker Punch ). The power of Psychic type moves also increases while in effect.",
+		},
+		{
+			NameKey = "Lunge",
+			Description = "The user makes a lunge at the target, attacking with full force. This also lowers the target's Attack stat.(100% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Fire Lash",
+			Description = "The user strikes the target with a burning lash. This also lowers the target's Defense stat.(100% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Power Trip",
+			Description = "The user boasts its strength and attacks the target. The more the user's stats are raised, the greater the move's power. Z-Move effects",
+		},
+		{
+			NameKey = "Burn Up",
+			Description = "To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type. Z-Move effects",
+		},
+		{
+			NameKey = "Speed Swap",
+			Description = "The user exchanges Speed stats with the target. Z-Move effects",
+		},
+		{
+			NameKey = "Smart Strike",
+			Description = "The user stabs the target with a sharp horn. This attack never misses. Z-Move effects",
+		},
+		{
+			NameKey = "Purify",
+			Description = "The user heals the target's status condition. If the move succeeds, it also restores the user's own HP. Z-Move effects",
+		},
+		{
+			NameKey = "Revelation Dance",
+			Description = "Revelation Dance deals damage with a different type depending on the style of Oricorio:",
+		},
+		{
+			NameKey = "Core Enforcer",
+			Description = "Core Enforcer deals damage, and if the target has already moved this turn, suppresses the target's ability while it remains in battle.",
+		},
+		{
+			NameKey = "Trop Kick",
+			Description = "Trop Kick deals damage and lowers the target's Attack by one stage.",
+		},
+		{
+			NameKey = "Instruct",
+			Description = "Instruct tells the user's teammate in a double/triple battle to use its most recent move instead of them. In other words, it allows a teammate to attack twice instead of the two Pokémon attacking once each.",
+		},
+		{
+			NameKey = "Beak Blast",
+			Description = "The user first heats up its beak, and then it attacks the target. Making direct contact with the Pokémon while it's heating up its beak results in a burn. Z-Move effects",
+		},
+		{
+			NameKey = "Clanging Scales",
+			Description = "Clanging Scales deals damage but lowers the user's Defense by one stage after attacking.",
+		},
+		{
+			NameKey = "Dragon Hammer",
+			Description = "The user uses its body like a hammer to attack the target and inflict damage. Z-Move effects",
+		},
+		{
+			NameKey = "Brutal Swing",
+			Description = "The user swings its body around violently to inflict damage on everything in its vicinity. Z-Move effects",
+		},
+		{
+			NameKey = "Aurora Veil",
+			Description = "Aurora Veil halves damage from Physical and Special attacks for five turns. It can only be used during hail or snow, but the effects continue if the weather changes or subsides.",
+		},
+		{
+			NameKey = "Sinister Arrow Raid",
+			Description = "Sinister Arrow Raid is a Ghost type Z-move exclusive to Decidueye . It is used with Decidueye's signature move Spirit Shackle .",
+		},
+		{
+			NameKey = "Malicious Moonsault",
+			Description = "Malicious Moonsault is a Dark type Z-move exclusive to Incineroar . It is used with Incineroar's signature move Darkest Lariat .",
+		},
+		{
+			NameKey = "Oceanic Operetta",
+			Description = "Oceanic Operetta is a Water type Z-move exclusive to Primarina . It is used with Primarina's signature move Sparkling Aria .",
+		},
+		{
+			NameKey = "Guardian of Alola",
+			Description = "Guardian of Alola is a Z-move exclusive to the guardian deities of Alola - Tapu Koko , Tapu Lele , Tapu Bulu and Tapu Fini . It is used with Nature's Madness .",
+		},
+		{
+			NameKey = "Soul-Stealing 7-Star Strike",
+			Description = "Soul-Stealing 7-Star Strike is a Ghost type Z-move exclusive to Marshadow . It is used with Marshadow's signature move Spectral Thief .",
+		},
+		{
+			NameKey = "Stoked Sparksurfer",
+			Description = "Stoked Sparksurfer is an Electric type Z-Move exclusive to Alolan Raichu . It is used with Thunderbolt .",
+		},
+		{
+			NameKey = "Pulverizing Pancake",
+			Description = "Pulverizing Pancake is a Normal type Z-Move exclusive to Snorlax . It is used with Giga Impact .",
+		},
+		{
+			NameKey = "Extreme Evoboost",
+			Description = "Extreme Evoboost is a Z-Move exclusive to Eevee . It is used with Last Resort .",
+		},
+		{
+			NameKey = "Genesis Supernova",
+			Description = "Genesis Supernova is a Psychic type Z-move exclusive to Mew . It is used with the move Psychic .",
+		},
+		{
+			NameKey = "Shell Trap",
+			Description = "Shell Trap sets a trap at the beginning of the turn, and if the user is hit by a physical move during the turn, it deals high damage to the opponent.",
+		},
+		{
+			NameKey = "Fleur Cannon",
+			Description = "Fleur Cannon deals damage but lowers the user's Special Attack by two stages after attacking.",
+		},
+		{
+			NameKey = "Psychic Fangs",
+			Description = "The user bites the target with its psychic capabilities. This can also destroy Light Screen and Reflect. Z-Move effects",
+		},
+		{
+			NameKey = "Stomping Tantrum",
+			Description = "Driven by frustration, the user attacks the target. If the user's previous move has failed, the power of this move doubles. Z-Move effects",
+		},
+		{
+			NameKey = "Shadow Bone",
+			Description = "May lower opponent's Defense.(20% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Accelerock",
+			Description = "Accelerock deals damage and has high priority.",
+		},
+		{
+			NameKey = "Liquidation",
+			Description = "May lower opponent's Defense.(20% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Prismatic Laser",
+			Description = "The user shoots powerful lasers using the power of a prism. The user can't move on the next turn. Z-Move effects",
+		},
+		{
+			NameKey = "Spectral Thief",
+			Description = "The user hides in the target's shadow, steals the target's stat boosts, and then attacks. Z-Move effects",
+		},
+		{
+			NameKey = "Sunsteel Strike",
+			Description = "Ignores the target's ability. Z-Move effects",
+		},
+		{
+			NameKey = "Moongeist Beam",
+			Description = "Ignores the target's ability. Z-Move effects",
+		},
+		{
+			NameKey = "Tearful Look",
+			Description = "The user gets teary eyed to make the target lose its combative spirit. This lowers the target's Attack and Sp. Atk stats.(100% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Zing Zap",
+			Description = "May cause flinching.(30% chance) Z-Move effects",
+		},
+		{
+			NameKey = "Nature's Madness",
+			Description = "Halves the foe's HP. Z-Move effects",
+		},
+		{
+			NameKey = "Multi-Attack",
+			Description = "Multi-Attack is the signature move of Silvally. It deals damage with its type matching the Memory item held.",
+		},
+		{
+			NameKey = "10,000,000 Volt Thunderbolt",
+			Description = "10,000,000 Volt Thunderbolt deals damage and has a sharply increased critical hit ratio (1/2 instead of 1/24).",
+		},
+		{
+			NameKey = "Mind Blown",
+			Description = "Mind Blown deals damage, but the user sacrifices 1/2 of its maximum HP in recoil.",
+		},
+		{
+			NameKey = "Plasma Fists",
+			Description = "Changes Normal-type moves to Electric-type moves. Z-Move effects",
+		},
+		{
+			NameKey = "Photon Geyser",
+			Description = "Photon Geyser deals damage, but uses either the user's Attack or Special Attack stat to determine its power, whichever is higher.",
+		},
+		{
+			NameKey = "Light That Burns the Sky",
+			Description = "Light That Burns the Sky is a Psychic type Z-Move exclusive to Necrozma . It is used with Photon Geyser .",
+		},
+		{
+			NameKey = "Searing Sunraze Smash",
+			Description = "Searing Sunraze Smash is a Steel type Z-Move exclusive to Solgaleo and Dusk Mane Necrozma , introduced in Pokémon Ultra Sun & Ultra Moon . It is used with Solgaleo's signature move, Sunsteel Strike .",
+		},
+		{
+			NameKey = "Menacing Moonraze Maelstrom",
+			Description = "Menacing Moonraze Maelstrom is a Ghost type Z-Move exclusive to Lunala and Dawn Wings Necrozma , introduced in Pokémon Ultra Sun & Ultra Moon . It is used with Lunala's signature move, Moongeist Beam .",
+		},
+		{
+			NameKey = "Let's Snuggle Forever",
+			Description = "Let's Snuggle Forever is a Fairy type Z-Move exclusive to Mimikyu . It is used with Play Rough .",
+		},
+		{
+			NameKey = "Splintered Stormshards",
+			Description = "Splintered Stormshards is a Rock-type Z-Move exclusive to Lycanroc . It is used with Stone Edge .",
+		},
+		{
+			NameKey = "Clangorous Soulblaze",
+			Description = "Clangorous Soulblaze is a Dragon type Z-Move exclusive to Kommo-o , introduced in Pokémon Ultra Sun & Ultra Moon . It is used with Clanging Scales .",
+		},
+		{
+			NameKey = "Zippy Zap",
+			Description = "Zippy Zap deals damage with high priority and always results in a critical hit.",
+		},
+		{
+			NameKey = "Splishy Splash",
+			Description = "Splishy Splash deals damage and has a 30% chance to paralyze the target.",
+		},
+		{
+			NameKey = "Floaty Fall",
+			Description = "Floaty Fall deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Pika Papow",
+			Description = "Pika Papow is a Pikachu-exclusive Partner Power from Pokémon Let's Go. The power increases when Pikachu's Friendship is higher (similar to Return ), up to a maximum base power of 102 .",
+		},
+		{
+			NameKey = "Bouncy Bubble",
+			Description = "Bouncy Bubble deals damage and heals the user for half the damage dealt to the opponent.",
+		},
+		{
+			NameKey = "Buzzy Buzz",
+			Description = "Buzzy Buzz deals damage and paralyzes the target.",
+		},
+		{
+			NameKey = "Sizzly Slide",
+			Description = "Sizzly Slide deals damage and burns the opponent.",
+		},
+		{
+			NameKey = "Glitzy Glow",
+			Description = "Glitzy Glow deals damage and reduces damage from Special attacks by 50%, for 5 turns (similar to Light Screen ).",
+		},
+		{
+			NameKey = "Baddy Bad",
+			Description = "Baddy Bad deals damage and reduces damage from Physical attacks by 50%, for 5 turns (similar to Reflect ).",
+		},
+		{
+			NameKey = "Sappy Seed",
+			Description = "Sappy Seed deals damage and plants a seed on the target that drains 1/8 of its maximum HP at the end of each turn (similar to Leech Seed ).",
+		},
+		{
+			NameKey = "Freezy Frost",
+			Description = "Freezy Frost deals damage and eliminates stat changes from all Pokémon on the field (similar to Haze ).",
+		},
+		{
+			NameKey = "Sparkly Swirl",
+			Description = "Sparkly Swirl deals damage and heals all status conditions of the user's party Pokémon (similar to Aromatherapy ).",
+		},
+		{
+			NameKey = "Veevee Volley",
+			Description = "Veevee Volley is an Eevee-exclusive Partner Power from Pokémon Let's Go. The power increases when Eevee's Friendship is higher (similar to Return ), up to a maximum base power of 102 .",
+		},
+		{
+			NameKey = "Double Iron Bash",
+			Description = "Double Iron Bash deals damage, will strike twice (with 60 base power each time), and has a 30% chance of causing the target to flinch (if the target has not yet moved). Pokémon with the ability Inner Focus or those behind a Substitute cannot be made to flinch.",
+		},
+		{
+			NameKey = "Max Guard",
+			Description = "Max Guard is a Dynamax move from Pokémon Sword and Shield. Status category moves turn into Max Guard during Dynamax.",
+		},
+		{
+			NameKey = "Dynamax Cannon",
+			Description = "Damage doubles if opponent is Dynamaxed.",
+		},
+		{
+			NameKey = "Snipe Shot",
+			Description = "Ignores moves and abilities that draw in moves. High critical hit ratio.",
+		},
+		{
+			NameKey = "Jaw Lock",
+			Description = "Prevents user and opponent from switching out.",
+		},
+		{
+			NameKey = "Stuff Cheeks",
+			Description = "The user eats its held Berry, then sharply raises its Defense stat.(100% chance)",
+		},
+		{
+			NameKey = "No Retreat",
+			Description = "Raises all stats but user cannot switch out.(100% chance)",
+		},
+		{
+			NameKey = "Tar Shot",
+			Description = "Lowers the opponent's Speed and makes them weaker to Fire-type moves.(100% chance)",
+		},
+		{
+			NameKey = "Magic Powder",
+			Description = "Changes target's type to Psychic.",
+		},
+		{
+			NameKey = "Dragon Darts",
+			Description = "Dragon Darts deals damage and hits twice. In a double battle, it hits each opponent once.",
+		},
+		{
+			NameKey = "Teatime",
+			Description = "Forces all Pokémon on the field to eat their berries.",
+		},
+		{
+			NameKey = "Octolock",
+			Description = "Octolock prevents the target from fleeing or switching out, while the user remains in battle. It also lowers the target's Defense and Special Defense by one stage each every turn.",
+		},
+		{
+			NameKey = "Bolt Beak",
+			Description = "If the user attacks before the target, the power of this move is doubled.",
+		},
+		{
+			NameKey = "Fishious Rend",
+			Description = "If the user attacks before the target, the power of this move is doubled.",
+		},
+		{
+			NameKey = "Court Change",
+			Description = "Swaps the effects on either side of the field.",
+		},
+		{
+			NameKey = "Max Flare",
+			Description = "Max Flare is a Dynamax move from Pokémon Sword and Shield. Fire type moves turn into Max Flare during Dynamax.",
+		},
+		{
+			NameKey = "Max Flutterby",
+			Description = "Max Flutterby is a Dynamax move from Pokémon Sword and Shield. Bug type moves turn into Max Flutterby during Dynamax.",
+		},
+		{
+			NameKey = "Max Lightning",
+			Description = "Max Lightning is a Dynamax move from Pokémon Sword and Shield. Electric type moves turn into Max Lightning during Dynamax.",
+		},
+		{
+			NameKey = "Max Strike",
+			Description = "Max Strike is a Dynamax move from Pokémon Sword and Shield. Normal type moves turn into Max Strike during Dynamax.",
+		},
+		{
+			NameKey = "Max Knuckle",
+			Description = "Max Knuckle is a Dynamax move from Pokémon Sword and Shield. Fighting type moves turn into Max Knuckle during Dynamax.",
+		},
+		{
+			NameKey = "Max Phantasm",
+			Description = "Max Phantasm is a Dynamax move from Pokémon Sword and Shield. Ghost type moves turn into Max Phantasm during Dynamax.",
+		},
+		{
+			NameKey = "Max Hailstorm",
+			Description = "Max Hailstorm is a Dynamax move from Pokémon Sword and Shield. Ice type moves turn into Max Hailstorm during Dynamax.",
+		},
+		{
+			NameKey = "Max Ooze",
+			Description = "Max Ooze is a Dynamax move from Pokémon Sword and Shield. Poison type moves turn into Max Ooze during Dynamax.",
+		},
+		{
+			NameKey = "Max Geyser",
+			Description = "Max Geyser is a Dynamax move from Pokémon Sword and Shield. Water type moves turn into Max Geyser during Dynamax.",
+		},
+		{
+			NameKey = "Max Airstream",
+			Description = "Max Airstream is a Dynamax move from Pokémon Sword and Shield. Flying type moves turn into Max Airstream during Dynamax.",
+		},
+		{
+			NameKey = "Max Starfall",
+			Description = "Max Starfall is a Dynamax move from Pokémon Sword and Shield. Fairy type moves turn into Max Starfall during Dynamax.",
+		},
+		{
+			NameKey = "Max Wyrmwind",
+			Description = "Max Wyrmwind is a Dynamax move from Pokémon Sword and Shield. Dragon type moves turn into Max Wyrmwind during Dynamax.",
+		},
+		{
+			NameKey = "Max Mindstorm",
+			Description = "Max Overgrowth is a Dynamax move from Pokémon Sword and Shield. Grass type moves turn into Max Overgrowth during Dynamax.",
+		},
+		{
+			NameKey = "Max Rockfall",
+			Description = "Max Rockfall is a Dynamax move from Pokémon Sword and Shield. Rock type moves turn into Max Rockfall during Dynamax.",
+		},
+		{
+			NameKey = "Max Quake",
+			Description = "Max Quake is a Dynamax move from Pokémon Sword and Shield. Ground type moves turn into Max Quake during Dynamax.",
+		},
+		{
+			NameKey = "Max Darkness",
+			Description = "Max Darkness is a Dynamax move from Pokémon Sword and Shield. Dark type moves turn into Max Darkness during Dynamax.",
+		},
+		{
+			NameKey = "Max Overgrowth",
+			Description = "Max Overgrowth is a Dynamax move from Pokémon Sword and Shield. Grass type moves turn into Max Overgrowth during Dynamax.",
+		},
+		{
+			NameKey = "Max Steelspike",
+			Description = "Max Steelspike is a Dynamax move from Pokémon Sword and Shield. Steel type moves turn into Max Steelspike during Dynamax.",
+		},
+		{
+			NameKey = "Clangorous Soul",
+			Description = "Raises all user's stats but loses HP.(100% chance)",
+		},
+		{
+			NameKey = "Body Press",
+			Description = "The higher the user's Defense, the stronger the attack.",
+		},
+		{
+			NameKey = "Decorate",
+			Description = "Sharply raises target's Attack and Special Attack.(100% chance)",
+		},
+		{
+			NameKey = "Drum Beating",
+			Description = "Lowers opponent's Speed.(100% chance)",
+		},
+		{
+			NameKey = "Snap Trap",
+			Description = "Traps opponent, damaging them for 4-5 turns.(100% chance)",
+		},
+		{
+			NameKey = "Pyro Ball",
+			Description = "May burn opponent.(10% chance)",
+		},
+		{
+			NameKey = "Behemoth Blade",
+			Description = "Behemoth Blade deals damage, and if the target is Dynamaxed its power doubles to 200.",
+		},
+		{
+			NameKey = "Behemoth Bash",
+			Description = "Behemoth Bash deals damage, and if the target is Dynamaxed its power doubles to 200.",
+		},
+		{
+			NameKey = "Aura Wheel",
+			Description = "Aura Wheel deals damage and raises the user's Speed by one stage. It is the signature move of Morpeko , and its type changes based on Morpeko's form: Electric type in Full Belly Mode, or Dark type in Hangry Mode.",
+		},
+		{
+			NameKey = "Breaking Swipe",
+			Description = "Hits multiple opponents and lowers their attack.(100% chance)",
+		},
+		{
+			NameKey = "Branch Poke",
+			Description = "Branch Poke has no added effects.",
+		},
+		{
+			NameKey = "Overdrive",
+			Description = "Hits all adjacent opponents.",
+		},
+		{
+			NameKey = "Apple Acid",
+			Description = "Lowers target's Special Defense.(100% chance)",
+		},
+		{
+			NameKey = "Grav Apple",
+			Description = "Lowers the opponent's Defense stat.(100% chance)",
+		},
+		{
+			NameKey = "Spirit Break",
+			Description = "Spirit Break deals damage and lowers the target's Special Attack by one stage. Stats can be lowered to a minimum of -6 stages each.",
+		},
+		{
+			NameKey = "Strange Steam",
+			Description = "May confuse opponent.(20% chance)",
+		},
+		{
+			NameKey = "Life Dew",
+			Description = "Life Dew recovers up to 25% of the user's and its teammate's maximum HP.",
+		},
+		{
+			NameKey = "Obstruct",
+			Description = "Obstruct prevents any attacks targeted at the user from striking, for the duration of the turn. If a contact move is targeted at the user on that turn, the attacker's Defense is lowered by two stages.",
+		},
+		{
+			NameKey = "False Surrender",
+			Description = "Ignores Accuracy and Evasiveness.",
+		},
+		{
+			NameKey = "Meteor Assault",
+			Description = "User must recharge next turn.",
+		},
+		{
+			NameKey = "Eternabeam",
+			Description = "User can't move on the next turn.",
+		},
+		{
+			NameKey = "Steel Beam",
+			Description = "Steel Beam deals damage but the user loses 50% of its HP.",
+		},
+		{
+			NameKey = "Expanding Force",
+			Description = "The user attacks the target with its psychic power. This move’s power goes up and damages all opposing Pokémon on Psychic Terrain.",
+		},
+		{
+			NameKey = "Steel Roller",
+			Description = "The user attacks while destroying the terrain. This move fails when the ground hasn’t turned into a terrain.",
+		},
+		{
+			NameKey = "Scale Shot",
+			Description = "The user attacks by shooting scales two to five times in a row. This move boosts the user’s Speed stat but lowers its Defense stat.",
+		},
+		{
+			NameKey = "Meteor Beam",
+			Description = "In this two-turn attack, the user gathers space power and boosts its Sp. Atk stat, then attacks the target on the next turn.",
+		},
+		{
+			NameKey = "Shell Side Arm",
+			Description = "May poison opponent. Inflicts either Special or Physical damage, whichever is better.",
+		},
+		{
+			NameKey = "Misty Explosion",
+			Description = "The user attacks everything around it and faints upon using this move. This move’s power is increased on Misty Terrain.",
+		},
+		{
+			NameKey = "Grassy Glide",
+			Description = "High priority during Grassy Terrain. Changes",
+		},
+		{
+			NameKey = "Rising Voltage",
+			Description = "The user attacks with electric voltage rising from the ground. This move’s power doubles when the target is on Electric Terrain.",
+		},
+		{
+			NameKey = "Terrain Pulse",
+			Description = "The user utilizes the power of the terrain to attack. This move’s type and power changes depending on the terrain when it’s used.",
+		},
+		{
+			NameKey = "Skitter Smack",
+			Description = "The user skitters behind the target to attack. This also lowers the target’s Sp. Atk stat.",
+		},
+		{
+			NameKey = "Burning Jealousy",
+			Description = "Hits all opponents, and burns any that have had their stats boosted.",
+		},
+		{
+			NameKey = "Lash Out",
+			Description = "The user lashes out to vent its frustration toward the target. If its stats were lowered during the turn, the power of this move is doubled.",
+		},
+		{
+			NameKey = "Poltergeist",
+			Description = "The user attacks the target by controlling the target’s item. The move fails if the target doesn’t have an item.",
+		},
+		{
+			NameKey = "Corrosive Gas",
+			Description = "The user surrounds everything around it with highly acidic gas and melts away items they hold.",
+		},
+		{
+			NameKey = "Coaching",
+			Description = "The user properly coaches its ally Pokémon, boosting their Attack and Defense stats.",
+		},
+		{
+			NameKey = "Flip Turn",
+			Description = "After making its attack, the user rushes back to switch places with a party Pokémon in waiting.",
+		},
+		{
+			NameKey = "Triple Axel",
+			Description = "A consecutive three-kick attack that becomes more powerful with each successful hit.",
+		},
+		{
+			NameKey = "Dual Wingbeat",
+			Description = "The user slams the target with its wings. The target is hit twice in a row.",
+		},
+		{
+			NameKey = "Scorching Sands",
+			Description = "The user throws scorching sand at the target to attack. This may also leave the target with a burn.",
+		},
+		{
+			NameKey = "Jungle Healing",
+			Description = "Restores team's HP and cures status conditions.",
+		},
+		{
+			NameKey = "Wicked Blow",
+			Description = "Always results in a critical hit and ignores stat changes. Changes",
+		},
+		{
+			NameKey = "Surging Strikes",
+			Description = "Always results in a critical hit and ignores stat changes.",
+		},
+		{
+			NameKey = "Thunder Cage",
+			Description = "Deals damage and traps opponent, damaging them for 4-5 turns.",
+		},
+		{
+			NameKey = "Dragon Energy",
+			Description = "The higher the user's HP, the higher the power.",
+		},
+		{
+			NameKey = "Freezing Glare",
+			Description = "May freeze opponent.(10% chance)",
+		},
+		{
+			NameKey = "Fiery Wrath",
+			Description = "May cause flinching.(20% chance)",
+		},
+		{
+			NameKey = "Thunderous Kick",
+			Description = "Lowers opponent's Defense.(100% chance)",
+		},
+		{
+			NameKey = "Glacial Lance",
+			Description = "The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pokémon. Changes",
+		},
+		{
+			NameKey = "Astral Barrage",
+			Description = "The user attacks by sending a frightful amount of small ghosts at opposing Pokémon.",
+		},
+		{
+			NameKey = "Eerie Spell",
+			Description = "Eerie Spell deals damage and reduces the PP of the target's last-used move by 3.",
+		},
+		{
+			NameKey = "Dire Claw",
+			Description = "Dire Claw deals damage and has a 50% chance of either poisoning, paralyzing, or putting the target to sleep.",
+		},
+		{
+			NameKey = "Psyshield Bash",
+			Description = "Psyshield Bash deals damage and raises the user's Defense by one stage.",
+		},
+		{
+			NameKey = "Power Shift",
+			Description = "Power Shift switches the user's Attack stat with its Defense.",
+		},
+		{
+			NameKey = "Stone Axe",
+			Description = "Stone Axe deals damage and scatters sharp rocks around the opposing field, like Stealth Rock , which damage opponents switching into battle.",
+		},
+		{
+			NameKey = "Springtide Storm",
+			Description = "Springtide Storm deals damage and has a 30% chance of lowering the target's Attack by one stage. The move targets both opponents in a double battle (each with a 30% chance of lowering Attack).",
+		},
+		{
+			NameKey = "Mystical Power",
+			Description = "Mystical Power deals damage and raises the user's Special Attack by one stage.",
+		},
+		{
+			NameKey = "Raging Fury",
+			Description = "The user of Raging Fury attacks for 2-3 turns, during which it cannot switch out, and then becomes confused. Confused Pokémon have a 33% chance of hurting themselves each turn, for 1-4 attacking turns (50% chance in Generations 1-6 ). The damage received is as if the Pokémon attacks itself with a typeless 40 base power Physical attack.",
+		},
+		{
+			NameKey = "Wave Crash",
+			Description = "Wave Crash deals damage, but the user receives 1/3 of the damage it inflicted in recoil. In other words, if the attack does 90 HP damage to the opponent, the user will lose 30 HP.",
+		},
+		{
+			NameKey = "Chloroblast",
+			Description = "Chloroblast deals damage, but the user loses 1/2 of its maximum HP.",
+		},
+		{
+			NameKey = "Mountain Gale",
+			Description = "Mountain Gale deals damage and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Victory Dance",
+			Description = "Victory Dance raises the user's Attack, Defense and Speed by one stage each.",
+		},
+		{
+			NameKey = "Headlong Rush",
+			Description = "Headlong Rush deals damage, but lowers the user's Defense and Special Defense stats by one stage each after attacking.",
+		},
+		{
+			NameKey = "Barb Barrage",
+			Description = "Barb Barrage deals damage and has a 50% chance chance of poisoning the target. If the target is already poisoned, its power is doubled.",
+		},
+		{
+			NameKey = "Esper Wing",
+			Description = "Esper Wing deals damage and raises the user's Speed by one stage. It also has an increased critical hit ratio ( 1/8 instead of 1/24 ).",
+		},
+		{
+			NameKey = "Bitter Malice",
+			Description = "Bitter Malice deals damage and lowers the target's Attack by one stage.",
+		},
+		{
+			NameKey = "Shelter",
+			Description = "Shelter raises the user's Defense by two stages.",
+		},
+		{
+			NameKey = "Triple Arrows",
+			Description = "Triple Arrows deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ). It has a 50% chance of lowering the target's Defense by one stage, and has a 30% chance of causing the target to flinch (if the target has not yet moved).",
+		},
+		{
+			NameKey = "Infernal Parade",
+			Description = "Infernal Parade deals damage and has a 30% chance of burning the target. If the target already has a status condition, its power is doubled.",
+		},
+		{
+			NameKey = "Ceaseless Edge",
+			Description = "Ceaseless Edge deals damage and lays a trap of thorns on the opposing field, like Spikes , which damage opponents switching into battle.",
+		},
+		{
+			NameKey = "Bleakwind Storm",
+			Description = "Bleakwind Storm deals damage and has a 30% chance of lowering the target's Speed by one stage. The move targets both opponents in a double battle (each with a 30% chance of lowering Speed).",
+		},
+		{
+			NameKey = "Wildbolt Storm",
+			Description = "Wildbolt Storm deals damage and has a 20% chance of paralyzing the target. The move targets both opponents in a double battle (each with a 20% chance of paralysis).",
+		},
+		{
+			NameKey = "Sandsear Storm",
+			Description = "Sandsear Storm deals damage and has a 20% chance of burning the target. The move targets both opponents in a double battle (each with a 20% chance of burning).",
+		},
+		{
+			NameKey = "Lunar Blessing",
+			Description = "Lunar Blessing heals all status conditions of the user and its teammates, and restores 25% of their maximum HP.",
+		},
+		{
+			NameKey = "Take Heart",
+			Description = "Take Heart heals the user's status conditions, and raises the user's Special Attack and Special Defense by one stage each.",
+		},
+		{
+			NameKey = "Tera Blast",
+			Description = "Tera Blast deals damage, and its type changes to the user's Tera Type, when the Pokémon is Terastallized.",
+		},
+		{
+			NameKey = "Silk Trap",
+			Description = "Protects the user and lowers opponent's Speed on contact.",
+		},
+		{
+			NameKey = "Axe Kick",
+			Description = "May confuse opponent. If it misses, the user loses HP.",
+		},
+		{
+			NameKey = "Last Respects",
+			Description = "Damages increases the more party Pokémon have been defeated.",
+		},
+		{
+			NameKey = "Lumina Crash",
+			Description = "Harshly lowers target’s Special Defense.",
+		},
+		{
+			NameKey = "Order Up",
+			Description = "Order Up deals damage. If the user, Dondozo, has a Tastugiri in its mouth, it also raises a particular stat depending on the form of Tatsugiri:",
+		},
+		{
+			NameKey = "Jet Punch",
+			Description = "Always goes first.",
+		},
+		{
+			NameKey = "Spicy Extract",
+			Description = "Harshly lowers the opponent's Defense and sharply raises their Attack.",
+		},
+		{
+			NameKey = "Spin Out",
+			Description = "Harshly lowers user’s Speed.",
+		},
+		{
+			NameKey = "Population Bomb",
+			Description = "Hits 1-10 times in a row.",
+		},
+		{
+			NameKey = "Ice Spinner",
+			Description = "Removes effects of Terrain.",
+		},
+		{
+			NameKey = "Glaive Rush",
+			Description = "Attacks from opposing Pokémon during the next turn cannot miss and will inflict double damage.",
+		},
+		{
+			NameKey = "Revival Blessing",
+			Description = "Revives a fainted party Pokémon to half HP.",
+		},
+		{
+			NameKey = "Salt Cure",
+			Description = "Deals damage each turn; Steel and Water types are more affected.",
+		},
+		{
+			NameKey = "Triple Dive",
+			Description = "Hits 3 times in a row.",
+		},
+		{
+			NameKey = "Mortal Spin",
+			Description = "Removes entry hazards and trap move effects, and poisons opposing Pokémon.",
+		},
+		{
+			NameKey = "Doodle",
+			Description = "Changes the abilities of the user and its teammates to that of the target.",
+		},
+		{
+			NameKey = "Fillet Away",
+			Description = "Lowers HP but sharply boosts Attack, Special Attack, and Speed.",
+		},
+		{
+			NameKey = "Kowtow Cleave",
+			Description = "Always hits.",
+		},
+		{
+			NameKey = "Flower Trick",
+			Description = "Never misses; always results in a critical hit.",
+		},
+		{
+			NameKey = "Torch Song",
+			Description = "Raises user's Special Attack.",
+		},
+		{
+			NameKey = "Aqua Step",
+			Description = "Raises user's Speed.(100% chance)",
+		},
+		{
+			NameKey = "Raging Bull",
+			Description = "Type depends on the user’s form. Breaks through Reflect and Light Screen barriers.",
+		},
+		{
+			NameKey = "Make It Rain",
+			Description = "Lowers user's Special Attack. Money is earned after the battle.",
+		},
+		{
+			NameKey = "Psyblade",
+			Description = "Psyblade deals damage, and its power is boosted by 50% on Electric Terrain.",
+		},
+		{
+			NameKey = "Hydro Steam",
+			Description = "Hydro Steam deals damage, and its power is boosted by 50% in harsh sunlight, instead of being reduced.",
+		},
+		{
+			NameKey = "Ruination",
+			Description = "Halves the opponent's HP.",
+		},
+		{
+			NameKey = "Collision Course",
+			Description = "Boosted even more if it's super-effective.",
+		},
+		{
+			NameKey = "Electro Drift",
+			Description = "Boosted even more if it's super-effective.",
+		},
+		{
+			NameKey = "Shed Tail",
+			Description = "Creates a substitute, then swaps places with a party Pokémon in waiting.",
+		},
+		{
+			NameKey = "Chilly Reception",
+			Description = "Switches out and summons a snowstorm lasting 5 turns.",
+		},
+		{
+			NameKey = "Tidy Up",
+			Description = "Removes the effects of entry hazards and Substitute, and boosts user’s Attack and Speed.",
+		},
+		{
+			NameKey = "Snowscape",
+			Description = "Raises Defense of Ice types for 5 turns.",
+		},
+		{
+			NameKey = "Pounce",
+			Description = "Lowers opponent's Speed.(100% chance)",
+		},
+		{
+			NameKey = "Trailblaze",
+			Description = "Trailblaze deals damage and raises the user's speed by one stage.",
+		},
+		{
+			NameKey = "Chilling Water",
+			Description = "Lowers opponent's Attack.",
+		},
+		{
+			NameKey = "Hyper Drill",
+			Description = "Can strike through Protect/Detect.",
+		},
+		{
+			NameKey = "Twin Beam",
+			Description = "Hits twice in one turn.",
+		},
+		{
+			NameKey = "Rage Fist",
+			Description = "The more times the user has been hit by attacks, the greater the move's power.",
+		},
+		{
+			NameKey = "Armor Cannon",
+			Description = "Armor Cannon deals damage, but lowers the user's Defense and Special Defense stats by one stage each after attacking.",
+		},
+		{
+			NameKey = "Bitter Blade",
+			Description = "Bitter Blade deals damage and the user will recover 50% of the damage taken by the target.",
+		},
+		{
+			NameKey = "Double Shock",
+			Description = "After using this move, the user will no longer be Electric type.",
+		},
+		{
+			NameKey = "Gigaton Hammer",
+			Description = "Cannot be used twice in a row.",
+		},
+		{
+			NameKey = "Comeuppance",
+			Description = "Deals more damage to the opponent that last inflicted damage on it.",
+		},
+		{
+			NameKey = "Aqua Cutter",
+			Description = "Aqua Cutter deals damage and has an increased critical-hit ratio.",
+		},
+		{
+			NameKey = "Blazing Torque",
+			Description = "Blazing Torque deals damage and has a 30% chance of burning the target.",
+		},
+		{
+			NameKey = "Wicked Torque",
+			Description = "Wicked Torque deals damage and has a 10% chance of putting the target to sleep.",
+		},
+		{
+			NameKey = "Noxious Torque",
+			Description = "Noxious Torque deals damage and has a 30% chance of poisoning the target.",
+		},
+		{
+			NameKey = "Combat Torque",
+			Description = "Combat Torque deals damage and has a 30% chance of paralyzing the target.",
+		},
+		{
+			NameKey = "Magical Torque",
+			Description = "Magical Torque deals damage and has a 30% chance of confusing the target.",
+		},
+		{
+			NameKey = "Blood Moon",
+			Description = "The user unleashes the full brunt of its spirit from a full moon that shines as red as blood. This move can't be used twice in a row.",
+		},
+		{
+			NameKey = "Matcha Gotcha",
+			Description = "The user fires a blast of tea that it mixed. The user's HP is restored by up to half the damage taken by the target. This may also leave the target with a burn.",
+		},
+		{
+			NameKey = "Syrup Bomb",
+			Description = "Lowers opponent's Speed each turn for 3 turns.",
+		},
+		{
+			NameKey = "Ivy Cudgel",
+			Description = "Ivy Cudgel deals damage and has an increased critical hit ratio ( 1/8 instead of 1/24 ). Its type changes based on the mask worn by Ogerpon :",
+		},
+		{
+			NameKey = "Electro Shot",
+			Description = "The user absorbs electricity on the first turn and raises its Special Attack; on the second turn, Electro Shot deals damage.",
+		},
+		{
+			NameKey = "Tera Starstorm",
+			Description = "With the power of its crystals, the user bombards and eliminates the target. When used by Terapagos in its Stellar Form, this move damages all opposing Pokémon.",
+		},
+		{
+			NameKey = "Fickle Beam",
+			Description = "Fickle Beam deals damage with 80 base power, however there is a 30% chance for the power to double to 160.",
+		},
+		{
+			NameKey = "Burning Bulwark",
+			Description = "The user’s intensely hot fur protects it from attacks and also burns any attacker that makes direct contact with it.",
+		},
+		{
+			NameKey = "Thunderclap",
+			Description = "Strikes before a target's move.",
+		},
+		{
+			NameKey = "Mighty Cleave",
+			Description = "The user wields the light that has accumulated atop its head to cleave the target. This move hits even if the target protects itself.",
+		},
+		{
+			NameKey = "Tachyon Cutter",
+			Description = "Guaranteed to hit twice in a row.",
+		},
+		{
+			NameKey = "Hard Press",
+			Description = "The target is crushed with an arm, a claw, or the like to inflict damage. The more HP the target has left, the greater the move’s power.",
+		},
+		{
+			NameKey = "Dragon Cheer",
+			Description = "The user raises its allies’ morale with a draconic cry so that their future attacks have a heightened chance of landing critical hits. This rouses Dragon types more.",
+		},
+		{
+			NameKey = "Alluring Voice",
+			Description = "The user attacks the target using its angelic voice. This also confuses the target if its stats have been boosted during the turn.",
+		},
+		{
+			NameKey = "Temper Flare",
+			Description = "Spurred by desperation, the user attacks the target. This move’s power is doubled if the user’s previous move failed.",
+		},
+		{
+			NameKey = "Supercell Slam",
+			Description = "The user electrifies its body and drops onto the target to inflict damage. If this move misses, the user takes damage instead.",
+		},
+		{
+			NameKey = "Psychic Noise",
+			Description = "Deals damage and prevents target from healing.",
+		},
+		{
+			NameKey = "Upper Hand",
+			Description = "Strikes before a target's priority move.",
+		},
+		{
+			NameKey = "Malignant Chain",
+			Description = "The user pours toxins into the target by wrapping them in a toxic, corrosive chain. This may also leave the target badly poisoned.",
 		},
 	},
 	-- The list of Pokémon abilities below must remain in the same order
 	AbilityNames = {
-		"Puanteur", --Puanteur english:Stench
-		"Crachin", --Crachin english:Drizzle
-		"Turbo", --Turbo english:Speed Boost
-		"Armurbaston", --Armurbaston english:Battle Armor
-		"Fermete", --Fermete english:Sturdy
-		"Moiteur", --Moiteur english:Damp
-		"Echauffement", --Echauffement english:Limber
-		"Voile Sable", --Voile Sable english:Sand Veil
-		"Statik", --Statik english:Static
-		"Absorb Volt", --Absorb Volt english:Volt Absorb
-		"Absorb Eau", --Absorb Eau english:Water Absorb
-		"Benet", --Benet english:Oblivious
-		"Ciel Gris", --Ciel Gris english:Cloud Nine
-		"Oeil Compose", --Oeil Compose english:Compoundeyes
-		"Insomnia", --Insomnia english:Insomnia
-		"Deguisement", --Deguisement english:Color Change
-		"Vaccin", --Vaccin english:Immunity
-		"Torche", --Torche english:Flash Fire
-		"Ecran Poudre", --Ecran Poudre english:Shield Dust
-		"Tempo Perso", --Tempo Perso english:Own Tempo
-		"Ventouse", --Ventouse english:Suction Cups
-		"Intimidation", --Intimidation english:Intimidate
-		"Marque Ombre", --Marque Ombre english:Shadow Tag
-		"Peau Dure", --Peau Dure english:Rough Skin
-		"Garde Mystik", --Garde Mystik english:Wonder Guard
-		"Levitation", --Levitation english:Levitate
-		"Pose Spore", --Pose Spore english:Effect Spore
-		"Synchro", --Synchro english:Synchronize
-		"Corps Sain", --Corps Sain english:Clear Body
-		"Medic Nature", --Medic Nature english:Natural Cure
-		"Paratonnerre", --Paratonnerre english:Lightningrod
-		"Serenite", --Serenite english:Serene Grace
-		"Glissade", --Glissade english:Swift Swim
-		"Chlorophyle", --Chlorophyle english:Chlorophyll
-		"Lumiatirance", --Lumiatirance english:Illuminate
-		"Calque", --Calque english:Trace
-		"Coloforce", --Coloforce english:Huge Power
-		"Point Poison", --Point Poison english:Poison Point
-		"Attention", --Attention english:Inner Focus
-		"Armumagma", --Armumagma english:Magma Armor
-		"Ignifu-Voile", --Ignifu-Voile english:Water Veil
-		"Magnepiege", --Magnepiege english:Magnet Pull
-		"Anti-Bruit", --Anti-Bruit english:Soundproof
-		"Cuvette", --Cuvette english:Rain Dish
-		"Sable Volant", --Sable Volant english:Sand Stream
-		"Pression", --Pression english:Pressure
-		"Isograisse", --Isograisse english:Thick Fat
-		"Matinal", --Matinal english:Early Bird
-		"Corps Ardent", --Corps Ardent english:Flame Body
-		"Fuite", --Fuite english:Run Away
-		"Regard Vif", --Regard Vif english:Keen Eye
-		"Hyper Cutter", --Hyper Cutter english:Hyper Cutter
-		"Ramassage", --Ramassage english:Pickup
-		"Absenteisme", --Absenteisme english:Truant
-		"Agitation", --Agitation english:Hustle
-		"Joli Sourire", --Joli Sourire english:Cute Charm
-		"Plus", --Plus english:Plus
-		"Minus", --Minus english:Minus
-		"Meteo", --Meteo english:Forecast
-		"Glue", --Glue english:Sticky Hold
-		"Mue", --Mue english:Shed Skin
-		"Cran", --Cran english:Guts
-		"Ecaille Spe.", --Ecaille Spe. english:Marvel Scale
-		"Suintement", --Suintement english:Liquid Ooze
-		"Engrais", --Engrais english:Overgrow
-		"Brasier", --Brasier english:Blaze
-		"Torrent", --Torrent english:Torrent
-		"Essaim", --Essaim english:Swarm
-		"Tete De Roc", --Tete De Roc english:Rock Head
-		"Secheresse", --Secheresse english:Drought
-		"Piege", --Piege english:Arena Trap
-		"Esprit Vital", --Esprit Vital english:Vital Spirit
-		"Ecran Fumee", --Ecran Fumee english:White Smoke
-		"Force Pure", --Force Pure english:Pure Power
-		"Coque Armure", --Coque Armure english:Shell Armor
-		"Cacophonie", --Cacophonie english:Cacophony
-		"Air Lock", --Air Lock english:Air Lock
+		"Puanteur",
+		"Crachin",
+		"Turbo",
+		"Armurbaston",
+		"Fermeté",
+		"Moiteur",
+		"Échauffement",
+		"Voile Sable",
+		"Statik",
+		"Absorb Volt",
+		"Absorb Eau",
+		"Benêt",
+		"Ciel Gris",
+		"Œil Composé",
+		"Insomnia",
+		"Déguisement",
+		"Vaccin",
+		"Torche",
+		"Écran Poudre",
+		"Tempo Perso",
+		"Ventouse",
+		"Intimidation",
+		"Marque Ombre",
+		"Peau Dure",
+		"Garde Mystik",
+		"Lévitation",
+		"Pose Spore",
+		"Synchro",
+		"Corps Sain",
+		"Médic Nature",
+		"Paratonnerre",
+		"Sérénité",
+		"Glissade",
+		"Chlorophylle",
+		"Lumiattirance",
+		"Calque",
+		"Coloforce",
+		"Point Poison",
+		"Attention",
+		"Armumagma",
+		"Ignifu-Voile",
+		"Magnépiège",
+		"Anti-Bruit",
+		"Cuvette",
+		"Sable Volant",
+		"Pression",
+		"Isograisse",
+		"Matinal",
+		"Corps Ardent",
+		"Fuite",
+		"Regard Vif",
+		"Hyper Cutter",
+		"Ramassage",
+		"Absentéisme",
+		"Agitation",
+		"Joli Sourire",
+		"Plus",
+		"Minus",
+		"Météo",
+		"Glue",
+		"Mue",
+		"Cran",
+		"Écaille Spéciale",
+		"Suintement",
+		"Engrais",
+		"Brasier",
+		"Torrent",
+		"Essaim",
+		"Tête de Roc",
+		"Sécheresse",
+		"Piège Sable",
+		"Esprit Vital",
+		"Écran Fumée",
+		"Force Pure",
+		"Coque Armure",
+		"Air Lock",
+		"Pieds Confus",
+		"Motorisé",
+		"Rivalité",
+		"Impassible",
+		"Rideau Neige",
+		"Gloutonnerie",
+		"Colérique",
+		"Délestage",
+		"Ignifugé",
+		"Simple",
+		"Peau Sèche",
+		"Télécharge",
+		"Poing de Fer",
+		"Soin Poison",
+		"Adaptabilité",
+		"Multi-Coups",
+		"Hydratation",
+		"Force Soleil",
+		"Pied Véloce",
+		"Normalise",
+		"Sniper",
+		"Garde Magik",
+		"Annule Garde",
+		"Frein",
+		"Technicien",
+		"Feuille Garde",
+		"Maladresse",
+		"Brise Moule",
+		"Chanceux",
+		"Boom Final",
+		"Anticipation",
+		"Prédiction",
+		"Inconscient",
+		"Lentiteintée",
+		"Filtre",
+		"Début Calme",
+		"Querelleur",
+		"Lavabo",
+		"Corps Gel",
+		"Solide Roc",
+		"Alerte Neige",
+		"Cherche Miel",
+		"Fouille",
+		"Téméraire",
+		"Multitype",
+		"Don Floral",
+		"Mauvais Rêve",
+		"Pickpocket",
+		"Sans Limite",
+		"Contestation",
+		"Tension",
+		"Acharné",
+		"Défaitiste",
+		"Corps Maudit",
+		"Cœur Soin",
+		"Garde Amie",
+		"Armurouillée",
+		"Heavy Metal",
+		"Light Metal",
+		"Multiécaille",
+		"Rage Poison",
+		"Rage Brûlure",
+		"Récolte",
+		"Télépathe",
+		"Lunatique",
+		"Envelocape",
+		"Toxitouche",
+		"Régé-Force",
+		"Cœur de Coq",
+		"Baigne Sable",
+		"Peau Miracle",
+		"Analyste",
+		"Illusion",
+		"Imposteur",
+		"Infiltration",
+		"Momie",
+		"Impudence",
+		"Cœur Noble",
+		"Phobique",
+		"Miroir Magik",
+		"Herbivore",
+		"Farceur",
+		"Force Sable",
+		"Épine de Fer",
+		"Mode Transe",
+		"Victorieux",
+		"TurboBrasier",
+		"Téra-Voltage",
+		"Aroma-Voile",
+		"Flora-Voile",
+		"Bajoues",
+		"Protéen",
+		"Toison Épaisse",
+		"Magicien",
+		"Pare-Balles",
+		"Battant",
+		"Prognathe",
+		"Peau Gelée",
+		"Gluco-Voile",
+		"Déclic Tactique",
+		"Ailes Bourrasque",
+		"Méga Blaster",
+		"Toison Herbue",
+		"Symbiose",
+		"Griffe Dure",
+		"Peau Féérique",
+		"Poisseux",
+		"Peau Céleste",
+		"Amour Filial",
+		"Aura Ténébreuse",
+		"Aura Féérique",
+		"Aura Inversée",
+		"Mer Primaire",
+		"Terre Finale",
+		"Souffle Delta",
+		"Endurance",
+		"Escampette",
+		"Repli Tactique",
+		"Sable Humide",
+		"Cruauté",
+		"Bouclier-Carcan",
+		"Filature",
+		"Aquabulle",
+		"Expert Acier",
+		"Dracolère",
+		"Chasse-Neige",
+		"Longue Portée",
+		"Hydrata-Son",
+		"Prioguérison",
+		"Peau Électrique",
+		"Surf Caudal",
+		"Banc",
+		"Fantômasque",
+		"Synergie",
+		"Rassemblement",
+		"Corrosion",
+		"Hypersommeil",
+		"Prestance Royale",
+		"Expuls'Organes",
+		"Danseuse",
+		"Batterie",
+		"Boule de Poils",
+		"Corps Coloré",
+		"Animacœur",
+		"Mèche Rebelle",
+		"Receveur",
+		"Osmose",
+		"Boost Chimère",
+		"Système Alpha",
+		"Créa-Élec",
+		"Créa-Psy",
+		"Créa-Brume",
+		"Créa-Herbe",
+		"Métallo-Garde",
+		"Spectro-Bouclier",
+		"Prisme-Armure",
+		"Cérébro-Force",
+		"Lame Indomptable",
+		"Égide Inflexible",
+		"Libéro",
+		"Ramasse Ball",
+		"Effilochage",
+		"Propulseur",
+		"Armure Miroir",
+		"Dégobage",
+		"Nerfs d’Acier",
+		"Turbine",
+		"Punk Rock",
+		"Expul’Sable",
+		"Écailles Glacées",
+		"Mûrissement",
+		"Tête de Gel",
+		"Cercle d’Énergie",
+		"Mimétisme",
+		"Brise-Barrière",
+		"Boost Acier",
+		"Corps Condamné",
+		"Âme Vagabonde",
+		"Entêtement",
+		"Gaz Inhibiteur",
+		"Voile Pastel",
+		"Déclic Fringale",
+		"Tir Vif",
+		"Poing Invisible",
+		"Breuvage Suspect",
+		"Transistor",
+		"Dent de Dragon",
+		"Blanche Ruade",
+		"Sombre Ruade",
+		"Osmose Équine",
+		"Osmose Équine",
+		"Odeur Tenace",
+		"Semencier",
+		"Thermodynamique",
+		"Courroupace",
+		"Sel Purificateur",
+		"Bien Cuit",
+		"Aéroporté",
+		"Chien de Garde",
+		"Porte-Roche",
+		"Turbine Éolienne",
+		"Supermutation",
+		"Commandant",
+		"Grecharge",
+		"Paléosynthèse",
+		"Charge Quantique",
+		"Corps en Or",
+		"Urne du Fléau",
+		"Épée du Fléau",
+		"Bois du Fléau",
+		"Perles du Fléau",
+		"Pouls Orichalque",
+		"Moteur à Hadrons",
+		"Opportuniste",
+		"Ruminant",
+		"Incisif",
+		"Général Suprême",
+		"Collab",
+		"Dépôt Toxique",
+		"Armure Caudale",
+		"Absorbe-Terre",
+		"Force Fongique",
+		"Aux Petits Soins",
+		"Œil Révélateur",
+		"Force Mémorielle",
+		"Force Mémorielle",
+		"Force Mémorielle",
+		"Force Mémorielle",
+		"Chaîne Toxique",
+		"Nectar Mielleux",
+		"Téramorphose",
+		"Téra-Carapace",
+		"Téraformation 0",
+		"Emprise Toxique",
 	},
 	-- The list below must remain in the same order.
 	-- These are custom hand-written ability descriptions, only edit the "Description" and "DescriptionEmerald" values
 	AbilityDescriptions = {
 		{
 			NameKey = "Stench",
-			Description = "While at the head of the party, decreases the wild encounter rate by 50%.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "In the Battle Pyramid, the wild encounter rate is only decreased by 25%.", -- NEEDS TRANSLATION
+			Description = "This Pokemon's attacks without a chance to make the target flinch gain a 10% chance to make the target flinch. Outside of battle If a Pokémon with Stench is the leading party Pokémon, wild Pokémon are only half as likely to appear.",
 		},
 		{
 			NameKey = "Drizzle",
-			Description = "Changes weather to rain when switched in. In rain, Water moves have 50% increased power and Fire moves have 50% decreased power. Thunder will always hit, Solarbeam deals 50% reduced damage, and Moonlight, Synthesis, and Morning Sun heal for 1/4 max HP", -- NEEDS TRANSLATION
+			Description = "Drizzle creates a rain shower when the ability-bearer enters battle. The effect lasts 5 turns, unless it is cleared via Air Lock or Cloud Nine or replaced by another weather condition.",
 		},
 		{
 			NameKey = "Speed Boost",
-			Description = "At the end of each turn, raises Speed stat by one stage.", -- NEEDS TRANSLATION
+			Description = "Its Speed stat is gradually boosted.",
 		},
 		{
 			NameKey = "Battle Armor",
-			Description = "Prevents this Pokémon from receiving critical hits.", -- NEEDS TRANSLATION
+			Description = "Battle Armor prevents the Pokémon from receiving a critical hit.",
 		},
 		{
 			NameKey = "Sturdy",
-			Description = "Cannot be hit by one-hit KO moves (Fissure, Horn Drill, Guillotine, Sheer Cold).", -- NEEDS TRANSLATION
+			Description = "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
 		},
 		{
 			NameKey = "Damp",
-			Description = "Prevents allied and opposing Pokémon from using self-destructing moves (Self-Destruct, Explosion).", -- NEEDS TRANSLATION
+			Description = "Damp prevents all Pokémon on the field from using the moves Selfdestruct and Explosion . It also prevents damage (to the Damp Pokémon only) from the ability Aftermath .",
 		},
 		{
 			NameKey = "Limber",
-			Description = "Cannot be paralyzed. Gaining this Ability, like through Skill Swap, will cure Paralysis.", -- NEEDS TRANSLATION
+			Description = "The Pokémon is protected from paralysis.",
 		},
 		{
 			NameKey = "Sand Veil",
-			Description = "Increases Evasion by 20% in a sandstorm, and this Pokémon takes no end of turn damage in a sandstorm.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, decreases the wild encounter rate by 50% in a sandstorm.", -- NEEDS TRANSLATION
+			Description = "Sand Veil raises the ability-bearer's evasion by 20% in a sandstorm . It also gives immunity to sandstorm damage (if they are not already protected by being Ground / Rock / Steel type). Outside of battle If a Pokémon with Sand Veil is the leading party Pokémon while travelling in a sandstorm, wild Pokémon are only half as likely to appear.",
 		},
 		{
 			NameKey = "Static",
-			Description = "When hit by a contact move, 1/3 chance to paralyze the attacker.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, wild encounters have a 50% chance of being against an Electric Pokémon, if possible.", -- NEEDS TRANSLATION
+			Description = "If a Pokémon with Static is hit by a move making contact, there is a 30% chance the foe will become paralyzed. Outside of battle If a Pokémon with Static is the leading party Pokémon, it is 50% more likely that a wild Pokémon encountered will be Electric type.",
 		},
 		{
 			NameKey = "Volt Absorb",
-			Description = "Restores 25% max HP instead of taking damage if hit by a damaging Electric move.", -- NEEDS TRANSLATION
+			Description = "A Pokémon with Volt Absorb heals 1/4 of its maximum HP when hit by an Electric -type attack, including Thunder Wave .",
 		},
 		{
 			NameKey = "Water Absorb",
-			Description = "Restores 25% max HP instead of taking damage if hit by a damaging Water move.", -- NEEDS TRANSLATION
+			Description = "A Pokémon with Water Absorb heals 1/4 of its maximum HP when hit by a Water -type attack.",
 		},
 		{
 			NameKey = "Oblivious",
-			Description = "Cannot be infatuated. Gaining this Ability, like through Skill Swap, will cure infatuation.", -- NEEDS TRANSLATION
+			Description = "Oblivious makes the Pokémon immune to gender-based moves and abilities, specifically Attract , Captivate and Cute Charm .",
 		},
 		{
 			NameKey = "Cloud Nine",
-			Description = "Negates all effects of weather, but does not end the weather.", -- NEEDS TRANSLATION
+			Description = "Cloud Nine suppresses all effects brought on by weather, including move power increases, end-of-turn damage, accuracy changes, relevant abilities and so on.",
 		},
 		{
-			NameKey = "Compoundeyes",
-			Description = "Increases the Accuracy of moves by 30% (i.e. Thunder has an Accuracy of 70%. With this ability, it would instead have 70% x 1.3 = 91% Accuracy).", -- NEEDS TRANSLATION
-			DescriptionEmerald = "Increases the chance of finding a wild Pokémon holding an item.", -- NEEDS TRANSLATION
+			NameKey = "Compound Eyes",
+			Description = "Compound Eyes raises the ability-bearer's accuracy by 30%. Outside of battle If a Pokémon with Compound Eyes is first in the party, Pokémon that can be holding items have that chance increase from 50% to 60% (for common items), 5% to 20% (for uncommon items) or 1% to 5% (for rare items).",
 		},
 		{
 			NameKey = "Insomnia",
-			Description = "Cannot be put to sleep. If this Pokémon uses Rest, it will fail. Gaining this Ability, like through Skill Swap, will cure Sleep.", -- NEEDS TRANSLATION
+			Description = "Insomnia prevents the ability-bearer from falling asleep, both from moves by other Pokémon like Sing , and self-inflicted sleep like Rest . If a sleeping Pokémon aquires Insomnia (e.g. from Worry Seed , it will wake up on its next turn.",
 		},
 		{
 			NameKey = "Color Change",
-			Description = "When hit by a damaging move, changes this Pokémon's type to match the move's type.", -- NEEDS TRANSLATION
+			Description = "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move. This effect is prevented if the move had a secondary effect removed by the Sheer Force Ability.",
 		},
 		{
 			NameKey = "Immunity",
-			Description = "Cannot be inflicted with Poison. Gaining this Ability, like through Skill Swap, will cure Poison.", -- NEEDS TRANSLATION
+			Description = "Prevents the Pokémon from getting poisoned.",
 		},
 		{
 			NameKey = "Flash Fire",
-			Description = "Immune to Fire moves. The first time this Pokémon is hit by a Fire move, its own Fire moves gain 50% power.", -- NEEDS TRANSLATION
+			Description = "When a Pokémon with Flash Fire is hit by a Fire-type move, it does not deal damage but instead raises the power of the bearer's Fire-type moves by 50%. Subsequent hits do not raise the power even more, but the effect remains while the ability-bearer is in battle.",
 		},
 		{
 			NameKey = "Shield Dust",
-			Description = "Unaffected by the additional effects of other Pokémon's damaging moves. For example, a Pokémon with this ability cannot be frozen by Blizzard or made to flinch by Fake Out.", -- NEEDS TRANSLATION
+			Description = "Blocks the added effects of attacks taken.",
 		},
 		{
 			NameKey = "Own Tempo",
-			Description = "Cannot be confused. Gaining this Ability, like through Skill Swap, will cure confusion.", -- NEEDS TRANSLATION
+			Description = "Prevents the Pokémon from becoming confused.",
 		},
 		{
 			NameKey = "Suction Cups",
-			Description = "Prevents this Pokémon from being forced to switch out.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "Increases the chance of getting bites while fishing.", -- NEEDS TRANSLATION
+			Description = "Suction Cups prevents opponents forcing the ability-bearer to switch out or flee via the moves Roar , Whirlwind , Circle Throw , or Dragon Tail , or the item Red Card . Outside of battle If a Pokémon with Suction Cups is the leading party Pokémon, the chance of hooking a Pokémon during fishing increases.",
 		},
 		{
 			NameKey = "Intimidate",
-			Description = "Lowers all opposing Pokémons' Attack stats by one stage when this Pokémon enters battle.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, 50% chance to prevent a wild encounter that would have been with a Pokémon 5 or more levels lower than this Pokémon.", -- NEEDS TRANSLATION
+			Description = "Intimidate lower's the Attack of all opponents by one stage when the ability-bearer switches in (including the start of a battle). Stats can be lowered to a minimum of -6 stages each. Outside of battle If a Pokémon with Intimidate is the leading party Pokémon, wild Pokémon are 50% less likely to be lower level.",
 		},
 		{
 			NameKey = "Shadow Tag",
-			Description = "Prevents opposing Pokémon from switching out or fleeing.", -- NEEDS TRANSLATION
+			Description = "Prevents the foe from escaping.",
 		},
 		{
 			NameKey = "Rough Skin",
-			Description = "When hit by a contact move, the attacker takes 1/16 of their max HP as damage.", -- NEEDS TRANSLATION
+			Description = "When a Pokémon with Rough Skin is hit by a move that makes contact, the attacker receives damage equal to 1/8 of their maximum HP. Multi-hit moves (e.g. DoubleSlap ) activate Rough Skin for each strike.",
 		},
 		{
 			NameKey = "Wonder Guard",
-			Description = "Immune to all damaging moves that are not super effective, except for Struggle, Beat Up, Future Sight, and Doom Desire. Cannot be copied by Role Play or swapped by Skill Swap.", -- NEEDS TRANSLATION
+			Description = "This Pokemon can only be damaged by supereffective moves and indirect damage.",
 		},
 		{
 			NameKey = "Levitate",
-			Description = "Immune to Ground moves. This immunity is lost if this Pokémon uses Ingrain.", -- NEEDS TRANSLATION
+			Description = "Levitate causes the Pokémon to be raised (like Flying -type Pokémon). Raised Pokémon are not affected by Ground -type moves, Spikes , Toxic Spikes nor Arena Trap . Full details in glossary .",
 		},
 		{
 			NameKey = "Effect Spore",
-			Description = "When hit by a contact move, 10% chance for the attacker to become afflicted with Poison, Paralysis, or Sleep; with an equal chance of each. It's possible the random status won't affect the attacker, in the case that it is immune to that status.", -- NEEDS TRANSLATION
+			Description = "Contact may poison or cause paralysis or sleep.",
 		},
 		{
 			NameKey = "Synchronize",
-			Description = "When a Pokémon inflicts Poison, Paralysis, or Burn on this Pokémon, that Pokémon will be inflicted with the same status condition, if possible.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, there is a 50% chance that a wild encounter Pokémon will have the same nature as this Pokémon.", -- NEEDS TRANSLATION
+			Description = "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same non-volatile status condition.",
 		},
 		{
 			NameKey = "Clear Body",
-			Description = "Prevents stat reductions caused by opposing Pokémons' moves and abilities.", -- NEEDS TRANSLATION
+			Description = "Prevents other Pokémon from lowering its stats.",
 		},
 		{
 			NameKey = "Natural Cure",
-			Description = "Heals any status conditions on switching out.", -- NEEDS TRANSLATION
+			Description = "All status problems heal when it switches out.",
 		},
 		{
-			NameKey = "Lightningrod",
-			Description = "All single-target Electric moves used by opposing Pokémon are redirected to this Pokémon.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, Trainers registered with the PokéNav's Match Call feature will call twice as often.", -- NEEDS TRANSLATION
+			NameKey = "Lightning Rod",
+			Description = "Lightning Rod forces all single-target Electric -type moves - used by any other Pokémon on the field - to target this Pokémon, and with 100% accuracy. This includes the status move Thunder Wave. When hit by the move, it deals no damage to the ability-bearer but raises its Special Attack by one stage. Stats can be raised to a maximum of +6 stages each.",
 		},
 		{
 			NameKey = "Serene Grace",
-			Description = "Doubles the chance of secondary effects from this Pokémon's moves.", -- NEEDS TRANSLATION
+			Description = "This Pokemon's moves have their secondary effect chance doubled. This effect stacks with the Rainbow effect, except for secondary effects that cause the target to flinch.",
 		},
 		{
 			NameKey = "Swift Swim",
-			Description = "Doubles Speed stat during rain.", -- NEEDS TRANSLATION
+			Description = "Swift Swim doubles the ability-bearer's Speed during rain .",
 		},
 		{
 			NameKey = "Chlorophyll",
-			Description = "Doubles Speed stat when the weather is sunny.", -- NEEDS TRANSLATION
+			Description = "Chlorophyll doubles the ability-bearer's Speed during bright sunshine .",
 		},
 		{
 			NameKey = "Illuminate",
-			Description = "Increases the wild encounter rate by 100%.", -- NEEDS TRANSLATION
+			Description = "Illuminate has no effect in battle. Outside of battle If a Pokémon with Illuminate is the leading party Pokémon, wild Pokémon are twice as likely to appear.",
 		},
 		{
 			NameKey = "Trace",
-			Description = "Copies a random opposing Pokémon's Ability when this Pokémon enters battle.", -- NEEDS TRANSLATION
+			Description = "The Pokémon copies a foe's Ability.",
 		},
 		{
 			NameKey = "Huge Power",
-			Description = "Doubles this Pokémon's Attack stat.", -- NEEDS TRANSLATION
+			Description = "Raises the Pokémon's Attack stat.",
 		},
 		{
 			NameKey = "Poison Point",
-			Description = "When hit by a contact move, 1/3 chance to inflict Poison on the attacker.", -- NEEDS TRANSLATION
+			Description = "Contact with the Pokémon may poison the attacker.",
 		},
 		{
 			NameKey = "Inner Focus",
-			Description = "Prevents flinching.", -- NEEDS TRANSLATION
+			Description = "Inner Focus prevents the Pokémon from flinching, for example when attacked by a move like Headbutt .",
 		},
 		{
 			NameKey = "Magma Armor",
-			Description = "Cannot be frozen. Gaining this Ability, like through Skill Swap, will cure Freeze.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "Decreases the time needed to hatch an Egg by half.", -- NEEDS TRANSLATION
+			Description = "Magma Armor prevents the Pokémon from becoming frozen, for example from moves like Blizzard . Outside of battle If a Pokémon with Magma Armor (or Flame Body or Steam Engine ) and a Pokémon Egg are amongst the party Pokémon, the number of steps required to hatch the egg are halved.",
 		},
 		{
 			NameKey = "Water Veil",
-			Description = "Cannot be burned. Gaining this Ability, like through Skill Swap, will cure a Burn.", -- NEEDS TRANSLATION
+			Description = "Prevents the Pokémon from getting a burn.",
 		},
 		{
 			NameKey = "Magnet Pull",
-			Description = "Prevents allied and opposing Steel Pokémon from switching out.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, wild encounters have a 50% chance of being against a Steel Pokémon, if possible.", -- NEEDS TRANSLATION
+			Description = "Magnet Pull prevents Steel type Pokémon from switching out of battle or fleeing. Outside of battle If a Pokémon with Magnet Pull is the leading party Pokémon, it is 50% more likely that a wild Pokémon encountered will be Steel type.",
 		},
 		{
 			NameKey = "Soundproof",
-			Description = "Immune to sound-based moves. These moves are: GrassWhistle, Growl, Heal Bell, Hyper Voice, Metal Sound, Perish Song, Roar, Screech, Sing, Snore, Supersonic, Uproar", -- NEEDS TRANSLATION
+			Description = "This Pokemon is immune to sound-based moves, unless it used the move.",
 		},
 		{
 			NameKey = "Rain Dish",
-			Description = "Heals this Pokémon for 1/16 max HP after each turn during rain.", -- NEEDS TRANSLATION
+			Description = "A Pokémon with Rain Dish will recover 1/16 of its maximum HP during rain, after each turn.",
 		},
 		{
 			NameKey = "Sand Stream",
-			Description = "Changes weather to a sandstorm when switched in. After each turn during a sandstorm, each Pokémon takes 1/16 max HP damage, unless they are Rock, Ground, or Steel.", -- NEEDS TRANSLATION
+			Description = "On switch-in, this Pokemon summons Sandstorm.",
 		},
 		{
 			NameKey = "Pressure",
-			Description = "When a moves targets this Pokémon, one additional PP is deducted. A Pokémon can still target this Pokémon with a move if it only has 1 PP remaining for it.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, 50% chance that a wild encounter Pokémon will be the highest level it could appear.", -- NEEDS TRANSLATION
+			Description = "Pressure makes any attack targeted at the ability-bearer - regardless of whether it hits - use 2 PP instead of 1. Outside of battle If a Pokémon with Pressure is the leading party Pokémon, wild Pokémon are 50% more likely to be higher level.",
 		},
 		{
 			NameKey = "Thick Fat",
-			Description = "Damage received from Ice or Fire moves is halved.", -- NEEDS TRANSLATION
+			Description = "Thick Fat reduces the damage taken from Fire -type and Ice -type moves by 50%. Interestingly, many Pokémon possessing this ability already take reduced damage from those types. A Dewgong or Walrein with Thick Fat would take 1/8 normal damage when hit by an Ice-type move.",
 		},
 		{
 			NameKey = "Early Bird",
-			Description = "Spends half as many turns asleep, rounded down.", -- NEEDS TRANSLATION
+			Description = "The Pokémon awakens quickly from sleep.",
 		},
 		{
 			NameKey = "Flame Body",
-			Description = "When hit by a contact move, 1/3 chance to burn the attacker.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "Decreases the time needed to hatch an Egg by half.", -- NEEDS TRANSLATION
+			Description = "If a Pokémon with Flame Body is hit by a move that makes contact, there is a 30% chance the attacker will become burned. Outside of battle If a Pokémon with Flame Body (or Magma Armor or Steam Engine ) and a Pokémon Egg are both in the party Pokémon, the number of steps required to hatch the egg are halved.",
 		},
 		{
 			NameKey = "Run Away",
-			Description = "Running away from wild encounters always succeeds.", -- NEEDS TRANSLATION
+			Description = "Run Away allows the bearer to flee a battle with a wild Pokémon without fail, even if the opposing Pokémon has used a move like Mean Look or Bind , or has an ability such as Arena Trap . Pokémon with Run Away cannot switch out for another Pokémon, only flee. It does not allow the Pokémon to flee from Trainer battles.",
 		},
 		{
 			NameKey = "Keen Eye",
-			Description = "This Pokémon's Accuracy cannot be lowered.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, 50% chance to prevent a wild encounter that would have been with a Pokémon 5 or more levels lower than this Pokémon.", -- NEEDS TRANSLATION
+			Description = "Keen Eye prevents the Pokémon from losing accuracy, for example from moves like Sand-Attack . Outside of battle If a Pokémon with Keen Eye is the leading party Pokémon, wild Pokémon are 50% less likely to be lower level.",
 		},
 		{
 			NameKey = "Hyper Cutter",
-			Description = "This Pokémon's Attack stat cannot be lowered by other Pokémon.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "If this Pokémon uses Cut in the overworld, the radius of the Cut tall grass is increased by one.", -- NEEDS TRANSLATION
+			Description = "Hyper Cutter prevents the bearer's Attack stat from being lowered by other Pokémon, through moves such as Growl or abilities such as Intimidate . It does not prevent self-inflicted decreases, for example from Superpower .",
 		},
 		{
 			NameKey = "Pickup",
-			Description = "After winning a battle, there is a 10% chance that this Pokémon will be holding an item, if it was not already holding one.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "The types of items obtained vary according to this Pokémon's level, or the current level of the Battle Pyramid.", -- NEEDS TRANSLATION
+			Description = "When another Pokémon on the field uses a single-use held item, a Pokémon with Pickup will obtain the used item (if they are not already holding anything) and it can be used again. Outside of battle When a battle ends, any party Pokémon with Pickup has a 10% chance of picking up an item (if they are not already holding an item).",
 		},
 		{
 			NameKey = "Truant",
-			Description = "Every other turn using a move in battle, this Pokémon instead loafs around and does nothing.", -- NEEDS TRANSLATION
+			Description = "This Pokemon skips every other turn instead of using a move.",
 		},
 		{
 			NameKey = "Hustle",
-			Description = "Increases Attack stat by 50%, but decreases the Accuracy of physical moves by 20%.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, 50% chance that a wild encounter Pokémon will be the highest level it could appear.", -- NEEDS TRANSLATION
+			Description = "Hustle increases the ability-bearer's Attack by 50%, however, it also reduces the Accuracy of all Physical moves by 20%. Outside of battle If a Pokémon with Hustle is the leading party Pokémon, wild Pokémon are 50% more likely to be higher level.",
 		},
 		{
 			NameKey = "Cute Charm",
-			Description = "When hit by a contact move, 1/3 chance to inflict infatuation on the attacker. Has no effect if this Pokémon is genderless, or the same gender as the attacker.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, 2/3 chance that a wild encounter will be forced to the opposite gender of this Pokémon, if possible.", -- NEEDS TRANSLATION
+			Description = "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender.. Outside of battle If a Pokémon with Cute Charm is the leading party Pokémon, the chance of encountering a Pokémon of the opposite gender is 2/3 .",
 		},
 		{
 			NameKey = "Plus",
-			Description = "When in a Double Battle where any active Pokémon has the Ability Minus, this Pokémon's Special Attack stat increases by 50%.", -- NEEDS TRANSLATION
+			Description = "Ups Sp. Atk if another Pokémon has Plus or Minus.",
 		},
 		{
 			NameKey = "Minus",
-			Description = "When in a Double Battle where any active Pokémon has the Ability Plus, this Pokémon's Special Attack stat increases by 50%.", -- NEEDS TRANSLATION
+			Description = "Ups Sp. Atk if another Pokémon has Plus or Minus.",
 		},
 		{
 			NameKey = "Forecast",
-			Description = "Castform's type changes with the weather. Fire while sunny, Water while raining, or Ice while hailing. Cloud Nine and Air Lock disable this effect. This ability has no effect if a Pokémon other than Castform obtains this ability.", -- NEEDS TRANSLATION
+			Description = "Castform transforms with the weather.",
 		},
 		{
 			NameKey = "Sticky Hold",
-			Description = "This Pokémon's held item cannot be taken or removed.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "Increases the chance of getting bites while fishing.", -- NEEDS TRANSLATION
+			Description = "Sticky Hold prevents held items from being taken or switched. Outside of battle If a Pokémon with Sticky Hold is the leading party Pokémon, the chance of hooking a Pokémon during fishing increases.",
 		},
 		{
 			NameKey = "Shed Skin",
-			Description = "1/3 chance at the end of every turn to cure major status conditions (Burn, Poison, Paralysis, Freeze, Sleep).", -- NEEDS TRANSLATION
+			Description = "The Pokémon may heal its own status problems.",
 		},
 		{
 			NameKey = "Guts",
-			Description = "Increases this Pokémon's Attack stat by 50% when affected by a major status condition (Burn, Poison, Paralysis, Freeze, Sleep), and ignores the Attack reduction of Burn.", -- NEEDS TRANSLATION
+			Description = "Guts raises the ability-bearer's Attack by 50% when inflicted by a major status ailment (poison, burn, paralysis, freeze or sleep). If burnt, the Pokémon does not suffer the usual drop in Attack. All other effects of the status condition remain, e.g. losing HP each turn (poison, burn), speed drop (paralysis) or being unable to attack ",
 		},
 		{
 			NameKey = "Marvel Scale",
-			Description = "Increases this Pokémon's Defense stat by 50% when affected by a major status condition (Burn, Poison, Paralysis, Freeze, Sleep).", -- NEEDS TRANSLATION
+			Description = "Marvel Scale raises the ability-bearer's Defense by 50% when inflicted by a major status ailment (poison, burn, paralysis, freeze or sleep). All effects of the status condition remain, e.g. losing HP each turn (poison, burn), speed drop (paralysis) or being unable to attack (paralysis, freeze, sleep).",
 		},
 		{
 			NameKey = "Liquid Ooze",
-			Description = "HP draining moves used against this Pokémon cause the attacker to instead lose the HP they would have healed.", -- NEEDS TRANSLATION
+			Description = "Damages attackers using any draining move.",
 		},
 		{
 			NameKey = "Overgrow",
-			Description = "If this Pokémon is at or below 1/3 of its max HP, the power of their Grass moves is increased by 50%.", -- NEEDS TRANSLATION
+			Description = "Overgrow increases the power of Grass -type moves by 50% (1.5x) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch ).",
 		},
 		{
 			NameKey = "Blaze",
-			Description = "If this Pokémon is at or below 1/3 of its max HP, the power of their Fire moves is increased by 50%.", -- NEEDS TRANSLATION
+			Description = "Blaze increases the power of Fire -type moves by 50% (1.5x) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch ).",
 		},
 		{
 			NameKey = "Torrent",
-			Description = "If this Pokémon is at or below 1/3 of its max HP, the power of their Water moves is increased by 50%.", -- NEEDS TRANSLATION
+			Description = "Torrent increases the power of Water -type moves by 50% (1.5x) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch ).",
 		},
 		{
 			NameKey = "Swarm",
-			Description = "If this Pokémon is at or below 1/3 of its max HP, the power of their Bug moves is increased by 50%.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "Increases the frequency at which wild Pokémons' cries are heard in the overworld.", -- NEEDS TRANSLATION
+			Description = "Swarm increases the power of Bug -type moves by 50% (1.5x) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch ). Outside of battle If a Pokémon with Swarm is the leading party Pokémon, wild Pokémon are twice as likely to appear.",
 		},
 		{
 			NameKey = "Rock Head",
-			Description = "Prevents recoil damage from moves, except for Struggle.", -- NEEDS TRANSLATION
+			Description = "Protects the Pokémon from recoil damage.",
 		},
 		{
 			NameKey = "Drought",
-			Description = "Changes weather to sunny when switched in. In sun, Fire moves have 50% increased power and Water moves have 50% decreased power. Removes the charging turn for Solarbeam, lowers the Accuracy of Thunder to 50%, and causes Moonlight, Synthesis, and Morning Sun to heal 2/3 max HP.", -- NEEDS TRANSLATION
+			Description = "On switch-in, this Pokemon summons Sunny Day.",
 		},
 		{
 			NameKey = "Arena Trap",
-			Description = "Prevents opposing Pokémon from switching out or fleeing, except Flying-types and Pokémon with Levitate.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "Increases the wild encounter rate by 100%.", -- NEEDS TRANSLATION
+			Description = "Arena Trap prevents opponents from fleeing or switching out. Raised Pokémon are not affected. Raised Pokémon are any Flying types or those under the effects of Levitate , Magnet Rise or Telekinesis . Full details in glossary . Outside of battle If a Pokémon with Arena Trap is the leading party Pokémon, wild Pokémon are twice as likely to appear.",
 		},
 		{
 			NameKey = "Vital Spirit",
-			Description = "Cannot be put to sleep. If this Pokémon tries to use Rest, it will fail. Gaining this Ability, like through Skill Swap, will cure Sleep.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, 50% chance that a wild encounter will be at the highest possible level that Pokémon could appear.", -- NEEDS TRANSLATION
+			Description = "Vital Spirit prevents the ability-bearer from falling asleep. This means that it also prevents the use of the move Rest . Outside of battle If a Pokémon with Vital Spirit is the leading party Pokémon, wild Pokémon are 50% more likely to be higher level.",
 		},
 		{
 			NameKey = "White Smoke",
-			Description = "Prevents stat reductions caused by opposing Pokémons' moves and abilities.", -- NEEDS TRANSLATION
-			DescriptionEmerald = "While at the head of the party, decreases the wild encounter rate by 50%.", -- NEEDS TRANSLATION
+			Description = "Prevents other Pokémon from lowering its stats. Outside of battle If a Pokémon with White Smoke is the leading party Pokémon, wild Pokémon are only half as likely to appear.",
 		},
 		{
 			NameKey = "Pure Power",
-			Description = "Doubles this Pokémon's Attack stat.", -- NEEDS TRANSLATION
+			Description = "Raises the Pokémon's Attack stat.",
 		},
 		{
 			NameKey = "Shell Armor",
-			Description = "Prevents this Pokémon from receiving critical hits.", -- NEEDS TRANSLATION
-		},
-		{
-			NameKey = "Cacophony",
-			Description = "Immune to sound-based moves. These moves are: GrassWhistle, Growl, Heal Bell, Hyper Voice, Metal Sound, Perish Song, Roar, Screech, Sing, Snore, Supersonic, Uproar.", -- NEEDS TRANSLATION
+			Description = "Shell Armor prevents the Pokémon from receiving a critical hit.",
 		},
 		{
 			NameKey = "Air Lock",
-			Description = "Negates all effects of weather, but does not end the weather.", -- NEEDS TRANSLATION
+			Description = "Air Lock suppresses all effects brought on by weather, including move power increases, end-of-turn damage, accuracy changes, relevant abilities and so on.",
+		},
+		{
+			NameKey = "Tangled Feet",
+			Description = "Raises evasion if the Pokémon is confused.",
+		},
+		{
+			NameKey = "Motor Drive",
+			Description = "Raises Speed if hit by an Electric-type move.",
+		},
+		{
+			NameKey = "Rivalry",
+			Description = "Deals more damage to a Pokémon of same gender.",
+		},
+		{
+			NameKey = "Steadfast",
+			Description = "Raises Speed each time the Pokémon flinches.",
+		},
+		{
+			NameKey = "Snow Cloak",
+			Description = "Snow Cloak raises ability-bearer's evasion by 20% in a hail storm. It also gives immunity to damage by hail (if they are not already protected by being Ice type). Outside of battle If a Pokémon with Snow Cloak is the leading party Pokémon while travelling in a hail storm/blizzard, wild Pokémon are only half as likely to appear.",
+		},
+		{
+			NameKey = "Gluttony",
+			Description = "A Pokémon with Gluttony will use a pinch berry when its HP drops to 50%, rather than the usual 25%. Pinch berries are: Figy, Wiki, Mago, Aguav, Iapapa, Liechi, Ganlon, Salac, Petaya, Apicot, Lansat, Starf, Micle and Custap. (Their descriptions state that they work in a pinch. )",
+		},
+		{
+			NameKey = "Anger Point",
+			Description = "Anger Point raises the ability-bearer's Attack to its maximum level - +6 stages or 4x usual power - when a move targeting it receives a critical hit.",
+		},
+		{
+			NameKey = "Unburden",
+			Description = "Raises Speed if a held item is used.",
+		},
+		{
+			NameKey = "Heatproof",
+			Description = "Heatproof reduces the damage taken from Fire -type moves by 50%. It also halves the damage from a burn, from 1/8 to 1/16 of the Pokémon's maximum HP.",
+		},
+		{
+			NameKey = "Simple",
+			Description = "When one of this Pokemon's stat stages is raised or lowered, the amount is doubled.",
+		},
+		{
+			NameKey = "Dry Skin",
+			Description = "Dry Skin causes several effects: When hit by a Water -type attack, instead of damage it heals 1/4 of this Pokémon's maximum HP. When hit by a Fire -type attack, it does 25% more damage. During bright sunshine the Pokémon loses 1/8 of its maximum HP each turn. During rain the Pokémon recovers 1/8 of its maximum HP each turn.",
+		},
+		{
+			NameKey = "Download",
+			Description = "On switch-in, this Pokemon's Attack or Special Attack is raised by 1 stage based on the weaker combined defensive stat of all opposing Pokemon. Attack is raised if their Defense is lower, and Special Attack is raised if their Special Defense is the same or lower.",
+		},
+		{
+			NameKey = "Iron Fist",
+			Description = "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
+		},
+		{
+			NameKey = "Poison Heal",
+			Description = "Restores HP if the Pokémon is poisoned.",
+		},
+		{
+			NameKey = "Adaptability",
+			Description = "Adaptability increases the effectiveness of STAB moves from the usual 1.5x to 2x. For example, a Water -type Pokémon using Surf (base power 90) would normally get an effective power of 135. With Adaptability it would be 180 instead.",
+		},
+		{
+			NameKey = "Skill Link",
+			Description = "This Pokemon's multi-hit attacks always hit the maximum number of times. Triple Kick and Triple Axel do not check accuracy for the second and third hits.",
+		},
+		{
+			NameKey = "Hydration",
+			Description = "A Pokémon with Hydration will cure itself of any status conditions during rain, at the end of each turn. This includes self-inflicted conditions such as from using Rest .",
+		},
+		{
+			NameKey = "Solar Power",
+			Description = "During harsh sunlight, Solar Power raises the ability-bearer's Special Attack by 50%, but it also loses 1/8 of its maximum HP after each turn.",
+		},
+		{
+			NameKey = "Quick Feet",
+			Description = "If this Pokemon has a non-volatile status condition, its Speed is multiplied by 1.5. This Pokemon ignores the paralysis effect of halving Speed.",
+		},
+		{
+			NameKey = "Normalize",
+			Description = "This Pokemon's moves are changed to be Normal type and have their power multiplied by 1.2. This effect comes before other effects that change a move's type.",
+		},
+		{
+			NameKey = "Sniper",
+			Description = "Sniper increases the power of critical hits by 1.5x. This means a critical hit will deal 2.25x normal damage instead of 1.5x.",
+		},
+		{
+			NameKey = "Magic Guard",
+			Description = "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
+		},
+		{
+			NameKey = "No Guard",
+			Description = "No Guard ensures that all attacks used by, and targeted at, the ability-bearer hit without fail. This includes moves used on a Pokémon in the hidden stages of the moves Fly , Dive , Dig and Shadow Force . Outside of battle If a Pokémon with No Guard is the leading party Pokémon, wild Pokémon are twice as likely to appear.",
+		},
+		{
+			NameKey = "Stall",
+			Description = "The Pokémon moves after all other Pokémon do.",
+		},
+		{
+			NameKey = "Technician",
+			Description = "This Pokemon's moves of 60 power or less have their power multiplied by 1.5, including Struggle. This effect comes after a move's effect changes its own power.",
+		},
+		{
+			NameKey = "Leaf Guard",
+			Description = "Leaf Guard prevents the bearer from succumbing to major status ailments (sleep, burns, poisoning, paralysis or freezing) during sunny weather. It does not prevent minor status ailments such as Confusion or Infatuation, nor does it prevent self-inflicted status conditions such as from using Rest .",
+		},
+		{
+			NameKey = "Klutz",
+			Description = "The Pokémon can't use any held items.",
+		},
+		{
+			NameKey = "Mold Breaker",
+			Description = "Mold Breaker prevents a target's ability from affecting moves that the Mold Breaker Pokémon uses. It only affects abilities that change the power, accuracy or other effects of moves.",
+		},
+		{
+			NameKey = "Super Luck",
+			Description = "Super Luck raises the ability-bearer's critical-hit ratio by one stage (for most moves this increases from a 1/16 chance to 1/8 ).",
+		},
+		{
+			NameKey = "Aftermath",
+			Description = "If an attacker faints a Pokémon with Aftermath using a contact move, the attacker will lose 1/4 of their maximum HP.",
+		},
+		{
+			NameKey = "Anticipation",
+			Description = "A Pokémon with Anticipation will shudder upon entering battle, if an opponent has a move that is super-effective against it, or a One-Hit-KO move ( Fissure , Horn Drill , Guillotine or Sheer Cold ). It only activates when the ability-bearer switches in, not when an opponent switches in.",
+		},
+		{
+			NameKey = "Forewarn",
+			Description = "Determines what moves a foe has.",
+		},
+		{
+			NameKey = "Unaware",
+			Description = "Ignores any stat changes in the Pokémon.",
+		},
+		{
+			NameKey = "Tinted Lens",
+			Description = "Powers up “not very effective” moves.",
+		},
+		{
+			NameKey = "Filter",
+			Description = "Filter reduces the damage taken from super-effective attacks by 25%. For example, a Dark-type move used against a Psychic-type Pokémon with Filter would deal 1.5x the usual damage instead of 2x. A double weakness would be reduced from 4x to 3x.",
+		},
+		{
+			NameKey = "Slow Start",
+			Description = "Temporarily halves Attack and Speed.",
+		},
+		{
+			NameKey = "Scrappy",
+			Description = "Enables moves to hit Ghost-type Pokémon.",
+		},
+		{
+			NameKey = "Storm Drain",
+			Description = "Storm Drain forces all single-target Water -type moves- used by any other Pokémon on the field - to target this Pokémon, and with 100% accuracy. When hit by the move, it deals no damage to the ability-bearer but raises its Special Attack by one stage. Stats can be raised to a maximum of +6 stages each. ",
+		},
+		{
+			NameKey = "Ice Body",
+			Description = "A Pokémon with Ice Body will recover 1/16 of its maximum HP during hail, after each turn. It also grants immunity to the hailstorm damage, if not already immune.",
+		},
+		{
+			NameKey = "Solid Rock",
+			Description = "Solid Rock reduces the damage taken from super-effective attacks by 25%. For example, a Water-type move used against a Rock-type Pokémon with Solid Rock would deal 1.5x the usual damage instead of 2x. A double weakness would be reduced from 4x to 3x.",
+		},
+		{
+			NameKey = "Snow Warning",
+			Description = "Snow Warning creates a hailstorm when the ability-bearer enters battle. The effect lasts 5 turns, unless it is cleared via Air Lock or Cloud Nine or replaced by another weather condition. ",
+		},
+		{
+			NameKey = "Honey Gather",
+			Description = "Honey Gather has no effect in battle. Outside of battle When a battle ends, any party Pokémon with Honey Gather may pick up honey as a held item (if they are not already holding an item).",
+		},
+		{
+			NameKey = "Frisk",
+			Description = "The Pokémon can check a foe's held item.",
+		},
+		{
+			NameKey = "Reckless",
+			Description = "This Pokemon's attacks with recoil or crash damage have their power multiplied by 1.2. Does not affect Struggle.",
+		},
+		{
+			NameKey = "Multitype",
+			Description = "If this Pokemon is an Arceus, its type changes to match its held Plate.",
+		},
+		{
+			NameKey = "Flower Gift",
+			Description = "Flower Gift raises the Attack and Special Defense of all party Pokémon by 50% during harsh sunlight.",
+		},
+		{
+			NameKey = "Bad Dreams",
+			Description = "Bad Dreams causes all sleeping opponents to lose 1/8 of their maximum HP at the end of each turn.",
+		},
+		{
+			NameKey = "Pickpocket",
+			Description = "Steals an item when hit by another Pokémon.",
+		},
+		{
+			NameKey = "Sheer Force",
+			Description = "Sheer Force increases the power of moves that have beneficial secondary effects by 30%, but removes those additional effects.",
+		},
+		{
+			NameKey = "Contrary",
+			Description = "Makes stat changes have an opposite effect.",
+		},
+		{
+			NameKey = "Unnerve",
+			Description = "Makes the foe nervous and unable to eat Berries.",
+		},
+		{
+			NameKey = "Defiant",
+			Description = "Defiant raises the ability-bearer's Attack by two stages when hit by a stat-lowering move. Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Defeatist",
+			Description = "When the HP of a Pokémon with Defeatist falls below 50%, its Attack and Special Attack stats are halved.",
+		},
+		{
+			NameKey = "Cursed Body",
+			Description = "May disable a move used on the Pokémon.",
+		},
+		{
+			NameKey = "Healer",
+			Description = "May heal an ally's status conditions.",
+		},
+		{
+			NameKey = "Friend Guard",
+			Description = "Reduces damage done to allies.",
+		},
+		{
+			NameKey = "Weak Armor",
+			Description = "When a Pokémon with Weak Armor is hit by a physical move, its Defense drops one stage, but its Speed increases by one stage. Stats can be raised to a maximum of +6 stages each, or lowered to a minimum of -6 stages each.",
+		},
+		{
+			NameKey = "Heavy Metal",
+			Description = "Heavy Metal doubles the Pokémon's weight in battle. Increasing weight affects these moves: Grass Knot (higher damage when receiving) Heat Crash (higher damage when attacking, lower damage when receiving) Heavy Slam (higher damage when attacking, lower damage when receiving) Low Kick (higher damage when receiving)",
+		},
+		{
+			NameKey = "Light Metal",
+			Description = "Light Metal halves the Pokémon's weight in battle. Decreasing weight affects these moves: Grass Knot (lower damage when receiving) Heat Crash (lower damage when attacking, higher damage when receiving) Heavy Slam (lower damage when attacking, higher damage when receiving) Low Kick (lower damage when receiving)",
+		},
+		{
+			NameKey = "Multiscale",
+			Description = "Reduces damage when HP is full.",
+		},
+		{
+			NameKey = "Toxic Boost",
+			Description = "Powers up physical attacks when poisoned.",
+		},
+		{
+			NameKey = "Flare Boost",
+			Description = "Powers up special attacks when burned.",
+		},
+		{
+			NameKey = "Harvest",
+			Description = "May create another Berry after one is used.",
+		},
+		{
+			NameKey = "Telepathy",
+			Description = "Pokémon with the Telepathy ability will not take damage from teammates in double and triple battles. This affects moves such as Surf and Earthquake , which normally hit all Pokémon on the field apart from the user.",
+		},
+		{
+			NameKey = "Moody",
+			Description = "Raises one stat and lowers another.",
+		},
+		{
+			NameKey = "Overcoat",
+			Description = "Overcoat makes the Pokémon immune to residual damage from weather conditions (specifically Hail and Sandstorm ).",
+		},
+		{
+			NameKey = "Poison Touch",
+			Description = "May poison targets when a Pokémon makes contact.",
+		},
+		{
+			NameKey = "Regenerator",
+			Description = "A Pokémon with Regenerator restores 1/3 of its maximum HP when switching out.",
+		},
+		{
+			NameKey = "Big Pecks",
+			Description = "Big Pecks prevents the ability-bearer's Defense stat from being lowered, for example via Tail Whip .",
+		},
+		{
+			NameKey = "Sand Rush",
+			Description = "Sand Rush doubles the ability-bearer's Speed during a sandstorm .",
+		},
+		{
+			NameKey = "Wonder Skin",
+			Description = "Wonder Skin halves the accuracy of all status moves targeted at the ability-bearer. It does not affect self-inflicted status moves like Reflect or Swords Dance , nor does it affect the secondary conditions of attacking moves like Flamethrower .",
+		},
+		{
+			NameKey = "Analytic",
+			Description = "Boosts move power when the Pokémon moves last.",
+		},
+		{
+			NameKey = "Illusion",
+			Description = "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon.",
+		},
+		{
+			NameKey = "Imposter",
+			Description = "It transforms itself into the Pokémon it is facing.",
+		},
+		{
+			NameKey = "Infiltrator",
+			Description = "Infiltrator ignores the effects of Reflect , Light Screen and Safeguard . In other words, if the opponent has used Safeguard, Toxic would still badly poison them.",
+		},
+		{
+			NameKey = "Mummy",
+			Description = "Contact with this Pokémon spreads this Ability.",
+		},
+		{
+			NameKey = "Moxie",
+			Description = "Moxie increases the user's Attack one stage upon fainting an opponent. Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Justified",
+			Description = "Justified raises the ability-bearer's Attack by one stage when hit by a damaging Dark -type move. The Attack rises for every hit of the move Beat Up . Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Rattled",
+			Description = "When a Pokémon with Rattled is hit by a Bug , Ghost or Dark type move, its Speed is raised one stage (up to the usual maximum of +6 stages).",
+		},
+		{
+			NameKey = "Magic Bounce",
+			Description = "Reflects status- changing moves.",
+		},
+		{
+			NameKey = "Sap Sipper",
+			Description = "Boosts Attack when hit by a Grass-type move.",
+		},
+		{
+			NameKey = "Prankster",
+			Description = "This Pokemon's non-damaging moves have their priority increased by 1. Opposing Dark-type Pokemon are immune to these moves, and any move called by these moves, if the resulting user of the move has this Ability.",
+		},
+		{
+			NameKey = "Sand Force",
+			Description = "Sand Force raises the power of Ground , Rock and Steel type moves by 30% during a sandstorm . It also grants immunity to the sandstorm damage, if not already immune (currently this only applies to Shellos since all other Pokémon with the ability are already immune).",
+		},
+		{
+			NameKey = "Iron Barbs",
+			Description = "When a Pokémon with Iron Barbs is hit by a move that makes contact, the attacker receives damage equal to 1/8 of their maximum HP. Multi-hit moves (e.g. DoubleSlap ) activate Iron Barbs for each strike.",
+		},
+		{
+			NameKey = "Zen Mode",
+			Description = "Zen Mode changes the ability-bearer's form to Zen Mode when their health falls below 50%. Currently it only applies to Darmanitan, whose form change makes it Fire/Psychic type and changes its stats around.",
+		},
+		{
+			NameKey = "Victory Star",
+			Description = "Boosts the accuracy of its allies and itself.",
+		},
+		{
+			NameKey = "Turboblaze",
+			Description = "Turboblaze prevents a target's ability from affecting moves that the Turboblaze Pokémon uses. It only affects abilities that change the power, accuracy or other effects of moves. ",
+		},
+		{
+			NameKey = "Teravolt",
+			Description = "Teravolt prevents a target's ability from affecting moves that the Teravolt Pokémon uses. It only affects abilities that change the power, accuracy or other effects of moves. For example, Zekrom would be able to hit Bronzong (having Levitate ) using a Ground -type move like Earth Power . Ground type moves would still not affect Flying types.",
+		},
+		{
+			NameKey = "Aroma Veil",
+			Description = "Protects allies from attacks that limit their move choices.",
+		},
+		{
+			NameKey = "Flower Veil",
+			Description = "Flower Veil prevents ally Grass-type Pokémon's stats from being lowered, in double and triple battles.",
+		},
+		{
+			NameKey = "Cheek Pouch",
+			Description = "Cheek Pouch restores the bearer's HP when a Berry is consumed, on top of the berry's usual effects. So for example, it may cure a status condition and restore HP, or restore more HP than normal.",
+		},
+		{
+			NameKey = "Protean",
+			Description = "Protean changes the Pokémon's type to that of its previously used attack.",
+		},
+		{
+			NameKey = "Fur Coat",
+			Description = "Fur Coat reduces damage taken from physical attacks by 50%.",
+		},
+		{
+			NameKey = "Magician",
+			Description = "The Pokémon steals the held item of a Pokémon it hits with a move.",
+		},
+		{
+			NameKey = "Bulletproof",
+			Description = "Bulletproof makes the Pokémon immune to ball and bomb moves. Moves affected Acid Spray Aura Sphere Barrage Beak Blast Bullet Seed Egg Bomb Electro Ball Energy Ball Focus Blast Gyro Ball Ice Ball Magnet Bomb Mist Ball Mud Bomb Octazooka Pollen Puff Rock Blast Rock Wrecker Searing Shot Seed Bomb Shadow Ball Sludge Bomb Weather Ball Zap Cannon.",
+		},
+		{
+			NameKey = "Competitive",
+			Description = "Competitive raises the ability-bearer's Special Attack by two stages when hit by a stat-lowering move. Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Strong Jaw",
+			Description = "This Pokemon's bite-based attacks have their power multiplied by 1.5.",
+		},
+		{
+			NameKey = "Refrigerate",
+			Description = "Refrigerate causes all Normal -type attacking moves used by the Pokémon to become Ice -type, and increase in power by 20%. Ice-type Pokémon also gain STAB from those moves (which means an effective increase of 80%).",
+		},
+		{
+			NameKey = "Sweet Veil",
+			Description = "Sweet Veil prevents this Pokémon and its allies from falling asleep, for example from moves like Hypnosis .",
+		},
+		{
+			NameKey = "Stance Change",
+			Description = "Stance Change is exclusive to Aegislash . When using a damage-dealing move, Aegislash switches to its Blade Forme. When using the move King's Shield , Aegislash switches to its Shield Forme. The form change occurs when the appropriate move is selected, regardless of whether the attack goes ahead (e.g. prevented by paralysis).",
+		},
+		{
+			NameKey = "Gale Wings",
+			Description = "Gives priority to Flying-type moves.",
+		},
+		{
+			NameKey = "Mega Launcher",
+			Description = "This Pokemon's pulse moves have their power multiplied by 1.5. Heal Pulse restores 3/4 of a target's maximum HP, rounded half down.",
+		},
+		{
+			NameKey = "Grass Pelt",
+			Description = "Boosts the Defense stat in Grassy Terrain.",
+		},
+		{
+			NameKey = "Symbiosis",
+			Description = "The Pokémon can pass an item to an ally.",
+		},
+		{
+			NameKey = "Tough Claws",
+			Description = "Tough Claws increases the power of moves that make contact. Most Physical-category moves are contact moves.",
+		},
+		{
+			NameKey = "Pixilate",
+			Description = "Pixilate causes all Normal -type attacking moves used by the Pokémon to become Fairy -type, and increase in power by 20%. Fairy-type Pokémon also gain STAB from those moves (which means an effective increase of 80%).",
+		},
+		{
+			NameKey = "Gooey",
+			Description = "Contact with the Pokémon lowers the attacker's Speed stat.",
+		},
+		{
+			NameKey = "Aerilate",
+			Description = "Aerilate causes all Normal -type attacking moves used by the Pokémon to become Flying -type, and increase in power by 20%. Flying-type Pokémon also gain STAB from those moves (which means an effective increase of 80%).",
+		},
+		{
+			NameKey = "Parental Bond",
+			Description = "Parental Bond allows the ability-bearer to attack twice. The second attack hits with 25% of the power, so in effect it is equivalent to a 25% boost to all attacks. Parental Bond is the signature ability of Mega Kangaskhan . When the ability is in use, the mother and child each attack.",
+		},
+		{
+			NameKey = "Dark Aura",
+			Description = "Dark Aura raises the power of Dark-type moves by 33% for all Pokémon on the field (not just the ability-bearer). It is the signature ability of Yveltal .",
+		},
+		{
+			NameKey = "Fairy Aura",
+			Description = "Fairy Aura raises the power of Fairy-type moves by 33%, for all Pokémon on the field (not just the ability-bearer). It is the signature ability of Xerneas .",
+		},
+		{
+			NameKey = "Aura Break",
+			Description = "While this Pokemon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33.",
+		},
+		{
+			NameKey = "Primordial Sea",
+			Description = "On switch-in, the weather becomes Primordial Sea, which includes all the effects of Rain Dance and prevents damaging Fire-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Desolate Land Abilities.",
+		},
+		{
+			NameKey = "Desolate Land",
+			Description = "On switch-in, the weather becomes Desolate Land, which includes all the effects of Sunny Day and prevents damaging Water-type moves from executing. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Delta Stream or Primordial Sea Abilities.",
+		},
+		{
+			NameKey = "Delta Stream",
+			Description = "On switch-in, the weather becomes Delta Stream, which removes the weaknesses of the Flying type from Flying-type Pokemon. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by the Desolate Land or Primordial Sea Abilities.",
+		},
+		{
+			NameKey = "Stamina",
+			Description = "Stamina raises the bearer's Defense by one stage when it is attacked by any move. Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Wimp Out",
+			Description = "Wimp Out causes the bearer to switch out (or flee in a wild battle) when its HP falls below 50%.",
+		},
+		{
+			NameKey = "Emergency Exit",
+			Description = "Switches out when HP falls below 50%.",
+		},
+		{
+			NameKey = "Water Compaction",
+			Description = "Water Compaction raises the bearer's Defense by 2 stages when it is hit by a Water-type move. Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Merciless",
+			Description = "The Pokémon's attacks become critical hits if the target is poisoned.",
+		},
+		{
+			NameKey = "Shields Down",
+			Description = "Shields Down causes the Pokémon to changes its appearance and stats depending on its remaining HP. When the Pokémon's HP is over 50%, it has higher defenses and is immune to status conditions. When its HP falls below 50%, the outer shell breaks and the Pokémon has higher attack.",
+		},
+		{
+			NameKey = "Stakeout",
+			Description = "Stakeout enables the Pokémon to deal twice the normal damage to any Pokémon that switches in or enters the field mid-battle.",
+		},
+		{
+			NameKey = "Water Bubble",
+			Description = "Water Bubble reduces damage taken from Fire-type moves by 50%, and doubles the power of Water-type moves used by the ability-bearer. It also prevents the Pokémon from being burned.",
+		},
+		{
+			NameKey = "Steelworker",
+			Description = "Steelworker increases the power of Steel-type moves used by this Pokémon by 50%.",
+		},
+		{
+			NameKey = "Berserk",
+			Description = "Berserk raises the Pokémon's Special Attack by one stage when its HP falls below 50%.",
+		},
+		{
+			NameKey = "Slush Rush",
+			Description = "Boosts the Pokémon's Speed stat in a hailstorm.",
+		},
+		{
+			NameKey = "Long Reach",
+			Description = "The Pokémon uses its moves without making contact with the target.",
+		},
+		{
+			NameKey = "Liquid Voice",
+			Description = "This Pokemon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		},
+		{
+			NameKey = "Triage",
+			Description = "This Pokemon's healing moves have their priority increased by 3.",
+		},
+		{
+			NameKey = "Galvanize",
+			Description = "Normal-type moves become Electric-type moves and their power boosted.",
+		},
+		{
+			NameKey = "Surge Surfer",
+			Description = "Surge Surfer doubles the bearer's Speed when Electric Terrain is active.",
+		},
+		{
+			NameKey = "Schooling",
+			Description = "Schooling changes Wishiwashi into its School Form, if its HP is above 25% and Wishiwashi is at least level 20. If its HP falls below 25%, Wishiwashi will revert back to Solo Form. Schooling cannot be removed or replaced via moves like Skill Swap or the Mummy ability.",
+		},
+		{
+			NameKey = "Disguise",
+			Description = "Disguise allows the bearer to avoid damage for one attack, in a similar way to Substitute .",
+		},
+		{
+			NameKey = "Battle Bond",
+			Description = "Battle Bond causes Greninja to transform into Ash-Greninja when it KOs an opponent. Battle Bond also increases the power of Greninja's signature move Water Shuriken .",
+		},
+		{
+			NameKey = "Power Construct",
+			Description = "Power Construct is unique to Zygarde. When Zygarde 10% Forme or Zygarde 50% Forme falls below half HP, it changes into Zygarde Complete Forme. As Complete Forme has a higher base HP than the other two Formes, its HP is also restored by the same amount the maximum HP increased.",
+		},
+		{
+			NameKey = "Corrosion",
+			Description = "Corrosion allows the bearer to poison any Pokémon, including Steel and Poison types.",
+		},
+		{
+			NameKey = "Comatose",
+			Description = "This Pokemon is considered to be asleep and cannot become affected by a non-volatile status condition or Yawn.",
+		},
+		{
+			NameKey = "Queenly Majesty",
+			Description = "Prevents use of priority moves.",
+		},
+		{
+			NameKey = "Innards Out",
+			Description = "When a Pokémon with Innards Out faints, it deals damage to the opponent equal to amount of damage it took on the final blow.",
+		},
+		{
+			NameKey = "Dancer",
+			Description = "After another Pokemon uses a dance move, this Pokemon uses the same move. The copied move is subject to all effects that can prevent a move from being executed. A move used through this Ability cannot be copied again by other Pokemon with this Ability.",
+		},
+		{
+			NameKey = "Battery",
+			Description = "Battery allows the Pokémon to raise the power of teammates' special moves.",
+		},
+		{
+			NameKey = "Fluffy",
+			Description = "Fluffy reduces damage from contact moves by 50%, but Fire-type moves do double damage. Fire-type moves that make contact do regular damage.",
+		},
+		{
+			NameKey = "Dazzling",
+			Description = "Dazzling makes the Pokémon immune to high-priority moves (i.e. those with a priority above 0).",
+		},
+		{
+			NameKey = "Soul-Heart",
+			Description = "Soul-Heart raises the bearer's Special Attack one stage when any Pokémon on the field faints. Stats can be raised to a maximum of +6 stages each.",
+		},
+		{
+			NameKey = "Tangling Hair",
+			Description = "Contact with the Pokémon lowers the attacker's Speed stat.",
+		},
+		{
+			NameKey = "Receiver",
+			Description = "A Pokémon with Receiver will inherit the ability of a teammate in a double/triple battle when that teammate faints. Abilities that activate upon entering the field, such as Intimidate , will activate when the Pokémon with Receiver inherits it.",
+		},
+		{
+			NameKey = "Power of Alchemy",
+			Description = "The Pokémon copies the Ability of a defeated ally.",
+		},
+		{
+			NameKey = "Beast Boost",
+			Description = "The Pokémon boosts its most proficient stat each time it knocks out a Pokémon.",
+		},
+		{
+			NameKey = "RKS System",
+			Description = "Changes type depending on held item.",
+		},
+		{
+			NameKey = "Electric Surge",
+			Description = "Electric Surge creates a low-lying electric field, like the move Electric Terrain , when the Pokémon enters battle. It prevents grounded Pokémon from falling asleep, and increases the power of Electric type attacks.",
+		},
+		{
+			NameKey = "Psychic Surge",
+			Description = "Psychic Surge creates a low-lying psychic field, like the move Psychic Terrain , when the Pokémon enters battle. It prevents high-priority moves being used and increases the power of Psychic type attacks.",
+		},
+		{
+			NameKey = "Misty Surge",
+			Description = "Misty Surge creates a low-lying mist, like the move Misty Terrain , when the bearer enters battle. It protects all grounded Pokémon from status conditions and halves the power of Dragon type attacks.",
+		},
+		{
+			NameKey = "Grassy Surge",
+			Description = "Grassy Surge creates a low-lying grassy field, like the move Grassy Terrain , when the Pokémon enters battle. It restores the HP of grounded Pokémon each turn and increases the power of Grass type attacks.",
+		},
+		{
+			NameKey = "Full Metal Body",
+			Description = "Prevents other Pokémon from lowering its stats.",
+		},
+		{
+			NameKey = "Shadow Shield",
+			Description = "Reduces damage when HP is full.",
+		},
+		{
+			NameKey = "Prism Armor",
+			Description = "Prism Armor reduces the damage taken from super-effective attacks by 25%. It is not affected by the abilities Mold Breaker , Teravolt , or Turboblaze . For example, a Dark-type move used against a Psychic-type Pokémon with Prism Armor would deal 1.5x the usual damage instead of 2x. A double weakness would be reduced from 4x to 3x.",
+		},
+		{
+			NameKey = "Neuroforce",
+			Description = "Powers up moves that are super effective.",
+		},
+		{
+			NameKey = "Intrepid Sword",
+			Description = "Boosts Attack in battle.",
+		},
+		{
+			NameKey = "Dauntless Shield",
+			Description = "Boosts Defense in battle.",
+		},
+		{
+			NameKey = "Libero",
+			Description = "Libero changes the Pokémon's type to that of its previously used attack.",
+		},
+		{
+			NameKey = "Ball Fetch",
+			Description = "If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle.",
+		},
+		{
+			NameKey = "Cotton Down",
+			Description = "When a Pokémon with Cotton Down is hit by an attack, it lowers the attacker's Speed.",
+		},
+		{
+			NameKey = "Propeller Tail",
+			Description = "Ignores moves and abilities that draw in moves.",
+		},
+		{
+			NameKey = "Mirror Armor",
+			Description = "Reflects any stat-lowering effects.",
+		},
+		{
+			NameKey = "Gulp Missile",
+			Description = "Gulp Missile is the signature ability of Cramorant . If Cramorant uses the move Surf or Dive , it returns with a fish in its mouth. If Cramorant then takes damage, it retaliates by spitting out the fish, dealing extra damage. Cramorant may also return carrying a Pikachu . If Pikachu is launched at the opponent they will become paralyzed.",
+		},
+		{
+			NameKey = "Stalwart",
+			Description = "Ignores moves and abilities that draw in moves.",
+		},
+		{
+			NameKey = "Steam Engine",
+			Description = "This Pokemon's Speed is raised by 6 stages after it is damaged by a Fire- or Water-type move.",
+		},
+		{
+			NameKey = "Punk Rock",
+			Description = "Boosts sound-based moves and halves damage from the same moves.",
+		},
+		{
+			NameKey = "Sand Spit",
+			Description = "Creates a sandstorm when hit by an attack.",
+		},
+		{
+			NameKey = "Ice Scales",
+			Description = "Halves damage from Special moves.",
+		},
+		{
+			NameKey = "Ripen",
+			Description = "Doubles the effect of berries.",
+		},
+		{
+			NameKey = "Ice Face",
+			Description = "Ice Face is the signature ability of Eiscue . It allows the Pokémon to take a physical attack without taking damage. After the attack, Eiscue changes to its No Ice Face form, however, it can be restored in hail.",
+		},
+		{
+			NameKey = "Power Spot",
+			Description = "Just being next to the Pokémon powers up moves.",
+		},
+		{
+			NameKey = "Mimicry",
+			Description = "Changes type depending on the terrain.",
+		},
+		{
+			NameKey = "Screen Cleaner",
+			Description = "Nullifies effects of Light Screen, Reflect, and Aurora Veil.",
+		},
+		{
+			NameKey = "Steely Spirit",
+			Description = "Powers up ally Pokémon's Steel-type moves.",
+		},
+		{
+			NameKey = "Perish Body",
+			Description = "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle.",
+		},
+		{
+			NameKey = "Wandering Spirit",
+			Description = "Swaps abilities with opponents on contact.",
+		},
+		{
+			NameKey = "Gorilla Tactics",
+			Description = "Boosts the Pokémon's Attack stat but only allows the use of the first selected move.",
+		},
+		{
+			NameKey = "Neutralizing Gas",
+			Description = "Neutralizes abilities of all Pokémon in battle.",
+		},
+		{
+			NameKey = "Pastel Veil",
+			Description = "Pastel Veil prevents the Pokémon and its teammates from being poisoned. It also cures teammates of poisoning when it enters the battlefield.",
+		},
+		{
+			NameKey = "Hunger Switch",
+			Description = "Hunger Switch causes Morpeko to change its form each turn, alternating between Full Belly Mode and Hangry Mode. Morpeko's form also changes the type of its signature move, Aura Wheel .",
+		},
+		{
+			NameKey = "Quick Draw",
+			Description = "This Pokemon has a 30% chance to move first in its priority bracket with attacking moves.",
+		},
+		{
+			NameKey = "Unseen Fist",
+			Description = "Contact moves can strike through Protect/Detect.",
+		},
+		{
+			NameKey = "Curious Medicine",
+			Description = "Resets all stat changes upon entering battlefield.",
+		},
+		{
+			NameKey = "Transistor",
+			Description = "Transistor increases the power of Electric-type moves used by this Pokémon by 50%. It is the signature ability of Regieleki.",
+		},
+		{
+			NameKey = "Dragon's Maw",
+			Description = "Dragon's Maw increases the power of Dragon-type moves used by this Pokémon by 50%. It is the signature ability of Regidrago.",
+		},
+		{
+			NameKey = "Chilling Neigh",
+			Description = "Boosts Attack after knocking out a Pokémon.",
+		},
+		{
+			NameKey = "Grim Neigh",
+			Description = "Boosts Special Attack after knocking out a Pokémon.",
+		},
+		{
+			NameKey = "As One",
+			Description = "Combines Unnerve and Chilling Neigh/Grim Neigh",
+		},
+		{
+			NameKey = "As One",
+			Description = "Combines Unnerve and Chilling Neigh/Grim Neigh",
+		},
+		{
+			NameKey = "Lingering Aroma",
+			Description = "Contact changes the attacker's Ability to Lingering Aroma.",
+		},
+		{
+			NameKey = "Seed Sower",
+			Description = "Turns the ground into Grassy Terrain when the Pokémon is hit by an attack.",
+		},
+		{
+			NameKey = "Thermal Exchange",
+			Description = "Raises Attack when hit by a Fire-type move. Cannot be burned.",
+		},
+		{
+			NameKey = "Anger Shell",
+			Description = "When the Pokémon's HP drops below half, Anger Shell lowers its Defense and Special Defense but its Attack, Special Attack and Speed are raised.",
+		},
+		{
+			NameKey = "Purifying Salt",
+			Description = "Protects from status conditions and halves damage from Ghost-type moves.",
+		},
+		{
+			NameKey = "Well-Baked Body",
+			Description = "Immune to Fire-type moves, and Defense is sharply boosted.",
+		},
+		{
+			NameKey = "Wind Rider",
+			Description = "Wind Rider gives immunity to wind moves, and causes the Pokémon's Attack to increase by one stage when hit by one. Moves affected Air Cutter Bleakwind Storm Blizzard Fairy Wind Gust Heat Wave Hurricane Icy Wind Petal Blizzard Sandsear Storm Sandstorm Springtide Storm Tailwind Twister Whirlwind Wildbolt Storm",
+		},
+		{
+			NameKey = "Guard Dog",
+			Description = "Boosts Attack if intimidated, and prevents being forced to switch out.",
+		},
+		{
+			NameKey = "Rocky Payload",
+			Description = "Rocky Payload increases the power of Rock-type moves used by this Pokémon by 50%.",
+		},
+		{
+			NameKey = "Wind Power",
+			Description = "If a Pokémon with Wind Power is hit by a wind move, the power of the next Electric-type move it uses is doubled. Moves affected Air Cutter Bleakwind Storm Blizzard Fairy Wind Gust Heat Wave Hurricane Icy Wind Petal Blizzard Sandsear Storm Sandstorm Springtide Storm Tailwind Twister Whirlwind Wildbolt Storm",
+		},
+		{
+			NameKey = "Zero to Hero",
+			Description = "Transforms into its Hero Form when switching out.",
+		},
+		{
+			NameKey = "Commander",
+			Description = "Goes inside the mouth of an ally Dondozo if one is on the field.",
+		},
+		{
+			NameKey = "Electromorphosis",
+			Description = "If a Pokémon with Electromorphosis is hit by an attack, the power of the next Electric-type move it uses is doubled.",
+		},
+		{
+			NameKey = "Protosynthesis",
+			Description = "Raises highest stat in harsh sunlight, or if holding Booster Energy.",
+		},
+		{
+			NameKey = "Quark Drive",
+			Description = "Raises highest stat on Electric Terrain, or if holding Booster Energy.",
+		},
+		{
+			NameKey = "Good as Gold",
+			Description = "Gives immunity to status moves.",
+		},
+		{
+			NameKey = "Vessel of Ruin",
+			Description = "Lowers Special Attack of all Pokémon except itself.",
+		},
+		{
+			NameKey = "Sword of Ruin",
+			Description = "Lowers Defense of all Pokémon except itself.",
+		},
+		{
+			NameKey = "Tablets of Ruin",
+			Description = "Lowers Attack of all Pokémon except itself.",
+		},
+		{
+			NameKey = "Beads of Ruin",
+			Description = "Lowers Special Defense of all Pokémon except itself.",
+		},
+		{
+			NameKey = "Orichalcum Pulse",
+			Description = "Turns the sunlight harsh when entering battle, and boosts Attack while active.",
+		},
+		{
+			NameKey = "Hadron Engine",
+			Description = "Creates an Electric Terrain when entering battle, and boosts Special Attack while active.",
+		},
+		{
+			NameKey = "Opportunist",
+			Description = "Copies stat boosts by the opponent.",
+		},
+		{
+			NameKey = "Cud Chew",
+			Description = "Cud Chew causes the Pokémon to reuse an already consumed Berry at the end of the next turn.",
+		},
+		{
+			NameKey = "Sharpness",
+			Description = "This Pokemon's slicing moves have their power multiplied by 1.5.",
+		},
+		{
+			NameKey = "Supreme Overlord",
+			Description = "Attack and Special Attack are boosted for each party Pokémon that has been defeated.",
+		},
+		{
+			NameKey = "Costar",
+			Description = "Copies ally's stat changes on entering battle.",
+		},
+		{
+			NameKey = "Toxic Debris",
+			Description = "Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves.",
+		},
+		{
+			NameKey = "Armor Tail",
+			Description = "Armor Tail prevents the opponent from using any moves that have priority, such as Quick Attack .",
+		},
+		{
+			NameKey = "Earth Eater",
+			Description = "Restores HP when hit by a Ground-type move.",
+		},
+		{
+			NameKey = "Mycelium Might",
+			Description = "Status moves go last, but are not affected by the opponent's ability.",
+		},
+		{
+			NameKey = "Hospitality",
+			Description = "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP.",
+		},
+		{
+			NameKey = "Mind's Eye",
+			Description = "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves.",
+		},
+		{
+			NameKey = "Embody Aspect",
+			Description = "Embody Aspect boosts a particular stat, depending on the form of a Terastallized Ogerpon: Teal Mask form: the Pokémon's Speed stat is boosted. ; Wellspring Mask form: the Pokémon's Sp. Def stat is boosted. ; Heartflame Mask form: the Pokémon's Attack stat is boosted. ; Cornerstone Mask form: the Pokémon's Defense stat is boosted.",
+		},
+		{
+			NameKey = "Embody Aspect",
+			Description = "Embody Aspect boosts a particular stat, depending on the form of a Terastallized Ogerpon: Teal Mask form: the Pokémon's Speed stat is boosted. ; Wellspring Mask form: the Pokémon's Sp. Def stat is boosted. ; Heartflame Mask form: the Pokémon's Attack stat is boosted. ; Cornerstone Mask form: the Pokémon's Defense stat is boosted.",
+		},
+		{
+			NameKey = "Embody Aspect",
+			Description = "Embody Aspect boosts a particular stat, depending on the form of a Terastallized Ogerpon: Teal Mask form: the Pokémon's Speed stat is boosted. ; Wellspring Mask form: the Pokémon's Sp. Def stat is boosted. ; Heartflame Mask form: the Pokémon's Attack stat is boosted. ; Cornerstone Mask form: the Pokémon's Defense stat is boosted.",
+		},
+		{
+			NameKey = "Embody Aspect",
+			Description = "Embody Aspect boosts a particular stat, depending on the form of a Terastallized Ogerpon: Teal Mask form: the Pokémon's Speed stat is boosted. ; Wellspring Mask form: the Pokémon's Sp. Def stat is boosted. ; Heartflame Mask form: the Pokémon's Attack stat is boosted. ; Cornerstone Mask form: the Pokémon's Defense stat is boosted.",
+		},
+		{
+			NameKey = "Toxic Chain",
+			Description = "Toxic Chain may cause bad poisoning when the Pokémon hits an opponent with a move.",
+		},
+		{
+			NameKey = "Supersweet Syrup",
+			Description = "A sickly sweet scent spreads across the field the first time the Pokémon enters a battle, lowering the evasiveness of opposing Pokémon.",
+		},
+		{
+			NameKey = "Tera Shift",
+			Description = "When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form.",
+		},
+		{
+			NameKey = "Tera Shell",
+			Description = "The Pokémon’s shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective.",
+		},
+		{
+			NameKey = "Teraform Zero",
+			Description = "When Terapagos changes into its Stellar Form, it uses its hidden powers to eliminate all effects of weather and terrain, reducing them to zero.",
+		},
+		{
+			NameKey = "Poison Puppeteer",
+			Description = "Pokémon poisoned by Pecharunt’s moves will also become confused.",
 		},
 	},
 	-- The list of item names below must remain in the same order
 	ItemNames = {
-		"Master Ball", --Master Ball english:Master Ball
-		"Hyper Ball", --Hyper Ball english:Ultra Ball
-		"Super Ball", --Super Ball english:Great Ball
-		"Poké Ball", --Poké Ball english:Poke Ball
-		"Safari Ball", --Safari Ball english:Safari Ball
-		"Filet Ball", --Filet Ball english:Net Ball
-		"Scuba Ball", --Scuba Ball english:Dive Ball
-		"Faiblo Ball", --Faiblo Ball english:Nest Ball
-		"Bis Ball", --Bis Ball english:Repeat Ball
-		"Chrono Ball", --Chrono Ball english:Timer Ball
-		"Luxe Ball", --Luxe Ball english:Luxury Ball
-		"Honor Ball", --Honor Ball english:Premier Ball
-		"Potion", --Potion english:Potion
-		"Antidote", --Antidote english:Antidote
-		"Anti-Brule", --Anti-Brule english:Burn Heal
-		"Antigel", --Antigel english:Ice Heal
-		"Reveil", --Reveil english:Awakening
-		"Anti-Para", --Anti-Para english:Parlyz Heal
-		"Guerison", --Guerison english:Full Restore
-		"Potion Max", --Potion Max english:Max Potion
-		"Hyper Potion", --Hyper Potion english:Hyper Potion
-		"Super Potion", --Super Potion english:Super Potion
-		"Total Soin", --Total Soin english:Full Heal
-		"Rappel", --Rappel english:Revive
-		"Rappel Max", --Rappel Max english:Max Revive
-		"Eau Fraiche", --Eau Fraiche english:Fresh Water
-		"Soda Cool", --Soda Cool english:Soda Pop
-		"Limonade", --Limonade english:Lemonade
-		"Lait Meumeu", --Lait Meumeu english:Moomoo Milk
-		"Poudrenergie", --Poudrenergie english:EnergyPowder
-		"Racinenergie", --Racinenergie english:Energy Root
-		"Poudre Soin", --Poudre Soin english:Heal Powder
-		"Herbe Rappel", --Herbe Rappel english:Revival Herb
-		"Huile", --Huile english:Ether
-		"Huile Max", --Huile Max english:Max Ether
-		"Elixir", --Elixir english:Elixir
-		"Max Elixir", --Max Elixir english:Max Elixir
-		"Lava Cookie", --Lava Cookie english:Lava Cookie
-		"Flute Bleue", --Flute Bleue english:Blue Flute
-		"Flute Jaune", --Flute Jaune english:Yellow Flute
-		"Flute Rouge", --Flute Rouge english:Red Flute
-		"Flute Noire", --Flute Noire english:Black Flute
-		"Fluteblanche", --Fluteblanche english:White Flute
-		"Jus De Baie", --Jus De Baie english:Berry Juice
-		"Cendresacree", --Cendresacree english:Sacred Ash
-		"Sel Trefonds", --Sel Trefonds english:Shoal Salt
-		"Co. Trefonds", --Co. Trefonds english:Shoal Shell
-		"Tesson Rouge", --Tesson Rouge english:Red Shard
-		"Tesson Bleu", --Tesson Bleu english:Blue Shard
-		"Tesson Jaune", --Tesson Jaune english:Yellow Shard
-		"Tesson Vert", --Tesson Vert english:Green Shard
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"Pv Plus", --Pv Plus english:HP Up
-		"Proteine", --Proteine english:Protein
-		"Fer", --Fer english:Iron
-		"Carbone", --Carbone english:Carbos
-		"Calcium", --Calcium english:Calcium
-		"Super Bonbon", --Super Bonbon english:Rare Candy
-		"Pp Plus", --Pp Plus english:PP Up
-		"Zinc", --Zinc english:Zinc
-		"Pp Max", --Pp Max english:PP Max
-		"????????", --???????? english:unknown
-		"Defense Spec", --Defense Spec english:Guard Spec.
-		"Muscle +", --Muscle + english:Dire Hit
-		"Attaque +", --Attaque + english:X Attack
-		"Defense +", --Defense + english:X Defend
-		"Vitesse +", --Vitesse + english:X Speed
-		"Precision +", --Precision + english:X Accuracy
-		"Special +", --Special + english:X Special
-		"Poképoupee", --Poképoupee english:Poke Doll
-		"Queue Skitty", --Queue Skitty english:Fluffy Tail
-		"????????", --???????? english:unknown
-		"Superepousse", --Superepousse english:Super Repel
-		"Max Repousse", --Max Repousse english:Max Repel
-		"Corde Sortie", --Corde Sortie english:Escape Rope
-		"Repousse", --Repousse english:Repel
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"Pierresoleil", --Pierresoleil english:Sun Stone
-		"Pierre Lune", --Pierre Lune english:Moon Stone
-		"Pierre Feu", --Pierre Feu english:Fire Stone
-		"Pierrefoudre", --Pierrefoudre english:Thunderstone
-		"Pierre Eau", --Pierre Eau english:Water Stone
-		"Pierreplante", --Pierreplante english:Leaf Stone
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"Petit Champi", --Petit Champi english:TinyMushroom
-		"Gros Champi", --Gros Champi english:Big Mushroom
-		"????????", --???????? english:unknown
-		"Perle", --Perle english:Pearl
-		"Grande Perle", --Grande Perle english:Big Pearl
-		"Pouss.etoile", --Pouss.etoile english:Stardust
-		"Morc. Etoile", --Morc. Etoile english:Star Piece
-		"Pepite", --Pepite english:Nugget
-		"Ecaillecoeur", --Ecaillecoeur english:Heart Scale
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"Lettre Oranj", --Lettre Oranj english:Orange Mail
-		"Lettre Port", --Lettre Port english:Harbor Mail
-		"Lettre Brill", --Lettre Brill english:Glitter Mail
-		"Lettre Meca", --Lettre Meca english:Mech Mail
-		"Lettre Bois", --Lettre Bois english:Wood Mail
-		"Lettre Vague", --Lettre Vague english:Wave Mail
-		"Lettre Bulle", --Lettre Bulle english:Bead Mail
-		"Lettre Ombre", --Lettre Ombre english:Shadow Mail
-		"Lettre Tropi", --Lettre Tropi english:Tropic Mail
-		"Lettre Songe", --Lettre Songe english:Dream Mail
-		"Lettre Cool", --Lettre Cool english:Fab Mail
-		"Lettre Retro", --Lettre Retro english:Retro Mail
-		"Baie Ceriz", --Baie Ceriz english:Cheri Berry
-		"Baie Maron", --Baie Maron english:Chesto Berry
-		"Baie Pecha", --Baie Pecha english:Pecha Berry
-		"Baie Fraive", --Baie Fraive english:Rawst Berry
-		"Baie Willia", --Baie Willia english:Aspear Berry
-		"Baie Mepo", --Baie Mepo english:Leppa Berry
-		"Baie Oran", --Baie Oran english:Oran Berry
-		"Baie Kika", --Baie Kika english:Persim Berry
-		"Baie Prine", --Baie Prine english:Lum Berry
-		"Baie Sitrus", --Baie Sitrus english:Sitrus Berry
-		"Baie Figuy", --Baie Figuy english:Figy Berry
-		"Baie Wiki", --Baie Wiki english:Wiki Berry
-		"Baie Mago", --Baie Mago english:Mago Berry
-		"Baie Gowav", --Baie Gowav english:Aguav Berry
-		"Baie Papaya", --Baie Papaya english:Iapapa Berry
-		"Baie Framby", --Baie Framby english:Razz Berry
-		"Baie Remu", --Baie Remu english:Bluk Berry
-		"Baie Nanab", --Baie Nanab english:Nanab Berry
-		"Baie Repoi", --Baie Repoi english:Wepear Berry
-		"Baie Nanana", --Baie Nanana english:Pinap Berry
-		"Baie Grena", --Baie Grena english:Pomeg Berry
-		"Baie Alga", --Baie Alga english:Kelpsy Berry
-		"Baie Qualot", --Baie Qualot english:Qualot Berry
-		"Baie Lonme", --Baie Lonme english:Hondew Berry
-		"Baie Resin", --Baie Resin english:Grepa Berry
-		"Baie Tamato", --Baie Tamato english:Tamato Berry
-		"Baie Siam", --Baie Siam english:Cornn Berry
-		"Baie Mangou", --Baie Mangou english:Magost Berry
-		"Baie Rabuta", --Baie Rabuta english:Rabuta Berry
-		"Baie Tronci", --Baie Tronci english:Nomel Berry
-		"Baie Kiwan", --Baie Kiwan english:Spelon Berry
-		"Baie Palma", --Baie Palma english:Pamtre Berry
-		"Baie Stekpa", --Baie Stekpa english:Watmel Berry
-		"Baie Durin", --Baie Durin english:Durin Berry
-		"Baie Myrte", --Baie Myrte english:Belue Berry
-		"Baie Lichii", --Baie Lichii english:Liechi Berry
-		"Baie Lingan", --Baie Lingan english:Ganlon Berry
-		"Baie Sailak", --Baie Sailak english:Salac Berry
-		"Baie Pitaye", --Baie Pitaye english:Petaya Berry
-		"Baie Abriko", --Baie Abriko english:Apicot Berry
-		"Baie Lansat", --Baie Lansat english:Lansat Berry
-		"Baie Frista", --Baie Frista english:Starf Berry
-		"Baie Enigma", --Baie Enigma english:Enigma Berry
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"Poudreclaire", --Poudreclaire english:BrightPowder
-		"Herbeblanche", --Herbeblanche english:White Herb
-		"Brac. Macho", --Brac. Macho english:Macho Brace
-		"Multi Exp", --Multi Exp english:Exp. Share
-		"Vive Griffe", --Vive Griffe english:Quick Claw
-		"Grelot Zen", --Grelot Zen english:Soothe Bell
-		"Herbe Mental", --Herbe Mental english:Mental Herb
-		"Band. Choix", --Band. Choix english:Choice Band
-		"Roche Royale", --Roche Royale english:King's Rock
-		"Poudre Arg.", --Poudre Arg. english:SilverPowder
-		"Piece Rune", --Piece Rune english:Amulet Coin
-		"Rune Purif.", --Rune Purif. english:Cleanse Tag
-		"Rosee Ame", --Rosee Ame english:Soul Dew
-		"Dent Ocean", --Dent Ocean english:DeepSeaTooth
-		"Ecailleocean", --Ecailleocean english:DeepSeaScale
-		"Boule Fumee", --Boule Fumee english:Smoke Ball
-		"Pierre Stase", --Pierre Stase english:Everstone
-		"Bandeau", --Bandeau english:Focus Band
-		"Oeuf Chance", --Oeuf Chance english:Lucky Egg
-		"Lentilscope", --Lentilscope english:Scope Lens
-		"Peau Metal", --Peau Metal english:Metal Coat
-		"Restes", --Restes english:Leftovers
-		"Ecailledraco", --Ecailledraco english:Dragon Scale
-		"Ballelumiere", --Ballelumiere english:Light Ball
-		"Sable Doux", --Sable Doux english:Soft Sand
-		"Pierre Dure", --Pierre Dure english:Hard Stone
-		"Grain Miracl", --Grain Miracl english:Miracle Seed
-		"Lunet.noires", --Lunet.noires english:BlackGlasses
-		"Ceint.noire", --Ceint.noire english:Black Belt
-		"Aimant", --Aimant english:Magnet
-		"Eau Mystique", --Eau Mystique english:Mystic Water
-		"Bec Pointu", --Bec Pointu english:Sharp Beak
-		"Pic Venin", --Pic Venin english:Poison Barb
-		"Glaceternel", --Glaceternel english:NeverMeltIce
-		"Rune Sort", --Rune Sort english:Spell Tag
-		"Cuillertordu", --Cuillertordu english:TwistedSpoon
-		"Charbon", --Charbon english:Charcoal
-		"Croc Dragon", --Croc Dragon english:Dragon Fang
-		"Mouch. Soie", --Mouch. Soie english:Silk Scarf
-		"Ameliorator", --Ameliorator english:Up-Grade
-		"Grelot Coque", --Grelot Coque english:Shell Bell
-		"Encens Mer", --Encens Mer english:Sea Incense
-		"Encens Doux", --Encens Doux english:Lax Incense
-		"Poing Chance", --Poing Chance english:Lucky Punch
-		"Poudre Metal", --Poudre Metal english:Metal Powder
-		"Masse Os", --Masse Os english:Thick Club
-		"Baton", --Baton english:Stick
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"Foul. Rouge", --Foul. Rouge english:Red Scarf
-		"Foul. Bleu", --Foul. Bleu english:Blue Scarf
-		"Foul. Rose", --Foul. Rose english:Pink Scarf
-		"Foul. Vert", --Foul. Vert english:Green Scarf
-		"Foul. Jaune", --Foul. Jaune english:Yellow Scarf
-		"Velo Course", --Velo Course english:Mach Bike
-		"Boite Jetons", --Boite Jetons english:Coin Case
-		"Cherch'objet", --Cherch'objet english:Itemfinder
-		"Canne", --Canne english:Old Rod
-		"Super Canne", --Super Canne english:Good Rod
-		"Mega Canne", --Mega Canne english:Super Rod
-		"Passe Bateau", --Passe Bateau english:S.S. Ticket
-		"Passeconcour", --Passeconcour english:Contest Pass
-		"????????", --???????? english:unknown
-		"Seau Wailmer", --Seau Wailmer english:Wailmer Pail
-		"Pack Devon", --Pack Devon english:Devon Goods
-		"Sac A Suie", --Sac A Suie english:Soot Sack
-		"Cle Sous-Sol", --Cle Sous-Sol english:Basement Key
-		"Velo Cross", --Velo Cross english:Acro Bike
-		"Boite Pokeblocks", --Boite Pokeblocks english:Pokeblock Case
-		"Lettre", --Lettre english:Letter
-		"Passe Eon", --Passe Eon english:Eon Ticket
-		"Orbe Rouge", --Orbe Rouge english:Red Orb
-		"Orbe Bleu", --Orbe Bleu english:Blue Orb
-		"Scanner", --Scanner english:Scanner
-		"Lunet. Sable", --Lunet. Sable english:Go-Goggles
-		"Meteorite", --Meteorite english:Meteorite
-		"Cle Salle 1", --Cle Salle 1 english:Rm. 1 Key
-		"Cle Salle 2", --Cle Salle 2 english:Rm. 2 Key
-		"Cle Salle 4", --Cle Salle 4 english:Rm. 4 Key
-		"Cle Salle 6", --Cle Salle 6 english:Rm. 6 Key
-		"Cle Stockage", --Cle Stockage english:Storage Key
-		"Foss. Racine", --Foss. Racine english:Root Fossil
-		"Foss. Griffe", --Foss. Griffe english:Claw Fossil
-		"Devon Scope", --Devon Scope english:Devon Scope
-		"Ct01", --Ct01 english:TM01
-		"Ct02", --Ct02 english:TM02
-		"Ct03", --Ct03 english:TM03
-		"Ct04", --Ct04 english:TM04
-		"Ct05", --Ct05 english:TM05
-		"Ct06", --Ct06 english:TM06
-		"Ct07", --Ct07 english:TM07
-		"Ct08", --Ct08 english:TM08
-		"Ct09", --Ct09 english:TM09
-		"Ct10", --Ct10 english:TM10
-		"Ct11", --Ct11 english:TM11
-		"Ct12", --Ct12 english:TM12
-		"Ct13", --Ct13 english:TM13
-		"Ct14", --Ct14 english:TM14
-		"Ct15", --Ct15 english:TM15
-		"Ct16", --Ct16 english:TM16
-		"Ct17", --Ct17 english:TM17
-		"Ct18", --Ct18 english:TM18
-		"Ct19", --Ct19 english:TM19
-		"Ct20", --Ct20 english:TM20
-		"Ct21", --Ct21 english:TM21
-		"Ct22", --Ct22 english:TM22
-		"Ct23", --Ct23 english:TM23
-		"Ct24", --Ct24 english:TM24
-		"Ct25", --Ct25 english:TM25
-		"Ct26", --Ct26 english:TM26
-		"Ct27", --Ct27 english:TM27
-		"Ct28", --Ct28 english:TM28
-		"Ct29", --Ct29 english:TM29
-		"Ct30", --Ct30 english:TM30
-		"Ct31", --Ct31 english:TM31
-		"Ct32", --Ct32 english:TM32
-		"Ct33", --Ct33 english:TM33
-		"Ct34", --Ct34 english:TM34
-		"Ct35", --Ct35 english:TM35
-		"Ct36", --Ct36 english:TM36
-		"Ct37", --Ct37 english:TM37
-		"Ct38", --Ct38 english:TM38
-		"Ct39", --Ct39 english:TM39
-		"Ct40", --Ct40 english:TM40
-		"Ct41", --Ct41 english:TM41
-		"Ct42", --Ct42 english:TM42
-		"Ct43", --Ct43 english:TM43
-		"Ct44", --Ct44 english:TM44
-		"Ct45", --Ct45 english:TM45
-		"Ct46", --Ct46 english:TM46
-		"Ct47", --Ct47 english:TM47
-		"Ct48", --Ct48 english:TM48
-		"Ct49", --Ct49 english:TM49
-		"Ct50", --Ct50 english:TM50
-		"Cs01", --Cs01 english:HM01
-		"Cs02", --Cs02 english:HM02
-		"Cs03", --Cs03 english:HM03
-		"Cs04", --Cs04 english:HM04
-		"Cs05", --Cs05 english:HM05
-		"Cs06", --Cs06 english:HM06
-		"Cs07", --Cs07 english:HM07
-		"Cs08", --Cs08 english:HM08
-		"????????", --???????? english:unknown
-		"????????", --???????? english:unknown
-		"Colis Chen", --Colis Chen english:Oak's Parcel
-		"Pokéflute", --Pokéflute english:Poke Flute
-		"Cle Secrete", --Cle Secrete english:Secret Key
-		"Bon Commande", --Bon Commande english:Bike Voucher
-		"Dent D'or", --Dent D'or english:Gold Teeth
-		"Vieil Ambre", --Vieil Ambre english:Old Amber
-		"Carte Magn.", --Carte Magn. english:Card Key
-		"Cle Asc.", --Cle Asc. english:Lift Key
-		"Nautile", --Nautile english:Helix Fossil
-		"Fossile Dome", --Fossile Dome english:Dome Fossil
-		"Scope Sylphe", --Scope Sylphe english:Silph Scope
-		"Bicyclette", --Bicyclette english:Bicycle
-		"Carte", --Carte english:Town Map
-		"Cherche Vs", --Cherche Vs english:Vs. Seeker
-		"Memorydex", --Memorydex english:Fame Checker
-		"Boite Ct", --Boite Ct english:TM Case
-		"Sac A Baies", --Sac A Baies english:Berry Pouch
-		"Tv Abc", --Tv Abc english:Teachy TV
-		"Tri-Passe", --Tri-Passe english:Tri-Pass
-		"Passe Prisme", --Passe Prisme english:Rainbow Pass
-		"The", --The english:Tea
-		"Ticketmystik", --Ticketmystik english:MysticTicket
-		"Ticketaurora", --Ticketaurora english:AuroraTicket
-		"Pot Poudre", --Pot Poudre english:Powder Jar
-		"Rubis", --Rubis english:Ruby
-		"Saphir", --Saphir english:Sapphire
-		"Sceau Magma", --Sceau Magma english:Magma Emblem
-		"Vieille Carte", --Vieille Carte english:Old Sea Map
+		"Poké Ball",
+		"Super Ball",
+		"Hyper Ball",
+		"Master Ball",
+		"Honor Ball",
+		"Soin Ball",
+		"Filet Ball",
+		"Faiblo Ball",
+		"Scuba Ball",
+		"Sombre Ball",
+		"Chrono Ball",
+		"Rapide Ball",
+		"Bis Ball",
+		"Luxe Ball",
+		"Niveau Ball",
+		"Appât Ball",
+		"Lune Ball",
+		"Copain Ball",
+		"Love Ball",
+		"Speed Ball",
+		"Masse Ball",
+		"Rêve Ball",
+		"Safari Ball",
+		"Compét' Ball",
+		"Parc Ball",
+		"Ultra Ball",
+		"Mémoire Ball",
+		"Potion",
+		"Super Potion",
+		"Hyper Potion",
+		"Potion Max",
+		"Guérison",
+		"Rappel",
+		"Rappel Max",
+		"Eau Fraîche",
+		"Soda Cool",
+		"Limonade",
+		"Lait Meumeu",
+		"Poudre Énergie",
+		"Racine Énergie",
+		"Poudre Soin",
+		"Herbe Rappel",
+		"Antidote",
+		"Anti-Para",
+		"Anti-Brûle",
+		"Antigel",
+		"Réveil",
+		"Total Soin",
+		"Huile",
+		"Huile Max",
+		"Élixir",
+		"Élixir Max",
+		"Jus de Baie",
+		"Cendres Sacrées",
+		"Chococœur",
+		"Maxi Miel",
+		"Crok'Argenta",
+		"Bonbon Rage",
+		"Lava Cookie",
+		"Vieux Gâteau",
+		"Glace Volute",
+		"Galette Illumis",
+		"Sablé Yantreizh",
+		"Malasada Maxi",
+		"PV Plus",
+		"Protéine",
+		"Fer",
+		"Calcium",
+		"Zinc",
+		"Carbone",
+		"PP Plus",
+		"PP Max",
+		"Plume Santé",
+		"Plume Force",
+		"Plume Armure",
+		"Plume Esprit",
+		"Plume Mental",
+		"Plume Sprint",
+		"Pilule Talent",
+		"Patch Talent",
+		"Aromate Solo",
+		"Aromate Rigide",
+		"Aromate Mauvais",
+		"Aromate Brave",
+		"Aromate Assuré",
+		"Aromate Malin",
+		"Aromate Lâche",
+		"Aromate Relax",
+		"Aromate Modeste",
+		"Aromate Doux",
+		"Aromate Foufou",
+		"Aromate Discret",
+		"Aromate Calme",
+		"Aromate Gentil",
+		"Aromate Prudent",
+		"Aromate Malpoli",
+		"Aromate Timide",
+		"Aromate Pressé",
+		"Aromate Jovial",
+		"Aromate Naïf",
+		"Aromate Sérieux",
+		"Super Bonbon",
+		"Bonbon Exp. XS",
+		"Bonbon Exp. S",
+		"Bonbon Exp. M",
+		"Bonbon Exp. L",
+		"Bonbon Exp. XL",
+		"Bonbon Dynamax",
+		"Flûte Bleue",
+		"Flûte Jaune",
+		"Flûte Rouge",
+		"Flûte Noire",
+		"Flûte Blanche",
+		"Repousse",
+		"Super Repousse",
+		"Max Repousse",
+		"Parfum",
+		"Super Parfum",
+		"Max Parfum",
+		"Corde Sortie",
+		"Attaque+",
+		"Défense+",
+		"Atq. Spé+",
+		"Déf. Spé+",
+		"Vitesse+",
+		"Précision+",
+		"Muscle+",
+		"Garde-Stats",
+		"Poké Poupée",
+		"Queue Skitty",
+		"Poké Plumet",
+		"Maxi Champi",
+		"Capsule d'Argent",
+		"Capsule d'Or",
+		"Pépite",
+		"Maxi Pépite",
+		"Tiny Mushroom",
+		"Gros Champi",
+		"Champi Suave",
+		"Perle",
+		"Grande Perle",
+		"Perle Triple",
+		"Poussière Étoile",
+		"Morceau d'Étoile",
+		"Morceau Comète",
+		"Sel Tréfonds",
+		"CoquilleTréfonds",
+		"Tesson Rouge",
+		"Tesson Bleu",
+		"Tesson jaune",
+		"Tesson Vert",
+		"Écaille Cœur",
+		"Miel",
+		"Os Rare",
+		"Clé de Voûte",
+		"Jolie Plume",
+		"Vieux Sou",
+		"Vieil Écu",
+		"Vieux Ducat",
+		"Vieux Vase",
+		"Vieux Bijou",
+		"Vieux Santon",
+		"Vieux Tortil",
+		"Bibelot Bizarre",
+		"Nautile",
+		"Fossile Dôme",
+		"Vieil Ambre",
+		"Fossile Racine",
+		"Fossile Griffe",
+		"Fossile Armure",
+		"Fossile Crâne",
+		"Fossile Plaque",
+		"Fossile Plume",
+		"Fossile Mâchoire",
+		"Fossile Nageoire",
+		"Fossile Oiseau",
+		"Fossile Poisson",
+		"Fossile Dragon",
+		"Fossile Aileron",
+		"Fertipousse",
+		"Engrais",
+		"Fertistable",
+		"Fertiglu",
+		"Fertibondance",
+		"Fertistantané",
+		"Fertibérance",
+		"Fertiprodige",
+		"Noigrume Rouge",
+		"Noigrume Bleu",
+		"Noigrume Jaune",
+		"Noigrume Vert",
+		"Noigrume Rose",
+		"Noigrume Blanc",
+		"Noigrume Noir",
+		"Morceau Vœu",
+		"Branche Galanoa",
+		"Armurium",
+		"Dynamaxium",
+		"Lettre Oranj",
+		"Lettre Port",
+		"Lettre Brill",
+		"Lettre Meca",
+		"Lettre Bois",
+		"Lettre Vague",
+		"Lettre Bulle",
+		"Lettre Ombre",
+		"Lettre Tropi",
+		"Lettre Songe",
+		"Lettre Cool",
+		"Lettre Retro",
+		"Pierre Feu",
+		"Pierre Eau",
+		"Pierre Foudre",
+		"Pierre Plante",
+		"Pierre Glace",
+		"Pierre Soleil",
+		"Pierre Lune",
+		"Pierre Éclat",
+		"Pierre Nuit",
+		"Pierre Aube",
+		"Pomme Sucrée",
+		"Pomme Acidulée",
+		"Théière Fêlée",
+		"Théière Ébréchée",
+		"Bracelet Galanoa",
+		"Couronne Galanoa",
+		"Écaille Draco",
+		"Améliorator",
+		"Protecteur",
+		"Électiriseur",
+		"Magmariseur",
+		"CD Douteux",
+		"Tissu Fauche",
+		"Bel'Écaille",
+		"Chantibonbon",
+		"Sachet Senteur",
+		"Pierre Ovale",
+		"Fraise en Sucre",
+		"Cœur en Sucre",
+		"Baie en Sucre",
+		"Trèfle en Sucre",
+		"Fleur en Sucre",
+		"Étoile en Sucre",
+		"Ruban en Sucre",
+		"Pierre Stase",
+		"Nectar Rouge",
+		"Nectar Jaune",
+		"Nectar Rose",
+		"Nectar Mauve",
+		"Plaque Flamme",
+		"Plaque Hydro",
+		"Plaque Volt",
+		"Plaque Herbe",
+		"Plaque Glace",
+		"Plaque Poing",
+		"Plaque Toxicité",
+		"Plaque Terre",
+		"Plaque Ciel",
+		"Plaque Esprit",
+		"Plaque Insecte",
+		"Plaque Roc",
+		"Plaque Fantôme",
+		"Plaque Draco",
+		"Plaque Ombre",
+		"Plaque Fer",
+		"Plaque Pixie",
+		"Module Aqua",
+		"Module Choc",
+		"Module Pyro",
+		"Module Cryo",
+		"ROM Feu",
+		"ROM Eau",
+		"ROM Électrik",
+		"ROM Plante",
+		"ROM Glace",
+		"ROM Combat",
+		"ROM Poison",
+		"ROM Sol",
+		"ROM Vol",
+		"ROM Psy",
+		"ROM Insecte",
+		"ROM Roche",
+		"ROM Spectre",
+		"ROM Dragon",
+		"ROM Ténèbres",
+		"ROM Acier",
+		"ROM Fée",
+		"Épée Rouillée",
+		"Bouclier Rouillé",
+		"Gemme Rouge",
+		"Gemme Bleue",
+		"Florizarrite",
+		"Dracaufite X",
+		"Dracaufite Y",
+		"Tortankite",
+		"Dardargnite",
+		"Roucarnagite",
+		"Alakazamite",
+		"Flagadossite",
+		"Ectoplasmite",
+		"Kangourexite",
+		"Scarabruite",
+		"Léviatorite",
+		"Ptéraïte",
+		"Mewtwoïte X",
+		"Mewtwoïte Y",
+		"Pharampite",
+		"Steelixite",
+		"Cizayoxite",
+		"Scarhinoïte",
+		"Démolossite",
+		"Tyranocivite",
+		"Jungkite",
+		"Braségalite",
+		"Laggronite",
+		"Gardevoirite",
+		"Ténéfixite",
+		"Mysdibulite",
+		"Galekingite",
+		"Charminite",
+		"Élecsprintite",
+		"Sharpedite",
+		"Caméruptite",
+		"Altarite",
+		"Branettite",
+		"Absolite",
+		"Oniglalite",
+		"Drattakite",
+		"Métalossite",
+		"Latiasite",
+		"Latiosite",
+		"Lockpinite",
+		"Carchacrokite",
+		"Lucarite",
+		"Blizzarite",
+		"Gallamite",
+		"Nanméouïte",
+		"Diancite",
+		"Joyau Normal",
+		"Joyau Feu",
+		"Joyau Eau",
+		"Joyau Électrik",
+		"Joyau Plante",
+		"Joyau Glace",
+		"Joyau Combat",
+		"Joyau Poison",
+		"Joyau Sol",
+		"Joyau Vol",
+		"Joyau Psy",
+		"Joyau Insecte",
+		"Joyau Roche",
+		"Joyau Spectre",
+		"Joyau Dragon",
+		"Joyau Ténèbres",
+		"Joyau Acier",
+		"Joyau Fée",
+		"Normazélite",
+		"Pyrozélite",
+		"Aquazélite",
+		"Voltazélite",
+		"Florazélite",
+		"Cryozélite",
+		"Combazélite",
+		"Toxizélite",
+		"Terrazélite",
+		"Aérozélite",
+		"Psychézélite",
+		"Insectozélite",
+		"Rocazélite",
+		"Spectrozélite",
+		"Dracozélite",
+		"Ténébrozélite",
+		"Métallozélite",
+		"Nymphézélite",
+		"Pikazélite",
+		"Évolizélite",
+		"Normazélite",
+		"Mewzélite",
+		"Archézélite",
+		"Félinozélite",
+		"Oratozélite",
+		"Lougarozélite",
+		"Mimiquizélite",
+		"Ékaïzélite",
+		"Tokozélite",
+		"Solgazélite",
+		"Lunazélite",
+		"Marshadozélite",
+		"Aloraïzélite",
+		"Pikachazélite",
+		"Ultranécrozélite",
+		"Balle Lumière",
+		"Poireau",
+		"Masse Os",
+		"Poing Chance",
+		"Poudre Métal",
+		"Poudre Vite",
+		"Écaille Océan",
+		"Dent Océan",
+		"Rosée Âme",
+		"Orbe Adamant",
+		"Orbe Perlé",
+		"Orbe Platiné",
+		"Encens Mer",
+		"Encens Doux",
+		"Encens Bizarre",
+		"Encens Roc",
+		"Encens Plein",
+		"Encens Vague",
+		"Encens Fleur",
+		"Encens Veine",
+		"Encens Pur",
+		"Foulard Rouge",
+		"Foulard Bleu",
+		"Foulard Rose",
+		"Foulard Vert",
+		"Foulard Jaune",
+		"Bracelet Macho",
+		"Poids Pouvoir",
+		"Poignet Pouvoir",
+		"Ceinture Pouvoir",
+		"Lentille Pouvoir",
+		"Bandeau Pouvoir",
+		"Chaîne Pouvoir",
+		"Mouchoir Soie",
+		"Charbon",
+		"Eau Mystique",
+		"Aimant",
+		"Graine Miracle",
+		"Glace Éternelle",
+		"Ceinture Noire",
+		"Pic Venin",
+		"Sable Doux",
+		"Bec Pointu",
+		"Cuillère Tordue",
+		"Poudre Argentée",
+		"Pierre Dure",
+		"Rune Sort",
+		"Croc Dragon",
+		"Lunettes Noires",
+		"Peau Métal",
+		"Bandeau Choix",
+		"Lunettes Choix",
+		"Mouchoir Choix",
+		"Orbe Flamme",
+		"Orbe Toxique",
+		"Roche Humide",
+		"Roche Chaude",
+		"Roche Lisse",
+		"Roche Glace",
+		"Graine Électrik",
+		"Graine Psychique",
+		"Graine Brume",
+		"Graine Herbe",
+		"Bulbe",
+		"Pile",
+		"Lichen Lumineux",
+		"Boule de Neige",
+		"Poudre Claire",
+		"Herbe Blanche",
+		"Multi Exp",
+		"Vive Griffe",
+		"Grelot Zen",
+		"Herbe Mental",
+		"Roche Royale",
+		"Pièce Rune",
+		"Rune Purifiante",
+		"Boule Fumée",
+		"Bandeau",
+		"Oeuf Chance",
+		"Lentilscope",
+		"Restes",
+		"Grelot Coque",
+		"Loupe",
+		"Bandeau Muscle",
+		"Lunettes Sages",
+		"Ceinture Pro",
+		"Lumargile",
+		"Orbe Vie",
+		"Herbe Pouvoir",
+		"Ceinture Force",
+		"Lentille Zoom",
+		"Métronome",
+		"Balle Fer",
+		"Ralentiqueue",
+		"Noeud Destin",
+		"Boue Noire",
+		"Accro Griffe",
+		"Piquants",
+		"Carapace Mue",
+		"Grosse Racine",
+		"Griffe Rasoir",
+		"Croc Rasoir",
+		"Évoluroc",
+		"Pierrallégée",
+		"Casque Brut",
+		"Ballon",
+		"Carton Rouge",
+		"Point de Mire",
+		"Bande Étreinte",
+		"Bouton Fuite",
+		"Vulné-Assurance",
+		"Veste de Combat",
+		"Lunettes Filtre",
+		"Orbe Frousse",
+		"Champ’Duit",
+		"Pare-Effet",
+		"Spray Gorge",
+		"Sac Fuite",
+		"Grosses Bottes",
+		"Assurance Échec",
+		"Chariot Distordu",
+		"Parapluie Solide",
+		"Baie Ceriz",
+		"Baie Maron",
+		"Baie Pêcha",
+		"Baie Fraive",
+		"Baie Willia",
+		"Baie Mepo",
+		"Baie Oran",
+		"Baie Kika",
+		"Baie Prine",
+		"Baie Sitrus",
+		"Baie Figuy",
+		"Baie Wiki",
+		"Baie Mago",
+		"Baie Gowav",
+		"Baie Papaya",
+		"Baie Framby",
+		"Baie Remu",
+		"Baie Nanab",
+		"Baie Repoi",
+		"Baie Nanana",
+		"Baie Grena",
+		"Baie Alga",
+		"Baie Qualot",
+		"Baie Lonme",
+		"Baie Resin",
+		"Baie Tamato",
+		"Baie Siam",
+		"Baie Mangou",
+		"Baie Rabuta",
+		"Baie Tronci",
+		"Baie Kiwan",
+		"Baie Palma",
+		"Baie Stekpa",
+		"Baie Durin",
+		"Baie Myrte",
+		"Baie Zalis",
+		"Baie Chocco",
+		"Baie Pocpoc",
+		"Baie Parma",
+		"Baie Ratam",
+		"Baie Nanone",
+		"Baie Pomroz",
+		"Baie Kébia",
+		"Baie Jouca",
+		"Baie Cobaba",
+		"Baie Yapap",
+		"Baie Panga",
+		"Baie Charti",
+		"Baie Sédra",
+		"Baie Fraigo",
+		"Baie Lampou",
+		"Baie Babiri",
+		"Baie Selro",
+		"Baie Lichii",
+		"Baie Lingan",
+		"Baie Lingan",
+		"Baie Sailak",
+		"Baie Abriko",
+		"Baie Lansat",
+		"Baie Frista",
+		"Baie Enigma",
+		"Baie Micle",
+		"Baie Chérim",
+		"Baie Jaboca",
+		"Baie Pommo",
+		"Baie Rangma",
+		"Baie Éka",
+		"Baie Enigma",
+		"CT01",
+		"CT02",
+		"CT03",
+		"CT04",
+		"CT05",
+		"CT06",
+		"CT07",
+		"CT08",
+		"CT09",
+		"CT10",
+		"CT11",
+		"CT12",
+		"CT13",
+		"CT14",
+		"CT15",
+		"CT16",
+		"CT17",
+		"CT18",
+		"CT19",
+		"CT20",
+		"CT21",
+		"CT22",
+		"CT23",
+		"CT24",
+		"CT25",
+		"CT26",
+		"CT27",
+		"CT28",
+		"CT29",
+		"CT30",
+		"CT31",
+		"CT32",
+		"CT33",
+		"CT34",
+		"CT35",
+		"CT36",
+		"CT37",
+		"CT38",
+		"CT39",
+		"CT40",
+		"CT41",
+		"CT42",
+		"CT43",
+		"CT44",
+		"CT45",
+		"CT46",
+		"CT47",
+		"CT48",
+		"CT49",
+		"CT50",
+		"CT51",
+		"CT52",
+		"CT53",
+		"CT54",
+		"CT55",
+		"CT56",
+		"CT57",
+		"CT58",
+		"CT59",
+		"CT60",
+		"CT61",
+		"CT62",
+		"CT63",
+		"CT64",
+		"CT65",
+		"CT66",
+		"CT67",
+		"CT68",
+		"CT69",
+		"CT70",
+		"CT71",
+		"CT72",
+		"CT73",
+		"CT74",
+		"CT75",
+		"CT76",
+		"CT77",
+		"CT78",
+		"CT79",
+		"CT80",
+		"CT81",
+		"CT82",
+		"CT83",
+		"CT84",
+		"CT85",
+		"CT86",
+		"CT87",
+		"CT88",
+		"CT89",
+		"CT90",
+		"CT91",
+		"CT92",
+		"CT93",
+		"CT94",
+		"CT95",
+		"CT96",
+		"CT97",
+		"CT98",
+		"CT99",
+		"CT100",
+		"CS01",
+		"CS02",
+		"CS03",
+		"CS04",
+		"CS05",
+		"CS06",
+		"CS07",
+		"CS08",
+		"Charme Ovale",
+		"Charme Chroma",
+		"Charme Stabilité",
+		"Charme Exp",
+		"Moti-Catalogue",
+		"Gracidée",
+		"Miroir Sacré",
+		"Pointeau ADN",
+		"Boîte Zygarde",
+		"Vase Scellé",
+		"Necrosol",
+		"Necroluna",
+		"Rênes de l'Unité",
+		"Méga-Anneau",
+		"Super Bracelet Z",
+		"Poignet Dynamax",
+		"Bicyclette",
+		"Vélo Course",
+		"Vélo Cross",
+		"Canne",
+		"Super Canne",
+		"Méga Canne",
+		"Cherch'Objet",
+		"Carte Ville",
+		"Cherch'Combat",
+		"Boîte CT",
+		"Sac à Baies",
+		"Boîte Pokémon",
+		"Boîte Jetons",
+		"Pot Poudre",
+		"Wailmerrosoir",
+		"Poké Radar",
+		"Boîte Pokéblocs",
+		"Sac à Suie",
+		"Poké Flûte",
+		"Memorydex",
+		"TV ABC",
+		"Passe Bateau",
+		"Passe Éon",
+		"Ticketmystik",
+		"Ticketaurora",
+		"Vieillecarte",
+		"Lettre",
+		"Pack Devon",
+		"Lunettes Sable",
+		"Devon Scope",
+		"Clé Sous-Sol",
+		"Scanner",
+		"Clé Stockage",
+		"Clé Salle 1",
+		"Clé Salle 2",
+		"Clé Salle 4",
+		"Clé Salle 6",
+		"Météorite",
+		"Sceau Magma",
+		"Passe Concours",
+		"Colis",
+		"Clé Secrète",
+		"Bon Commande",
+		"Dentier en Or",
+		"Carte Magnétique",
+		"Clé Ascenseur",
+		"Scope Sylphe",
+		"Tri-Passe",
+		"Passe Prisme",
+		"Thé",
+		"Rubis",
+		"Saphir",
+		"Garde-Talent",
+		"Talisman Sain",
+		"Gant de Boxe",
+		"Cape Obscure",
+		"Dé Pipé",
+		"Armure de la Fortune",
+		"Énergie Booster",
+		"Gros Bambou",
+		"Pièces de Gimmighoul",
+		"Emblème du Général",
+		"Armure de la Rancune",
+		"Feuille Copieuse",
+		"Rouleau des Ténèbres",
+		"Rouleau de l'Eau",
+		"Orbe Téracristal",
+		"Petit Bambou",
+		"Téra-Éclat Insecte",
+		"Téra-Éclat Ténèbres",
+		"Téra-Éclat Dragon",
+		"Téra-Éclat Électrik",
+		"Téra-Éclat Fée",
+		"Téra-Éclat Combat",
+		"Téra-Éclat Feu",
+		"Téra-Éclat Vol",
+		"Téra-Éclat Spectre",
+		"Téra-Éclat Plante",
+		"Téra-Éclat Sol",
+		"Téra-Éclat Glace",
+		"Téra-Éclat Normal",
+		"Téra-Éclat Poison",
+		"Téra-Éclat Psy",
+		"Téra-Éclat Roche",
+		"Téra-Éclat Acier",
+		"Téra-Éclat Eau",
+		"Globe Adamant",
+		"Globe Platiné",
+		"Globe Perlé",
+		"Obsidienne",
+		"Fil de Liaison",
+		"Bloc de Tourbe",
+		"ADN Berzerk",
+		"Plume Enchantée",
+		"Pomme Nectar",
+		"Bol Médiocre",
+		"Bol Exceptionnel",
+		"Masque de la Pierre",
+		"Masque du Puits",
+		"Masque du Fourneau",
+		"Mochi Santé",
+		"Mochi Force",
+		"Mochi Armure",
+		"Mochi Esprit",
+		"Mochi Mental",
+		"Mochi Sprint",
+		"Mochi Renouveau",
+		"Charme Éclatant",
+		"Métal Composite",
+		"Téra-Éclat Stellaire",
+		"Rusti-Muffin",
+		"Remède",
+		"Super Remède",
+		"Hyper Remède",
+		"Esquive Extra",
+		"Défense Extra",
+		"Offensive Extra",
+		"Double Extra",
+		"Papillote Choix",
+		"En-cas Contraire",
+		"Bouchée Double",
+		"Poupée Pokéshi",
+		"Étrange Ball",
+		"Repousse Éternel",
 	},
 	-- The list of Pokémon natures below must remain in the same order
 	NatureNames = {
-		"Hardy", -- NEEDS TRANSLATION
-		"Lonely", -- NEEDS TRANSLATION
-		"Brave", -- NEEDS TRANSLATION
-		"Adamant", -- NEEDS TRANSLATION
-		"Naughty", -- NEEDS TRANSLATION
-		"Bold", -- NEEDS TRANSLATION
-		"Docile", -- NEEDS TRANSLATION
-		"Relaxed", -- NEEDS TRANSLATION
-		"Impish", -- NEEDS TRANSLATION
-		"Lax", -- NEEDS TRANSLATION
-		"Timid", -- NEEDS TRANSLATION
-		"Hasty", -- NEEDS TRANSLATION
-		"Serious", -- NEEDS TRANSLATION
-		"Jolly", -- NEEDS TRANSLATION
-		"Naive", -- NEEDS TRANSLATION
-		"Modest", -- NEEDS TRANSLATION
-		"Mild", -- NEEDS TRANSLATION
-		"Quiet", -- NEEDS TRANSLATION
-		"Bashful", -- NEEDS TRANSLATION
-		"Rash", -- NEEDS TRANSLATION
-		"Calm", -- NEEDS TRANSLATION
-		"Gentle", -- NEEDS TRANSLATION
-		"Sassy", -- NEEDS TRANSLATION
-		"Careful", -- NEEDS TRANSLATION
-		"Quirky", -- NEEDS TRANSLATION
+		"Hardi",
+		"Solo",
+		"Brave",
+		"Rigide",
+		"Mauvais",
+		"Assuré",
+		"Docile",
+		"Relax",
+		"Malin",
+		"Lâche",
+		"Timide",
+		"Pressé",
+		"Sérieux",
+		"Jovial",
+		"Naïf",
+		"Modeste",
+		"Doux",
+		"Discret",
+		"Pudique",
+		"Foufou",
+		"Calme",
+		"Gentil",
+		"Malpoli",
+		"Prudent",
+		"Bizarre",
 	},
-	-- The list of Pokémon names below must remain in the same order
-	PokemonNames = {
-		"Bulbizarre", --Bulbizarre english:Bulbasaur
-		"Herbizarre", --Herbizarre english:Ivysaur
-		"Florizarre", --Florizarre english:Venusaur
-		"Salameche", --Salameche english:Charmander
-		"Reptincel", --Reptincel english:Charmeleon
-		"Dracaufeu", --Dracaufeu english:Charizard
-		"Carapuce", --Carapuce english:Squirtle
-		"Carabaffe", --Carabaffe english:Wartortle
-		"Tortank", --Tortank english:Blastoise
-		"Chenipan", --Chenipan english:Caterpie
-		"Chrysacier", --Chrysacier english:Metapod
-		"Papilusion", --Papilusion english:Butterfree
-		"Aspicot", --Aspicot english:Weedle
-		"Coconfort", --Coconfort english:Kakuna
-		"Dardargnan", --Dardargnan english:Beedrill
-		"Roucool", --Roucool english:Pidgey
-		"Roucoups", --Roucoups english:Pidgeotto
-		"Roucarnage", --Roucarnage english:Pidgeot
-		"Rattata", --Rattata english:Rattata
-		"Rattatac", --Rattatac english:Raticate
-		"Piafabec", --Piafabec english:Spearow
-		"Rapasdepic", --Rapasdepic english:Fearow
-		"Abo", --Abo english:Ekans
-		"Arbok", --Arbok english:Arbok
-		"Pikachu", --Pikachu english:Pikachu
-		"Raichu", --Raichu english:Raichu
-		"Sabelette", --Sabelette english:Sandshrew
-		"Sablaireau", --Sablaireau english:Sandslash
-		"Nidoran F", --Nidoran  english:Nidoran F
-		"Nidorina", --Nidorina english:Nidorina
-		"Nidoqueen", --Nidoqueen english:Nidoqueen
-		"Nidoran M", --Nidoran  english:Nidoran M
-		"Nidorino", --Nidorino english:Nidorino
-		"Nidoking", --Nidoking english:Nidoking
-		"Melofee", --Melofee english:Clefairy
-		"Melodelfe", --Melodelfe english:Clefable
-		"Goupix", --Goupix english:Vulpix
-		"Feunard", --Feunard english:Ninetales
-		"Rondoudou", --Rondoudou english:Jigglypuff
-		"Grodoudou", --Grodoudou english:Wigglytuff
-		"Nosferapti", --Nosferapti english:Zubat
-		"Nosferalto", --Nosferalto english:Golbat
-		"Mystherbe", --Mystherbe english:Oddish
-		"Ortide", --Ortide english:Gloom
-		"Rafflesia", --Rafflesia english:Vileplume
-		"Paras", --Paras english:Paras
-		"Parasect", --Parasect english:Parasect
-		"Mimitoss", --Mimitoss english:Venonat
-		"Aeromite", --Aeromite english:Venomoth
-		"Taupiqueur", --Taupiqueur english:Diglett
-		"Triopikeur", --Triopikeur english:Dugtrio
-		"Miaouss", --Miaouss english:Meowth
-		"Persian", --Persian english:Persian
-		"Psykokwak", --Psykokwak english:Psyduck
-		"Akwakwak", --Akwakwak english:Golduck
-		"Ferosinge", --Ferosinge english:Mankey
-		"Colossinge", --Colossinge english:Primeape
-		"Caninos", --Caninos english:Growlithe
-		"Arcanin", --Arcanin english:Arcanine
-		"Ptitard", --Ptitard english:Poliwag
-		"Tetarte", --Tetarte english:Poliwhirl
-		"Tartard", --Tartard english:Poliwrath
-		"Abra", --Abra english:Abra
-		"Kadabra", --Kadabra english:Kadabra
-		"Alakazam", --Alakazam english:Alakazam
-		"Machoc", --Machoc english:Machop
-		"Machopeur", --Machopeur english:Machoke
-		"Mackogneur", --Mackogneur english:Machamp
-		"Chetiflor", --Chetiflor english:Bellsprout
-		"Boustiflor", --Boustiflor english:Weepinbell
-		"Empiflor", --Empiflor english:Victreebel
-		"Tentacool", --Tentacool english:Tentacool
-		"Tentacruel", --Tentacruel english:Tentacruel
-		"Racaillou", --Racaillou english:Geodude
-		"Gravalanch", --Gravalanch english:Graveler
-		"Grolem", --Grolem english:Golem
-		"Ponyta", --Ponyta english:Ponyta
-		"Galopa", --Galopa english:Rapidash
-		"Ramoloss", --Ramoloss english:Slowpoke
-		"Flagadoss", --Flagadoss english:Slowbro
-		"Magneti", --Magneti english:Magnemite
-		"Magneton", --Magneton english:Magneton
-		"Canarticho", --Canarticho english:Farfetch'd
-		"Doduo", --Doduo english:Doduo
-		"Dodrio", --Dodrio english:Dodrio
-		"Otaria", --Otaria english:Seel
-		"Lamantine", --Lamantine english:Dewgong
-		"Tadmorv", --Tadmorv english:Grimer
-		"Grotadmorv", --Grotadmorv english:Muk
-		"Kokiyas", --Kokiyas english:Shellder
-		"Crustabri", --Crustabri english:Cloyster
-		"Fantominus", --Fantominus english:Gastly
-		"Spectrum", --Spectrum english:Haunter
-		"Ectoplasma", --Ectoplasma english:Gengar
-		"Onix", --Onix english:Onix
-		"Soporifik", --Soporifik english:Drowzee
-		"Hypnomade", --Hypnomade english:Hypno
-		"Krabby", --Krabby english:Krabby
-		"Krabboss", --Krabboss english:Kingler
-		"Voltorbe", --Voltorbe english:Voltorb
-		"Electrode", --Electrode english:Electrode
-		"Noeunoeuf", --Noeunoeuf english:Exeggcute
-		"Noadkoko", --Noadkoko english:Exeggutor
-		"Osselait", --Osselait english:Cubone
-		"Ossatueur", --Ossatueur english:Marowak
-		"Kicklee", --Kicklee english:Hitmonlee
-		"Tygnon", --Tygnon english:Hitmonchan
-		"Excelangue", --Excelangue english:Lickitung
-		"Smogo", --Smogo english:Koffing
-		"Smogogo", --Smogogo english:Weezing
-		"Rhinocorne", --Rhinocorne english:Rhyhorn
-		"Rhinoferos", --Rhinoferos english:Rhydon
-		"Leveinard", --Leveinard english:Chansey
-		"Saquedeneu", --Saquedeneu english:Tangela
-		"Kangourex", --Kangourex english:Kangaskhan
-		"Hypotrempe", --Hypotrempe english:Horsea
-		"Hypocean", --Hypocean english:Seadra
-		"Poissirene", --Poissirene english:Goldeen
-		"Poissoroy", --Poissoroy english:Seaking
-		"Stari", --Stari english:Staryu
-		"Staross", --Staross english:Starmie
-		"M. Mime", --M. Mime english:Mr. Mime
-		"Insecateur", --Insecateur english:Scyther
-		"Lippoutou", --Lippoutou english:Jynx
-		"Elektek", --Elektek english:Electabuzz
-		"Magmar", --Magmar english:Magmar
-		"Scarabrute", --Scarabrute english:Pinsir
-		"Tauros", --Tauros english:Tauros
-		"Magicarpe", --Magicarpe english:Magikarp
-		"Leviator", --Leviator english:Gyarados
-		"Lokhlass", --Lokhlass english:Lapras
-		"Metamorph", --Metamorph english:Ditto
-		"Evoli", --Evoli english:Eevee
-		"Aquali", --Aquali english:Vaporeon
-		"Voltali", --Voltali english:Jolteon
-		"Pyroli", --Pyroli english:Flareon
-		"Porygon", --Porygon english:Porygon
-		"Amonita", --Amonita english:Omanyte
-		"Amonistar", --Amonistar english:Omastar
-		"Kabuto", --Kabuto english:Kabuto
-		"Kabutops", --Kabutops english:Kabutops
-		"Ptera", --Ptera english:Aerodactyl
-		"Ronflex", --Ronflex english:Snorlax
-		"Artikodin", --Artikodin english:Articuno
-		"Electhor", --Electhor english:Zapdos
-		"Sulfura", --Sulfura english:Moltres
-		"Minidraco", --Minidraco english:Dratini
-		"Draco", --Draco english:Dragonair
-		"Dracolosse", --Dracolosse english:Dragonite
-		"Mewtwo", --Mewtwo english:Mewtwo
-		"Mew", --Mew english:Mew
-		"Germignon", --Germignon english:Chikorita
-		"Macronium", --Macronium english:Bayleef
-		"Meganium", --Meganium english:Meganium
-		"Hericendre", --Hericendre english:Cyndaquil
-		"Feurisson", --Feurisson english:Quilava
-		"Typhlosion", --Typhlosion english:Typhlosion
-		"Kaiminus", --Kaiminus english:Totodile
-		"Crocrodil", --Crocrodil english:Croconaw
-		"Aligatueur", --Aligatueur english:Feraligatr
-		"Fouinette", --Fouinette english:Sentret
-		"Fouinar", --Fouinar english:Furret
-		"Hoothoot", --Hoothoot english:Hoothoot
-		"Noarfang", --Noarfang english:Noctowl
-		"Coxy", --Coxy english:Ledyba
-		"Coxyclaque", --Coxyclaque english:Ledian
-		"Mimigal", --Mimigal english:Spinarak
-		"Migalos", --Migalos english:Ariados
-		"Nostenfer", --Nostenfer english:Crobat
-		"Loupio", --Loupio english:Chinchou
-		"Lanturn", --Lanturn english:Lanturn
-		"Pichu", --Pichu english:Pichu
-		"Melo", --Melo english:Cleffa
-		"Toudoudou", --Toudoudou english:Igglybuff
-		"Togepi", --Togepi english:Togepi
-		"Togetic", --Togetic english:Togetic
-		"Natu", --Natu english:Natu
-		"Xatu", --Xatu english:Xatu
-		"Wattouat", --Wattouat english:Mareep
-		"Lainergie", --Lainergie english:Flaaffy
-		"Pharamp", --Pharamp english:Ampharos
-		"Joliflor", --Joliflor english:Bellossom
-		"Marill", --Marill english:Marill
-		"Azumarill", --Azumarill english:Azumarill
-		"Simularbre", --Simularbre english:Sudowoodo
-		"Tarpaud", --Tarpaud english:Politoed
-		"Granivol", --Granivol english:Hoppip
-		"Floravol", --Floravol english:Skiploom
-		"Cotovol", --Cotovol english:Jumpluff
-		"Capumain", --Capumain english:Aipom
-		"Tournegrin", --Tournegrin english:Sunkern
-		"Heliatronc", --Heliatronc english:Sunflora
-		"Yanma", --Yanma english:Yanma
-		"Axoloto", --Axoloto english:Wooper
-		"Maraiste", --Maraiste english:Quagsire
-		"Mentali", --Mentali english:Espeon
-		"Noctali", --Noctali english:Umbreon
-		"Cornebre", --Cornebre english:Murkrow
-		"Roigada", --Roigada english:Slowking
-		"Feuforeve", --Feuforeve english:Misdreavus
-		"Zarbi", --Zarbi english:Unown
-		"Qulbutoke", --Qulbutoke english:Wobbuffet
-		"Girafarig", --Girafarig english:Girafarig
-		"Pomdepik", --Pomdepik english:Pineco
-		"Foretress", --Foretress english:Forretress
-		"Insolourdo", --Insolourdo english:Dunsparce
-		"Scorplane", --Scorplane english:Gligar
-		"Steelix", --Steelix english:Steelix
-		"Snubbull", --Snubbull english:Snubbull
-		"Granbull", --Granbull english:Granbull
-		"Qwilfish", --Qwilfish english:Qwilfish
-		"Cizayox", --Cizayox english:Scizor
-		"Caratroc", --Caratroc english:Shuckle
-		"Scarhino", --Scarhino english:Heracross
-		"Farfuret", --Farfuret english:Sneasel
-		"Teddiursa", --Teddiursa english:Teddiursa
-		"Ursaring", --Ursaring english:Ursaring
-		"Limagma", --Limagma english:Slugma
-		"Volcaropod", --Volcaropod english:Magcargo
-		"Marcacrin", --Marcacrin english:Swinub
-		"Cochignon", --Cochignon english:Piloswine
-		"Corayon", --Corayon english:Corsola
-		"Remoraid", --Remoraid english:Remoraid
-		"Octillery", --Octillery english:Octillery
-		"Cadoizo", --Cadoizo english:Delibird
-		"Demanta", --Demanta english:Mantine
-		"Airmure", --Airmure english:Skarmory
-		"Malosse", --Malosse english:Houndour
-		"Demolosse", --Demolosse english:Houndoom
-		"Hyporoi", --Hyporoi english:Kingdra
-		"Phanpy", --Phanpy english:Phanpy
-		"Donphan", --Donphan english:Donphan
-		"Porygon2", --Porygon2 english:Porygon2
-		"Cerfrousse", --Cerfrousse english:Stantler
-		"Queulorior", --Queulorior english:Smeargle
-		"Debugant", --Debugant english:Tyrogue
-		"Kapoera", --Kapoera english:Hitmontop
-		"Lippouti", --Lippouti english:Smoochum
-		"Elekid", --Elekid english:Elekid
-		"Magby", --Magby english:Magby
-		"Ecremeuh", --Ecremeuh english:Miltank
-		"Leuphorie", --Leuphorie english:Blissey
-		"Raikou", --Raikou english:Raikou
-		"Entei", --Entei english:Entei
-		"Suicune", --Suicune english:Suicune
-		"Embrylex", --Embrylex english:Larvitar
-		"Ymphect", --Ymphect english:Pupitar
-		"Tyranocif", --Tyranocif english:Tyranitar
-		"Lugia", --Lugia english:Lugia
-		"Ho-Oh", --Ho-Oh english:Ho-Oh
-		"Celebi", --Celebi english:Celebi
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"?", --? english:none
-		"Arcko", --Arcko english:Treecko
-		"Massko", --Massko english:Grovyle
-		"Jungko", --Jungko english:Sceptile
-		"Poussifeu", --Poussifeu english:Torchic
-		"Galifeu", --Galifeu english:Combusken
-		"Brasegali", --Brasegali english:Blaziken
-		"Gobou", --Gobou english:Mudkip
-		"Flobio", --Flobio english:Marshtomp
-		"Laggron", --Laggron english:Swampert
-		"Medhyena", --Medhyena english:Poochyena
-		"Grahyena", --Grahyena english:Mightyena
-		"Zigzaton", --Zigzaton english:Zigzagoon
-		"Lineon", --Lineon english:Linoone
-		"Chenipotte", --Chenipotte english:Wurmple
-		"Armulys", --Armulys english:Silcoon
-		"Charmillon", --Charmillon english:Beautifly
-		"Blindalys", --Blindalys english:Cascoon
-		"Papinox", --Papinox english:Dustox
-		"Nenupiot", --Nenupiot english:Lotad
-		"Lombre", --Lombre english:Lombre
-		"Ludicolo", --Ludicolo english:Ludicolo
-		"Grainipiot", --Grainipiot english:Seedot
-		"Pifeuil", --Pifeuil english:Nuzleaf
-		"Tengalice", --Tengalice english:Shiftry
-		"Ningale", --Ningale english:Nincada
-		"Ninjask", --Ninjask english:Ninjask
-		"Munja", --Munja english:Shedinja
-		"Nirondelle", --Nirondelle english:Taillow
-		"Heledelle", --Heledelle english:Swellow
-		"Balignon", --Balignon english:Shroomish
-		"Chapignon", --Chapignon english:Breloom
-		"Spinda", --Spinda english:Spinda
-		"Goelise", --Goelise english:Wingull
-		"Bekipan", --Bekipan english:Pelipper
-		"Arakdo", --Arakdo english:Surskit
-		"Maskadra", --Maskadra english:Masquerain
-		"Wailmer", --Wailmer english:Wailmer
-		"Wailord", --Wailord english:Wailord
-		"Skitty", --Skitty english:Skitty
-		"Delcatty", --Delcatty english:Delcatty
-		"Kecleon", --Kecleon english:Kecleon
-		"Balbuto", --Balbuto english:Baltoy
-		"Kaorine", --Kaorine english:Claydol
-		"Tarinor", --Tarinor english:Nosepass
-		"Chartor", --Chartor english:Torkoal
-		"Tenefix", --Tenefix english:Sableye
-		"Barloche", --Barloche english:Barboach
-		"Barbicha", --Barbicha english:Whiscash
-		"Lovdisc", --Lovdisc english:Luvdisc
-		"Ecrapince", --Ecrapince english:Corphish
-		"Colhomard", --Colhomard english:Crawdaunt
-		"Barpau", --Barpau english:Feebas
-		"Milobellus", --Milobellus english:Milotic
-		"Carvanha", --Carvanha english:Carvanha
-		"Sharpedo", --Sharpedo english:Sharpedo
-		"Kraknoix", --Kraknoix english:Trapinch
-		"Vibraninf", --Vibraninf english:Vibrava
-		"Libegon", --Libegon english:Flygon
-		"Makuhita", --Makuhita english:Makuhita
-		"Hariyama", --Hariyama english:Hariyama
-		"Dynavolt", --Dynavolt english:Electrike
-		"Elecsprint", --Elecsprint english:Manectric
-		"Chamallot", --Chamallot english:Numel
-		"Camerupt", --Camerupt english:Camerupt
-		"Obalie", --Obalie english:Spheal
-		"Phogleur", --Phogleur english:Sealeo
-		"Kaimorse", --Kaimorse english:Walrein
-		"Cacnea", --Cacnea english:Cacnea
-		"Cacturne", --Cacturne english:Cacturne
-		"Stalgamin", --Stalgamin english:Snorunt
-		"Oniglali", --Oniglali english:Glalie
-		"Seleroc", --Seleroc english:Lunatone
-		"Solaroc", --Solaroc english:Solrock
-		"Azurill", --Azurill english:Azurill
-		"Spoink", --Spoink english:Spoink
-		"Groret", --Groret english:Grumpig
-		"Posipi", --Posipi english:Plusle
-		"Negapi", --Negapi english:Minun
-		"Mysdibule", --Mysdibule english:Mawile
-		"Meditikka", --Meditikka english:Meditite
-		"Charmina", --Charmina english:Medicham
-		"Tylton", --Tylton english:Swablu
-		"Altaria", --Altaria english:Altaria
-		"Okeoke", --Okeoke english:Wynaut
-		"Skelenox", --Skelenox english:Duskull
-		"Teraclope", --Teraclope english:Dusclops
-		"Roselia", --Roselia english:Roselia
-		"Parecool", --Parecool english:Slakoth
-		"Vigoroth", --Vigoroth english:Vigoroth
-		"Monaflemit", --Monaflemit english:Slaking
-		"Gloupti", --Gloupti english:Gulpin
-		"Avaltout", --Avaltout english:Swalot
-		"Tropius", --Tropius english:Tropius
-		"Chuchmur", --Chuchmur english:Whismur
-		"Ramboum", --Ramboum english:Loudred
-		"Brouhabam", --Brouhabam english:Exploud
-		"Coquiperl", --Coquiperl english:Clamperl
-		"Serpang", --Serpang english:Huntail
-		"Rosabyss", --Rosabyss english:Gorebyss
-		"Absol", --Absol english:Absol
-		"Polichombr", --Polichombr english:Shuppet
-		"Branette", --Branette english:Banette
-		"Seviper", --Seviper english:Seviper
-		"Mangriff", --Mangriff english:Zangoose
-		"Relicanth", --Relicanth english:Relicanth
-		"Galekid", --Galekid english:Aron
-		"Galegon", --Galegon english:Lairon
-		"Galeking", --Galeking english:Aggron
-		"Morpheo", --Morpheo english:Castform
-		"Muciole", --Muciole english:Volbeat
-		"Lumivole", --Lumivole english:Illumise
-		"Lilia", --Lilia english:Lileep
-		"Vacilys", --Vacilys english:Cradily
-		"Anorith", --Anorith english:Anorith
-		"Armaldo", --Armaldo english:Armaldo
-		"Tarsal", --Tarsal english:Ralts
-		"Kirlia", --Kirlia english:Kirlia
-		"Gardevoir", --Gardevoir english:Gardevoir
-		"Draby", --Draby english:Bagon
-		"Drackhaus", --Drackhaus english:Shelgon
-		"Drattak", --Drattak english:Salamence
-		"Terhal", --Terhal english:Beldum
-		"Metang", --Metang english:Metang
-		"Metalosse", --Metalosse english:Metagross
-		"Regirock", --Regirock english:Regirock
-		"Regice", --Regice english:Regice
-		"Registeel", --Registeel english:Registeel
-		"Kyogre", --Kyogre english:Kyogre
-		"Groudon", --Groudon english:Groudon
-		"Rayquaza", --Rayquaza english:Rayquaza
-		"Latias", --Latias english:Latias
-		"Latios", --Latios english:Latios
-		"Jirachi", --Jirachi english:Jirachi
-		"Deoxys", --Deoxys english:Deoxys
-		"Eoko", --Eoko english:Chimecho
-	},
+
 }

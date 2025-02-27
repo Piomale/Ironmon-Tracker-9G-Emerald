@@ -295,7 +295,7 @@ function Program.initialize()
 	else
 		Program.clientFpsMultiplier = 1
 	end
-
+	
 	-- Reset variables when a new game is loaded
 	Program.updateRequired = false
 	Program.inStartMenu = false
@@ -320,11 +320,11 @@ function Program.initialize()
 	if friendshipRequired > 1 and friendshipRequired <= PokemonData.Values.FriendshipRequiredToEvo then
 		Program.GameData.friendshipRequired = friendshipRequired
 	end
-
+	
 	Program.Pedometer:initialize()
+	
 	Program.GameTimer:initialize()
 	Program.AutoSaver:updateSaveCount()
-
 	Program.addFrameCounter("Tracker:AutoLoadData", 1, Tracker.AutoSave.loadFromFile, 1, true)
 	Program.addFrameCounter("Program:DelayedStartup", 60, Program.delayedStartup, 1, true)
 end
@@ -436,7 +436,7 @@ function Program.update()
 				end
 			end
 		end
-
+		
 		if SetupScreen.inProcessOfBinding() then
 			local inputsPressed = SetupScreen.checkCurrentJoypadInput()
 			if #inputsPressed > 0 then
@@ -444,16 +444,15 @@ function Program.update()
 			end
 		end
 	end
-
+	
 	-- Don't bother reading game data before a game even begins
 	if not Program.isValidMapLocation() then
 		return
 	end
-
+	
 	-- Get any "new" information from game memory for player's pokemon team every half second (60 frames/sec)
 	if Program.Frames.lowAccuracyUpdate == 0 or Program.updateRequired then
 		Program.updateCatchingTutorial()
-
 		if not Program.inCatchingTutorial and not Program.isInEvolutionScene() then
 			Program.updatePokemonTeams()
 			TeamViewArea.buildOutPartyScreen()
@@ -473,6 +472,7 @@ function Program.update()
 
 			if not Program.hasCheckedGameSettings then
 				Program.hasCheckedGameSettings = true
+				
 				if Options["Override Button Mode to LR"] then
 					Program.changeGameSettingForLR()
 				end
@@ -492,8 +492,10 @@ function Program.update()
 			end
 
 			if Options["Display repel usage"] and not Battle.inActiveBattle() then
+				
 				-- Check if the player is in the start menu (for hiding the repel usage icon)
 				Program.inStartMenu = Program.isInStartMenu()
+				
 				-- Check for active repel and steps remaining
 				if not Program.inStartMenu then
 					Program.updateRepelSteps()
@@ -514,14 +516,14 @@ function Program.update()
 			SpriteData.checkForIdleSleeping(0)
 		end
 	end
-
+	
 	-- Only update "Heals in Bag", Evolution Stones, "PC Heals", and "Badge Data" info every 3 seconds (3 seconds * 60 frames/sec)
 	if Program.Frames.three_sec_update == 0 or Program.updateRequired then
 		Program.updateBagItems()
 		Program.updatePCHeals()
 		Program.updateBadgesObtained()
 		CrashRecoveryScreen.trySaveBackup()
-
+		
 		if not Input.joypadUsedRecently then
 			local secondsSinceLastActive = math.max(os.time() - Program.lastActiveTimestamp, 0)
 			SpriteData.checkForIdleSleeping(secondsSinceLastActive)
@@ -539,6 +541,7 @@ function Program.update()
 	if Program.Frames.lowAccuracyUpdate == 0 or Program.updateRequired then
 		CustomCode.afterProgramDataUpdate()
 	end
+	
 end
 
 ---Signals Program, and Battle, to read in the game data again (useful for when loading a Tracker save state)
@@ -724,7 +727,7 @@ function Program.updatePokemonTeams()
 		-- Then lookup information on the opposing Pokemon
 		personality = Memory.readdword(GameSettings.estats + addressOffset)
 		trainerID = Memory.readdword(GameSettings.estats + addressOffset + 4)
-
+		
 		if personality ~= 0 or trainerID ~= 0 then
 			local pokemon = Program.readNewPokemon(GameSettings.estats + addressOffset, personality)
 			if Program.validPokemonData(pokemon) then
@@ -736,13 +739,14 @@ function Program.updatePokemonTeams()
 						end
 					end
 				end
-
+				
 				Program.GameData.EnemyTeam[i] = pokemon
 			end
 		else
+			
 			Program.GameData.EnemyTeam[i] = nil
 		end
-
+		
 		-- Next Pokemon - Each is offset by 100 bytes
 		addressOffset = addressOffset + Program.Addresses.sizeofPokemonStruct
 	end
@@ -769,7 +773,6 @@ function Program.readNewPokemon(startAddress, personality)
 	local effort1 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset), magicword)
 	local effort2 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset + 4), magicword)
 	local misc2 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + miscoffset + 4), magicword)
-
 	local nickname = ""
 	for i=0, Program.Addresses.sizeofPokemonNickname - 1, 1 do
 		local charByte = Memory.readbyte(startAddress + 8 + i)
@@ -777,7 +780,7 @@ function Program.readNewPokemon(startAddress, personality)
 		nickname = nickname .. (GameSettings.GameCharMap[charByte] or Constants.HIDDEN_INFO)
 	end
 	nickname = Utils.formatSpecialCharacters(nickname)
-
+	
 	-- Unused data memory reads
 	-- local effort3 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset + 8), magicword)
 	-- local misc3   = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + miscoffset + 8), magicword)
@@ -791,7 +794,9 @@ function Program.readNewPokemon(startAddress, personality)
 
 	local species = Utils.getbits(growth1, 0, 16) -- Pokemon's Pokedex ID
 	local abilityNum = Utils.getbits(misc2, 31, 1) -- [0 or 1] to determine which ability, available in PokemonData
+	
 
+	
 	-- Check for shininess: https://bulbapedia.bulbagarden.net/wiki/Personality_value#Shininess
 	local trainerID = Utils.getbits(otid, 0, 16)
 	local secretID = Utils.getbits(otid, 16, 16)
@@ -832,6 +837,19 @@ function Program.readNewPokemon(startAddress, personality)
 	local def_and_speed = Memory.readdword(startAddress + Program.Addresses.offsetPokemonStatsDefSpe)
 	local spatk_and_spdef = Memory.readdword(startAddress + Program.Addresses.offsetPokemonStatsSpaSpd)
 
+
+	moves = {
+			{ id = Utils.getbits(attack1, 0, 16), level = 1, pp = Utils.getbits(attack3, 0, 8) },
+			{ id = Utils.getbits(attack1, 16, 16), level = 1, pp = Utils.getbits(attack3, 8, 8) },
+			{ id = Utils.getbits(attack2, 0, 16), level = 1, pp = Utils.getbits(attack3, 16, 8) },
+			{ id = Utils.getbits(attack2, 16, 16), level = 1, pp = Utils.getbits(attack3, 24, 8) },
+		}
+	-- print(nickname)
+	-- print(MoveData.Moves[moves[1]['id']]['name'])
+	-- print(MoveData.Moves[moves[2]['id']]['name'])
+	-- print(MoveData.Moves[moves[3]['id']]['name'])
+	-- print(MoveData.Moves[moves[4]['id']]['name'])
+	-- print("-----------------")
 	return Program.DefaultPokemon:new({
 		personality = personality,
 		nickname = nickname,
@@ -1122,7 +1140,6 @@ end
 
 function Program.updateMapLocation()
 	local newMapId = Memory.readword(GameSettings.gMapHeader + Program.Addresses.offsetMapHeaderLayoutId)
-
 	-- If the player is in a new area, auto-lookup for mGBA screen
 	if not Main.IsOnBizhawk() and newMapId ~= Program.GameData.mapId then
 		local isFirstLocation = Program.GameData.mapId == nil or Program.GameData.mapId == 0
@@ -1277,6 +1294,7 @@ function Program.changeGameSettingForLR(forced)
 	end
 	local addr2 = Utils.getSaveBlock2Addr()
 	local currentSetting = Memory.readbyte(addr2 + Program.Addresses.offsetOptionsButtonMode)
+
 	if forced or currentSetting == 0 then -- 0 is the default setting for the game
 		Memory.writebyte(addr2 + Program.Addresses.offsetOptionsButtonMode, Program.Values.ButtonModeLR)
 	end
@@ -1285,24 +1303,22 @@ end
 -- Pokemon is valid if it has a valid id, helditem, and each move that exists is a real move.
 function Program.validPokemonData(pokemonData)
 	if pokemonData == nil then return false end
-
 	-- If the Pokemon exists, but it's ID is invalid
 	if not PokemonData.isValid(pokemonData.pokemonID) and pokemonData.pokemonID ~= 0 then -- 0 = blank pokemon id
 		return false
 	end
-
+	
 	-- If the Pokemon is holding an item, and that item is invalid
 	if pokemonData.heldItem ~= nil and (pokemonData.heldItem < 0 or pokemonData.heldItem > 376) then
 		return false
 	end
-
+	
 	-- For each of the Pokemon's moves that isn't blank, is that move real
 	for _, move in pairs(pokemonData.moves) do
 		if not MoveData.isValid(move.id) and move.id ~= 0 then -- 0 = blank move id
 			return false
 		end
 	end
-
 	return true
 end
 

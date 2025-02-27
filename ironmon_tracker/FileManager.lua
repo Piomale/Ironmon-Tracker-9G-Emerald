@@ -77,8 +77,8 @@ FileManager.Extensions = {
 }
 
 FileManager.Urls = {
-	VERSION = "https://api.github.com/repos/besteon/Ironmon-Tracker/releases/latest",
-	DOWNLOAD = "https://github.com/besteon/Ironmon-Tracker/releases/latest",
+	VERSION = "https://api.github.com/repos/piomale/Ironmon-Tracker-em-9g/releases/latest",
+	DOWNLOAD = "https://github.com/piomale/Ironmon-Tracker-em-9g/releases/latest",
 	WIKI = "https://github.com/besteon/Ironmon-Tracker/wiki",
 	DISCUSSIONS = "https://github.com/besteon/Ironmon-Tracker/discussions/389", -- Discussion: "Help us translate the Ironmon Tracker"
 	NEW_RUNS = "https://github.com/besteon/Ironmon-Tracker/wiki/New-Runs-Setup",
@@ -342,7 +342,6 @@ function FileManager.tryOsExecute(command, errorFile)
 	-- An attempted fix to allow non-english characters in paths; but this is only half of it, so it's incomplete.
 	-- Leaving this here in case some more research is done to figure out how to work around this.
 	-- local foreignCompatibleCommand = "@chcp 65001>nul && " .. commandWithOutput
-
 	local result = os.execute(commandWithOutput)
 	local success = (result == true or result == 0) -- 0 = success in some cases
 	if not success then

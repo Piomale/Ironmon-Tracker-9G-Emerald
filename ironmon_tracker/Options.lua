@@ -51,6 +51,7 @@ Options = {
 	["Open Book Play Mode"] = false,
 	["Allow sprites to walk"] = true,
 	["Active Profile"] = "",
+	
 
 	-- Internal Tracker settings
 	["Has checked carousel battle details"] = false,
@@ -76,9 +77,12 @@ Options.CONTROLS = {
 -- User-specified file/folder locations
 Options.FILES = {
 	["ROMs Folder"] = "",
-	["Randomizer JAR"] = "",
-	["Source ROM"] = "",
-	["Settings File"] = "",
+	["Shuffler"] = "",
+	["Source ROM"] = ""
+}
+
+Options.GenerationFlags = {
+	["Game Language"] = "",
 }
 
 -- Execution paths

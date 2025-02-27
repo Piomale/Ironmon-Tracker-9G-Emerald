@@ -1,1 +1,20 @@
-* text=auto
+Settings.ini
+NetworkSettings.ini
+Requests.json
+test Attempts.txt
+Emerald-EM-Seed.gba Attempts.txt
+*.trackerdata
+*.gba
+*.log
+*.txt
+*.pastlog
+*.statistics
+*.colortheme
+*.qlp
+!death_quotes.txt
+!StreamerbotCodeImport.txt
+*.pt
+*.faves
+*.tdat
+*.tdata
+*.State

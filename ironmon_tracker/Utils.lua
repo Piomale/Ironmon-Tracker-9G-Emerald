@@ -987,16 +987,15 @@ end
 -- Reads the game stat stored at statIndex in memory
 -- https://github.com/pret/pokefirered/blob/master/include/constants/game_stat.h
 function Utils.getGameStat(statIndex)
+	
 	local saveBlock1Addr = Utils.getSaveBlock1Addr()
+	
 	local gameStatsAddr = saveBlock1Addr + GameSettings.gameStatsOffset
-
 	local gameStatValue = Memory.readdword(gameStatsAddr + statIndex * Program.Addresses.sizeofGameStat)
-
 	local key = Utils.getEncryptionKey(4) -- Want a 32-bit key
 	if key ~= nil then
 		gameStatValue = Utils.bit_xor(gameStatValue, key)
 	end
-
 	return math.floor(gameStatValue)
 end
 

@@ -156,10 +156,12 @@ function Main.Run()
 		end
 		return
 	end
-
+	
 	-- After a game is successfully loaded, then initialize the remaining Tracker files
 	FileManager.setupErrorLog()
+	
 	Main.ReadAttemptsCount() -- re-check attempts count if different game is loaded
+	
 	FileManager.executeEachFile("initialize") -- initialize all tracker files
 	CustomCode.startup()
 	CustomCode.checkForRomHacks()
@@ -620,87 +622,66 @@ end
 function Main.GenerateNextRom()
 	local files = Main.GetQuickloadFiles()
 
-	if #files.jarList == 0 or #files.settingsList == 0 or #files.romList == 0 then
+	if #files.shufflerList == 0 or #files.romList == 0 then
 		print("> ERROR: Files missing that are required for New Run to generate a new ROM.")
 		Main.DisplayError("Files missing that are required for New Run to generate a new ROM.\n\nFix these at: Tracker Settings (gear icon) -> New Run")
 		return nil
-	elseif #files.jarList > 1 or #files.settingsList > 1 or #files.romList > 1 then
-		local msg1 = string.format("ERROR: Too many GBA/JAR/RNQS files found in the quickload folder.")
+	elseif #files.shufflerList > 1 or #files.romList > 1 then
+		local msg1 = string.format("ERROR: Too many GBA/SHUFFLER files found in the quickload folder.")
 		local msg2 = string.format("Please remove all-but-one of each these types of files from the folder.")
-		print("> " .. msg1)
-		print("> " .. msg2)
 		Main.DisplayError(msg1 .. "\n" .. msg2)
 		return nil
 	end
 
-	local jarPath = (files.quickloadPath or "") .. files.jarList[1]
-	local settingsPath = (files.quickloadPath or "") .. files.settingsList[1]
+	local shufflerPath = (files.quickloadPath or "") .. files.shufflerList[1]
 	local romPath = (files.quickloadPath or "") .. files.romList[1]
 
-	-- Filename of the AutoRandomized ROM is based on the settings file (for cases of playing Kaizo + Survival + Others)
-	local settingsFileName = FileManager.extractFileNameFromPath(files.settingsList[1])
-	local attemptsFileName = string.format("%s %s%s", settingsFileName, FileManager.PostFixes.ATTEMPTS_FILE, FileManager.Extensions.ATTEMPTS)
-	local attemptsFolder = FileManager.getPathOverride("Attempt Counts") or FileManager.dir
-
-	local nextRomName = string.format("%s %s%s", settingsFileName, FileManager.PostFixes.AUTORANDOMIZED, FileManager.Extensions.GBA_ROM)
+	local nextRomName = "Emerald-EM-Seed.gba"
 	local nextRomFolder = FileManager.getPathOverride("ROMs and Logs") or FileManager.dir
 	local nextRomPath = nextRomFolder .. nextRomName
+	
+	local attemptsFileName = string.format("%s %s%s", nextRomName, FileManager.PostFixes.ATTEMPTS_FILE, FileManager.Extensions.ATTEMPTS)
+	local attemptsFolder = FileManager.getPathOverride("Attempt Counts") or FileManager.dir
+	
+	nextRomFolderDirtyTrick = nextRomFolder:gsub("\\$", "")
 
 	local previousRomName = Main.SaveCurrentRom(nextRomName)
-
+	local lang = Options.GenerationFlags["Game Language"]
+	
 	-- mGBA only, need to unload current ROM but loading another temp ROM
 	if previousRomName ~= nil and not Main.IsOnBizhawk() then
 		emu:loadFile(nextRomFolder .. previousRomName)
 	end
 
-	local javaPath = Options.PATHS["Java Path"]
-	if Utils.isNilOrEmpty(javaPath) then
-		javaPath = "java" -- Default for most operating systems
-	end
 
-	local javacommand = string.format(
-		'%s -Xmx4608M -jar "%s" cli -s "%s" -i "%s" -o "%s" -l',
-		javaPath,
-		jarPath,
-		settingsPath,
+	local shufflerCommand = string.format(
+		'%s "%s" "%s" --lang-%s',
+		shufflerPath,
 		romPath,
-		nextRomPath
+		nextRomFolderDirtyTrick,
+		lang
 	)
-
 	local errorFolderpath = FileManager.getPathOverride("Randomizer Error Log") or FileManager.dir
 	local errorLogFilepath = errorFolderpath .. FileManager.Files.RANDOMIZER_ERROR_LOG
-	local success, fileLines = FileManager.tryOsExecute(javacommand, errorLogFilepath)
+	local success, fileLines = FileManager.tryOsExecute(shufflerCommand, errorLogFilepath)
 
 	if success then
 		local output = table.concat(fileLines, "\n")
 		-- It's possible this message changes in the future?
 		---@diagnostic disable-next-line: cast-local-type
-		success = (output:find("Randomized successfully!", 1, true) ~= nil)
+		success = (output:find("Shuffling", 1, true) ~= nil)
 		if not success and not Utils.isNilOrEmpty(output) then -- only print if something went wrong
 			print("> ERROR: " .. output)
 		end
 	end
-
 	-- If something went wrong and the ROM wasn't generated to the ROM path
 	if not success or not FileManager.fileExists(nextRomPath) then
 		local output = table.concat(FileManager.readLinesFromFile(errorLogFilepath), "\n")
-		local missingJava = Utils.containsText(output, "'java' is not recognized", true)
-		local missing64bit = Utils.containsText(output, "Invalid maximum heap size", true)
 		local err1
 		local moreInfoLabel, moreinfoUrl
-		if missingJava then
-			err1 = string.format('ERROR: Java not installed. Please install "Java 64-bit Offline."')
-			moreInfoLabel = "Get Java"
-			moreinfoUrl = "https://www.java.com/en/download/manual.jsp"
-		elseif missing64bit then
-			err1 = string.format('ERROR: Wrong Java installed. Please install "Java 64-bit Offline."')
-			moreInfoLabel = "Get Java"
-			moreinfoUrl = "https://www.java.com/en/download/manual.jsp"
-		else
-			err1 = string.format('ERROR: For more information, open the "%s" found in your Tracker folder.', FileManager.Files.RANDOMIZER_ERROR_LOG)
-			moreInfoLabel = "View Error Log"
-			moreinfoUrl = errorFolderpath .. FileManager.Files.RANDOMIZER_ERROR_LOG
-		end
+		err1 = string.format('ERROR: For more information, open the "%s" found in your Tracker folder.', FileManager.Files.RANDOMIZER_ERROR_LOG)
+		moreInfoLabel = "View Error Log"
+		moreinfoUrl = errorFolderpath .. FileManager.Files.RANDOMIZER_ERROR_LOG
 		local err2 = "~~~ The Randomizer program failed to generate a ROM ~~~"
 		print("> " .. err1)
 		print("> " .. err2)
@@ -715,20 +696,17 @@ function Main.GenerateNextRom()
 	}
 end
 
--- Returns a table containing [jars, settings, roms, quickloadPath] either from Settings.ini or from the Quickload folder
+-- Returns a table containing [shufflers, settings, roms, quickloadPath] either from Settings.ini or from the Quickload folder
 function Main.GetQuickloadFiles()
 	-- Each item in the lists is an absolute file path
 	local fileLists = {
-		jarList = {},
-		settingsList = {},
+		shufflerList = {},
 		romList = {},
 		quickloadPath = nil,
 	}
-
 	-- If all three supplied exists, shortcut to using those over anything else
-	if Options["Generate ROM each time"] and FileManager.fileExists(Options.FILES["Randomizer JAR"]) and FileManager.fileExists(Options.FILES["Settings File"]) and FileManager.fileExists(Options.FILES["Source ROM"]) then
-		table.insert(fileLists.jarList, Options.FILES["Randomizer JAR"])
-		table.insert(fileLists.settingsList, Options.FILES["Settings File"])
+	if Options["Generate ROM each time"] and FileManager.fileExists(Options.FILES["Shuffler"]) and FileManager.fileExists(Options.FILES["Source ROM"]) then
+		table.insert(fileLists.shufflerList, Options.FILES["Shuffler"])
 		table.insert(fileLists.romList, Options.FILES["Source ROM"])
 		return fileLists
 	end
@@ -745,9 +723,8 @@ function Main.GetQuickloadFiles()
 	end
 
 	local listsByExtension = {
-		["jar"] = fileLists.jarList,
-		["rnqs"] = fileLists.settingsList,
-		["gba"] = fileLists.romList,
+		["shuffler"] = fileLists.shufflerList,
+		["gba"] = fileLists.romList
 	}
 
 	local quickloadFileNames = FileManager.getFilesFromDirectory(fileLists.quickloadPath)
@@ -760,11 +737,8 @@ function Main.GetQuickloadFiles()
 
 	-- If some files were missing from the folder, check again from Options if they were partially added in from Settings.ini
 	if Options["Generate ROM each time"] then
-		if #fileLists.jarList == 0 and FileManager.fileExists(Options.FILES["Randomizer JAR"]) then
-			table.insert(fileLists.jarList, Options.FILES["Randomizer JAR"])
-		end
-		if #fileLists.settingsList == 0 and FileManager.fileExists(Options.FILES["Settings File"]) then
-			table.insert(fileLists.settingsList, Options.FILES["Settings File"])
+		if #fileLists.shufflerList == 0 and FileManager.fileExists(Options.FILES["Shuffler"]) then
+			table.insert(fileLists.shufflerList, Options.FILES["Shuffler"])
 		end
 		if #fileLists.romList == 0 and FileManager.fileExists(Options.FILES["Source ROM"]) then
 			table.insert(fileLists.romList, Options.FILES["Source ROM"])
@@ -870,9 +844,6 @@ function Main.GetAttemptsFile(forceUseSettingsFile)
 		settingsFileName = FileManager.extractFileNameFromPath(Options.FILES["Settings File"])
 	else
 		quickloadFiles = quickloadFiles or Main.GetQuickloadFiles()
-		if #quickloadFiles.settingsList > 0 then
-			settingsFileName = FileManager.extractFileNameFromPath(quickloadFiles.settingsList[1])
-		end
 	end
 	if settingsFileName ~= nil then
 		attemptsFileName = string.format("%s %s%s", settingsFileName, FileManager.PostFixes.ATTEMPTS_FILE, FileManager.Extensions.ATTEMPTS)
@@ -989,7 +960,12 @@ function Main.LoadSettings()
 		if settings.config.ShowReleaseNotes ~= nil then
 			Main.Version.showReleaseNotes = settings.config.ShowReleaseNotes
 		end
-
+		for configKey, _ in pairs(Options.GenerationFlags) do
+			local configValue = settings.config[string.gsub(configKey, " ", "_")]
+			if configValue ~= nil then
+				Options.GenerationFlags[configKey] = configValue
+			end
+		end
 		for configKey, _ in pairs(Options.FILES) do
 			local configValue = settings.config[string.gsub(configKey, " ", "_")]
 			if configValue ~= nil then
@@ -1107,7 +1083,6 @@ function Main.SaveSettings(forced)
 	if not forced and not Theme.settingsUpdated then
 		return
 	end
-
 	local settings = Main.MetaSettings or {}
 	settings.config = settings.config or {}
 	settings.tracker = settings.tracker or {}
@@ -1122,7 +1097,12 @@ function Main.SaveSettings(forced)
 	settings.config.DateLastChecked = Main.Version.dateChecked
 	settings.config.ShowUpdateNotification = Main.Version.showUpdate
 	settings.config.ShowReleaseNotes = Main.Version.showReleaseNotes
-
+	
+	
+	for configKey, _ in pairs(Options.GenerationFlags) do
+		local encodedKey = string.gsub(configKey, " ", "_")
+		settings.config[encodedKey] = Options.GenerationFlags[configKey]
+	end
 	for configKey, _ in pairs(Options.FILES) do
 		local encodedKey = string.gsub(configKey, " ", "_")
 		settings.config[encodedKey] = Options.FILES[configKey]

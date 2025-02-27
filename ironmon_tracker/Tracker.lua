@@ -108,6 +108,7 @@ function Tracker.getPokemon(slotNumber, isOwn, excludeEggs)
 
 	local team = isOwn and Program.GameData.PlayerTeam or Program.GameData.EnemyTeam
 	local pokemon = team[slotNumber]
+	
 	if pokemon == nil then
 		return nil
 	end

@@ -114,10 +114,10 @@ function Battle.inActiveBattle()
 end
 
 function Battle.update()
+	
 	if not Program.isValidMapLocation() then
 		return
 	end
-
 	-- First check if the player is actually in a battle before updating other battle data
 	if (Program.Frames.highAccuracyUpdate == 0 or Program.updateRequired) and not Program.inCatchingTutorial then
 		Battle.updateBattleStatus()
@@ -141,15 +141,19 @@ end
 
 -- Check if we can enter battle (opposingPokemon check required for lab fight), or if a battle has just finished
 function Battle.updateBattleStatus()
+	
 	local numBattlers = Memory.readbyte(GameSettings.gBattlersCount)
+	
 	local firstMonID = Memory.readword(GameSettings.gBattleMons)
+	
+	
+		
 	local isFakeBattle = numBattlers == 0 or not PokemonData.isValid(firstMonID)
 	local opposingPokemon = Tracker.getPokemon(1, false) -- get the lead pokemon on the enemy team
-
+	
 	-- BattleStatus [0 = In battle, 1 = Won the match, 2 = Lost the match, 4 = Fled, 7 = Caught]
 	local statusOrOutcome = Memory.readbyte(GameSettings.gBattleOutcome) -- For current or the last battle (gBattleOutcome isn't cleared when a battle ends)
 	local battleStatusActive = statusOrOutcome == 0 and opposingPokemon ~= nil
-
 	-- Flags to check if it's okay to start reading battle related game data (shortly after a battle begins) or if the battle has completely ended
 	local msgTiming = {
 		DataStart = {
@@ -169,6 +173,7 @@ function Battle.updateBattleStatus()
 	}
 	local battleMainFunction = Memory.readdword(GameSettings.gBattleMainFunc)
 
+	
 	if Battle.inBattleScreen and not Battle.dataReady and msgTiming.DataStart[Battle.isWildEncounter][battleMainFunction]then
 		Battle.dataReady = true
 		Battle.isViewingOwn = not Options["Auto swap to enemy"]
@@ -179,7 +184,6 @@ function Battle.updateBattleStatus()
 	if not Battle.inBattleScreen and battleStatusActive and isFakeBattle then
 		isSafariEncounter = Program.isInSafariZone()
 	end
-
 	if not Battle.inBattleScreen and battleStatusActive and (not isFakeBattle or isSafariEncounter) then
 		Battle.beginNewBattle()
 	elseif Battle.dataReady and not battleStatusActive and msgTiming.DataEnd[battleMainFunction] then
@@ -319,7 +323,7 @@ end
 function Battle.processBattleTurn()
 	-- attackerValue = 0 or 2 for player mons and 1 or 3 for enemy mons (2,3 are doubles partners)
 	Battle.attacker = Memory.readbyte(GameSettings.gBattlerAttacker)
-
+	
 	local currentTurn = Memory.readbyte(GameSettings.gBattleResults + Program.Addresses.offsetBattleResultsCurrentTurn)
 	local currDamageTotal = Memory.readword(GameSettings.gTakenDmg)
 
@@ -386,28 +390,31 @@ function Battle.updateTrackedInfo()
 	end
 	--ignore focus punch setup, only priority move that isn't actually a used move yet. Also don't bother tracking abilities/moves for ghosts
 	if not Battle.moveDelayed() and not Battle.isGhost then
-
+		
 		-- Handle Focus punch separately
 		if Battle.battleMsg ~= GameSettings.BattleScript_FocusPunchSetUp then
 		-- Check if we are on a new action cycle (Range 0 to numBattlers - 1)
 		-- firstActionTaken fixes leftover data issue going from Single to Double battle
 		-- If the same attacker was just logged, stop logging
-
+			
 			if actionCount < Battle.numBattlers and Battle.firstActionTaken and confirmedCount == 0 and currentAction == 0 then
+				
 				-- 0 = MOVE_USED
 				if lastMoveByAttacker > 0 and lastMoveByAttacker < #MoveData.Moves + 1 then
 					if Battle.AbilityChangeData.prevAction ~= actionCount then
 						Battle.AbilityChangeData.recordNextMove = true
 						Battle.AbilityChangeData.prevAction = actionCount
 					elseif Battle.AbilityChangeData.recordNextMove then
+						
 						local hitFlags = Memory.readdword(GameSettings.gHitMarker)
 						local moveFlags = Memory.readbyte(GameSettings.gMoveResultFlags)
 						--Do nothing if attacker was unable to use move (Fully paralyzed, Truant, etc.; HITMARKER_UNABLE_TO_USE_MOVE)
 						if Utils.bit_and(hitFlags, Program.Addresses.hitmarkerFlag80000) == 0 then
 							-- Track move so long as the mon was able to use it
-
 							--Handle snatch
+							
 							if Battle.battleMsg == GameSettings.BattleScript_SnatchedMove then
+								
 								local battlerSlot = Battle.Combatants[Battle.IndexMap[Battle.battler]]
 								local battler = Battle.BattleParties[Battle.battler % 2][battlerSlot]
 								local battlerTransformData = battler.transformData
@@ -427,7 +434,8 @@ function Battle.updateTrackedInfo()
 								local attackerSlot = Battle.Combatants[Battle.IndexMap[Battle.attacker]] or 0
 								local attacker = Battle.BattleParties[Battle.attacker % 2][attackerSlot] or {}
 								local transformData = attacker.transformData
-								if transformData and not transformData.isOwn then
+								
+								if transformData and not transformData.isOwn or true then
 									-- Only track moves which the pokemon knew at the start of battle (in case of Sketch/Mimic)
 									if lastMoveByAttacker == attacker.moves[1] or lastMoveByAttacker == attacker.moves[2] or lastMoveByAttacker == attacker.moves[3] or lastMoveByAttacker == attacker.moves[4] then
 										local attackingMon = Tracker.getPokemon(transformData.slot,transformData.isOwn)
@@ -746,7 +754,6 @@ function Battle.beginNewBattle()
 	-- BATTLE_TYPE_TRAINER (1 << 3)
 	local battleFlags = Memory.readdword(GameSettings.gBattleTypeFlags)
 	Battle.isWildEncounter = Utils.getbits(battleFlags, 3, 1) == 0
-
 	-- If this is a new battle, reset views and other pokemon tracker info
 	Battle.inBattleScreen = true
 	Battle.dataReady = false
@@ -948,6 +955,7 @@ function Battle.populateBattlePartyObject()
 	Battle.BattleParties[1] = {}
 	for i=1, 6, 1 do
 		local ownPokemon = Tracker.getPokemon(i, true)
+		
 		if ownPokemon ~= nil then
 			local ownMoves = {
 				ownPokemon.moves[1].id,

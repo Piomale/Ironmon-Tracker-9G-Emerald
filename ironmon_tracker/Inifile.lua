@@ -105,13 +105,13 @@ function Inifile.save(name, t)
 	-- Get our metadata if it exists
 	local metadata = getmetatable(t)
 	local comments, sectionorder
-
+	
 	if metadata then metadata = metadata.__Inifile end
 	if metadata then
 		comments = metadata.comments
 		sectionorder = metadata.sectionorder
 	end
-
+	
 	-- If there are comments before sections,
 	-- write them out now
 	if comments and comments[comments] then
@@ -132,6 +132,7 @@ function Inifile.save(name, t)
 		local s = t[section]
 		-- Discard if it doesn't exist (anymore)
 		if not s then return end
+		
 		table.insert(contents, ("[%s]"):format(section))
 
 		-- Write our comments out again, sadly we have only achieved
@@ -164,6 +165,7 @@ function Inifile.save(name, t)
 	local done = {}
 	if sectionorder then
 		for _, v in ipairs(sectionorder) do
+			
 			done[v.name] = true
 			writesection(v.name, v)
 		end

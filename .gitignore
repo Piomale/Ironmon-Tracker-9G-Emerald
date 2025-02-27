@@ -1,20 +1,15 @@
-Settings.ini
-*.tdat
+*.ini
+*.json
+!Pokemon Emerald.json
+!TrackerOverrides.json
 *.gba
-*.sav
 *.State
-*.ss[0-9]
 *.log
-*Attempts.txt
-quickload/*.jar
-quickload/*.rnqs
-extensions/*
-!extensions/How to use.txt
-!extensions/CodeExtensionTemplate.lua.txt
-ironmon_tracker/*.txt
-ironmon_tracker/NewRunProfiles.json
-ironmon_tracker/network/Requests.json
-ironmon_tracker/images/pokemonAnimated/*.gif
-AnimatedPokemon.gif
-RandomizerErrorLog.txt
-ThemePresets.txt
+*.txt
+!ThemePresets.txt
+!CodeExtensionTemplate.lua.txt
+!How to use.txt
+!StreamerbotCodeImport.txt
+!LICENSE.txt
+!README.txt
+*.tdat

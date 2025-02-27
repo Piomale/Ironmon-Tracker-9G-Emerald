@@ -540,11 +540,11 @@ function QuickloadScreen.createInitialProfile()
 	-- Define initial profile attributes based on current New Run settings/files
 	local quickloadFiles = Main.tempQuickloadFiles or Main.GetQuickloadFiles()
 	if Options["Generate ROM each time"] then
-		profile.Name = FileManager.extractFileNameFromPath(quickloadFiles.settingsList[1] or "") or ""
+		profile.Name = "Emerald-EM-Seed.gba"
 		profile.Mode = SCREEN.Modes.GENERATE
-		profile.Paths.Settings = quickloadFiles.settingsList[1] or ""
-		profile.Paths.Jar = quickloadFiles.jarList[1] or ""
+		profile.Paths.Shuffler = quickloadFiles.shufflerList[1] or ""
 		profile.Paths.Rom = quickloadFiles.romList[1] or ""
+		profile.Lang = quickloadFiles.LangList[1] or ""
 	elseif Options["Use premade ROMs"] then
 		local romsFolderName = FileManager.extractFolderNameFromPath(quickloadFiles.quickloadPath or "") or ""
 		if not Utils.isNilOrEmpty(romsFolderName) then
@@ -574,6 +574,9 @@ function QuickloadScreen.addUpdateProfile(profile, setAsActive)
 	end
 	if Utils.isNilOrEmpty(profile.Name) then
 		profile.Name = string.format("Unknown Profile %s", profile.GUID:sub(1, 4))
+	end
+	if Utils.isNilOrEmpty(profile.Lang) then
+		profile.Lang = "fr"
 	end
 	if Utils.isNilOrEmpty(profile.GameOverCondition) then
 		profile.GameOverCondition = Options["Game Over condition"]
@@ -627,9 +630,9 @@ function QuickloadScreen.deleteProfile(profile)
 		Options["Generate ROM each time"] = false
 		Options["Use premade ROMs"] = false
 		Options.FILES["ROMs Folder"] = ""
-		Options.FILES["Randomizer JAR"] = ""
-		Options.FILES["Source ROM"] = ""
-		Options.FILES["Settings File"] = ""
+		Options.FILES["Shuffler"] = ""
+		Options.FILES["Source ROM"] = ""						 
+		Options.GenerationFlags["Game Language"] = ""						 
 	end
 	SCREEN.Profiles[profile.GUID] = nil
 	SCREEN.saveProfiles()
@@ -666,9 +669,9 @@ function QuickloadScreen.setActiveProfile(profile)
 	Options["Generate ROM each time"] = isGenerateMode
 	Options["Use premade ROMs"] = not isGenerateMode
 	Options.FILES["ROMs Folder"] = not isGenerateMode and profile.Paths.RomsFolder or ""
-	Options.FILES["Randomizer JAR"] = isGenerateMode and profile.Paths.Jar or ""
+	Options.FILES["Shuffler"] = isGenerateMode and profile.Paths.Shuffler or ""
 	Options.FILES["Source ROM"] = isGenerateMode and profile.Paths.Rom or ""
-	Options.FILES["Settings File"] = isGenerateMode and profile.Paths.Settings or ""
+	Options.GenerationFlags["Game Language"] = isGenerateMode and profile.Lang or ""
 	Main.SaveSettings(true)
 
 	-- Since the New Run settings changed, load in the attempts count
@@ -789,22 +792,8 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 		return filepath
 	end
 	local function _autoUpdateBlueTextValues()
-		if ExternalUI.BizForms.isChecked(form.Controls.checkboxGenerate) then
-			local chosenRomText = FileManager.extractFileNameFromPath(ExternalUI.BizForms.getText(form.Controls.Generate.textboxROM) or "", true)
-			ExternalUI.BizForms.setText(form.Controls.Generate.labelChosenROM, chosenRomText)
-			local chosenJarText = FileManager.extractFileNameFromPath(ExternalUI.BizForms.getText(form.Controls.Generate.textboxJAR) or "", true)
-			ExternalUI.BizForms.setText(form.Controls.Generate.labelChosenJAR, chosenJarText)
-			local chosenSettingsText = FileManager.extractFileNameFromPath(ExternalUI.BizForms.getText(form.Controls.Generate.textboxRNQS) or "", true)
-			ExternalUI.BizForms.setText(form.Controls.Generate.labelChosenSettings, chosenSettingsText)
-			local createdRomName = FileManager.extractFileNameFromPath(chosenSettingsText)
-			if not Utils.isNilOrEmpty(createdRomName) then
-				createdRomName = string.format("%s %s%s", createdRomName, FileManager.PostFixes.AUTORANDOMIZED, FileManager.Extensions.GBA_ROM)
-			end
+			local createdRomName = "Emerald-EM-Seed.gba"
 			ExternalUI.BizForms.setText(form.Controls.Generate.labelCreatedRomValue, createdRomName)
-		elseif ExternalUI.BizForms.isChecked(form.Controls.checkboxPremade) then
-			local chosenFolderText = FileManager.extractFolderNameFromPath(ExternalUI.BizForms.getText(form.Controls.Premade.textboxFOLDER) or "")
-			ExternalUI.BizForms.setText(form.Controls.Premade.labelChosenFolder, chosenFolderText)
-		end
 	end
 	local function _autoUpdateProfileName()
 		-- Don't auto change the name if one already exists
@@ -813,8 +802,7 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 		end
 		local name
 		if ExternalUI.BizForms.isChecked(form.Controls.checkboxGenerate) then
-			local path = ExternalUI.BizForms.getText(form.Controls.Generate.textboxRNQS)
-			name = FileManager.extractFileNameFromPath(path)
+			name = "KAIZO"
 		elseif ExternalUI.BizForms.isChecked(form.Controls.checkboxPremade) then
 			local path = ExternalUI.BizForms.getText(form.Controls.Premade.textboxFOLDER)
 			local folderName = FileManager.extractFolderNameFromPath(path)
@@ -832,10 +820,10 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 			if Utils.isNilOrEmpty(ExternalUI.BizForms.getText(form.Controls.Generate.textboxROM)) then
 				allVerified = false
 			end
-			if Utils.isNilOrEmpty(ExternalUI.BizForms.getText(form.Controls.Generate.textboxJAR)) then
+			if Utils.isNilOrEmpty(ExternalUI.BizForms.getText(form.Controls.Generate.textboxSHUFFLER)) then
 				allVerified = false
 			end
-			if Utils.isNilOrEmpty(ExternalUI.BizForms.getText(form.Controls.Generate.textboxRNQS)) then
+			if (not ExternalUI.BizForms.isChecked(form.Controls.Generate.checkboxFrench) and not ExternalUI.BizForms.isChecked(form.Controls.Generate.checkboxEnglish)) or (ExternalUI.BizForms.isChecked(form.Controls.Generate.checkboxFrench) and ExternalUI.BizForms.isChecked(form.Controls.Generate.checkboxEnglish))  then
 				allVerified = false
 			end
 		elseif ExternalUI.BizForms.isChecked(form.Controls.checkboxPremade) then
@@ -865,21 +853,8 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 	end
 	local function _autoUpdateGameOverDropdown()
 		local extractedName
-		if ExternalUI.BizForms.isChecked(form.Controls.checkboxGenerate) then
-			local path = ExternalUI.BizForms.getText(form.Controls.Generate.textboxRNQS)
-			extractedName = FileManager.extractFileNameFromPath(path)
-		elseif ExternalUI.BizForms.isChecked(form.Controls.checkboxPremade) then
-			local path = ExternalUI.BizForms.getText(form.Controls.Premade.textboxFOLDER)
-			extractedName = FileManager.extractFolderNameFromPath(path)
-		end
-		local text, selectedOption
-		if Utils.containsText(extractedName, "Standard", true) or Utils.containsText(extractedName, "Ultimate", true) then
-			selectedOption = "EntirePartyFaints"
-			text = dropdownOptionsGameOver[3]
-		else -- Kaizo, Survival, etc.
-			selectedOption = "LeadPokemonFaints"
-			text = dropdownOptionsGameOver[1]
-		end
+		selectedOption = "LeadPokemonFaints"
+		text = dropdownOptionsGameOver[1]
 		if form.Controls.dropdownGameOver then
 			ExternalUI.BizForms.setText(form.Controls.dropdownGameOver, text)
 			if form.Controls.labelGameOverChanged then
@@ -898,6 +873,8 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 		end
 		_updateVisibility()
 	end)
+
+
 	form.Controls.checkboxPremade = form:createCheckbox("Premade ROMs folder", X + 240, lineY, function()
 		if ExternalUI.BizForms.isChecked(form.Controls.checkboxPremade) then
 			ExternalUI.BizForms.setChecked(form.Controls.checkboxGenerate, false)
@@ -910,7 +887,29 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 		ExternalUI.BizForms.setProperty(form.Controls.checkboxPremade, ExternalUI.BizForms.Properties.ENABLED, false)
 	end
 	lineY = lineY + 30
+	
+	
+	-- LANG
+	form.Controls.Generate.labelLANG = form:createLabel("Language (choose one):", X, lineY)
+	lineY = lineY + 20
+	form.Controls.Generate.checkboxFrench = form:createCheckbox("Français", X + 70, lineY, function()
+		if ExternalUI.BizForms.isChecked(form.Controls.Generate.checkboxFrench) then
+			ExternalUI.BizForms.setChecked(form.Controls.Generate.checkboxEnglish, false)
+		end
+		_updateVisibility()
+		_verifyFilesAndUpdateButtons()
+	end)
+	form.Controls.Generate.checkboxEnglish = form:createCheckbox("English", X + 240, lineY, function()
+		if ExternalUI.BizForms.isChecked(form.Controls.Generate.checkboxEnglish) then
+			ExternalUI.BizForms.setChecked(form.Controls.Generate.checkboxFrench, false)
+		end
+		_updateVisibility()
+		_verifyFilesAndUpdateButtons()
+	end)
+	
+	lineY = lineY + 30
 
+	
 	-- SOURCE ROM
 	form.Controls.Generate.labelROM = form:createLabel("Source ROM (a .GBA file):", X, lineY)
 	form.Controls.Generate.labelChosenROM = form:createLabel("", X + 200, lineY)
@@ -952,55 +951,24 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 	end, 35, 25)
 	lineY = lineY + 32
 
-	-- RANDOMIZER JAR
-	form.Controls.Generate.labelJAR = form:createLabel("Randomizer Program (a .JAR file):", X, lineY)
-	form.Controls.Generate.labelChosenJAR = form:createLabel("", X + 200, lineY)
-	ExternalUI.BizForms.setProperty(form.Controls.Generate.labelChosenJAR, ExternalUI.BizForms.Properties.FORE_COLOR, "blue")
+	-- RANDOMIZER SHUFFLER
+	form.Controls.Generate.labelSHUFFLER = form:createLabel("Randomizer Program (shuffler.exe):", X, lineY)
+	form.Controls.Generate.labelChosenSHUFFLER = form:createLabel("", X + 200, lineY)
+	ExternalUI.BizForms.setProperty(form.Controls.Generate.labelChosenSHUFFLER, ExternalUI.BizForms.Properties.FORE_COLOR, "blue")
 	lineY = lineY + 20
-	form.Controls.Generate.textboxJAR = form:createTextBox(profile.Paths.Jar or "", X, lineY - 1, FILE_BOX_W, 20)
-	form.Controls.Generate.buttonJAR = form:createButton("...", X + FILE_BOX_W + 10, lineY - 4, function()
-		local currentPath = ExternalUI.BizForms.getText(form.Controls.Generate.textboxJAR)
+	form.Controls.Generate.textboxSHUFFLER = form:createTextBox(profile.Paths.Shuffler or "", X, lineY - 1, FILE_BOX_W, 20)
+	form.Controls.Generate.buttonSHUFFLER = form:createButton("...", X + FILE_BOX_W + 10, lineY - 4, function()
+		local currentPath = ExternalUI.BizForms.getText(form.Controls.Generate.textboxSHUFFLER)
 		currentPath = _extractFolderPath(currentPath)
-		local filterOptions = "JAR File (*.JAR)|*.jar|All files (*.*)|*.*"
-		local newPath, success = ExternalUI.BizForms.openFilePrompt("SELECT JAR", currentPath, filterOptions)
+		local filterOptions = "EXE File (*.EXE)|*.exe|All files (*.*)|*.*"
+		local newPath, success = ExternalUI.BizForms.openFilePrompt("shuffler.exe", currentPath, filterOptions)
 		if success then
-			ExternalUI.BizForms.setText(form.Controls.Generate.textboxJAR, newPath)
+			ExternalUI.BizForms.setText(form.Controls.Generate.textboxSHUFFLER, newPath)
 		end
 		_verifyFilesAndUpdateButtons()
 		_autoUpdateBlueTextValues()
 	end, 35, 25)
 	lineY = lineY + 32
-
-	-- SETTINGS FILE
-	form.Controls.Generate.labelRNQS = form:createLabel("Randomizer Settings (a .RNQS file):", X, lineY)
-	form.Controls.Generate.labelChosenSettings = form:createLabel("", X + 200, lineY)
-	ExternalUI.BizForms.setProperty(form.Controls.Generate.labelChosenSettings, ExternalUI.BizForms.Properties.FORE_COLOR, "blue")
-	lineY = lineY + 20
-	form.Controls.Generate.textboxRNQS = form:createTextBox(profile.Paths.Settings or "", X, lineY - 1, FILE_BOX_W, 20)
-	form.Controls.Generate.buttonSettings = form:createButton("...", X + FILE_BOX_W + 10, lineY - 4, function()
-		local currentPath = ExternalUI.BizForms.getText(form.Controls.Generate.textboxRNQS)
-		currentPath = _extractFolderPath(currentPath)
-		-- If the custom settings file hasn't ever been set, show the folder containing preloaded setting files
-		if Utils.isNilOrEmpty(currentPath) then
-			currentPath = FileManager.getRandomizerSettingsPath()
-		end
-		local filterOptions = "RNQS File (*.RNQS)|*.rnqs|All files (*.*)|*.*"
-		local newPath, success = ExternalUI.BizForms.openFilePrompt("SELECT RNQS", currentPath, filterOptions)
-		if success then
-			ExternalUI.BizForms.setText(form.Controls.Generate.textboxRNQS, newPath)
-			_autoUpdateProfileName()
-		end
-		_verifyFilesAndUpdateButtons()
-		_autoUpdateBlueTextValues()
-		_autoUpdateGameOverDropdown()
-	end, 35, 25)
-	lineY = lineY + 30
-	form.Controls.Generate.labelCreatedRomName = form:createLabel("Tracker will create this ROM file:", X, lineY)
-	form.Controls.Generate.labelCreatedRomValue = form:createLabel("", X + 200, lineY)
-	ExternalUI.BizForms.setProperty(form.Controls.Generate.labelCreatedRomValue, ExternalUI.BizForms.Properties.FORE_COLOR, "blue")
-	lineY = lineY + 20
-	form.Controls.labelDivider = form:createLabel(string.rep("-", 200), X, lineY, W - X * 2 - 1, 20)
-	lineY = lineY + 25
 
 	-- NAME
 	form.Controls.labelName = form:createLabel("Profile Name:", X, lineY)
@@ -1038,8 +1006,12 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 		if ExternalUI.BizForms.isChecked(form.Controls.checkboxGenerate) then
 			profile.Mode = SCREEN.Modes.GENERATE
 			profile.Paths.Rom = ExternalUI.BizForms.getText(form.Controls.Generate.textboxROM) or ""
-			profile.Paths.Jar = ExternalUI.BizForms.getText(form.Controls.Generate.textboxJAR) or ""
-			profile.Paths.Settings = ExternalUI.BizForms.getText(form.Controls.Generate.textboxRNQS) or ""
+			profile.Paths.Shuffler = ExternalUI.BizForms.getText(form.Controls.Generate.textboxSHUFFLER) or ""
+			if ExternalUI.BizForms.isChecked(form.Controls.Generate.checkboxEnglish) then
+				profile.Lang = "en"
+			else
+				profile.Lang = "fr"
+			end
 		elseif ExternalUI.BizForms.isChecked(form.Controls.checkboxPremade) then
 			profile.Mode = SCREEN.Modes.PREMADE
 			profile.Paths.RomsFolder = ExternalUI.BizForms.getText(form.Controls.Premade.textboxFOLDER) or ""
@@ -1059,6 +1031,7 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 				profile.Paths.Tdat = newTdatFilepath
 			end
 		end
+
 		-- Set the GameOver condition
 		local selectedGameOverDropdown = ExternalUI.BizForms.getText(form.Controls.dropdownGameOver) or ""
 		if selectedGameOverDropdown == dropdownOptionsGameOver[1] then
@@ -1090,6 +1063,15 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 	else
 		ExternalUI.BizForms.setChecked(form.Controls.checkboxGenerate, true)
 	end
+	
+		-- Set the language
+	if profile.Lang == "en" then
+		ExternalUI.BizForms.setChecked(form.Controls.Generate.checkboxEnglish, true)
+	else
+		ExternalUI.BizForms.setChecked(form.Controls.Generate.checkboxFrench, true)
+	end
+	
+	
 	_verifyFilesAndUpdateButtons()
 	_updateVisibility()
 	_autoUpdateBlueTextValues()
@@ -1128,19 +1110,17 @@ function QuickloadScreen.getGameProfileRomName(profile)
 
 	local filename
 	if profile.Mode == QuickloadScreen.Modes.GENERATE then
-		-- Filename of the AutoRandomized ROM is based on the settings file (for cases of playing Kaizo + Survival + Others)
-		local settingsFileName = FileManager.extractFileNameFromPath(profile.Paths.Settings or "")
-		filename = string.format("%s %s%s", settingsFileName, FileManager.PostFixes.AUTORANDOMIZED, FileManager.Extensions.GBA_ROM)
+		filename = "Emerald-EM-Seed.gba"
 	elseif profile.Mode == QuickloadScreen.Modes.PREMADE then
-		filename = GameSettings.getRomName()
-		local filepath = (profile.Paths.RomsFolder or "") .. filename .. FileManager.Extensions.GBA_ROM
+		filename = "Emerald-EM-Seed.gba"
+		local filepath = (profile.Paths.RomsFolder or "") .. filename
 		if not FileManager.fileExists(filepath) then
 			-- File doesn't exist, try again with underscores instead of spaces (awkward Bizhawk issue)
 			filename = filename:gsub(" ", "_")
 		end
 	end
 
-	return filename or (GameSettings.getRomName() .. FileManager.Extensions.GBA_ROM)
+	return filename or "Emerald-EM-Seed.gba"
 end
 
 ---Returns the full ROM filepath used by the specified `profile`
@@ -1151,19 +1131,17 @@ function QuickloadScreen.getGameProfileRomPath(profile)
 	local filepath
 	if profile.Mode == SCREEN.Modes.GENERATE then
 		-- Filename of the AutoRandomized ROM is based on the settings file (for cases of playing Kaizo + Survival + Others)
-		local settingsFileName = FileManager.extractFileNameFromPath(profile.Paths.Settings or "")
-		local filename = string.format("%s %s%s", settingsFileName, FileManager.PostFixes.AUTORANDOMIZED, FileManager.Extensions.GBA_ROM)
+		local filename = "Emerald-EM-Seed.gba"
 		filepath = FileManager.prependDir(filename)
 	elseif profile.Mode == SCREEN.Modes.PREMADE then
-		local filename = GameSettings.getRomName()
-		filepath = (profile.Paths.RomsFolder or "") .. filename .. FileManager.Extensions.GBA_ROM
+		local filename = "Emerald-EM-Seed.gba"
 		if not FileManager.fileExists(filepath) then
 			-- File doesn't exist, try again with underscores instead of spaces (awkward Bizhawk issue)
 			filename = filename:gsub(" ", "_")
 			filepath = (profile.Paths.RomsFolder or "") .. filename .. FileManager.Extensions.GBA_ROM
 		end
 	end
-	return filepath or (GameSettings.getRomName() .. FileManager.Extensions.GBA_ROM)
+	return filepath or "Emerald-EM-Seed.gba"
 end
 
 ---Returns the full TDAT filepath used by the specified `profile`
@@ -1252,6 +1230,7 @@ end
 QuickloadScreen.IProfile = {
 	-- Required unique GUID
 	GUID = "",
+	Lang = "",
 	-- Display Name
 	Name = "",
 	-- New Run Mode, either: SCREEN.Modes. "Generate" or "Premade"
@@ -1267,9 +1246,8 @@ QuickloadScreen.IProfile = {
 	-- Available Paths used by this profile
 	Paths = {
 		--[[ Several useful paths stored for each profile
-		Jar = [Generate Mode] path to the jar file used for randomizations (.JAR)
+		Shuffler = [Generate Mode] path to the shuffler file used for randomizations (.EXE)
 		Rom = [Generate Mode] path to the source rom file used for randomizations (.GBA)
-		Settings = [Generate Mode]  path to the randomize settings file used for randomizations (.RNQS)
 		RomsFolder = [Premade Mode] path to the folder containing a batch of randomized roms
 		Tdat = path to the associated tracker notes file (.TDAT)
 		CurrentRom = path to most recently created/loaded ROM
@@ -1283,6 +1261,7 @@ function QuickloadScreen.IProfile:new(o)
 	o = o or {}
 	o.GUID = o.GUID or Utils.newGUID()
 	o.Name = o.Name or ""
+	o.Lang = o.Lang or ""
 	o.Mode = o.Mode or ""
 	o.GameVersion = o.GameVersion or ""
 	o.GameOverCondition = o.GameOverCondition or ""
