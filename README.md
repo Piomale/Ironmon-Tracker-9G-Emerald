@@ -24,7 +24,7 @@ Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
 - le log viewer (il n'y a pas de fichier de log)
 
 
-En cas de problème, vérifier:
+### En cas de problème, vérifier:
 - La version de https://github.com/Nax/emerald-em/tree/master doit être 0.3
 - Vous avez bien mis le trackeur en français / en anglais
 - La seed a été généré en français
