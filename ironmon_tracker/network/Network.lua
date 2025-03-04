@@ -299,6 +299,7 @@ function Network.updateByHttp()
 end
 
 -- Connection object prototype
+
 Network.IConnection = {
 	Type = Network.ConnectionTypes.None,
 	State = Network.ConnectionState.Closed,
@@ -315,6 +316,9 @@ Network.IConnection = {
 		end
 	end,
 }
+
+---@param o? table
+---@return table connection
 function Network.IConnection:new(o)
 	o = o or {}
 	setmetatable(o, self)

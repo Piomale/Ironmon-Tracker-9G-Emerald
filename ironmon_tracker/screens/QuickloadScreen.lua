@@ -27,7 +27,7 @@ QuickloadScreen = {
 	currentTab = nil,
 	Profiles = {}, -- populated from JSON as a luatable: { [GUID] = IProfile() }
 	FORCE_UPDATE_GAME_VERSION = "ForceUpdateGameVersion",
-	PREMADE_ROMS_NAME_FORMAT = "%s Premade"
+	PREMADE_ROMS_NAME_FORMAT = "%s Premade",
 }
 local SCREEN = QuickloadScreen
 local TAB_HEIGHT = 12
@@ -36,6 +36,15 @@ local CANVAS = {
 	Y = Constants.SCREEN.MARGIN + 10 + TAB_HEIGHT,
 	W = Constants.SCREEN.RIGHT_GAP - (Constants.SCREEN.MARGIN * 2),
 	H = Constants.SCREEN.HEIGHT - (Constants.SCREEN.MARGIN * 2) - 10 - TAB_HEIGHT,
+}
+
+-- Used to automatically determine the Game Over condition when setting up a New Profile, based on text found in the randomizer settings filename (.rnqs)
+-- For example, if the keyword "Ultimate" is found in the name of the settings file, the default game over condition for the profile will be "EntirePartyFaints"
+SCREEN.SettingsKeywordToGameOverMap = {
+	["Standard"] = "EntirePartyFaints",
+	["Ultimate"] = "EntirePartyFaints",
+	["Kaizo"] = "LeadPokemonFaints",
+	["Survival"] = "LeadPokemonFaints",
 }
 
 SCREEN.Modes = {
@@ -853,8 +862,28 @@ function QuickloadScreen.addEditProfilePrompt(profile)
 	end
 	local function _autoUpdateGameOverDropdown()
 		local extractedName
-		selectedOption = "LeadPokemonFaints"
-		text = dropdownOptionsGameOver[1]
+		if ExternalUI.BizForms.isChecked(form.Controls.checkboxGenerate) then
+			local path = ExternalUI.BizForms.getText(form.Controls.Generate.textboxRNQS)
+			extractedName = FileManager.extractFileNameFromPath(path)
+		elseif ExternalUI.BizForms.isChecked(form.Controls.checkboxPremade) then
+			local path = ExternalUI.BizForms.getText(form.Controls.Premade.textboxFOLDER)
+			extractedName = FileManager.extractFolderNameFromPath(path)
+		end
+		local text, selectedOption
+		for keyword, condition in pairs(SCREEN.SettingsKeywordToGameOverMap or {}) do
+			if Utils.containsText(extractedName, keyword, true) then
+				selectedOption = condition
+				break
+			end
+		end
+		if selectedOption == "EntirePartyFaints" then
+			text = dropdownOptionsGameOver[3]
+		elseif selectedOption == "LeadPokemonFaints" then
+			text = dropdownOptionsGameOver[1]
+		else -- Otherwise, default to lead pokemon faints
+			selectedOption = "LeadPokemonFaints"
+			text = dropdownOptionsGameOver[1]
+		end
 		if form.Controls.dropdownGameOver then
 			ExternalUI.BizForms.setText(form.Controls.dropdownGameOver, text)
 			if form.Controls.labelGameOverChanged then
