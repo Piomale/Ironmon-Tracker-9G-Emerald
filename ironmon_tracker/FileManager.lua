@@ -77,8 +77,8 @@ FileManager.Extensions = {
 }
 
 FileManager.Urls = {
-	VERSION = "https://api.github.com/repos/piomale/Ironmon-Tracker-em-9g/releases/latest",
-	DOWNLOAD = "https://github.com/piomale/Ironmon-Tracker-em-9g/releases/latest",
+	VERSION = "https://api.github.com/repos/piomale/Ironmon-Tracker-9G-Emerald/releases/latest",
+	DOWNLOAD = "https://github.com/piomale/Ironmon-Tracker-9G-Emerald/releases/latest",
 	WIKI = "https://github.com/besteon/Ironmon-Tracker/wiki",
 	DISCUSSIONS = "https://github.com/besteon/Ironmon-Tracker/discussions/389", -- Discussion: "Help us translate the Ironmon Tracker"
 	NEW_RUNS = "https://github.com/besteon/Ironmon-Tracker/wiki/New-Runs-Setup",
