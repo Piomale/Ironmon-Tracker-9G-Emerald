@@ -7,8 +7,8 @@ UpdateOrInstall = {
 	trackerFileName = "Ironmon-Tracker.lua",
 	slash = package.config:sub(1,1) or "\\", -- Windows is \ and Linux is /
 	TAR_URL = "https://github.com/piomale/Ironmon-Tracker-9G-Emerald/archive/main.tar.gz",
-	archiveName = "Ironmon-Tracker-main.tar.gz",
-	archiveFolder = "Ironmon-Tracker-main",
+	archiveName = "Ironmon-Tracker-9G-Emerald.tar.gz",
+	archiveFolder = "Ironmon-Tracker-9G-Emerald-main",
 }
 
 -- Beta testers can have this enabled to receive live updates from "beta-test" branch
@@ -248,7 +248,7 @@ function UpdateOrInstall.updateFiles(archiveFolderPath)
 	end
 
 	local command, err1, err2 = UpdateOrInstall.buildCopyFilesCommand(archiveFolderPath, isOnWindows)
-
+	
 	local result = os.execute(command)
 	if not (result == true or result == 0) then -- true / 0 = successful
 		print("> WARNING: " .. err1)
@@ -262,11 +262,7 @@ end
 
 -- Returns a string of batch commands to run based on the operating system, also returns error messages
 function UpdateOrInstall.buildDownloadExtractCommand(tarUrl, archive, extractedFolder, isOnWindows, folderNamesToExclude, fileNamesToExclude)
-	folderNamesToExclude = folderNamesToExclude or {
-		'.vscode',
-		'.github',
-		string.format('ironmon_tracker%sDebug', UpdateOrInstall.slash),
-	}
+	folderNamesToExclude = folderNamesToExclude
 	fileNamesToExclude = fileNamesToExclude or {
 		'.editorconfig',
 		'.gitattributes',

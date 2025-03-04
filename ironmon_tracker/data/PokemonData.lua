@@ -5939,7 +5939,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "664",
-		name = "Scatterbug",
+		name = "scatterbug",
 		evolution = "9",
 		bst = 200,
 		movelvls = { {1, 1, 6, 15}, {1, 1, 6, 15} },
@@ -5947,7 +5947,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "665",
-		name = "Spewpa",
+		name = "spewpa",
 		evolution = "12",
 		bst = 213,
 		movelvls = { {1}, {1} },
@@ -12247,7 +12247,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1436",
-		name = "mothimsandy",
+		name = "mothim-sandy",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12256,7 +12256,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1437",
-		name = "mothimtrash",
+		name = "mothim-trash",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12265,7 +12265,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1438",
-		name = "scatterbugpolar",
+		name = "scatterbug-polar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12274,7 +12274,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1439",
-		name = "scatterbugtundra",
+		name = "scatterbug-tundra",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12283,7 +12283,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1440",
-		name = "scatterbugcontinental",
+		name = "scatterbug-continental",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12292,7 +12292,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1441",
-		name = "scatterbuggarden",
+		name = "scatterbug-garden",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12301,7 +12301,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1442",
-		name = "scatterbugelegant",
+		name = "scatterbug-elegant",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12310,7 +12310,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1443",
-		name = "scatterbugmeadow",
+		name = "scatterbug-meadow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12319,7 +12319,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1444",
-		name = "scatterbugmodern",
+		name = "scatterbug-modern",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12328,7 +12328,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1445",
-		name = "scatterbugmarine",
+		name = "scatterbug-marine",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12337,7 +12337,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1446",
-		name = "scatterbugarchipelago",
+		name = "scatterbug-archipelago",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12346,7 +12346,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1447",
-		name = "scatterbughighplains",
+		name = "scatterbug-highplains",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12355,7 +12355,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1448",
-		name = "scatterbugsandstorm",
+		name = "scatterbug-sandstorm",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12364,7 +12364,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1449",
-		name = "scatterbugriver",
+		name = "scatterbug-river",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12373,7 +12373,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1450",
-		name = "scatterbugmonsoon",
+		name = "scatterbug-monsoon",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12382,7 +12382,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1451",
-		name = "scatterbugsavanna",
+		name = "scatterbug-savanna",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12391,7 +12391,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1452",
-		name = "scatterbugsun",
+		name = "scatterbug-sun",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12400,7 +12400,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1453",
-		name = "scatterbugocean",
+		name = "scatterbug-ocean",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12409,7 +12409,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1454",
-		name = "scatterbugjungle",
+		name = "scatterbug-jungle",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12418,7 +12418,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1455",
-		name = "scatterbugfancy",
+		name = "scatterbug-fancy",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12427,7 +12427,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1456",
-		name = "scatterbugpokeball",
+		name = "scatterbug-pokeball",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12436,7 +12436,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1457",
-		name = "spewpapolar",
+		name = "spewpa-polar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12445,7 +12445,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1458",
-		name = "spewpatundra",
+		name = "spewpa-tundra",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12454,7 +12454,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1459",
-		name = "spewpacontinental",
+		name = "spewpa-continental",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12463,7 +12463,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1460",
-		name = "spewpagarden",
+		name = "spewpa-garden",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12472,7 +12472,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1461",
-		name = "spewpaelegant",
+		name = "spewpa-elegant",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12481,7 +12481,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1462",
-		name = "spewpameadow",
+		name = "spewpa-meadow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12490,7 +12490,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1463",
-		name = "spewpamodern",
+		name = "spewpa-modern",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12499,7 +12499,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1464",
-		name = "spewpamarine",
+		name = "spewpa-marine",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12508,7 +12508,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1465",
-		name = "spewpaarchipelago",
+		name = "spewpa-archipelago",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12517,7 +12517,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1466",
-		name = "spewpahighplains",
+		name = "spewpa-highplains",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12526,7 +12526,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1467",
-		name = "spewpasandstorm",
+		name = "spewpa-sandstorm",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12535,7 +12535,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1468",
-		name = "spewpariver",
+		name = "spewpa-river",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12544,7 +12544,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1469",
-		name = "spewpamonsoon",
+		name = "spewpa-monsoon",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12553,7 +12553,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1470",
-		name = "spewpasavanna",
+		name = "spewpa-savanna",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12562,7 +12562,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1471",
-		name = "spewpasun",
+		name = "spewpa-sun",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12571,7 +12571,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1472",
-		name = "spewpaocean",
+		name = "spewpa-ocean",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12580,7 +12580,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1473",
-		name = "spewpajungle",
+		name = "spewpa-jungle",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12589,7 +12589,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1474",
-		name = "spewpafancy",
+		name = "spewpa-fancy",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12598,7 +12598,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1475",
-		name = "spewpapokeball",
+		name = "spewpa-pokeball",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },

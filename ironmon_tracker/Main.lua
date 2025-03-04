@@ -1,6 +1,6 @@
 Main = {}
 
-Main.Version = { major = "0", minor = "0", patch = "1" }
+Main.Version = { major = "0", minor = "0", patch = "2" }
 
 Main.CreditsList = { -- based on the PokemonBizhawkLua project by MKDasher
 	CreatedBy = "Besteon",
@@ -426,6 +426,7 @@ function Main.updateReleaseNotes(response)
 	if not response then
 		Utils.tempDisableBizhawkSound()
 		local updatecheckCommand = string.format('curl "%s" --ssl-no-revoke', FileManager.Urls.VERSION)
+		print(updatecheckCommand)
 		local success, fileLines = FileManager.tryOsExecute(updatecheckCommand)
 		if success then
 			response = table.concat(fileLines, "\n")

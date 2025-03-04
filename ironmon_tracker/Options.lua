@@ -105,23 +105,23 @@ Options.Overrides = {
 
 -- The order of these iconsets cannot change, as user Settings reference them by their index number
 Options.IconSetMap = {
+	-- {
+		-- name = "Original", -- The name of the icon set which is displayed on the Tracker Setup screen
+		-- author = "Besteon", -- The name of the creator of the icon set which is displayed on the Tracker Setup screen
+		-- folder = "pokemon", -- The folder within the tracker files where each icon is stored, expected to be in /ironmon-tracker/images/
+		-- extension = ".gif", -- The file extension for each icon, expected that all icons use the same file extension
+		-- yOffset = 0, -- A number of pixels to shift the drawing of the icon downward
+		-- adjustQuestionMark = true, -- If true, will shift the question mark icon on the RouteInfo screen downward `yOffset` pixels
+	-- },
+	-- {
+		-- name = "Stadium",
+		-- author = "AmberCyprian",
+		-- folder = "pokemonStadium",
+		-- extension = ".png",
+		-- yOffset = 4,
+	-- },
 	{
-		name = "Original", -- The name of the icon set which is displayed on the Tracker Setup screen
-		author = "Besteon", -- The name of the creator of the icon set which is displayed on the Tracker Setup screen
-		folder = "pokemon", -- The folder within the tracker files where each icon is stored, expected to be in /ironmon-tracker/images/
-		extension = ".gif", -- The file extension for each icon, expected that all icons use the same file extension
-		yOffset = 0, -- A number of pixels to shift the drawing of the icon downward
-		adjustQuestionMark = true, -- If true, will shift the question mark icon on the RouteInfo screen downward `yOffset` pixels
-	},
-	{
-		name = "Stadium",
-		author = "AmberCyprian",
-		folder = "pokemonStadium",
-		extension = ".png",
-		yOffset = 4,
-	},
-	{
-		name = "Gen 7+",
+		name = "Gen 1-9",
 		author = "kittenchilly",
 		folder = "pokemonUpdated",
 		extension = ".png",
@@ -129,30 +129,30 @@ Options.IconSetMap = {
 		adjustQuestionMark = true,
 		-- source = "https://msikma.github.io/pokesprite/index.html",
 	},
-	{
-		name = "Explorers",
-		author = "Fellshadow",
-		folder = "pokemonMysteryDungeon",
-		extension = ".png",
-		yOffset = 4,
-		-- source = "https://sprites.pmdcollab.org/",
-	},
-	{
-		name = "Virtual Pet",
-		author = "Ryastoise",
-		folder = "pokemonVPet",
-		extension = ".png",
-		yOffset = 2,
-	},
-	{
-		name = "Walking Pals",
-		author = "UTDZac",
-		folder = "spritesWalkingPals",
-		extension = ".png",
-		isAnimated = true,
-		iconKey = "WalkingPals",
-		-- source = "https://sprites.pmdcollab.org/",
-	},
+	-- {
+		-- name = "Explorers",
+		-- author = "Fellshadow",
+		-- folder = "pokemonMysteryDungeon",
+		-- extension = ".png",
+		-- yOffset = 4,
+		source = "https://sprites.pmdcollab.org/",
+	-- },
+	-- {
+		-- name = "Virtual Pet",
+		-- author = "Ryastoise",
+		-- folder = "pokemonVPet",
+		-- extension = ".png",
+		-- yOffset = 2,
+	-- },
+	-- {
+		-- name = "Walking Pals",
+		-- author = "UTDZac",
+		-- folder = "spritesWalkingPals",
+		-- extension = ".png",
+		-- isAnimated = true,
+		-- iconKey = "WalkingPals",
+		source = "https://sprites.pmdcollab.org/",
+	-- },
 }
 -- Setup references for extensions that still use the deprecated key
 for i, _ in ipairs(Options.IconSetMap) do
