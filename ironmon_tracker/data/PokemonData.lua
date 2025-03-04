@@ -7580,7 +7580,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "869",
-		name = "Alcremie",
+		name = "Alcremie-",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 495,
 		movelvls = { {1, 1, 1, 1, 15, 20, 25, 30, 35, 40, 45, 50}, {1, 1, 1, 1, 15, 20, 25, 30, 35, 40, 45, 50} },
@@ -10183,7 +10183,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1194",
-		name = "shelloseast",
+		name = "shellos-east",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10192,7 +10192,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1195",
-		name = "gastrodoneast",
+		name = "gastrodon-east",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10441,7 +10441,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1226",
-		name = "deerlingsummer",
+		name = "deerling-summer",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10450,7 +10450,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1227",
-		name = "deerlingautumn",
+		name = "deerling-autumn",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10459,7 +10459,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1228",
-		name = "deerlingwinter",
+		name = "deerling-winter",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10468,7 +10468,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1229",
-		name = "sawsbucksummer",
+		name = "sawsbuck-summer",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10477,7 +10477,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1230",
-		name = "sawsbuckautumn",
+		name = "sawsbuck-autumn",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10486,7 +10486,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1231",
-		name = "sawsbuckwinter",
+		name = "sawsbuck-winter",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10591,7 +10591,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1244",
-		name = "greninjabattlebond",
+		name = "greninja-battle-bond",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10608,7 +10608,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1246",
-		name = "vivillonpolar",
+		name = "vivillon-polar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10617,7 +10617,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1247",
-		name = "vivillontundra",
+		name = "vivillon-tundra",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10626,7 +10626,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1248",
-		name = "vivilloncontinental",
+		name = "vivillon-continental",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10635,7 +10635,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1249",
-		name = "vivillongarden",
+		name = "vivillon-garden",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10644,7 +10644,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1250",
-		name = "vivillonelegant",
+		name = "vivillon-elegant",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10653,7 +10653,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1251",
-		name = "vivillonmeadow",
+		name = "vivillon-meadow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10662,7 +10662,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1252",
-		name = "vivillonmodern",
+		name = "vivillon-modern",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10671,7 +10671,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1253",
-		name = "vivillonmarine",
+		name = "vivillon-marine",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10680,7 +10680,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1254",
-		name = "vivillonarchipelago",
+		name = "vivillon-archipelago",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10689,7 +10689,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1255",
-		name = "vivillonhighplains",
+		name = "vivillon-high-plains",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10698,7 +10698,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1256",
-		name = "vivillonsandstorm",
+		name = "vivillon-sandstorm",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10707,7 +10707,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1257",
-		name = "vivillonriver",
+		name = "vivillon-river",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10716,7 +10716,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1258",
-		name = "vivillonmonsoon",
+		name = "vivillon-monsoon",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10725,7 +10725,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1259",
-		name = "vivillonsavanna",
+		name = "vivillon-savanna",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10734,7 +10734,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1260",
-		name = "vivillonsun",
+		name = "vivillon-sun",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10743,7 +10743,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1261",
-		name = "vivillonocean",
+		name = "vivillon-ocean",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10752,7 +10752,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1262",
-		name = "vivillonjungle",
+		name = "vivillon-jungle",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10777,7 +10777,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1265",
-		name = "flabebeyellow",
+		name = "flabebe-yellow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10786,7 +10786,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1266",
-		name = "flabebeorange",
+		name = "flabebe-orange",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10795,7 +10795,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1267",
-		name = "flabebeblue",
+		name = "flabebe-blue",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10804,7 +10804,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1268",
-		name = "flabebewhite",
+		name = "flabebe-white",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10813,7 +10813,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1269",
-		name = "floetteyellow",
+		name = "floette-yellow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10822,7 +10822,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1270",
-		name = "floetteorange",
+		name = "floette-orange",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10831,7 +10831,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1271",
-		name = "floetteblue",
+		name = "floette-blue",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10840,7 +10840,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1272",
-		name = "floettewhite",
+		name = "floette-white",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10857,7 +10857,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1274",
-		name = "florgesyellow",
+		name = "florges-yellow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10866,7 +10866,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1275",
-		name = "florgesorange",
+		name = "florges-orange",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10875,7 +10875,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1276",
-		name = "florgesblue",
+		name = "florges-blue",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10884,7 +10884,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1277",
-		name = "florgeswhite",
+		name = "florges-white",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10893,7 +10893,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1278",
-		name = "furfrouhearttrim",
+		name = "furfrou-heart-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10902,7 +10902,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1279",
-		name = "furfroustartrim",
+		name = "furfrou-star-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10911,7 +10911,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1280",
-		name = "furfroudiamondtrim",
+		name = "furfrou-diamond-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10920,7 +10920,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1281",
-		name = "furfroudebutantetrim",
+		name = "furfrou-debutante-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10929,7 +10929,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1282",
-		name = "furfroumatrontrim",
+		name = "furfrou-matron-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10938,7 +10938,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1283",
-		name = "furfroudandytrim",
+		name = "furfrou-dandy-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10947,7 +10947,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1284",
-		name = "furfroulareinetrim",
+		name = "furfrou-lareine-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10956,7 +10956,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1285",
-		name = "furfroukabukitrim",
+		name = "furfrou-kabuki-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -10965,7 +10965,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1286",
-		name = "furfroupharaohtrim",
+		name = "furfrou-pharaoh-trim",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11113,7 +11113,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1304",
-		name = "rockruffowntempo",
+		name = "rockruff-own-tempo",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11282,7 +11282,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1325",
-		name = "miniorviolet",
+		name = "minior-violet",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11291,7 +11291,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1326",
-		name = "miniorcoreyellow",
+		name = "minior-core-yellow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11300,7 +11300,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1327",
-		name = "miniorcoregreen",
+		name = "minior-core-green",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11309,7 +11309,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1328",
-		name = "miniorcoreblue",
+		name = "minior-core-blue",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11318,7 +11318,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1329",
-		name = "miniorcoreindigo",
+		name = "minior-core-indigo",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11335,7 +11335,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1331",
-		name = "miniormeteorred",
+		name = "minior-meteor-red",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11344,7 +11344,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1332",
-		name = "miniormeteororange",
+		name = "minior-meteor-orange",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11353,7 +11353,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1333",
-		name = "miniormeteoryellow",
+		name = "minior-meteor-yellow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11362,7 +11362,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1334",
-		name = "miniormeteorgreen",
+		name = "minior-meteor-green",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11371,7 +11371,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1335",
-		name = "miniormeteorblue",
+		name = "minior-meteor-blue",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11380,7 +11380,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1336",
-		name = "miniormeteorindigo",
+		name = "minior-meteor-indigo",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11389,7 +11389,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1337",
-		name = "miniormeteorviolet",
+		name = "minior-meteor-violet",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11478,7 +11478,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1348",
-		name = "alcremierainbowswirl",
+		name = "alcremie-rainbow-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11487,7 +11487,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1349",
-		name = "alcremiestrawberrymatchacream",
+		name = "alcremie-strawberry-matcha-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11496,7 +11496,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1350",
-		name = "alcremiestrawberrymintcream",
+		name = "alcremie-strawberry-mint-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11505,7 +11505,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1351",
-		name = "alcremiestrawberrylemoncream",
+		name = "alcremie-strawberry-lemon-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11514,7 +11514,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1352",
-		name = "alcremiestrawberrysaltedcream",
+		name = "alcremie-strawberry-salted-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11523,7 +11523,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1353",
-		name = "alcremiestrawberryrubyswirl",
+		name = "alcremie-strawberry-ruby-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11532,7 +11532,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1354",
-		name = "alcremiestrawberrycaramelswirl",
+		name = "alcremie-strawberry-caramel-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11541,7 +11541,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1355",
-		name = "alcremiestrawberryrainbowswirl",
+		name = "alcremie-strawberry-rainbow-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11638,7 +11638,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1367",
-		name = "alcremieberry",
+		name = "alcremie-berry",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11647,7 +11647,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1368",
-		name = "alcremieberryrubycream",
+		name = "alcremie-berry-ruby-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11656,7 +11656,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1369",
-		name = "alcremieberrymatchacream",
+		name = "alcremie-berry-matcha-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11665,7 +11665,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1370",
-		name = "alcremieberrymintcream",
+		name = "alcremie-berry-mint-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11674,7 +11674,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1371",
-		name = "alcremieberrylemoncream",
+		name = "alcremie-berry-lemon-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11683,7 +11683,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1372",
-		name = "alcremieberrysaltedcream",
+		name = "alcremie-berry-salted-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11692,7 +11692,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1373",
-		name = "alcremieberryrubyswirl",
+		name = "alcremie-berry-ruby-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11701,7 +11701,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1374",
-		name = "alcremieberrycaramelswirl",
+		name = "alcremie-berry-caramel-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11710,7 +11710,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1375",
-		name = "alcremielove",
+		name = "alcremie-love",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11719,7 +11719,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1376",
-		name = "alcremielovevanillacream",
+		name = "alcremie-love-vanilla-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11728,7 +11728,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1377",
-		name = "alcremieloverubycream",
+		name = "alcremie-love-ruby-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11737,7 +11737,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1378",
-		name = "alcremielovematchacream",
+		name = "alcremie-love-matcha-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11746,7 +11746,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1379",
-		name = "alcremielovemintcream",
+		name = "alcremie-love-mint-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11755,7 +11755,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1380",
-		name = "alcremielovelemoncream",
+		name = "alcremie-love-lemon-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11764,7 +11764,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1381",
-		name = "alcremielovesaltedcream",
+		name = "alcremie-love-salted-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11773,7 +11773,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1382",
-		name = "alcremieloverubyswirl",
+		name = "alcremie-love-ruby-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11782,7 +11782,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1383",
-		name = "alcremielovecaramelswirl",
+		name = "alcremie-love-caramel-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11791,7 +11791,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1384",
-		name = "alcremiestar",
+		name = "alcremie-star",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11800,7 +11800,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1385",
-		name = "alcremiestarvanillacream",
+		name = "alcremie-star-vanilla-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11809,7 +11809,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1386",
-		name = "alcremiestarrubycream",
+		name = "alcremie-star-ruby-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11818,7 +11818,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1387",
-		name = "alcremiestarmatchacream",
+		name = "alcremie-star-matcha-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11827,7 +11827,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1388",
-		name = "alcremiestarmintcream",
+		name = "alcremie-star-mint-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11836,7 +11836,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1389",
-		name = "alcremiestarlemoncream",
+		name = "alcremie-star-lemon-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11845,7 +11845,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1390",
-		name = "alcremiestarsaltedcream",
+		name = "alcremie-star-salted-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11854,7 +11854,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1391",
-		name = "alcremiestarrubyswirl",
+		name = "alcremie-star-ruby-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11863,7 +11863,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1392",
-		name = "alcremiestarcaramelswirl",
+		name = "alcremie-star-caramel-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11872,7 +11872,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1393",
-		name = "alcremieclover",
+		name = "alcremie-clover",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11881,7 +11881,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1394",
-		name = "alcremieclovervanillacream",
+		name = "alcremie-clover-vanilla-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11890,7 +11890,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1395",
-		name = "alcremiecloverrubycream",
+		name = "alcremie-clover-ruby-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11899,7 +11899,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1396",
-		name = "alcremieclovermatchacream",
+		name = "alcremie-clover-matcha-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11908,7 +11908,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1397",
-		name = "alcremieclovermintcream",
+		name = "alcremie-clover-mint-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11917,7 +11917,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1398",
-		name = "alcremiecloverlemoncream",
+		name = "alcremie-clover-lemon-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11926,7 +11926,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1399",
-		name = "alcremiecloversaltedcream",
+		name = "alcremie-clover-salted-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11935,7 +11935,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1400",
-		name = "alcremiecloverrubyswirl",
+		name = "alcremie-clover-ruby-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11944,7 +11944,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1401",
-		name = "alcremieclovercaramelswirl",
+		name = "alcremie-clover-caramel-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11953,7 +11953,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1402",
-		name = "alcremieflower",
+		name = "alcremie-flower",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11962,7 +11962,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1403",
-		name = "alcremieflowervanillacream",
+		name = "alcremie-flower-vanilla-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11971,7 +11971,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1404",
-		name = "alcremieflowerrubycream",
+		name = "alcremie-flower-ruby-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11980,7 +11980,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1405",
-		name = "alcremieflowermatchacream",
+		name = "alcremie-flower-matcha-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11989,7 +11989,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1406",
-		name = "alcremieflowermintcream",
+		name = "alcremie-flower-mint-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -11998,7 +11998,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1407",
-		name = "alcremieflowerlemoncream",
+		name = "alcremie-flower-lemon-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12007,7 +12007,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1408",
-		name = "alcremieflowersaltedcream",
+		name = "alcremie-flower-salted-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12016,7 +12016,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1409",
-		name = "alcremieflowerrubyswirl",
+		name = "alcremie-flower-ruby-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12025,7 +12025,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1410",
-		name = "alcremieflowercaramelswirl",
+		name = "alcremie-flower-caramel-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12034,7 +12034,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1411",
-		name = "alcremieribbon",
+		name = "alcremie-ribbon",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12043,7 +12043,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1412",
-		name = "alcremieribbonvanillacream",
+		name = "alcremie-ribbon-vanilla-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12052,7 +12052,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1413",
-		name = "alcremieribbonrubycream",
+		name = "alcremie-ribbon-ruby-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12061,7 +12061,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1414",
-		name = "alcremieribbonmatchacream",
+		name = "alcremie-ribbon-matcha-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12070,7 +12070,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1415",
-		name = "alcremieribbonmintcream",
+		name = "alcremie-ribbon-mint-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12079,7 +12079,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1416",
-		name = "alcremieribbonlemoncream",
+		name = "alcremie-ribbon-lemon-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12088,7 +12088,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1417",
-		name = "alcremieribbonsaltedcream",
+		name = "alcremie-ribbon-salted-cream",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12097,7 +12097,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1418",
-		name = "alcremieribbonrubyswirl",
+		name = "alcremie-ribbon-ruby-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12106,7 +12106,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1419",
-		name = "alcremieribboncaramelswirl",
+		name = "alcremie-ribbon-caramel-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12115,7 +12115,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1420",
-		name = "alcremieribbonrainbowswirl",
+		name = "alcremie-ribbon-rainbow-swirl",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12238,7 +12238,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1435",
-		name = "lugiashadow",
+		name = "lugia-shadow",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12903,7 +12903,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1513",
-		name = "toxtricityampedgmax",
+		name = "toxtricity-amped-gmax",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 0,
 		movelvls = { {}, {} },
@@ -12944,7 +12944,7 @@ PokemonData.Pokemon = {
 	},
 	{
 		testId = "1518",
-		name = "Alcremie-Gmax",
+		name = "Alcremie--Gmax",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 495,
 		movelvls = { {}, {} },
