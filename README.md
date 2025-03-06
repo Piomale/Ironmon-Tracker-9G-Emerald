@@ -21,7 +21,7 @@ Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
 - Détection du type des pokémons
 - La description des attaques/talents en français
 - Le talent des pokémons
-- Les niveau d'apprentissage des capacités pour de certains pokémons
+- Les niveau d'apprentissage des capacités pour certains pokémons
 - Détection de la langue (il faut choisir soit même la langue et désactiver la détection automatique)
 - le log viewer (il n'y a pas de fichier de log)
 
