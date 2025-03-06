@@ -19,7 +19,6 @@ Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
 
 ### Voici ce qui ne fonctionne pas:
 - Détection du type des pokémons
-- Certaines images de pokémon
 - La description des attaques/talents en français
 - Le talent des pokémons
 - Les niveau d'apprentissage des capacités pour de certains pokémons
