@@ -9247,7 +9247,7 @@ PokemonData.Pokemon = {
 		name = "Raticate-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 413,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 4, 7, 10, 13, 16, 19, 24, 29, 34, 39, 44}, {1, 1, 1, 1, 1, 1, 4, 7, 10, 13, 16, 19, 24, 29, 34, 39, 44} },
 		weight = 25.5,
 	},
 	{
@@ -9255,7 +9255,7 @@ PokemonData.Pokemon = {
 		name = "Raichu-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 485,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5}, {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5} },
 		weight = 21,
 	},
 	{
@@ -9263,7 +9263,7 @@ PokemonData.Pokemon = {
 		name = "Sandshrew-Alola",
 		evolution = "useItem",
 		bst = 300,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45}, {1, 1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45} },
 		weight = 40,
 	},
 	{
@@ -9271,7 +9271,7 @@ PokemonData.Pokemon = {
 		name = "Sandslash-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 450,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 9, 12, 15, 18, 21, 26, 31, 36, 41, 46, 51, 56, 61}, {1, 1, 1, 1, 1, 9, 12, 15, 18, 21, 26, 31, 36, 41, 46, 51, 56, 61} },
 		weight = 55,
 	},
 	{
@@ -9279,7 +9279,7 @@ PokemonData.Pokemon = {
 		name = "Vulpix-Alola",
 		evolution = "useItem",
 		bst = 299,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52}, {1, 1, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52} },
 		weight = 9.9,
 	},
 	{
@@ -9287,7 +9287,7 @@ PokemonData.Pokemon = {
 		name = "Ninetales-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 505,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1}, {1, 1, 1} },
 		weight = 19.9,
 	},
 	{
@@ -9295,7 +9295,7 @@ PokemonData.Pokemon = {
 		name = "Diglett-Alola",
 		evolution = "26",
 		bst = 265,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44}, {1, 1, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44} },
 		weight = 1,
 	},
 	{
@@ -9303,7 +9303,7 @@ PokemonData.Pokemon = {
 		name = "Dugtrio-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 425,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 12, 16, 20, 24, 30, 36, 42, 48, 54}, {1, 1, 1, 1, 1, 1, 12, 16, 20, 24, 30, 36, 42, 48, 54} },
 		weight = 66.6,
 	},
 	{
@@ -9311,7 +9311,7 @@ PokemonData.Pokemon = {
 		name = "Meowth-Alola",
 		evolution = "levelFriendship",
 		bst = 290,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 4, 8, 12, 16, 20, 24, 29, 32, 36, 40, 44}, {1, 1, 4, 8, 12, 16, 20, 24, 29, 32, 36, 40, 44} },
 		weight = 4.2,
 	},
 	{
@@ -9319,7 +9319,7 @@ PokemonData.Pokemon = {
 		name = "Persian-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 440,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 12, 16, 20, 24, 31, 36, 42, 48, 54}, {1, 1, 1, 1, 1, 12, 16, 20, 24, 31, 36, 42, 48, 54} },
 		weight = 33,
 	},
 	{
@@ -9327,7 +9327,7 @@ PokemonData.Pokemon = {
 		name = "Geodude-Alola",
 		evolution = "25",
 		bst = 300,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 6, 10, 12, 16, 18, 24, 28, 30, 34, 36, 40, 42}, {1, 1, 6, 10, 12, 16, 18, 24, 28, 30, 34, 36, 40, 42} },
 		weight = 20.3,
 	},
 	{
@@ -9335,7 +9335,7 @@ PokemonData.Pokemon = {
 		name = "Graveler-Alola",
 		evolution = "trade",
 		bst = 390,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 10, 12, 16, 18, 24, 30, 34, 40, 44, 50, 54}, {1, 1, 1, 10, 12, 16, 18, 24, 30, 34, 40, 44, 50, 54} },
 		weight = 110,
 	},
 	{
@@ -9343,7 +9343,7 @@ PokemonData.Pokemon = {
 		name = "Golem-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 495,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 16, 18, 22, 24, 30, 34, 40, 44, 50, 54}, {1, 1, 1, 1, 16, 18, 22, 24, 30, 34, 40, 44, 50, 54} },
 		weight = 316,
 	},
 	{
@@ -9351,7 +9351,7 @@ PokemonData.Pokemon = {
 		name = "Grimer-Alola",
 		evolution = "38",
 		bst = 325,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 4, 7, 12, 15, 18, 21, 26, 29, 32, 37, 40, 43, 46, 48}, {1, 1, 4, 7, 12, 15, 18, 21, 26, 29, 32, 37, 40, 43, 46, 48} },
 		weight = 42,
 	},
 	{
@@ -9359,7 +9359,7 @@ PokemonData.Pokemon = {
 		name = "Muk-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 500,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 12, 15, 18, 21, 26, 29, 32, 37, 40, 46, 52, 57}, {1, 1, 1, 1, 12, 15, 18, 21, 26, 29, 32, 37, 40, 46, 52, 57} },
 		weight = 52,
 	},
 	{
@@ -9367,7 +9367,7 @@ PokemonData.Pokemon = {
 		name = "Exeggutor-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 530,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1} },
 		weight = 415.6,
 	},
 	{
@@ -9375,7 +9375,7 @@ PokemonData.Pokemon = {
 		name = "Marowak-Alola",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 425,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 12, 16, 20, 24, 31, 36, 42, 48, 54, 60}, {1, 1, 1, 1, 12, 16, 20, 24, 31, 36, 42, 48, 54, 60} },
 		weight = 34,
 	},
 	{
@@ -9383,7 +9383,7 @@ PokemonData.Pokemon = {
 		name = "Meowth-Galar",
 		evolution = "28",
 		bst = 290,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 4, 8, 12, 16, 20, 24, 29, 32, 36, 40, 44}, {1, 1, 4, 8, 12, 16, 20, 24, 29, 32, 36, 40, 44} },
 		weight = 7.5,
 	},
 	{
@@ -9391,7 +9391,7 @@ PokemonData.Pokemon = {
 		name = "Ponyta-Galar",
 		evolution = "40",
 		bst = 410,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 5, 10, 15, 20, 25, 30, 35, 41, 45, 50, 55}, {1, 1, 5, 10, 15, 20, 25, 30, 35, 41, 45, 50, 55} },
 		weight = 24,
 	},
 	{
@@ -9399,7 +9399,7 @@ PokemonData.Pokemon = {
 		name = "Rapidash-Galar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 500,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 1, 1, 15, 20, 25, 30, 35, 43, 49, 56, 63}, {1, 1, 1, 1, 1, 1, 1, 1, 15, 20, 25, 30, 35, 43, 49, 56, 63} },
 		weight = 80,
 	},
 	{
@@ -9407,7 +9407,7 @@ PokemonData.Pokemon = {
 		name = "Slowpoke-Galar",
 		evolution = "useItem",
 		bst = 315,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45}, {1, 1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45} },
 		weight = 36,
 	},
 	{
@@ -9415,24 +9415,23 @@ PokemonData.Pokemon = {
 		name = "Slowbro-Galar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 490,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 41, 46, 51}, {1, 1, 1, 1, 1, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 41, 46, 51} },
 		weight = 70.5,
 	},
 	{
 		testId = "1099",
-		name = "farfetchdgalar",
+		name = "Farfetch’d-galar",
 		evolution = PokemonData.Evolutions.NONE,
-		bst = 0,
-		movelvls = { {}, {} },
-		weight = 0,
-		error = true,
+		bst = 377,
+		movelvls = { {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65}, {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65} },
+		weight = 15,
 	},
 	{
 		testId = "1100",
 		name = "Weezing-Galar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 490,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 12, 16, 20, 24, 28, 32, 38, 44, 50, 56, 62}, {1, 1, 1, 1, 1, 12, 16, 20, 24, 28, 32, 38, 44, 50, 56, 62} },
 		weight = 16,
 	},
 	{
@@ -9440,7 +9439,7 @@ PokemonData.Pokemon = {
 		name = "Mr. Mime-Galar",
 		evolution = "42",
 		bst = 460,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 1, 1, 12, 16, 20, 24, 28, 32, 36, 36, 36, 40, 44, 48, 52}, {1, 1, 1, 1, 1, 1, 1, 1, 12, 16, 20, 24, 28, 32, 36, 36, 36, 40, 44, 48, 52} },
 		weight = 56.8,
 	},
 	{
@@ -9448,7 +9447,7 @@ PokemonData.Pokemon = {
 		name = "Articuno-Galar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 580,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70}, {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70} },
 		weight = 50.9,
 	},
 	{
@@ -9456,7 +9455,7 @@ PokemonData.Pokemon = {
 		name = "Zapdos-Galar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 580,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70}, {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70} },
 		weight = 58.2,
 	},
 	{
@@ -9464,7 +9463,7 @@ PokemonData.Pokemon = {
 		name = "Moltres-Galar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 580,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70}, {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70} },
 		weight = 66,
 	},
 	{
@@ -9472,7 +9471,7 @@ PokemonData.Pokemon = {
 		name = "Slowking-Galar",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 490,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 1, 9, 12, 15, 18, 21, 27, 30, 33, 36, 39, 42, 45}, {1, 1, 1, 1, 1, 1, 1, 9, 12, 15, 18, 21, 27, 30, 33, 36, 39, 42, 45} },
 		weight = 79.5,
 	},
 	{
@@ -9480,7 +9479,7 @@ PokemonData.Pokemon = {
 		name = "Corsola-Galar",
 		evolution = "38",
 		bst = 410,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55}, {1, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55} },
 		weight = 0.5,
 	},
 	{
@@ -9488,7 +9487,7 @@ PokemonData.Pokemon = {
 		name = "Zigzagoon-Galar",
 		evolution = "20",
 		bst = 240,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36}, {1, 1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36} },
 		weight = 17.5,
 	},
 	{
@@ -9496,7 +9495,7 @@ PokemonData.Pokemon = {
 		name = "Linoone-Galar",
 		evolution = "35",
 		bst = 420,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 1, 1, 9, 12, 15, 18, 23, 28, 33, 38, 43, 48}, {1, 1, 1, 1, 1, 1, 1, 1, 9, 12, 15, 18, 23, 28, 33, 38, 43, 48} },
 		weight = 32.5,
 	},
 	{
@@ -9504,7 +9503,7 @@ PokemonData.Pokemon = {
 		name = "Darumaka-Galar",
 		evolution = "useItem",
 		bst = 315,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48}, {1, 1, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48} },
 		weight = 40,
 	},
 	{
@@ -12610,7 +12609,7 @@ PokemonData.Pokemon = {
 		name = "Raticate-Alola-Totem",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 413,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 1, 1, 4, 7, 10, 13, 16, 19, 24, 29, 34, 39, 44}, {1, 1, 1, 1, 1, 1, 4, 7, 10, 13, 16, 19, 24, 29, 34, 39, 44} },
 		weight = 105,
 	},
 	{
@@ -12666,7 +12665,7 @@ PokemonData.Pokemon = {
 		name = "Marowak-Alola-Totem",
 		evolution = PokemonData.Evolutions.NONE,
 		bst = 425,
-		movelvls = { {}, {} },
+		movelvls = { {1, 1, 1, 1, 12, 16, 20, 24, 31, 36, 42, 48, 54, 60}, {1, 1, 1, 1, 12, 16, 20, 24, 31, 36, 42, 48, 54, 60} },
 		weight = 98,
 	},
 	{
