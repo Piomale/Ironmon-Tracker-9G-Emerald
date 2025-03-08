@@ -190,7 +190,6 @@ function MoveData.buildData(forced)
 	--if not forced and not MoveData.checkIfDataIsRandomized() then
 	--	return
 	--end
-
 	for moveId = 1, #MoveData.Moves, 1 do
 		local moveInfo = MoveData.readMoveInfoFromMemory(moveId)
 		if moveInfo ~= nil then

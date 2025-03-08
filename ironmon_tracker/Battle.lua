@@ -324,9 +324,10 @@ function Battle.processBattleTurn()
 	-- attackerValue = 0 or 2 for player mons and 1 or 3 for enemy mons (2,3 are doubles partners)
 	Battle.attacker = Memory.readbyte(GameSettings.gBattlerAttacker)
 	
-	local currentTurn = Memory.readbyte(GameSettings.gBattleResults + Program.Addresses.offsetBattleResultsCurrentTurn)
+	local currentTurn = Memory.readbyte(GameSettings.gBattleResults - Program.Addresses.offsetBattleResultsCurrentTurn)
 	local currDamageTotal = Memory.readword(GameSettings.gTakenDmg)
-
+		print(currentTurn)
+		print(string.format("0x%X", GameSettings.gBattleResults - Program.Addresses.offsetBattleResultsCurrentTurn) )
 	-- As a new turn starts, note the previous amount of total damage, reset turn counters
 	if currentTurn ~= Battle.turnCount then
 		Battle.turnCount = currentTurn
@@ -396,23 +397,26 @@ function Battle.updateTrackedInfo()
 		-- Check if we are on a new action cycle (Range 0 to numBattlers - 1)
 		-- firstActionTaken fixes leftover data issue going from Single to Double battle
 		-- If the same attacker was just logged, stop logging
-			
 			if actionCount < Battle.numBattlers and Battle.firstActionTaken and confirmedCount == 0 and currentAction == 0 then
-				
+
 				-- 0 = MOVE_USED
 				if lastMoveByAttacker > 0 and lastMoveByAttacker < #MoveData.Moves + 1 then
 					if Battle.AbilityChangeData.prevAction ~= actionCount then
+						
 						Battle.AbilityChangeData.recordNextMove = true
 						Battle.AbilityChangeData.prevAction = actionCount
+						
 					elseif Battle.AbilityChangeData.recordNextMove then
 						
 						local hitFlags = Memory.readdword(GameSettings.gHitMarker)
 						local moveFlags = Memory.readbyte(GameSettings.gMoveResultFlags)
 						--Do nothing if attacker was unable to use move (Fully paralyzed, Truant, etc.; HITMARKER_UNABLE_TO_USE_MOVE)
+						
 						if Utils.bit_and(hitFlags, Program.Addresses.hitmarkerFlag80000) == 0 then
+							
 							-- Track move so long as the mon was able to use it
 							--Handle snatch
-							
+							print("track")
 							if Battle.battleMsg == GameSettings.BattleScript_SnatchedMove then
 								
 								local battlerSlot = Battle.Combatants[Battle.IndexMap[Battle.battler]]
@@ -436,6 +440,7 @@ function Battle.updateTrackedInfo()
 								local transformData = attacker.transformData
 								
 								if transformData and not transformData.isOwn or true then
+									
 									-- Only track moves which the pokemon knew at the start of battle (in case of Sketch/Mimic)
 									if lastMoveByAttacker == attacker.moves[1] or lastMoveByAttacker == attacker.moves[2] or lastMoveByAttacker == attacker.moves[3] or lastMoveByAttacker == attacker.moves[4] then
 										local attackingMon = Tracker.getPokemon(transformData.slot,transformData.isOwn)
