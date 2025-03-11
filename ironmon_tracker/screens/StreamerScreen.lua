@@ -37,7 +37,7 @@ SCREEN.Buttons = {
 		optionKey = "Show on new game screen",
 		getText = function(self) return Resources.StreamerScreen.OptionDisplayFavorites end,
 		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 64, Constants.SCREEN.RIGHT_GAP - 12, 8 },
-		box = {	Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 64, 8, 8 },
+		box = {	Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 59, 8, 8 },
 		toggleState = false, -- update later in initialize
 		updateSelf = function(self) self.toggleState = (Options[self.optionKey] == true) end,
 		onClick = function(self)
@@ -47,8 +47,8 @@ SCREEN.Buttons = {
 	},
 	PokemonFavorite1 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 79, 32, 29 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 75, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 62, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 58, 32, 32 },
 		pokemonID = 1,
 		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
 		onClick = function(self)
@@ -58,8 +58,8 @@ SCREEN.Buttons = {
 	},
 	PokemonFavorite2 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 79, 32, 29 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 75, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 62, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 58, 32, 32 },
 		pokemonID = 4,
 		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
 		onClick = function(self)
@@ -69,9 +69,75 @@ SCREEN.Buttons = {
 	},
 	PokemonFavorite3 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 79, 32, 29 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 75, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 62, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 58, 32, 32 },
 		pokemonID = 7,
+		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
+		onClick = function(self)
+			SCREEN.openPokemonPickerWindow(self, self.pokemonID)
+			Program.redraw(true)
+		end,
+	},
+		PokemonFavorite4 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 82, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 78, 32, 32 },
+		pokemonID = 152,
+		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
+		onClick = function(self)
+			SCREEN.openPokemonPickerWindow(self, self.pokemonID)
+			Program.redraw(true)
+		end,
+	},
+	PokemonFavorite5 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 82, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 78, 32, 32 },
+		pokemonID = 155,
+		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
+		onClick = function(self)
+			SCREEN.openPokemonPickerWindow(self, self.pokemonID)
+			Program.redraw(true)
+		end,
+	},
+	PokemonFavorite6 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 82, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 78, 32, 32 },
+		pokemonID = 158,
+		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
+		onClick = function(self)
+			SCREEN.openPokemonPickerWindow(self, self.pokemonID)
+			Program.redraw(true)
+		end,
+	},
+		PokemonFavorite7 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 102, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 98, 32, 32 },
+		pokemonID = 252,
+		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
+		onClick = function(self)
+			SCREEN.openPokemonPickerWindow(self, self.pokemonID)
+			Program.redraw(true)
+		end,
+	},
+	PokemonFavorite8 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 102, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 98, 32, 32 },
+		pokemonID = 255,
+		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
+		onClick = function(self)
+			SCREEN.openPokemonPickerWindow(self, self.pokemonID)
+			Program.redraw(true)
+		end,
+	},
+	PokemonFavorite9 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 102, 32, 29 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 98, 32, 32 },
+		pokemonID = 258,
 		getIconId = function(self) return self.pokemonID, SpriteData.Types.Idle end,
 		onClick = function(self)
 			SCREEN.openPokemonPickerWindow(self, self.pokemonID)
@@ -82,7 +148,7 @@ SCREEN.Buttons = {
 		type = Constants.ButtonTypes.ICON_BORDER,
 		image = Constants.PixelImages.MAGNIFYING_GLASS,
 		getText = function(self) return Resources.StreamerScreen.ButtonStreamConnect end,
-		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 115, 100, 16 },
+		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 130, 100, 16 },
 		updateSelf = function(self)
 			if Network.CurrentConnection.State == Network.ConnectionState.Established then
 				self.image = Constants.PixelImages.CHECKMARK
@@ -198,13 +264,25 @@ end
 
 function StreamerScreen.loadFavorites()
 	local favorites = Options["Startup favorites"] or "1,4,7" -- Default bulbasaur, charmander, squirtle
-	local first, second, third = string.match(favorites, "(%d+)%s*,%s*(%d+)%s*,%s*(%d+)")
+	local first, second, third, fourth, fifth, sixth, seventh, heighth, ninth = string.match(favorites, "(%d+)%s*,%s*(%d+)%s*,%s*(%d+)")
 	first = first or "1"
 	second = second or "4"
 	third = third or "7"
+	fourth = fourth or "152"
+	fifth = fifth or "155"
+	sixth = sixth or "158"
+	seventh = seventh or "252"
+	heighth = heighth or "255"
+	ninth = ninth or "258"
 	SCREEN.Buttons.PokemonFavorite1.pokemonID = tonumber(first) or 1
 	SCREEN.Buttons.PokemonFavorite2.pokemonID = tonumber(second) or 4
 	SCREEN.Buttons.PokemonFavorite3.pokemonID = tonumber(third) or 7
+	SCREEN.Buttons.PokemonFavorite4.pokemonID = tonumber(fourth) or 152
+	SCREEN.Buttons.PokemonFavorite5.pokemonID = tonumber(fifth) or 155
+	SCREEN.Buttons.PokemonFavorite6.pokemonID = tonumber(sixth) or 158
+	SCREEN.Buttons.PokemonFavorite7.pokemonID = tonumber(seventh) or 252
+	SCREEN.Buttons.PokemonFavorite8.pokemonID = tonumber(seventh) or 255
+	SCREEN.Buttons.PokemonFavorite9.pokemonID = tonumber(ninth) or 258
 end
 
 function StreamerScreen.saveFavorites()
@@ -212,6 +290,12 @@ function StreamerScreen.saveFavorites()
 		SCREEN.Buttons.PokemonFavorite1.pokemonID or 0,
 		SCREEN.Buttons.PokemonFavorite2.pokemonID or 0,
 		SCREEN.Buttons.PokemonFavorite3.pokemonID or 0,
+		SCREEN.Buttons.PokemonFavorite4.pokemonID or 0,
+		SCREEN.Buttons.PokemonFavorite5.pokemonID or 0,
+		SCREEN.Buttons.PokemonFavorite6.pokemonID or 0,
+		SCREEN.Buttons.PokemonFavorite7.pokemonID or 0,
+		SCREEN.Buttons.PokemonFavorite8.pokemonID or 0,
+		SCREEN.Buttons.PokemonFavorite9.pokemonID or 0,
 	}
 	Options["Startup favorites"] = table.concat(favoriteIds, ",")
 	Main.SaveSettings(true)
@@ -249,7 +333,7 @@ function StreamerScreen.drawScreen()
 	textLineY = textLineY + Constants.SCREEN.LINESPACING
 
 	-- Draw Favorites Label
-	Drawing.drawText(canvas.x + 3, canvas.y + 40, Resources.StreamerScreen.LabelFavorites .. ":", canvas.text, canvas.shadow)
+	Drawing.drawText(canvas.x + 3, canvas.y + 35, Resources.StreamerScreen.LabelFavorites .. ":", canvas.text, canvas.shadow)
 
 	-- Draw all buttons
 	for _, button in pairs(SCREEN.Buttons) do

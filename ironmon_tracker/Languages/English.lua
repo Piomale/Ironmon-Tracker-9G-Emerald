@@ -84,21 +84,29 @@ ScreenResources{
 			short = "Sun",
 			detailed = "Sun Stone",
 		},
-		LEAF_SUN = {
-			abbreviation = "LF/SN",
+		STONES = {
+			abbreviation = "STONES", -- NEEDS TRANSLATION
+			detailed = "Diff. Stones", -- NEEDS TRANSLATION
 		},
-		WATER30 = {
-			abbreviation = "30/WTR",
+		ICE = {
+			abbreviation = "ICE",
+			short = "Ice",
+			detailed = "Ice Stone"
 		},
-		WATER37 = {
-			abbreviation = "37/WTR",
+		SHINY = {
+			abbreviation = "SHINY",
+			short = "Shiny", 
+			detailed = "Shiny Stone",
 		},
-		WATER37_REV = {
-			abbreviation = "WTR/37",
+		SUN = {
+			abbreviation = "SUN",
+			short = "Sun", 
+			detailed = "Sun Stone",
 		},
-		EEVEE_STONES = {
-			abbreviation = "STONE",
-			detailed = "5 Diff. Stones",
+		DUSK = {
+			abbreviation = "DUSK",
+			short = "Dusk", 
+			detailed = "Dusk Stone",
 		},
 	},
 	TrackerScreen = {

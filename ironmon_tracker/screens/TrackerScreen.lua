@@ -1105,6 +1105,7 @@ function TrackerScreen.drawPokemonInfoArea(data)
 
 		Drawing.drawText(Constants.SCREEN.WIDTH + offsetX, offsetY, levelEvoText, Theme.COLORS["Default text"], shadowcolor)
 		if data.p.evo ~= PokemonData.Evolutions.NONE and evoSpacing ~= nil then
+			
 			-- Draw over the evo method in the new color to reflect if evo is possible/ready
 			local evoReadyFriendship = (Options["Determine friendship readiness"] and data.p.evo == PokemonData.Evolutions.FRIEND_READY)
 			local evoReadyLevel = Utils.isReadyToEvolveByLevel(data.p.evo, data.p.level)
@@ -1569,6 +1570,12 @@ function TrackerScreen.drawFavorites()
 		StartupScreen.Buttons.PokemonFavorite1,
 		StartupScreen.Buttons.PokemonFavorite2,
 		StartupScreen.Buttons.PokemonFavorite3,
+		StartupScreen.Buttons.PokemonFavorite4,
+		StartupScreen.Buttons.PokemonFavorite5,
+		StartupScreen.Buttons.PokemonFavorite6,
+		StartupScreen.Buttons.PokemonFavorite7,
+		StartupScreen.Buttons.PokemonFavorite8,
+		StartupScreen.Buttons.PokemonFavorite9,
 	}
 	-- Temporarily adjust the button's vertical location
 	local shiftY = 8

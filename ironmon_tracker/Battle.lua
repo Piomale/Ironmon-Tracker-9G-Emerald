@@ -118,6 +118,7 @@ function Battle.update()
 	if not Program.isValidMapLocation() then
 		return
 	end
+	
 	-- First check if the player is actually in a battle before updating other battle data
 	if (Program.Frames.highAccuracyUpdate == 0 or Program.updateRequired) and not Program.inCatchingTutorial then
 		Battle.updateBattleStatus()
@@ -153,6 +154,7 @@ function Battle.updateBattleStatus()
 	
 	-- BattleStatus [0 = In battle, 1 = Won the match, 2 = Lost the match, 4 = Fled, 7 = Caught]
 	local statusOrOutcome = Memory.readbyte(GameSettings.gBattleOutcome) -- For current or the last battle (gBattleOutcome isn't cleared when a battle ends)
+	
 	local battleStatusActive = statusOrOutcome == 0 and opposingPokemon ~= nil
 	-- Flags to check if it's okay to start reading battle related game data (shortly after a battle begins) or if the battle has completely ended
 	local msgTiming = {
@@ -172,9 +174,8 @@ function Battle.updateBattleStatus()
 		},
 	}
 	local battleMainFunction = Memory.readdword(GameSettings.gBattleMainFunc)
-
-	
 	if Battle.inBattleScreen and not Battle.dataReady and msgTiming.DataStart[Battle.isWildEncounter][battleMainFunction]then
+
 		Battle.dataReady = true
 		Battle.isViewingOwn = not Options["Auto swap to enemy"]
 	end
@@ -326,8 +327,6 @@ function Battle.processBattleTurn()
 	
 	local currentTurn = Memory.readbyte(GameSettings.gBattleResults - Program.Addresses.offsetBattleResultsCurrentTurn)
 	local currDamageTotal = Memory.readword(GameSettings.gTakenDmg)
-		print(currentTurn)
-		print(string.format("0x%X", GameSettings.gBattleResults - Program.Addresses.offsetBattleResultsCurrentTurn) )
 	-- As a new turn starts, note the previous amount of total damage, reset turn counters
 	if currentTurn ~= Battle.turnCount then
 		Battle.turnCount = currentTurn
@@ -372,7 +371,7 @@ function Battle.updateTrackedInfo()
 	--Ghost battle info is immediately loaded. If we wait until after the delay ends, the user can toggle views in that window and still see the 'Actual' Pokemon.
 	local battleFlags = Memory.readdword(GameSettings.gBattleTypeFlags)
 	--If this is a Ghost battle (bit 15), and the Silph Scope has not been obtained (bit 13). Also, game must be FR/LG
-	Battle.isGhost = GameSettings.game == 3 and (Utils.getbits(battleFlags, 15, 1) == 1 and Utils.getbits(battleFlags, 13, 1) == 0)
+	Battle.isGhost = false
 
 	-- Update useful battle values, will expand/rework this later
 	Battle.readBattleValues()
@@ -416,7 +415,6 @@ function Battle.updateTrackedInfo()
 							
 							-- Track move so long as the mon was able to use it
 							--Handle snatch
-							print("track")
 							if Battle.battleMsg == GameSettings.BattleScript_SnatchedMove then
 								
 								local battlerSlot = Battle.Combatants[Battle.IndexMap[Battle.battler]]
@@ -554,8 +552,10 @@ end
 function Battle.readBattleValues()
 	Battle.numBattlers = Memory.readbyte(GameSettings.gBattlersCount)
 	Battle.battleMsg = Memory.readdword(GameSettings.gBattlescriptCurrInstr)
-	Battle.battler = Memory.readbyte(GameSettings.gBattleScriptingBattler) % Battle.numBattlers
-	Battle.battlerTarget = Memory.readbyte(GameSettings.gBattlerTarget) % Battle.numBattlers
+	if Battle.numBattlers ~= 0 then
+		Battle.battler = Memory.readbyte(GameSettings.gBattleScriptingBattler) % Battle.numBattlers
+		Battle.battlerTarget = Memory.readbyte(GameSettings.gBattlerTarget) % Battle.numBattlers
+	end
 end
 
 function Battle.updateStatStages(pokemon, isOwn, isLeft)

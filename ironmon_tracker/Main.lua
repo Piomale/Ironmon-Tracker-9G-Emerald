@@ -1,6 +1,6 @@
 Main = {}
 
-Main.Version = { major = "0", minor = "0", patch = "3" }
+Main.Version = { major = "0", minor = "0", patch = "4" }
 
 Main.CreditsList = { -- based on the PokemonBizhawkLua project by MKDasher
 	CreatedBy = "Besteon",
@@ -426,7 +426,7 @@ function Main.updateReleaseNotes(response)
 	if not response then
 		Utils.tempDisableBizhawkSound()
 		local updatecheckCommand = string.format('curl "%s" --ssl-no-revoke', FileManager.Urls.VERSION)
-		print(updatecheckCommand)
+		
 		local success, fileLines = FileManager.tryOsExecute(updatecheckCommand)
 		if success then
 			response = table.concat(fileLines, "\n")
@@ -438,7 +438,7 @@ function Main.updateReleaseNotes(response)
 	Main.Version.releaseNotes = {}
 
 	-- The body of the release post is contained between 'body' and 'mentions_count'
-	local body = string.match(response or "", '"body":%s+"(.+)".-"mentions_count"')
+	local body = string.match(response or "", '"body":%s+"(.+)".-}')
 	if body == nil then
 		return
 	end
@@ -453,9 +453,10 @@ function Main.updateReleaseNotes(response)
 		str = str:gsub('\\"(.-)\\"', '"%1"')
 		return str
 	end
-
+	
 	local notesFound = false
 	for line in string.gmatch(body .. '\\r\\n', '(.-)\\r\\n') do
+		
 		if notesFound then
 			-- Include all release notes up until the mention of "version changelog"
 			if line:lower():find("version.changelog") then -- . being a wild card match

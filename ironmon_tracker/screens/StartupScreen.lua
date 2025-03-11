@@ -9,8 +9,8 @@ StartupScreen.Buttons = {
 	},
 	PokemonIcon = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 14, 31, 28 },
-		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 10, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 9, 31, 28 },
+		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 3, 32, 32 },
 		pokemonID = 0,
 		getIconId = function(self) return self.pokemonID, SpriteData.Types.Walk end,
 		onClick = function(self) StartupScreen.openChoosePokemonWindow() end
@@ -35,7 +35,7 @@ StartupScreen.Buttons = {
 	AttemptsCount = {
 		type = Constants.ButtonTypes.NO_BORDER,
 		getText = function(self) return tostring(Main.currentSeed) or Constants.BLANKLINE end,
-		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 54, Constants.SCREEN.MARGIN + 37, 33, 11 },
+		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 54, Constants.SCREEN.MARGIN + 25, 33, 11 },
 		isVisible = function() return Main.currentSeed > 0 end,
 		onClick = function(self) StreamerScreen.openEditAttemptsWindow() end
 	},
@@ -45,32 +45,81 @@ StartupScreen.Buttons = {
 		textColor = "Lower box text",
 		boxColors = { "Lower box border", "Lower box background" },
 		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 128, Constants.SCREEN.MARGIN + 137, 10, 10 },
-		isVisible = function() return not Options["Show on new game screen"] and Utils.isNilOrEmpty(Options["Welcome message"]) end,
+		-- isVisible = function() return not Options["Show on new game screen"] and Utils.isNilOrEmpty(Options["Welcome message"]) end,
+		isVisible = function() return true end,
 		onClick = function(self) Program.changeScreenView(StreamerScreen) end
 	},
 	PokemonFavorite1 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 90, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 86, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 52, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 48, 32, 32 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite1:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite1:onClick() end,
 	},
 	PokemonFavorite2 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 90, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 86, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 52, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 48, 32, 32 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite2:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite2:onClick() end,
 	},
 	PokemonFavorite3 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 90, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 86, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 52, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 48, 32, 32 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite3:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite3:onClick() end,
+	},
+	PokemonFavorite4= {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 72, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 68, 32, 32 },
+		isVisible = function(self) return Options["Show on new game screen"] end,
+		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite4:getIconId() end,
+		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite4:onClick() end,
+	},
+	PokemonFavorite5 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 72, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 68, 32, 32 },
+		isVisible = function(self) return Options["Show on new game screen"] end,
+		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite5:getIconId() end,
+		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite5:onClick() end,
+	},
+	PokemonFavorite6 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 72, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 68, 32, 32 },
+		isVisible = function(self) return Options["Show on new game screen"] end,
+		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite6:getIconId() end,
+		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite6:onClick() end,
+	},
+	PokemonFavorite7 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 92, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 88, 32, 32 },
+		isVisible = function(self) return Options["Show on new game screen"] end,
+		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite7:getIconId() end,
+		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite7:onClick() end,
+	},
+	PokemonFavorite8 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 92, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 88, 32, 32 },
+		isVisible = function(self) return Options["Show on new game screen"] end,
+		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite8:getIconId() end,
+		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite8:onClick() end,
+	},
+	PokemonFavorite9 = {
+		type = Constants.ButtonTypes.POKEMON_ICON,
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 92, 32, 44 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 88, 32, 32 },
+		isVisible = function(self) return Options["Show on new game screen"] end,
+		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite9:getIconId() end,
+		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite9:onClick() end,
 	},
 }
 
@@ -200,7 +249,7 @@ function StartupScreen.drawScreen()
 		x = Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN,
 		y = Constants.SCREEN.MARGIN,
 		width = Constants.SCREEN.RIGHT_GAP - (Constants.SCREEN.MARGIN * 2),
-		height = 72,
+		height = 42,
 		text = Theme.COLORS["Default text"],
 		border = Theme.COLORS["Upper box border"],
 		fill = Theme.COLORS["Upper box background"],
@@ -231,9 +280,9 @@ function StartupScreen.drawScreen()
 	Drawing.drawText(topcolX, textLineY, Main.TrackerVersion, topBox.text, topBox.shadow)
 	textLineY = textLineY + linespacing
 
-	Drawing.drawText(topBox.x + 2, textLineY, Resources.StartupScreen.Game .. ":", topBox.text, topBox.shadow)
-	Drawing.drawText(topcolX, textLineY, GameSettings.versioncolor, topBox.text, topBox.shadow)
-	textLineY = textLineY + linespacing
+	-- Drawing.drawText(topBox.x + 2, textLineY, Resources.StartupScreen.Game .. ":", topBox.text, topBox.shadow)
+	-- Drawing.drawText(topcolX, textLineY, GameSettings.versioncolor, topBox.text, topBox.shadow)
+	-- textLineY = textLineY + linespacing
 
 	if StartupScreen.Buttons.AttemptsCount:isVisible() then
 		Drawing.drawText(topBox.x + 2, textLineY, Resources.StartupScreen.Attempts .. ":", topBox.text, topBox.shadow)
@@ -274,7 +323,7 @@ function StartupScreen.drawScreen()
 	-- BOTTOM BORDER BOX
 	gui.defaultTextBackground(botBox.fill)
 	gui.drawRectangle(botBox.x, botBox.y, botBox.width, botBox.height, botBox.border, botBox.fill)
-	textLineY = botBox.y + 1
+	textLineY = botBox.y + 30
 
 	if showCustomWelcome then
 		textLineY = textLineY + 1

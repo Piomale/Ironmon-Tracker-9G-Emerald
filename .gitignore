@@ -2,6 +2,7 @@
 *.json
 !Pokemon Emerald.json
 !TrackerOverrides.json
+!meta.json
 *.gba
 *.State
 *.log

@@ -345,18 +345,21 @@ function Tracker.tryTrackInitialMoveset(pokemon)
 	if (pokemon.personality or 0) == 0 or Tracker.Data.initialMoveset[pokemon.personality] then
 		return
 	end
-	Tracker.Data.initialMoveset[pokemon.personality] = true
+	
+	return -- TODO
+	
+	-- Tracker.Data.initialMoveset[pokemon.personality] = true
 
 	-- Only track a pokemon's move if it could have naturally learned it
-	local learnedMoves = PokemonData.readLevelUpMoves(pokemon.pokemonID)
-	for _, move in ipairs(pokemon.moves or {}) do
-		for _, learnedMove in ipairs(learnedMoves or {}) do
-			if move.id and move.id == learnedMove.id and learnedMove.level <= pokemon.level then
-				Tracker.TrackMove(pokemon.pokemonID, learnedMove.id, learnedMove.level)
-				break
-			end
-		end
-	end
+	-- local learnedMoves = PokemonData.readLevelUpMoves(pokemon.pokemonID)
+	-- for _, move in ipairs(pokemon.moves or {}) do
+		-- for _, learnedMove in ipairs(learnedMoves or {}) do
+			-- if move.id and move.id == learnedMove.id and learnedMove.level <= pokemon.level then
+				-- Tracker.TrackMove(pokemon.pokemonID, learnedMove.id, learnedMove.level)
+				-- break
+			-- end
+		-- end
+	-- end
 end
 
 --- @param trainerId number The trainerId to check if it's a rival

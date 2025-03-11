@@ -15,22 +15,7 @@ GameSettings = {
 
 -- All supported Pokemon Game ROMs; each entry is a table containg the `name`, `softwareVersion` (RomHeaderSoftwareVersion), and `gameCode` (RomHeaderGameCode)
 GameSettings.RomVersions = {
-	Ruby_v1_0 = 		{ name = "Pokémon Ruby v1.0", 		softwareVersion = 0x00410000, 	gameCode = 0x41585645 },
-	Ruby_v1_1 = 		{ name = "Pokémon Ruby v1.1", 		softwareVersion = 0x01400000, 	gameCode = 0x41585645 },
-	Ruby_v1_2 = 		{ name = "Pokémon Ruby v1.2", 		softwareVersion = 0x023F0000, 	gameCode = 0x41585645 },
-	Sapphire_v1_0 = 	{ name = "Pokémon Sapphire v1.0", 	softwareVersion = 0x00550000, 	gameCode = 0x41585045 },
-	Sapphire_v1_1 = 	{ name = "Pokémon Sapphire v1.1", 	softwareVersion = 0x01540000, 	gameCode = 0x41585045 },
-	Sapphire_v1_2 = 	{ name = "Pokémon Sapphire v1.2", 	softwareVersion = 0x02530000, 	gameCode = 0x41585045 },
 	Emerald = 			{ name = "Pokémon Emerald", 		softwareVersion = 0x00720000, 	gameCode = 0x42504545 },
-	FireRed_v1_0 = 		{ name = "Pokémon FireRed v1.0", 	softwareVersion = 0x00680000, 	gameCode = 0x42505245 },
-	FireRed_v1_1 = 		{ name = "Pokémon FireRed v1.1", 	softwareVersion = 0x01670000, 	gameCode = 0x42505245 },
-	FireRed_Spanish = 	{ name = "Pokémon Rojo Fuego", 		softwareVersion = 0x005A0000, 	gameCode = 0x42505253 },
-	FireRed_Italian = 	{ name = "Pokémon Rosso Fuoco", 	softwareVersion = 0x00640000, 	gameCode = 0x42505249 },
-	FireRed_French = 	{ name = "Pokémon Rouge Feu", 		softwareVersion = 0x00670000, 	gameCode = 0x42505246 },
-	FireRed_German = 	{ name = "Pokémon Feuerrote", 		softwareVersion = 0x00690000, 	gameCode = 0x42505244 },
-	FireRed_Japanese = 	{ name = "Pokémon FireRed J", 		softwareVersion = 0x00630000, 	gameCode = 0x4250524A },
-	LeafGreen_v1_0 = 	{ name = "Pokémon LeafGreen v1.0", 	softwareVersion = 0x00810000, 	gameCode = 0x42504745 },
-	LeafGreen_v1_1 = 	{ name = "Pokémon LeafGreen v1.1", 	softwareVersion = 0x01800000, 	gameCode = 0x42504745 },
 }
 
 --[[ Symbols tables references
@@ -283,6 +268,7 @@ GameSettings.GameCharMap = {
 
 function GameSettings.initialize()
 	local success = GameSettings.importAddressesFromJson()
+	local success2 = GameSettings.importAddressesFromMetaJson()
 	if success then
 		success = GameSettings.importTrackerOverridesFromJson()
 	end
@@ -308,6 +294,29 @@ local function _decodeAddressFromJson(address)
 	else
 		return address
 	end
+end
+
+function GameSettings.importAddressesFromMetaJson()
+	filepath = FileManager.Files.META_ADDRESS
+	if not FileManager.fileExists(filepath) then
+		return false
+	end
+
+	local data = FileManager.decodeJsonFile(filepath)
+	if not (data and data.meta and data.meta.symbols) then
+		return false
+	end
+
+	xpcall(function()
+		-- GameInfo
+		GameSettings.SpeciesAbilities = data.meta.symbols.SpeciesAbilities
+		GameSettings.SpeciesCatchRate = data.meta.symbols.SpeciesCatchRate
+		GameSettings.SpeciesGrowthRate = data.meta.symbols.SpeciesGrowthRate
+		GameSettings.SpeciesStats = data.meta.symbols.SpeciesStats
+		GameSettings.SpeciesTypes = data.meta.symbols.SpeciesTypes
+	end, FileManager.logError)
+	
+	return true
 end
 
 ---Imports all necessary ROM addresses and values from the a JSON file for the loaded game
@@ -341,7 +350,6 @@ function GameSettings.importAddressesFromJson(filepath)
 				GameSettings[key] = addressAsNumber
 			end
 		end
-
 		-- AbilityAddresses
 		GameSettings.ABILITIES = {}
 		for key, abilityInfo in pairs(data.AbilityAddresses or {}) do
@@ -367,7 +375,7 @@ function GameSettings.importAddressesFromJson(filepath)
 			end
 		end
 	end, FileManager.logError)
-
+	
 	return true
 end
 

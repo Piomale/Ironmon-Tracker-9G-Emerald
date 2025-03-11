@@ -33,6 +33,7 @@ FileManager.Files = {
 	RANDOMIZER_ERROR_LOG = "RandomizerErrorLog.txt",
 	TRACKER_CORE = "Ironmon-Tracker.lua",
 	UPDATE_OR_INSTALL = "UpdateOrInstall.lua",
+	META_ADDRESS = "meta.json",
 	REQUESTS_DATA = "Requests.json", -- Located in the `network` folder
 	STREAMERBOT_CODE = FileManager.Folders.TrackerCode .. FileManager.slash .. FileManager.Folders.Network .. FileManager.slash .. "StreamerbotCodeImport.txt",
 	JSON_LIBRARY = FileManager.Folders.TrackerCode .. FileManager.slash .. "Json.lua",
@@ -41,6 +42,7 @@ FileManager.Files = {
 	CRASH_REPORT = FileManager.Folders.TrackerCode .. FileManager.slash .. "crashreport.txt",
 	KNOWN_WORKING_DIR = FileManager.Folders.TrackerCode .. FileManager.slash .. "knownworkingdir.txt",
 	NEWRUN_PROFILES = FileManager.Folders.TrackerCode .. FileManager.slash .. "NewRunProfiles.json",
+
 	ADDRESS_OVERRIDES = FileManager.Folders.TrackerCode .. FileManager.slash .. FileManager.Folders.GameAddresses .. FileManager.slash .. "TrackerOverrides.json",
 	LanguageCode = {
 		SpainData = "SpainData.lua",

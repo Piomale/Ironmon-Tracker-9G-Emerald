@@ -1148,6 +1148,12 @@ function EventData.getFavorites(params)
 		StreamerScreen.Buttons.PokemonFavorite1,
 		StreamerScreen.Buttons.PokemonFavorite2,
 		StreamerScreen.Buttons.PokemonFavorite3,
+		StreamerScreen.Buttons.PokemonFavorite4,
+		StreamerScreen.Buttons.PokemonFavorite5,
+		StreamerScreen.Buttons.PokemonFavorite6,
+		StreamerScreen.Buttons.PokemonFavorite7,
+		StreamerScreen.Buttons.PokemonFavorite8,
+		StreamerScreen.Buttons.PokemonFavorite9,
 	}
 	local favesList = {}
 	for i, button in ipairs(faveButtons or {}) do

@@ -57,7 +57,7 @@ ScreenResources{
 		THUNDER = {
 			abbreviation = "THUNDER", -- NEEDS TRANSLATION
 			short = "Thunder", -- NEEDS TRANSLATION
-			detailed = "Pierrefoudre",
+			detailed = "Pierre foudre",
 		},
 		FIRE = {
 			abbreviation = "FIRE", -- NEEDS TRANSLATION
@@ -77,29 +77,39 @@ ScreenResources{
 		LEAF = {
 			abbreviation = "LEAF", -- NEEDS TRANSLATION
 			short = "Leaf", -- NEEDS TRANSLATION
-			detailed = "Pierreplante",
+			detailed = "Pierre plante",
 		},
 		SUN = {
 			abbreviation = "SUN", -- NEEDS TRANSLATION
 			short = "Sun", -- NEEDS TRANSLATION
-			detailed = "Pierresoleil",
+			detailed = "Pierre soleil",
 		},
-		LEAF_SUN = {
-			abbreviation = "LF/SN", -- NEEDS TRANSLATION
+		STONES = {
+			abbreviation = "STONES", -- NEEDS TRANSLATION
+			detailed = "Diff. Stones", -- NEEDS TRANSLATION
 		},
-		WATER30 = {
-			abbreviation = "30/WTR", -- NEEDS TRANSLATION
+		ICE = {
+			abbreviation = "ICE",
+			short = "Ice",
+			detailed = "Ice Stone"
 		},
-		WATER37 = {
-			abbreviation = "37/WTR", -- NEEDS TRANSLATION
+		SHINY = {
+			abbreviation = "ÉCLAT",
+			short = "Éclat", 
+			detailed = "Pierre Éclat",
 		},
-		WATER37_REV = {
-			abbreviation = "WTR/37", -- NEEDS TRANSLATION
+		SUN = {
+			abbreviation = "SUN",
+			short = "Sun", 
+			detailed = "Sun Stone",
 		},
-		EEVEE_STONES = {
-			abbreviation = "STONE", -- NEEDS TRANSLATION
-			detailed = "5 Diff. Stones", -- NEEDS TRANSLATION
-		},
+		DUSK = {
+			abbreviation = "DUSK",
+			short = "Dusk", 
+			detailed = "Dusk Stone",
+		}
+	
+	
 	},
 	TrackerScreen = {
 		HPAbbreviation = "HP", -- NEEDS TRANSLATION
