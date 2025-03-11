@@ -1,33 +1,12 @@
 # Ironmon-Tracker-9G-Emerald
 
-Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
+Tracker peut la version 0.4 de https://github.com/Nax/emerald-em/tree/master
 
 ### Pour l'installation
   https://github.com/Piomale/Ironmon-Tracker-9G-Emerald/releases
   
-### Voici ce qui fonctionne:
-- Information sur son pokémon (nom, capacités et stats)
-- Tracking des capacités adverses
-- listes des pokémons rencontrés / des dresseurs affrontés
-- Generation d'une nouvelle seed avec les touches raccourcis
-- Timer in Game
-- Detection du game over
-- Possibilité de revenir en arriere avec des sauvegardes automatiques (par exemple recommencer un combat après une défaite)
-- Description en anglais de tous les talents et capacités
-- Nom en français des capacités et des pokémons
-- Choix du starter
-
-### Voici ce qui ne fonctionne pas:
-- Détection du type des pokémons
-- La description des attaques/talents en français
-- Le talent des pokémons
-- Les niveau d'apprentissage des capacités pour certains pokémons
-- Détection de la langue (il faut choisir soit même la langue et désactiver la détection automatique)
-- le log viewer (il n'y a pas de fichier de log)
-
-
 ### En cas de problème, il faut vérifier:
-- La version de https://github.com/Nax/emerald-em/tree/master doit être 0.3
-- Vous avez bien mis le trackeur en français / en anglais
+- La version de https://github.com/Nax/emerald-em/tree/master doit être 0.4
+- Vous avez bien mis le trackeur en français / en anglais et désactiver la détection automatique de la langue
 - La seed a été généré en français
 - Le problème ne fait pas partie de la liste des choses qui ne fonctionnent pas
