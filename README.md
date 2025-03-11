@@ -1,6 +1,6 @@
 # Ironmon-Tracker-9G-Emerald
 
-Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
+Tracker peut la version 0.4 de https://github.com/Nax/emerald-em/tree/master
 
 ### Pour l'installation
   https://github.com/Piomale/Ironmon-Tracker-9G-Emerald/releases
@@ -27,7 +27,7 @@ Tracker peut la version 0.3 de https://github.com/Nax/emerald-em/tree/master
 
 
 ### En cas de problème, il faut vérifier:
-- La version de https://github.com/Nax/emerald-em/tree/master doit être 0.3
+- La version de https://github.com/Nax/emerald-em/tree/master doit être 0.4
 - Vous avez bien mis le trackeur en français / en anglais
 - La seed a été généré en français
 - Le problème ne fait pas partie de la liste des choses qui ne fonctionnent pas
