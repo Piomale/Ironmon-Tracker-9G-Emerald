@@ -92,7 +92,7 @@
         "gBaseStats": "83203CC",
         "BattleScript_MoveUsedIsFrozen2": "82DB270",
         "BattleScript_MoveUsedIsConfused": "82DB2C0",
-        "EncryptionKeyOffset": "AC",
+        "EncryptionKeyOffset": "44",
         "gBattleControllerExecFlags": "2024068",
         "gBattleCommunication": "2024332",
         "gBattleMainFunc": "300442C",
@@ -111,7 +111,7 @@
         "gTakenDmg": "20241F8",
         "gBattlescriptCurrInstr": "2024214",
         "bagPocket_Balls_offset": "650",
-        "gSaveBlock1ptr": "3007274",
+        "gSaveBlock1ptr": "3007214",
         "gSpecialVar_ItemId": "203CE7C",
         "pstats": "2035254",
         "sTMHMMoves": "8616040"

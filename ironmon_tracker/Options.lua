@@ -126,6 +126,7 @@ Options.IconSetMap = {
 		folder = "pokemonUpdated",
 		extension = ".png",
 		yOffset = 2,
+		xOffset = 0,
 		adjustQuestionMark = true,
 		-- source = "https://msikma.github.io/pokesprite/index.html",
 	},

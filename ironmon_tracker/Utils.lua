@@ -978,6 +978,7 @@ function Utils.getEncryptionKey(size)
 	if size == 1 then
 		return Memory.read8(address)
 	elseif size == 2 then
+		local domain, splitAddr = Memory.splitDomainAndAddress(saveBlock2addr)
 		return Memory.read16(address)
 	else
 		return Memory.read32(address)

@@ -844,12 +844,7 @@ function Program.readNewPokemon(startAddress, personality)
 			{ id = Utils.getbits(attack2, 0, 16), level = 1, pp = Utils.getbits(attack3, 16, 8) },
 			{ id = Utils.getbits(attack2, 16, 16), level = 1, pp = Utils.getbits(attack3, 24, 8) },
 		}
-	-- print(nickname)
-	-- print(MoveData.Moves[moves[1]['id']]['name'])
-	-- print(MoveData.Moves[moves[2]['id']]['name'])
-	-- print(MoveData.Moves[moves[3]['id']]['name'])
-	-- print(MoveData.Moves[moves[4]['id']]['name'])
-	-- print("-----------------")
+
 	return Program.DefaultPokemon:new({
 		personality = personality,
 		nickname = nickname,
@@ -1124,6 +1119,7 @@ function Program.updateBadgesObtained()
 		badgeBits = Utils.getbits(Memory.readword(saveblock1Addr + GameSettings.badgeOffset), 7, 8)
 	elseif GameSettings.game == 2 then -- Emerald
 		badgeBits = Utils.getbits(Memory.readword(saveblock1Addr + GameSettings.badgeOffset), 7, 8)
+		local domain, splitAddr = Memory.splitDomainAndAddress(saveblock1Addr + GameSettings.badgeOffset)
 	elseif GameSettings.game == 3 then -- FireRed/LeafGreen
 		badgeBits = Memory.readbyte(saveblock1Addr + GameSettings.badgeOffset)
 	end
@@ -1485,6 +1481,7 @@ function Program.updateBagItems()
 	for address, size in pairs(addressesToScan) do
 		for i = 0, (size - 1), 1 do
 			local itemid_and_quantity = Memory.readdword(address + i * 4)
+
 			local itemID = Utils.getbits(itemid_and_quantity, 0, 16)
 			-- Only add to items if the item exists
 			if MiscData.Items[itemID] then
@@ -1519,6 +1516,14 @@ function Program.updateBagItems()
 
 	-- After updating items in bag, recalculate lead mon heals info
 	Program.recalcLeadPokemonHealingInfo()
+end
+
+function toBinaryString(value, numBits)
+    local binary = ""
+    for i = numBits - 1, 0, -1 do
+        binary = binary .. ((value >> i) & 1)
+    end
+    return binary
 end
 
 function Program.recalcLeadPokemonHealingInfo()

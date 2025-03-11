@@ -9,8 +9,8 @@ StartupScreen.Buttons = {
 	},
 	PokemonIcon = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 9, 31, 28 },
-		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 3, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 90, Constants.SCREEN.MARGIN + 9, 32, 32 },
+		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 90, Constants.SCREEN.MARGIN + 3, 32, 32 },
 		pokemonID = 0,
 		getIconId = function(self) return self.pokemonID, SpriteData.Types.Walk end,
 		onClick = function(self) StartupScreen.openChoosePokemonWindow() end
@@ -51,72 +51,72 @@ StartupScreen.Buttons = {
 	},
 	PokemonFavorite1 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 52, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 48, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 62, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 62, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite1:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite1:onClick() end,
 	},
 	PokemonFavorite2 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 52, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 48, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 62, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 62, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite2:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite2:onClick() end,
 	},
 	PokemonFavorite3 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 52, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 48, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 62, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 62, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite3:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite3:onClick() end,
 	},
 	PokemonFavorite4= {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 72, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 68, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 82, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 82, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite4:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite4:onClick() end,
 	},
 	PokemonFavorite5 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 72, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 68, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 82, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 82, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite5:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite5:onClick() end,
 	},
 	PokemonFavorite6 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 72, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 68, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 82, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 82, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite6:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite6:onClick() end,
 	},
 	PokemonFavorite7 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 92, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 88, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 102, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 8, 102, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite7:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite7:onClick() end,
 	},
 	PokemonFavorite8 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 92, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 88, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 102, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 53, 102, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite8:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite8:onClick() end,
 	},
 	PokemonFavorite9 = {
 		type = Constants.ButtonTypes.POKEMON_ICON,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 92, 32, 44 },
-		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 88, 32, 32 },
+		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 102, 16, 16 },
+		box = 			{ Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 98, 102, 16, 16 },
 		isVisible = function(self) return Options["Show on new game screen"] end,
 		getIconId = function(self) return StreamerScreen.Buttons.PokemonFavorite9:getIconId() end,
 		onClick = function(self) StreamerScreen.Buttons.PokemonFavorite9:onClick() end,
@@ -324,7 +324,7 @@ function StartupScreen.drawScreen()
 	gui.defaultTextBackground(botBox.fill)
 	gui.drawRectangle(botBox.x, botBox.y, botBox.width, botBox.height, botBox.border, botBox.fill)
 	textLineY = botBox.y + 30
-
+	
 	if showCustomWelcome then
 		textLineY = textLineY + 1
 		if Options["Show on new game screen"] then
@@ -372,15 +372,59 @@ function StartupScreen.drawScreen()
 
 	-- Temporarily vertically center-align the Favorite Pokemon icons if no welcome message
 	local prevYs = {}
+	prevYs = {
+		StartupScreen.Buttons.PokemonFavorite1.box[2],
+		StartupScreen.Buttons.PokemonFavorite2.box[2],
+		StartupScreen.Buttons.PokemonFavorite3.box[2],
+		StartupScreen.Buttons.PokemonFavorite4.box[2],
+		StartupScreen.Buttons.PokemonFavorite5.box[2],
+		StartupScreen.Buttons.PokemonFavorite6.box[2],
+		StartupScreen.Buttons.PokemonFavorite7.box[2],
+		StartupScreen.Buttons.PokemonFavorite8.box[2],
+		StartupScreen.Buttons.PokemonFavorite9.box[2],
+	}
+	local prevXs = {}
+	prevXs = {
+		StartupScreen.Buttons.PokemonFavorite1.box[1],
+		StartupScreen.Buttons.PokemonFavorite2.box[1],
+		StartupScreen.Buttons.PokemonFavorite3.box[1],
+		StartupScreen.Buttons.PokemonFavorite4.box[1],
+		StartupScreen.Buttons.PokemonFavorite5.box[1],
+		StartupScreen.Buttons.PokemonFavorite6.box[1],
+		StartupScreen.Buttons.PokemonFavorite7.box[1],
+		StartupScreen.Buttons.PokemonFavorite8.box[1],
+		StartupScreen.Buttons.PokemonFavorite9.box[1],
+	}
+	local listePokemonFavorite = {}
+	listePokemonFavorite= {
+		StartupScreen.Buttons.PokemonFavorite1,
+		StartupScreen.Buttons.PokemonFavorite2,
+		StartupScreen.Buttons.PokemonFavorite3,
+		StartupScreen.Buttons.PokemonFavorite4,
+		StartupScreen.Buttons.PokemonFavorite5,
+		StartupScreen.Buttons.PokemonFavorite6,
+		StartupScreen.Buttons.PokemonFavorite7,
+		StartupScreen.Buttons.PokemonFavorite8,
+		StartupScreen.Buttons.PokemonFavorite9,
+	}
 	if Options["Show on new game screen"] and Utils.isNilOrEmpty(Options["Welcome message"]) then
-		prevYs = {
-			StartupScreen.Buttons.PokemonFavorite1.box[2],
-			StartupScreen.Buttons.PokemonFavorite2.box[2],
-			StartupScreen.Buttons.PokemonFavorite3.box[2],
-		}
-		StartupScreen.Buttons.PokemonFavorite1.box[2] = prevYs[1] + 15
-		StartupScreen.Buttons.PokemonFavorite2.box[2] = prevYs[2] + 15
-		StartupScreen.Buttons.PokemonFavorite3.box[2] = prevYs[3] + 15
+		for i, bouton in ipairs(listePokemonFavorite) do
+			bouton.box[2] = bouton.box[2] + math.floor((i-1)/3) * 10
+			bouton.box[3] = 24
+			bouton.box[4] = 24
+			bouton.clickableArea[2] = bouton.box[2]
+			bouton.clickableArea[3] = 24
+			bouton.clickableArea[4] = 24
+		end
+	elseif Options["Show on new game screen"] then
+		for i, bouton in ipairs(listePokemonFavorite) do
+			bouton.box[1] = bouton.box[1] + 10
+			bouton.box[3] = 16
+			bouton.box[4] = 16
+			bouton.clickableArea[1] = bouton.box[1]
+			bouton.clickableArea[3] = 16
+			bouton.clickableArea[4] = 16
+		end
 	end
 
 	-- Draw all buttons
@@ -389,9 +433,25 @@ function StartupScreen.drawScreen()
 		Drawing.drawButton(button, buttonShadow)
 	end
 
-	if Options["Show on new game screen"] and Utils.isNilOrEmpty(Options["Welcome message"]) then
+	if Options["Show on new game screen"] then
+		StartupScreen.Buttons.PokemonFavorite1.box[1] = prevXs[1]
+		StartupScreen.Buttons.PokemonFavorite2.box[1] = prevXs[2]
+		StartupScreen.Buttons.PokemonFavorite3.box[1] = prevXs[3]
+		StartupScreen.Buttons.PokemonFavorite4.box[1] = prevXs[4]
+		StartupScreen.Buttons.PokemonFavorite5.box[1] = prevXs[5]
+		StartupScreen.Buttons.PokemonFavorite6.box[1] = prevXs[6]
+		StartupScreen.Buttons.PokemonFavorite7.box[1] = prevXs[7]
+		StartupScreen.Buttons.PokemonFavorite8.box[1] = prevXs[8]
+		StartupScreen.Buttons.PokemonFavorite9.box[1] = prevXs[9]
+		
 		StartupScreen.Buttons.PokemonFavorite1.box[2] = prevYs[1]
 		StartupScreen.Buttons.PokemonFavorite2.box[2] = prevYs[2]
 		StartupScreen.Buttons.PokemonFavorite3.box[2] = prevYs[3]
+		StartupScreen.Buttons.PokemonFavorite4.box[2] = prevYs[4]
+		StartupScreen.Buttons.PokemonFavorite5.box[2] = prevYs[5]
+		StartupScreen.Buttons.PokemonFavorite6.box[2] = prevYs[6]
+		StartupScreen.Buttons.PokemonFavorite7.box[2] = prevYs[7]
+		StartupScreen.Buttons.PokemonFavorite8.box[2] = prevYs[8]
+		StartupScreen.Buttons.PokemonFavorite9.box[2] = prevYs[9]
 	end
 end

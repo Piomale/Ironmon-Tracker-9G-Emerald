@@ -131,16 +131,16 @@ MiscData.Items = {}
 MiscData.PokeBalls = {}
 MiscData.TMs = {}
 MiscData.HMs = {}
-for i=1, 12, 1 do
+for i=1, 27, 1 do
 	MiscData.PokeBalls[i] = true
 end
-for i=289, 338, 1 do
+for i=582, 681, 1 do
 	MiscData.TMs[i] = {
 		icon = "tiny-tm",
 		pocket = MiscData.BagPocket.TMHM,
 	}
 end
-for i=339, 346, 1 do
+for i=682, 689, 1 do
 	MiscData.HMs[i] = {
 		icon = "tiny-tm",
 		pocket = MiscData.BagPocket.TMHM,
@@ -148,160 +148,160 @@ for i=339, 346, 1 do
 end
 
 MiscData.HealingItems = {
-	[13] = {
-		id = 13,
+	[28] = {
+		id = 28,
 		name = "Potion",
 		icon = "potion",
 		amount = 20,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[19] = {
-		id = 19,
-		name = "Full Restore",
-		icon = "full-restore",
-		amount = 100,
-		type = MiscData.HealingType.Percentage,
-		pocket = MiscData.BagPocket.Items,
-	},
-	[20] = {
-		id = 20,
-		name = "Max Potion",
-		icon = "max-potion",
-		amount = 100,
-		type = MiscData.HealingType.Percentage,
-		pocket = MiscData.BagPocket.Items,
-	},
-	[21] = {
-		id = 21,
-		name = "Hyper Potion",
-		icon = "hyper-potion",
-		amount = 200,
-		type = MiscData.HealingType.Constant,
-		pocket = MiscData.BagPocket.Items,
-	},
-	[22] = {
-		id = 22,
+	[29] = {
+		id = 29,
 		name = "Super Potion",
 		icon = "super-potion",
 		amount = 50,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[26] = {
-		id = 26,
+	[30] = {
+		id = 30,
+		name = "Hyper Potion",
+		icon = "hyper-potion",
+		amount = 200,
+		type = MiscData.HealingType.Constant,
+		pocket = MiscData.BagPocket.Items,
+	},
+	[31] = {
+		id = 31,
+		name = "Max Potion",
+		icon = "max-potion",
+		amount = 100,
+		type = MiscData.HealingType.Percentage,
+		pocket = MiscData.BagPocket.Items,
+	},
+	[32] = {
+		id = 32,
+		name = "Full Restore",
+		icon = "full-restore",
+		amount = 100,
+		type = MiscData.HealingType.Percentage,
+		pocket = MiscData.BagPocket.Items,
+	},
+	[35] = {
+		id = 35,
 		name = "Fresh Water",
 		icon = "fresh-water",
 		amount = 50,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[27] = {
-		id = 27,
+	[36] = {
+		id = 36,
 		name = "Soda Pop",
 		icon = "soda-pop",
 		amount = 60,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[28] = {
-		id = 28,
+	[37] = {
+		id = 37,
 		name = "Lemonade",
 		icon = "lemonade",
 		amount = 80,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[29] = {
-		id = 29,
+	[38] = {
+		id = 38,
 		name = "Moomoo Milk",
 		icon = "moomoo-milk",
 		amount = 100,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[30] = {
-		id = 30,
+	[39] = {
+		id = 39,
 		name = "EnergyPowder",
 		icon = "energy-powder",
 		amount = 50,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[31] = {
-		id = 31,
+	[40] = {
+		id = 40,
 		name = "Energy Root",
 		icon = "energy-root",
 		amount = 200,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[44] = {
-		id = 44,
+	[53] = {
+		id = 53,
 		name = "Berry Juice",
 		icon = "berry-juice",
 		amount = 20,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[139] = {
-		id = 139,
+	[520] = {
+		id = 520,
 		name = "Oran Berry",
 		icon = "oran-berry",
 		amount = 10,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[142] = {
-		id = 142,
+	[523] = {
+		id = 523,
 		name = "Sitrus Berry",
 		icon = "sitrus-berry",
 		amount = 30,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[143] = {
-		id = 143,
+	[524] = {
+		id = 524,
 		name = "Figy Berry",
 		icon = "oran-berry",
 		amount = 12.5,
 		type = MiscData.HealingType.Percentage,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[144] = {
-		id = 144,
+	[525] = {
+		id = 525,
 		name = "Wiki Berry",
 		icon = "oran-berry",
 		amount = 12.5,
 		type = MiscData.HealingType.Percentage,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[145] = {
-		id = 145,
+	[526] = {
+		id = 526,
 		name = "Mago Berry",
 		icon = "oran-berry",
 		amount = 12.5,
 		type = MiscData.HealingType.Percentage,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[146] = {
-		id = 146,
+	[527] = {
+		id = 527,
 		name = "Aguav Berry",
 		icon = "oran-berry",
 		amount = 12.5,
 		type = MiscData.HealingType.Percentage,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[147] = {
-		id = 147,
+	[528] = {
+		id = 528,
 		name = "Iapapa Berry",
 		icon = "oran-berry",
 		amount = 12.5,
 		type = MiscData.HealingType.Percentage,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[175] = {
-		id = 175,
+	[574] = {
+		id = 574,
 		name = "Enigma Berry",
 		icon = "oran-berry",
 		amount = 12.5,
@@ -311,113 +311,113 @@ MiscData.HealingItems = {
 }
 
 MiscData.StatusItems = {
-	[14] = {
-		id = 14,
+	[43] = {
+		id = 43,
 		name = "Antidote",
 		icon = "full-heal",
 		type = MiscData.StatusType.Poison,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[15] = {
-		id = 15,
+	[45] = {
+		id = 45,
 		name = "Burn Heal",
 		icon = "full-heal",
 		type = MiscData.StatusType.Burn,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[16] = {
-		id = 16,
+	[46] = {
+		id = 46,
 		name = "Ice Heal",
 		icon = "full-heal",
 		type = MiscData.StatusType.Freeze,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[17] = {
-		id = 17,
+	[47] = {
+		id = 47,
 		name = "Awakening",
 		icon = "full-heal",
 		type = MiscData.StatusType.Sleep,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[18] = {
-		id = 18,
+	[44] = {
+		id = 44,
 		name = "Parlyz Heal",
 		icon = "full-heal",
 		type = MiscData.StatusType.Paralyze,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[19] = {
-		id = 19,
+	[32] = {
+		id = 32,
 		name = "Full Restore",
 		icon = "full-restore",
 		type = MiscData.StatusType.All,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[23] = {
-		id = 23,
+	[48] = {
+		id = 48,
 		name = "Full Heal",
 		icon = "full-heal",
 		type = MiscData.StatusType.All,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[32] = {
-		id = 32,
+	[41] = {
+		id = 41,
 		name = "Heal Powder",
 		icon = "heal-powder",
 		type = MiscData.StatusType.All,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[38] = {
-		id = 38,
+	[59] = {
+		id = 59,
 		name = "Lava Cookie",
 		icon = "lava-cookie",
 		type = MiscData.StatusType.All,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[133] = {
-		id = 133,
+	[514] = {
+		id = 514,
 		name = "Cheri Berry",
 		icon = "cheri-berry",
 		type = MiscData.StatusType.Paralyze,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[134] = {
-		id = 134,
+	[515] = {
+		id = 515,
 		name = "Chesto Berry",
 		icon = "chesto-berry",
 		type = MiscData.StatusType.Sleep,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[135] = {
-		id = 135,
+	[516] = {
+		id = 516,
 		name = "Pecha Berry",
 		icon = "pecha-berry",
 		type = MiscData.StatusType.Poison,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[136] = {
-		id = 136,
+	[517] = {
+		id = 517,
 		name = "Rawst Berry",
 		icon = "rawst-berry",
 		type = MiscData.StatusType.Burn,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[137] = {
-		id = 137,
+	[518] = {
+		id = 818,
 		name = "Aspear Berry",
 		icon = "aspear-berry",
 		type = MiscData.StatusType.Freeze,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[140] = {
-		id = 140,
+	[521] = {
+		id = 521,
 		name = "Persim Berry",
 		icon = "persim-berry",
 		type = MiscData.StatusType.Confusion,
 		pocket = MiscData.BagPocket.Berries,
 	},
-	[141] = {
-		id = 141,
+	[522] = {
+		id = 522,
 		name = "Lum Berry",
 		icon = "lum-berry",
 		type = MiscData.StatusType.All,
@@ -426,40 +426,40 @@ MiscData.StatusItems = {
 }
 
 MiscData.PPItems = {
-	[34] = {
-		id = 34,
+	[49] = {
+		id = 49,
 		name = "Ether",
 		icon = "ether",
 		amount = 10,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[35] = {
-		id = 35,
+	[50] = {
+		id = 50,
 		name = "Max Ether",
 		icon = "ether",
 		amount = 100,
 		type = MiscData.HealingType.Percentage,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[36] = {
-		id = 36,
+	[51] = {
+		id = 51,
 		name = "Elixir",
 		icon = "elixir",
 		amount = 10,
 		type = MiscData.HealingType.Constant,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[37] = {
-		id = 37,
+	[52] = {
+		id = 52,
 		name = "Max Elixir",
 		icon = "elixir",
 		amount = 100,
 		type = MiscData.HealingType.Percentage,
 		pocket = MiscData.BagPocket.Items,
 	},
-	[138] = {
-		id = 138,
+	[519] = {
+		id = 519,
 		name = "Leppa Berry",
 		icon = "leppa-berry",
 		amount = 10,
@@ -469,59 +469,83 @@ MiscData.PPItems = {
 }
 
 MiscData.EvolutionStones = {
-	[93] = {
-		id = 93,
-		name = "Sun Stone",
-		icon = "sun-stone",
-		pocket = MiscData.BagPocket.Items,
-	},
-	[94] = {
-		id = 94,
-		name = "Moon Stone",
-		icon = "moon-stone",
-		pocket = MiscData.BagPocket.Items,
-	},
-	[95] = {
-		id = 95,
+	[211] = {
+		id = 211,
 		name = "Fire Stone",
 		icon = "fire-stone",
 		pocket = MiscData.BagPocket.Items,
 	},
-	[96] = {
-		id = 96,
-		name = "Thunderstone",
-		icon = "thunder-stone",
-		pocket = MiscData.BagPocket.Items,
-	},
-	[97] = {
-		id = 97,
+	[212] = {
+		id = 212,
 		name = "Water Stone",
 		icon = "water-stone",
 		pocket = MiscData.BagPocket.Items,
 	},
-	[98] = {
-		id = 98,
+	[213] = {
+		id = 213,
+		name = "Thunder Stone",
+		icon = "thunder-stone",
+		pocket = MiscData.BagPocket.Items,
+	},
+	[214] = {
+		id = 214,
 		name = "Leaf Stone",
 		icon = "leaf-stone",
+		pocket = MiscData.BagPocket.Items,
+	},
+	[215] = {
+		id = 215,
+		name = "Ice Stone",
+		icon = "ice-stone",
+		pocket = MiscData.BagPocket.Items,
+	},
+	[216] = {
+		id = 216,
+		name = "Sun Stone",
+		icon = "sun-stone",
+		pocket = MiscData.BagPocket.Items,
+	},
+	[217] = {
+		id = 217,
+		name = "Moon Stone",
+		icon = "moon-stone",
+		pocket = MiscData.BagPocket.Items,
+	},
+	[218] = {
+		id = 218,
+		name = "Shiny Stone",
+		icon = "shiny-stone",
+		pocket = MiscData.BagPocket.Items,
+	},
+	[219] = {
+		id = 219,
+		name = "Dusk Stone",
+		icon = "dusk-stone",
+		pocket = MiscData.BagPocket.Items,
+	},
+	[220] = {
+		id = 220,
+		name = "Dawn Stone",
+		icon = "dawn-stone",
 		pocket = MiscData.BagPocket.Items,
 	},
 }
 
 MiscData.BattleItems = {
-	[39] = {
+	[109] = {
 		icon = "blue-flute",
 		pocket = MiscData.BagPocket.Items,
 	},
-	[40] = {
+	[110] = {
 		icon = "yellow-flute",
 		pocket = MiscData.BagPocket.Items,
 	},
-	[41] = {
+	[111] = {
 		icon = "red-flute",
 		pocket = MiscData.BagPocket.Items,
 	},
 }
-for i=73, 79, 1 do -- X Items, Dire Hit, Guard Spec.
+for i=121, 126, 1 do -- X Items, Dire Hit, Guard Spec.
 	MiscData.BattleItems[i] = {
 		icon = "x-item",
 		pocket = MiscData.BagPocket.Items,
@@ -529,29 +553,35 @@ for i=73, 79, 1 do -- X Items, Dire Hit, Guard Spec.
 end
 
 MiscData.OtherItems = {}
-for i=63, 71, 1 do -- Vitamins and Candies
+for i=65, 72, 1 do -- Vitamins and Candies
 	MiscData.OtherItems[i] = {
 		icon = i == 68 and "candy" or "vitamin",
 		pocket = MiscData.BagPocket.Items,
 	}
 end
-MiscData.OtherItems[83] = { -- Super Repel
+for i=102, 108, 1 do -- Vitamins and Candies
+	MiscData.OtherItems[i] = {
+		icon = i == 68 and "candy" or "vitamin",
+		pocket = MiscData.BagPocket.Items,
+	}
+end
+MiscData.OtherItems[115] = { -- Super Repel
 	icon = "repel",
 	pocket = MiscData.BagPocket.Items,
 }
-MiscData.OtherItems[84] = { -- Max Repel
+MiscData.OtherItems[116] = { -- Max Repel
 	icon = "repel",
 	pocket = MiscData.BagPocket.Items,
 }
-MiscData.OtherItems[86] = { -- Repel
+MiscData.OtherItems[114] = { -- Repel
 	icon = "repel",
 	pocket = MiscData.BagPocket.Items,
 }
-MiscData.OtherItems[180] = { -- White Herb
+MiscData.OtherItems[460] = { -- White Herb
 	icon = "white-herb",
 	pocket = MiscData.BagPocket.Items,
 }
-MiscData.OtherItems[185] = { -- Mental Herb
+MiscData.OtherItems[464] = { -- Mental Herb
 	icon = "mental-herb",
 	pocket = MiscData.BagPocket.Items,
 }

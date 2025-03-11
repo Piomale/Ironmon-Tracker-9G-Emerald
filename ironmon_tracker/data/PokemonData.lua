@@ -52,6 +52,70 @@ PokemonData.Types = {
 	EMPTY = "", -- No second type for this Pokémon or an empty field
 }
 
+-- MiscData.EvolutionStones = {
+	-- [211] = {
+		-- id = 211,
+		-- name = "Fire Stone",
+		-- icon = "fire-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [212] = {
+		-- id = 212,
+		-- name = "Water Stone",
+		-- icon = "water-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [213] = {
+		-- id = 213,
+		-- name = "Thunder Stone",
+		-- icon = "thunder-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [214] = {
+		-- id = 214,
+		-- name = "Leaf Stone",
+		-- icon = "leaf-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [215] = {
+		-- id = 215,
+		-- name = "Ice Stone",
+		-- icon = "ice-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [216] = {
+		-- id = 216,
+		-- name = "Sun Stone",
+		-- icon = "sun-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [217] = {
+		-- id = 217,
+		-- name = "Moon Stone",
+		-- icon = "moon-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [218] = {
+		-- id = 218,
+		-- name = "Shiny Stone",
+		-- icon = "shiny-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [219] = {
+		-- id = 219,
+		-- name = "Dusk Stone",
+		-- icon = "dusk-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+	-- [220] = {
+		-- id = 220,
+		-- name = "Dawn Stone",
+		-- icon = "dawn-stone",
+		-- pocket = MiscData.BagPocket.Items,
+	-- },
+-- }
+
+
 -- Enumerated constants that defines various evolution possibilities
 -- This enum does NOT include levels for evolution, only stones, friendship, no evolution, etc.
 PokemonData.Evolutions = {
@@ -82,7 +146,7 @@ PokemonData.Evolutions = {
 		abbreviation = "THUNDER",
 		short = { "Thunder", },
 		detailed = { "Thunder Stone", },
-		evoItemIds = { 96 },
+		evoItemIds = { 213 },
 	},
 	-- multiples stones items
 	STONES = {
@@ -95,59 +159,63 @@ PokemonData.Evolutions = {
 		abbreviation = "FIRE",
 		short = { "Fire", },
 		detailed = { "Fire Stone", },
-		evoItemIds = { 95 },
+		evoItemIds = { 211 },
 	},
 	-- Water stone item
 	WATER = {
 		abbreviation = "WATER",
 		short = { "Water", },
 		detailed = { "Water Stone", },
-		evoItemIds = { 97 },
+		evoItemIds = { 212 },
 	},
 	-- Moon stone item
 	MOON = {
 		abbreviation = "MOON",
 		short = { "Moon", },
 		detailed = { "Moon Stone", },
-		evoItemIds = { 94 },
+		evoItemIds = { 217 },
 	},
 	-- Leaf stone item
 	LEAF = {
 		abbreviation = "LEAF",
 		short = { "Leaf", },
 		detailed = { "Leaf Stone", },
-		evoItemIds = { 98 },
+		evoItemIds = { 214 },
 	},
 	-- Sun stone item
 	SUN = {
 		abbreviation = "SUN",
 		short = { "Sun", },
 		detailed = { "Sun Stone", },
-		evoItemIds = { 93 },
+		evoItemIds = { 216 },
 	},
 	-- Sun stone item
 	ICE = {
 		abbreviation = "ICE",
 		short = { "Ice", },
-		detailed = { "Ice Stone", }
+		detailed = { "Ice Stone", },
+		evoItemIds = { 215 },
 	},
 	-- Shiny stone item
 	SHINY = {
 		abbreviation = "SHINY",
 		short = { "Shiny", },
-		detailed = { "Shiny Stone", }
+		detailed = { "Shiny Stone", },
+		evoItemIds = { 218 },
 	},
 	-- Sun stone item
-	SUN = {
-		abbreviation = "SUN",
-		short = { "Sun", },
-		detailed = { "Sun Stone", }
+	DAWN = {
+		abbreviation = "DAWN",
+		short = { "Dawn", },
+		detailed = { "Dawn Stone", },
+		evoItemIds = { 220 },
 	},
 	-- Dusk stone item
 	DUSK = {
 		abbreviation = "DUSK",
 		short = { "Dusk", },
-		detailed = { "Dusk Stone", }
+		detailed = { "Dusk Stone", },
+		evoItemIds = { 219 },
 	}
 }
 
