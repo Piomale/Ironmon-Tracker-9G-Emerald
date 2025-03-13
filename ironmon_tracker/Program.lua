@@ -773,6 +773,7 @@ function Program.readNewPokemon(startAddress, personality)
 	local effort1 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset), magicword)
 	local effort2 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset + 4), magicword)
 	local misc2 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + miscoffset + 4), magicword)
+	
 	local nickname = ""
 	for i=0, Program.Addresses.sizeofPokemonNickname - 1, 1 do
 		local charByte = Memory.readbyte(startAddress + 8 + i)
@@ -780,7 +781,6 @@ function Program.readNewPokemon(startAddress, personality)
 		nickname = nickname .. (GameSettings.GameCharMap[charByte] or Constants.HIDDEN_INFO)
 	end
 	nickname = Utils.formatSpecialCharacters(nickname)
-	
 	-- Unused data memory reads
 	-- local effort3 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset + 8), magicword)
 	-- local misc3   = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + miscoffset + 8), magicword)
@@ -1119,7 +1119,6 @@ function Program.updateBadgesObtained()
 		badgeBits = Utils.getbits(Memory.readword(saveblock1Addr + GameSettings.badgeOffset), 7, 8)
 	elseif GameSettings.game == 2 then -- Emerald
 		badgeBits = Utils.getbits(Memory.readword(saveblock1Addr + GameSettings.badgeOffset), 7, 8)
-		local domain, splitAddr = Memory.splitDomainAndAddress(saveblock1Addr + GameSettings.badgeOffset)
 	elseif GameSettings.game == 3 then -- FireRed/LeafGreen
 		badgeBits = Memory.readbyte(saveblock1Addr + GameSettings.badgeOffset)
 	end
@@ -1223,7 +1222,20 @@ end
 function Program.getPokemonTypes(isOwn, isLeft)
 	local ownerAddressOffset = Utils.inlineIf(isOwn, 0, Program.Addresses.sizeofBattlePokemon)
 	local leftAddressOffset = Utils.inlineIf(isLeft, 0, Program.Addresses.offsetBattlePokemonDoublesPartner)
-	local typesData = Memory.readword(GameSettings.gBattleMons + Program.Addresses.offsetBattlePokemonTypes + ownerAddressOffset + leftAddressOffset)
+	
+	--local typesData = Memory.readword(GameSettings.gBattleMons + Program.Addresses.offsetBattlePokemonTypes + ownerAddressOffset + leftAddressOffset)
+
+	if isOwn then
+		Battle.Combatants.LeftOwn = Memory.readbyte(GameSettings.gBattlerPartyIndexes) + 1
+	
+		pokemonid = Program.GameData.PlayerTeam[Battle.Combatants.LeftOwn].pokemonID
+	else
+		Battle.Combatants.LeftOther = Memory.readbyte(GameSettings.gBattlerPartyIndexes + 2) + 1
+		pokemonid = Program.GameData.EnemyTeam[Battle.Combatants.LeftOther].pokemonID
+		
+	end
+	local typesData = Memory.readword(GameSettings.SpeciesTypes.base + GameSettings.SpeciesTypes.stride * pokemonid)
+	
 	return {
 		PokemonData.TypeIndexMap[Utils.getbits(typesData, 0, 8)],
 		PokemonData.TypeIndexMap[Utils.getbits(typesData, 8, 8)],

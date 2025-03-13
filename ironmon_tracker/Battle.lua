@@ -147,7 +147,6 @@ function Battle.updateBattleStatus()
 	
 	local firstMonID = Memory.readword(GameSettings.gBattleMons)
 	
-	
 		
 	local isFakeBattle = numBattlers == 0 or not PokemonData.isValid(firstMonID)
 	local opposingPokemon = Tracker.getPokemon(1, false) -- get the lead pokemon on the enemy team
@@ -266,7 +265,6 @@ function Battle.getViewedPokemon(isOwn)
 	else
 		viewSlot = Utils.inlineIf(Battle.isViewingLeft or Battle.isViewingOwn, Battle.Combatants.LeftOther, Battle.Combatants.RightOther)
 	end
-
 	return Tracker.getPokemon(viewSlot, mustViewOwn)
 end
 
@@ -279,7 +277,7 @@ function Battle.updateViewSlots()
 	--update all 2 (or 4)
 	Battle.Combatants.LeftOwn = Memory.readbyte(GameSettings.gBattlerPartyIndexes) + 1
 	Battle.Combatants.LeftOther = Memory.readbyte(GameSettings.gBattlerPartyIndexes + 2) + 1
-
+	
 	-- Verify the view slots are within bounds, and that for doubles, the pokemon is not fainted (data is not cleared if there are no remaining pokemon)
 	if Battle.Combatants.LeftOwn < 1 or Battle.Combatants.LeftOwn > 6 then
 		Battle.Combatants.LeftOwn = 1

@@ -337,10 +337,12 @@ function PokemonData.buildData(forced)
 
 		-- Abilities (2 bytes)
 		-- local abilitiesData = Memory.readword(addrOffset + PokemonData.Addresses.offsetAbilities)
-		local abilitiesData = Memory.readword(GameSettings.SpeciesAbilities.base + id * GameSettings.SpeciesAbilities.stride)
+		
+		local abilitiesData = Memory.readdword(GameSettings.SpeciesAbilities.base + id * GameSettings.SpeciesAbilities.stride)
+		
 		pokemon.abilities = {
-			Utils.getbits(abilitiesData, 0, 8),
-			Utils.getbits(abilitiesData, 8, 8),
+			Utils.getbits(abilitiesData, 0, 16),
+			Utils.getbits(abilitiesData, 16, 16),
 		}
 
 	end

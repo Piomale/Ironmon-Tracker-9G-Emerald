@@ -6677,6 +6677,7 @@ GameResources{
 			Description = "The user pours toxins into the target by wrapping them in a toxic, corrosive chain. This may also leave the target badly poisoned.",
 		},
 	},
+	
 	-- The list of Pokémon abilities below must remain in the same order
 	AbilityNames = {
 		"Stench",
