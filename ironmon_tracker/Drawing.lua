@@ -48,15 +48,15 @@ Drawing.ImagePaths = {
 		getDefaultPath = function(self, value)
 			return FileManager.buildImagePath("types", value, ".png")
 		end,
-		-- shouldUseOverride = function(self, value) return false end,
-		-- getOverridePath = function(self, value) return "" end,
+		--shouldUseOverride = function(self, value) false end,
+		getOverridePath = function(self, value) return FileManager.buildImagePath("types\\" .. Options["Language"],  value.. ".png") end,
 	},
 	PokemonStatus = {
 		getDefaultPath = function(self, value)
 			return FileManager.buildImagePath("status", value, ".png")
 		end,
 		-- shouldUseOverride = function(self, value) return false end,
-		-- getOverridePath = function(self, value) return "" end,
+		-- getOverridePath = function(self, value) return FileManager.buildImagePath("status/french", value, ".png") end,
 	},
 	AnimatedPokemon = {
 		getDefaultPath = function(self, value)

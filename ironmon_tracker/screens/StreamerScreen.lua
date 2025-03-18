@@ -11,7 +11,7 @@ SCREEN.Buttons = {
 	AttemptsCountEdit = {
 		type = Constants.ButtonTypes.FULL_BORDER,
 		getText = function(self) return Resources.StreamerScreen.ButtonEdit end,
-		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 112, Constants.SCREEN.MARGIN + 14, 23, 11 },
+		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 14, 35, 11 },
 		draw = function(self, shadowcolor)
 			-- Draw the Label text to its left
 			local x = Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 3
@@ -23,7 +23,7 @@ SCREEN.Buttons = {
 	WelcomeMessageEdit = {
 		type = Constants.ButtonTypes.FULL_BORDER,
 		getText = function(self) return Resources.StreamerScreen.ButtonEdit end,
-		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 112, Constants.SCREEN.MARGIN + 29, 23, 11 },
+		box = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 100, Constants.SCREEN.MARGIN + 29, 35, 11 },
 		draw = function(self, shadowcolor)
 			-- Draw the Label text to its left
 			local x = Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 3
@@ -36,7 +36,7 @@ SCREEN.Buttons = {
 		type = Constants.ButtonTypes.CHECKBOX,
 		optionKey = "Show on new game screen",
 		getText = function(self) return Resources.StreamerScreen.OptionDisplayFavorites end,
-		clickableArea = { Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 64, Constants.SCREEN.RIGHT_GAP - 12, 8 },
+		clickableArea = { 	Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 59, 8, 8 },
 		box = {	Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN + 10, Constants.SCREEN.MARGIN + 59, 8, 8 },
 		toggleState = false, -- update later in initialize
 		updateSelf = function(self) self.toggleState = (Options[self.optionKey] == true) end,

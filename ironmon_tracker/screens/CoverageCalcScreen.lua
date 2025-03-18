@@ -19,7 +19,7 @@ local TAB_HEIGHT = 12
 
 SCREEN.OrderedTypeKeys = {
 	"NORMAL", "FIGHTING", "FLYING", "POISON", "GROUND", "ROCK", "BUG", "GHOST", "STEEL",
-	"FIRE", "WATER", "GRASS", "ELECTRIC", "PSYCHIC", "ICE", "DRAGON", "DARK",
+	"FIRE", "WATER", "GRASS", "ELECTRIC", "PSYCHIC", "ICE", "DRAGON", "DARK", "FAIRY",
 }
 
 SCREEN.Buttons = {
