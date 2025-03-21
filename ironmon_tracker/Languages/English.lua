@@ -5561,72 +5561,162 @@ GameResources{
 			Description = "Breakneck Blitz is the Normal type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "All-Out Pummeling",
 			Description = "All-Out Pummeling is the Fighting type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Supersonic Skystrike",
 			Description = "Supersonic Skystrike is the Flying type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Acid Downpour",
 			Description = "Acid Downpour is the Poison type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Tectonic Rage",
 			Description = "Tectonic Rage is the Ground type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Continental Crush",
 			Description = "Continental Crush is the Rock type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Savage Spin-Out",
 			Description = "Savage Spin-Out is the Bug type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Never-Ending Nightmare",
 			Description = "Never-Ending Nightmare is the Ghost type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Corkscrew Crash",
 			Description = "Corkscrew Crash is the Steel type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Inferno Overdrive",
 			Description = "Inferno Overdrive is the Fire type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Hydro Vortex",
 			Description = "Hydro Vortex is the Water type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Bloom Doom",
 			Description = "Bloom Doom is the Grass type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Gigavolt Havoc",
 			Description = "Gigavolt Havoc is the Electric type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Shattered Psyche",
 			Description = "Shattered Psyche is the Psychic type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Subzero Slammer",
 			Description = "Subzero Slammer is the Ice type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Devastating Drake",
 			Description = "Devastating Drake is the Dragon type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Black Hole Eclipse",
 			Description = "Black Hole Eclipse is the Dark type Z-Move, introduced in Pokémon Sun/Moon.",
 		},
 		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
+		},
+		{
 			NameKey = "Twinkle Tackle",
 			Description = "Twinkle Tackle is the Fairy type Z-Move, introduced in Pokémon Sun/Moon.",
+		},
+		{
+			NameKey = "",
+			nameFR = "",
+			Description = ""
 		},
 		{
 			NameKey = "Catastropika",
