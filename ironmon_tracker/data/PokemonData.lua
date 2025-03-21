@@ -148,12 +148,6 @@ PokemonData.Evolutions = {
 		detailed = { "Thunder Stone", },
 		evoItemIds = { 213 },
 	},
-	-- multiples stones items
-	STONES = {
-		abbreviation = "STONES",
-		short = { "Stones", },
-		detailed = { "Stones", }
-	},
 	-- Fire stone item
 	FIRE = {
 		abbreviation = "FIRE",
@@ -241,9 +235,6 @@ function PokemonData.updateResources()
 	PE.FRIEND.short = { RPED.FRIEND.short }
 	PE.FRIEND.detailed = { "%s " .. RPED.FRIEND.detailed }
 	PE.FRIEND_READY.abbreviation = RPED.FRIEND_READY.abbreviation
-	PE.STONES.abbreviation = { RPED.STONES.abbreviation }
-	PE.STONES.short = { RPED.STONES.short, }
-	PE.STONES.detailed = { RPED.STONES.detailed, }
 	PE.THUNDER.abbreviation = RPED.THUNDER.abbreviation
 	PE.THUNDER.short = { RPED.THUNDER.short }
 	PE.THUNDER.detailed = { RPED.THUNDER.detailed }
@@ -1040,7 +1031,7 @@ PokemonData.Pokemon = {
     {
         testId = 44,
         name = "gloom",
-        evolution = PokemonData.Evolutions.STONES,
+        evolution = "Multiple",
         bst = 395,
         movelvls = { {1, 1, 1, 1, 12, 14, 16, 18, 20, 26, 32, 38, 44, 50}, {1, 1, 1, 1, 12, 14, 16, 18, 20, 26, 32, 38, 44, 50} },
         weight = 8.6,
