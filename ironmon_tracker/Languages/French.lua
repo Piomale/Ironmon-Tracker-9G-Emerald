@@ -6184,9 +6184,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "All-Out Pummeling",
         nameFR = "Combo Hyper-Furie",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Supersonic Skystrike",
@@ -6194,9 +6204,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Acid Downpour",
         nameFR = "Déluge Causti-Toxique",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Tectonic Rage",
@@ -6204,9 +6224,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Continental Crush",
         nameFR = "Apocalypse Gigalithique",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Savage Spin-Out",
@@ -6214,9 +6244,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Never-Ending Nightmare",
         nameFR = "Appel des Ombres Éternelles",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Corkscrew Crash",
@@ -6224,9 +6264,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Inferno Overdrive",
         nameFR = "Pyro-Explosion Cataclysmique",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Hydro Vortex",
@@ -6234,9 +6284,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Bloom Doom",
         nameFR = "Pétalexplosion Éblouissante",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Gigavolt Havoc",
@@ -6244,9 +6304,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Shattered Psyche",
         nameFR = "Psycho-Pulvérisation EX",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Subzero Slammer",
@@ -6254,9 +6324,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Devastating Drake",
         nameFR = "Chaos Draconique",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Black Hole Eclipse",
@@ -6264,9 +6344,19 @@ GameResources{
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
     },
     {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
+    },
+    {
         NameKey = "Twinkle Tackle",
         nameFR = "Impact Choupinova",
         Description = "La puissance et la catégorie de Combo Hyper-Furie varient en fonction de la capacité sur laquelle cette capacité Z est basée."
+    },
+    {
+        NameKey = "",
+        nameFR = "",
+        Description = ""
     },
     {
         NameKey = "Catastropika",
