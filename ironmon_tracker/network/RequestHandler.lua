@@ -105,9 +105,10 @@ end
 ---Receives [external] requests as Json and converts them into IRequests
 ---@param jsonTable table?
 function RequestHandler.receiveJsonRequests(jsonTable)
+	
 	for _, request in pairs(jsonTable or {}) do
 		local eventKeys = {}
-
+		
 		-- If missing, try and automatically detect the event type based on provided args
 		if not EventHandler.Events[request.EventKey] then
 			if request.Args.Command then
@@ -125,7 +126,7 @@ function RequestHandler.receiveJsonRequests(jsonTable)
 		if #eventKeys == 0 then
 			table.insert(eventKeys, request.EventKey)
 		end
-
+		print(request.Args)
 		-- Then add to the Requests queue
 		RequestHandler.addUpdateRequest(RequestHandler.IRequest:new({
 			GUID = request.GUID,
@@ -186,6 +187,7 @@ end
 ---@param event? table IEvent
 ---@return table response IResponse
 function RequestHandler.processAndBuildResponse(request, event)
+
 	event = event or EventHandler.Events[request.EventKey] or EventHandler.Events.None
 	local response = RequestHandler.IResponse:new({
 		GUID = request.GUID,
@@ -199,7 +201,6 @@ function RequestHandler.processAndBuildResponse(request, event)
 			AutoComplete = true,
 		}
 	end
-
 	-- Check if the event is valid and the request is okay to process
 	if not EventHandler.isValidEvent(event) then
 		response.StatusCode = RequestHandler.StatusCodes.NOT_FOUND

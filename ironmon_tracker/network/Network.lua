@@ -1,12 +1,12 @@
 Network = {
 	CurrentConnection = {},
 	lastUpdateTime = 0,
-	STREAMERBOT_VERSION = "1.0.5", -- Known streamerbot version. Update this value to inform user to update streamerbot code
+	STREAMERBOT_VERSION = "1.1.0", -- Known streamerbot version. Update this value to inform user to update streamerbot code
 	TEXT_UPDATE_FREQUENCY = 2, -- # of seconds
 	SOCKET_UPDATE_FREQUENCY = 2, -- # of seconds
 	HTTP_UPDATE_FREQUENCY = 2, -- # of seconds
-	TEXT_INBOUND_FILE = "Tracker-Requests.json", -- The CLIENT's outbound data file; Tracker is the "Server" and will read requests from this file
-	TEXT_OUTBOUND_FILE = "Tracker-Responses.json", -- The CLIENT's inbound data file; Tracker is the "Server" and will write responses to this file
+	TEXT_INBOUND_FILE = "Tracker-Requests-9G.json", -- The CLIENT's outbound data file; Tracker is the "Server" and will read requests from this file
+	TEXT_OUTBOUND_FILE = "Tracker-Responses-9G.json", -- The CLIENT's inbound data file; Tracker is the "Server" and will write responses to this file
 	SOCKET_SERVER_NOT_FOUND = "Socket server was not initialized",
 }
 

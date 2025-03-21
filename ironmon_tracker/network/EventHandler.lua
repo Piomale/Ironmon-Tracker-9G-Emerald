@@ -63,6 +63,7 @@ end
 ---@return boolean success
 function EventHandler.addNewEvent(event)
 	-- Only add new, properly structured  events
+	
 	if Utils.isNilOrEmpty(event.Key) or EventHandler.Events[event.Key] then
 		return false
 	end
@@ -77,6 +78,7 @@ function EventHandler.addNewEvent(event)
 		end
 	end
 	EventHandler.Events[event.Key] = event
+	
 	EventHandler.loadEventSettings(event)
 	return true
 end
