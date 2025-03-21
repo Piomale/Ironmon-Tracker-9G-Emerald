@@ -126,7 +126,6 @@ function RequestHandler.receiveJsonRequests(jsonTable)
 		if #eventKeys == 0 then
 			table.insert(eventKeys, request.EventKey)
 		end
-		print(request.Args)
 		-- Then add to the Requests queue
 		RequestHandler.addUpdateRequest(RequestHandler.IRequest:new({
 			GUID = request.GUID,
