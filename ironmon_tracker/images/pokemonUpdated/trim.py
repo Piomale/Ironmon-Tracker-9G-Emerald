@@ -1,28 +1,21 @@
 from PIL import Image
 import os
 
-def crop_transparent(image_path):
-    image = Image.open(image_path)
-
-    if image.mode != "RGBA":
-        print(f"{image_path} n'a pas de transparence.")
-        return
-
-    # Convertir en mode RGBA (au cas où)
-    image = image.convert("RGBA")
-
-    # Récupérer le canal alpha
+def crop_transparent(image_path, threshold=10):
+    image = Image.open(image_path).convert("RGBA")
     alpha = image.split()[3]
-
-    # Obtenir la bbox de la zone non transparente
-    bbox = alpha.getbbox()
+    
+    # Seuil pour filtrer les pixels quasi-transparents
+    alpha_binary = alpha.point(lambda p: 255 if p > threshold else 0)
+    bbox = alpha_binary.getbbox()
 
     if bbox:
         cropped_image = image.crop(bbox)
         cropped_image.save(image_path)
         print(f"Image rognée et sauvegardée : {image_path}")
     else:
-        print(f"{image_path} est complètement transparent.")
+        print(f"{image_path} est complètement transparent ou en-dessous du seuil.")
+
 
 def process_images():
     current_directory = os.getcwd()

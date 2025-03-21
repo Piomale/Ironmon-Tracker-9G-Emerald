@@ -1011,10 +1011,11 @@ function TrackerScreen.drawScreen()
 	TrackerScreen.drawStatsArea(displayData)
 
 	-- Lower boxes
-	TrackerScreen.drawCarouselArea(displayData)
+	
 	if Tracker.getPokemon(1, true) == nil and Options["Show on new game screen"] then -- show favorites
 		TrackerScreen.drawFavorites()
 	else
+		TrackerScreen.drawCarouselArea(displayData)
 		TrackerScreen.drawMovesArea(displayData)
 	end
 end
@@ -1563,7 +1564,7 @@ function TrackerScreen.drawFavorites()
 	local boxX = Constants.SCREEN.WIDTH + Constants.SCREEN.MARGIN
 	local boxY = 92
 	local width = Constants.SCREEN.RIGHT_GAP - (2 * Constants.SCREEN.MARGIN)
-	local height = 44
+	local height = 44 + 19
 	gui.drawRectangle(boxX, boxY, width, height, Theme.COLORS["Lower box border"], Theme.COLORS["Lower box background"])
 
 	local favoritesButtons = {
@@ -1578,7 +1579,7 @@ function TrackerScreen.drawFavorites()
 		StartupScreen.Buttons.PokemonFavorite9,
 	}
 	-- Temporarily adjust the button's vertical location
-	local shiftY = 8
+	local shiftY = 8 + 25
 	for _, button in ipairs(favoritesButtons) do
 		local prevY = button.box[2]
 		button.box[2] = button.box[2] + shiftY
