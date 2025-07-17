@@ -7193,9 +7193,9 @@ MoveData.Moves = {
 		id = "736",
 		name = "Glitzy Glow",
 		type = PokemonData.Types.PSYCHIC,
-		power = "90",
+		power = "80",
 		pp = "15",
-		accuracy = "100",
+		accuracy = "95",
 		category = MoveData.Categories.SPECIAL,
 	},
 	{

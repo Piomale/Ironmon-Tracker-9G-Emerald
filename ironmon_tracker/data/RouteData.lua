@@ -26,15 +26,15 @@ end
 RouteData.AvailableRoutes = {}
 
 RouteData.EncounterArea = {
-	LAND = "Walking", -- Max 12 possible
-	SURFING = "Surfing", -- Max 5 possible
-	UNDERWATER = "Underwater", -- Max 5 possible(?)
-	STATIC = "Static",
+	LAND = "En marchant", -- Max 12 possible
+	SURFING = "Sur l'eau", -- Max 5 possible
+	UNDERWATER = "Sous l'eau", -- Max 5 possible(?)
+	STATIC = "Statique",
 	ROCKSMASH = "RockSmash", -- Max 5 possible
-	SUPERROD = "Super Rod", -- Max 10 possible between all rods
-	GOODROD = "Good Rod",
-	OLDROD = "Old Rod",
-	TRAINER = "Trainer", -- Eventually want to show trainer info/teams per area
+	SUPERROD = "Méga Canne", -- Max 10 possible between all rods
+	GOODROD = "Super Canne",
+	OLDROD = "Canne",
+	TRAINER = "Dresseur", -- Eventually want to show trainer info/teams per area
 }
 
 RouteData.OrderedEncounters = {

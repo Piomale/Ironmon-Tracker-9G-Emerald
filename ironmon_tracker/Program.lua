@@ -30,11 +30,11 @@ Program = {
 		offsetRepelStepCountFRLG = 0x40,
 		offsetRepelStepCountRSE = 0x42,
 		offsetGrowthRateIndex = 0x13,
-		offsetMapHeaderLayoutId = 0x12, -- mapLayoutId
+		offsetMapHeaderLayoutId = 0xE, -- mapLayoutId
 		offsetPokemonGettingExp = 0x10, -- expGetterMonId
 		offsetBattlePokemonStatStages = 0x18,
 		offsetBattlePokemonTypes = 0x21,
-		offsetBattlePokemonDoublesPartner = 0xB0,
+		offsetBattlePokemonDoublesPartner = 0xC0,
 		offsetBattleMoves = 0x1,
 		offsetEvoInfoTaskId = 0x2,
 		offsetTaskIsActive = 0x4,
@@ -67,7 +67,7 @@ Program = {
 		sizeofTrainerName = 12,
 		sizeofTrainerClass = 13,
 		sizeofMaxTrainerItems = 4,
-		sizeofBattlePokemon = 0x58,
+		sizeofBattlePokemon = 0x60,
 		sizeofBattleMove = 0xC,
 		sizeofTaskStruct = 0x28,
 		sizeofTMHMMoveId = 0x2,
@@ -444,7 +444,7 @@ function Program.update()
 			end
 		end
 	end
-	
+
 	-- Don't bother reading game data before a game even begins
 	if not Program.isValidMapLocation() then
 		return
@@ -456,12 +456,14 @@ function Program.update()
 		if not Program.inCatchingTutorial and not Program.isInEvolutionScene() then
 			Program.updatePokemonTeams()
 			TeamViewArea.buildOutPartyScreen()
-
+			
 			if Program.isValidMapLocation() then
+				
 				if Program.currentScreen == StartupScreen then
 					-- If the game hasn't started yet, show the start-up screen instead of the main Tracker screen
 					Program.currentScreen = TrackerScreen
 				elseif Options["Show starter ball info"] and RouteData.Locations.IsInLab[TrackerAPI.getMapId()] then
+					
 					Program.checkForStarterSelection()
 				end
 
@@ -729,6 +731,7 @@ function Program.updatePokemonTeams()
 		trainerID = Memory.readdword(GameSettings.estats + addressOffset + 4)
 		
 		if personality ~= 0 or trainerID ~= 0 then
+			
 			local pokemon = Program.readNewPokemon(GameSettings.estats + addressOffset, personality)
 			if Program.validPokemonData(pokemon) then
 				-- Double-check a race condition where current PP values are wildly out of range if retrieved right before a battle begins
@@ -739,7 +742,6 @@ function Program.updatePokemonTeams()
 						end
 					end
 				end
-				
 				Program.GameData.EnemyTeam[i] = pokemon
 			end
 		else
@@ -780,7 +782,9 @@ function Program.readNewPokemon(startAddress, personality)
 		if charByte == Program.Addresses.nicknameCharEnd then break end -- end of sequence
 		nickname = nickname .. (GameSettings.GameCharMap[charByte] or Constants.HIDDEN_INFO)
 	end
+	
 	nickname = Utils.formatSpecialCharacters(nickname)
+
 	-- Unused data memory reads
 	-- local effort3 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset + 8), magicword)
 	-- local misc3   = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + miscoffset + 8), magicword)
@@ -792,10 +796,11 @@ function Program.readNewPokemon(startAddress, personality)
 	-- 		+ Utils.addhalves(misc1) + Utils.addhalves(misc2) + Utils.addhalves(misc3)
 	-- cs = cs % 65536
 
-	local species = Utils.getbits(growth1, 0, 16) -- Pokemon's Pokedex ID
-	local abilityNum = Utils.getbits(misc2, 31, 1) -- [0 or 1] to determine which ability, available in PokemonData
-	
+		
+		
+	local species = Utils.getbits(growth1, 0, 11) -- Pokemon's Pokedex ID
 
+	local abilityNum = Utils.getbits(misc2, 31, 1) -- [0 or 1] to determine which ability, available in PokemonData
 	
 	-- Check for shininess: https://bulbapedia.bulbagarden.net/wiki/Personality_value#Shininess
 	local trainerID = Utils.getbits(otid, 0, 16)
@@ -844,7 +849,6 @@ function Program.readNewPokemon(startAddress, personality)
 			{ id = Utils.getbits(attack2, 0, 16), level = 1, pp = Utils.getbits(attack3, 16, 8) },
 			{ id = Utils.getbits(attack2, 16, 16), level = 1, pp = Utils.getbits(attack3, 24, 8) },
 		}
-
 	return Program.DefaultPokemon:new({
 		personality = personality,
 		nickname = nickname,
@@ -1114,6 +1118,7 @@ function Program.updateBadgesObtained()
 	end
 
 	local badgeBits = nil
+
 	local saveblock1Addr = Utils.getSaveBlock1Addr()
 	if GameSettings.game == 1 then -- Ruby/Sapphire
 		badgeBits = Utils.getbits(Memory.readword(saveblock1Addr + GameSettings.badgeOffset), 7, 8)
@@ -1122,7 +1127,7 @@ function Program.updateBadgesObtained()
 	elseif GameSettings.game == 3 then -- FireRed/LeafGreen
 		badgeBits = Memory.readbyte(saveblock1Addr + GameSettings.badgeOffset)
 	end
-
+	
 	if badgeBits ~= nil then
 		for index = 1, 8, 1 do
 			local badgeName = "badge" .. index
@@ -1139,6 +1144,7 @@ function Program.updateMapLocation()
 	if not Main.IsOnBizhawk() and newMapId ~= Program.GameData.mapId then
 		local isFirstLocation = Program.GameData.mapId == nil or Program.GameData.mapId == 0
 		MGBA.Screens.LookupRoute:setData(newMapId, isFirstLocation)
+		
 	end
 	Program.GameData.mapId = newMapId
 end
@@ -1220,20 +1226,22 @@ end
 
 -- Useful for dynamically getting the Pokemon's types if they have changed somehow (Color change, Transform, etc)
 function Program.getPokemonTypes(isOwn, isLeft)
-	local ownerAddressOffset = Utils.inlineIf(isOwn, 0, Program.Addresses.sizeofBattlePokemon)
-	local leftAddressOffset = Utils.inlineIf(isLeft, 0, Program.Addresses.offsetBattlePokemonDoublesPartner)
+	
+	--local ownerAddressOffset = Utils.inlineIf(isOwn, 0, Program.Addresses.sizeofBattlePokemon)
+	--local leftAddressOffset = Utils.inlineIf(isLeft, 0, Program.Addresses.offsetBattlePokemonDoublesPartner)
 	
 	--local typesData = Memory.readword(GameSettings.gBattleMons + Program.Addresses.offsetBattlePokemonTypes + ownerAddressOffset + leftAddressOffset)
 
 	if isOwn then
-		Battle.Combatants.LeftOwn = Memory.readbyte(GameSettings.gBattlerPartyIndexes) + 1
-	
-		pokemonid = Program.GameData.PlayerTeam[Battle.Combatants.LeftOwn].pokemonID
+		--Battle.Combatants.LeftOwn = Memory.readbyte(GameSettings.gBattlerPartyIndexes) + 1
+		Battle.Combatants.currentOwn = Memory.readbyte(GameSettings.gBattlerPartyIndexes + Utils.inlineIf(isLeft, 0, 4)) + 1
+		pokemonid = Program.GameData.PlayerTeam[Battle.Combatants.currentOwn].pokemonID
 	else
-		Battle.Combatants.LeftOther = Memory.readbyte(GameSettings.gBattlerPartyIndexes + 2) + 1
-		pokemonid = Program.GameData.EnemyTeam[Battle.Combatants.LeftOther].pokemonID
+		Battle.Combatants.currentOther = Memory.readbyte(GameSettings.gBattlerPartyIndexes + Utils.inlineIf(isLeft, 2, 6)) + 1
+		pokemonid = Program.GameData.EnemyTeam[Battle.Combatants.currentOther].pokemonID
 		
 	end
+	--print(string.format("0x%X", GameSettings.SpeciesTypes.base + GameSettings.SpeciesTypes.stride * pokemonid))
 	local typesData = Memory.readword(GameSettings.SpeciesTypes.base + GameSettings.SpeciesTypes.stride * pokemonid)
 	
 	return {
@@ -1302,7 +1310,7 @@ function Program.changeGameSettingForLR(forced)
 	end
 	local addr2 = Utils.getSaveBlock2Addr()
 	local currentSetting = Memory.readbyte(addr2 + Program.Addresses.offsetOptionsButtonMode)
-
+	
 	if forced or currentSetting == 0 then -- 0 is the default setting for the game
 		Memory.writebyte(addr2 + Program.Addresses.offsetOptionsButtonMode, Program.Values.ButtonModeLR)
 	end

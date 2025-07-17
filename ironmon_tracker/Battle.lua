@@ -142,18 +142,16 @@ end
 
 -- Check if we can enter battle (opposingPokemon check required for lab fight), or if a battle has just finished
 function Battle.updateBattleStatus()
-	
+
 	local numBattlers = Memory.readbyte(GameSettings.gBattlersCount)
 	
 	local firstMonID = Memory.readword(GameSettings.gBattleMons)
-	
-		
 	local isFakeBattle = numBattlers == 0 or not PokemonData.isValid(firstMonID)
 	local opposingPokemon = Tracker.getPokemon(1, false) -- get the lead pokemon on the enemy team
-	
+
 	-- BattleStatus [0 = In battle, 1 = Won the match, 2 = Lost the match, 4 = Fled, 7 = Caught]
 	local statusOrOutcome = Memory.readbyte(GameSettings.gBattleOutcome) -- For current or the last battle (gBattleOutcome isn't cleared when a battle ends)
-	
+
 	local battleStatusActive = statusOrOutcome == 0 and opposingPokemon ~= nil
 	-- Flags to check if it's okay to start reading battle related game data (shortly after a battle begins) or if the battle has completely ended
 	local msgTiming = {
@@ -174,7 +172,7 @@ function Battle.updateBattleStatus()
 	}
 	local battleMainFunction = Memory.readdword(GameSettings.gBattleMainFunc)
 	if Battle.inBattleScreen and not Battle.dataReady and msgTiming.DataStart[Battle.isWildEncounter][battleMainFunction]then
-
+		
 		Battle.dataReady = true
 		Battle.isViewingOwn = not Options["Auto swap to enemy"]
 	end
@@ -221,7 +219,6 @@ function Battle.togglePokemonViewed()
 	end
 
 	Battle.isViewingOwn = not Battle.isViewingOwn
-
 	-- Check toggling through other Pokemon available in doubles battles
 	if Battle.isViewingOwn and Battle.numBattlers > 2 then
 		-- Swap sides on returning to allied side
@@ -273,11 +270,9 @@ function Battle.updateViewSlots()
 	local prevEnemyPokemonRight = Battle.Combatants.RightOther
 	local prevOwnPokemonLeft = Battle.Combatants.LeftOwn
 	local prevOwnPokemonRight = Battle.Combatants.RightOwn
-
 	--update all 2 (or 4)
 	Battle.Combatants.LeftOwn = Memory.readbyte(GameSettings.gBattlerPartyIndexes) + 1
 	Battle.Combatants.LeftOther = Memory.readbyte(GameSettings.gBattlerPartyIndexes + 2) + 1
-	
 	-- Verify the view slots are within bounds, and that for doubles, the pokemon is not fainted (data is not cleared if there are no remaining pokemon)
 	if Battle.Combatants.LeftOwn < 1 or Battle.Combatants.LeftOwn > 6 then
 		Battle.Combatants.LeftOwn = 1
@@ -322,7 +317,7 @@ end
 function Battle.processBattleTurn()
 	-- attackerValue = 0 or 2 for player mons and 1 or 3 for enemy mons (2,3 are doubles partners)
 	Battle.attacker = Memory.readbyte(GameSettings.gBattlerAttacker)
-	
+	-- print(Battle.attacker)
 	local currentTurn = Memory.readbyte(GameSettings.gBattleResults - Program.Addresses.offsetBattleResultsCurrentTurn)
 	local currDamageTotal = Memory.readword(GameSettings.gTakenDmg)
 	-- As a new turn starts, note the previous amount of total damage, reset turn counters
@@ -332,9 +327,9 @@ function Battle.processBattleTurn()
 		Battle.enemyHasAttacked = false
 		Battle.isNewTurn = true
 	end
-
 	local damageDelta = currDamageTotal - Battle.prevDamageTotal
 	if damageDelta ~= 0 then
+		
 		-- Check current and previous attackers to see if enemy attacked within the last 30 frames
 		if Battle.attacker % 2 ~= 0 then
 			local enemyMoveId = Memory.readword(GameSettings.gBattleResults + Program.Addresses.offsetBattleResultsEnemyMoveId)
@@ -356,6 +351,7 @@ function Battle.processBattleTurn()
 	elseif Battle.attacker % 2 ~= 0 then
 		-- For recording any move (including non-damaging moves) to be used by mGBA Move Info Lookup
 		local actualEnemyMoveId = Memory.readword(GameSettings.gBattleResults + Program.Addresses.offsetBattleResultsEnemyMoveId)
+		
 		if actualEnemyMoveId ~= 0 then
 			Battle.actualEnemyMoveId = actualEnemyMoveId
 		end
@@ -395,16 +391,14 @@ function Battle.updateTrackedInfo()
 		-- firstActionTaken fixes leftover data issue going from Single to Double battle
 		-- If the same attacker was just logged, stop logging
 			if actionCount < Battle.numBattlers and Battle.firstActionTaken and confirmedCount == 0 and currentAction == 0 then
-
+				
 				-- 0 = MOVE_USED
 				if lastMoveByAttacker > 0 and lastMoveByAttacker < #MoveData.Moves + 1 then
 					if Battle.AbilityChangeData.prevAction ~= actionCount then
-						
 						Battle.AbilityChangeData.recordNextMove = true
 						Battle.AbilityChangeData.prevAction = actionCount
 						
 					elseif Battle.AbilityChangeData.recordNextMove then
-						
 						local hitFlags = Memory.readdword(GameSettings.gHitMarker)
 						local moveFlags = Memory.readbyte(GameSettings.gMoveResultFlags)
 						--Do nothing if attacker was unable to use move (Fully paralyzed, Truant, etc.; HITMARKER_UNABLE_TO_USE_MOVE)
@@ -492,6 +486,7 @@ function Battle.updateTrackedInfo()
 	-- Always track your own Pokemons' abilities, unless you are in a half-double battle alongside an NPC (3 + 3 vs 3 + 3)
 	local ownLeftPokemon = Tracker.getPokemon(Battle.Combatants.LeftOwn,true)
 	if ownLeftPokemon ~= nil and Battle.Combatants.LeftOwn <= Battle.partySize then
+		
 		local ownLeftAbilityId = PokemonData.getAbilityId(ownLeftPokemon.pokemonID, ownLeftPokemon.abilityNum)
 		if ownLeftAbilityId ~= 0 then
 			Tracker.TrackAbility(ownLeftPokemon.pokemonID, ownLeftAbilityId)
@@ -557,12 +552,14 @@ function Battle.readBattleValues()
 end
 
 function Battle.updateStatStages(pokemon, isOwn, isLeft)
+
 	local startAddress = GameSettings.gBattleMons + Utils.inlineIf(isOwn, 0, Program.Addresses.sizeofBattlePokemon)
+	
 	local isLeftOffset = Utils.inlineIf(isLeft, 0, Program.Addresses.offsetBattlePokemonDoublesPartner)
 	local statStageOffset = Program.Addresses.offsetBattlePokemonStatStages
 	local hp_atk_def_speed = Memory.readdword(startAddress + isLeftOffset + statStageOffset)
 	local spatk_spdef_acc_evasion = Memory.readdword(startAddress + isLeftOffset + statStageOffset + 4)
-
+	
 	pokemon.statStages.hp = Utils.getbits(hp_atk_def_speed, 0, 8)
 	if pokemon.statStages.hp ~= 0 then
 		pokemon.statStages = {
@@ -748,12 +745,11 @@ end
 
 function Battle.beginNewBattle()
 	if Battle.inBattleScreen then return end
-
 	GameOverScreen.isDisplayed = false
 	GameOverScreen.createTempSaveState()
 
 	Program.Frames.Others["TrainerBattleEnded"] = nil
-
+	
 	-- BATTLE_TYPE_TRAINER (1 << 3)
 	local battleFlags = Memory.readdword(GameSettings.gBattleTypeFlags)
 	Battle.isWildEncounter = Utils.getbits(battleFlags, 3, 1) == 0

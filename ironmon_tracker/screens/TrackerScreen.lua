@@ -1094,7 +1094,7 @@ function TrackerScreen.drawPokemonInfoArea(data)
 	end
 
 	-- POKEMON NAME
-	Drawing.drawText(Constants.SCREEN.WIDTH + offsetX, offsetY, data.p.name, Theme.COLORS["Default text"], shadowcolor)
+	Drawing.drawText(Constants.SCREEN.WIDTH + offsetX, offsetY, data.p.name , Theme.COLORS["Default text"], shadowcolor)
 	offsetY = offsetY + linespacing
 
 	-- POKEMON HP, LEVEL, & EVOLUTION INFO

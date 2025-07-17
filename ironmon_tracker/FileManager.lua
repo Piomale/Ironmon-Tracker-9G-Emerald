@@ -756,6 +756,7 @@ function FileManager.writeTableToFile(table, filepath)
 	if not file then
 		return
 	end
+	
 	local dataString = Pickle.pickle(table)
 	--append a trailing \n if one is absent
 	if dataString:sub(-1) ~= "\n" then

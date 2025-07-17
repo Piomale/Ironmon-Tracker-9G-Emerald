@@ -114,7 +114,7 @@ ScreenResources{
 	TrackerScreen = {
 		HPAbbreviation = "PV", -- NEEDS TRANSLATION
 		LevelAbbreviation = "N", -- NEEDS TRANSLATION
-		RandomBallChosen = "Randomly chosen ball", -- NEEDS TRANSLATION
+		RandomBallChosen = "Poké Ball aléatoire", -- NEEDS TRANSLATION
 		RandomBallUserChosen = "Chosen ball", -- NEEDS TRANSLATION
 		RandomBallUserPicks = "picks", -- NEEDS TRANSLATION
 		RandomBallLeft = "Gauche", -- NEEDS TRANSLATION
@@ -445,10 +445,10 @@ ScreenResources{
 		-- Route Info
 		CheckboxPercentages = "Percentages", -- NEEDS TRANSLATION
 		CheckboxLevels = "Levels", -- NEEDS TRANSLATION
-		LabelSeenBy = "Pokémon seen by", -- NEEDS TRANSLATION
+		LabelSeenBy = "Pokémon vus :", -- NEEDS TRANSLATION
 		LabelSeenEncounters = "Pokémon encounters", -- NEEDS TRANSLATION
-		LabelOrderAppearance = "In order of appearance", -- NEEDS TRANSLATION
-		PromptLookupRoute = "Choose a Route to look up", -- NEEDS TRANSLATION
+		LabelOrderAppearance = "Dans l'odre d'apparition", -- NEEDS TRANSLATION
+		PromptLookupRoute = "Choisis une route à regarder:", -- NEEDS TRANSLATION
 	},
 	NotebookIndexScreen = {
 		Title = "Tracker Notebook", -- NEEDS TRANSLATION

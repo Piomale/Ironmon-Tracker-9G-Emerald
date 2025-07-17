@@ -953,6 +953,13 @@ function Utils.setFormLocation(handle, x, y)
 	ExternalUI.BizForms.setWindowLocation(handle, x, y)
 end
 
+function Utils.getSaveBlock1AddrTMP(i)
+	if GameSettings.game == 1 then -- Ruby/Sapphire don't have ptr
+		return GameSettings.gSaveBlock1
+	end
+	return Memory.readdword(i)
+end
+
 function Utils.getSaveBlock1Addr()
 	if GameSettings.game == 1 then -- Ruby/Sapphire don't have ptr
 		return GameSettings.gSaveBlock1

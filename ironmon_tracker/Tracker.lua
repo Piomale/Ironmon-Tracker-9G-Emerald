@@ -105,10 +105,12 @@ function Tracker.getPokemon(slotNumber, isOwn, excludeEggs)
 	slotNumber = slotNumber or 1
 	isOwn = isOwn ~= false -- default to true
 	excludeEggs = excludeEggs ~= false -- default to true
-
 	local team = isOwn and Program.GameData.PlayerTeam or Program.GameData.EnemyTeam
 	local pokemon = team[slotNumber]
-	
+	if pokemon and team == Program.GameData.EnemyTeam then
+		--print(pokemon.pokemonID)
+		--print(PokemonData.Pokemon[pokemon.pokemonID].name)
+	end
 	if pokemon == nil then
 		return nil
 	end
@@ -148,10 +150,11 @@ function Tracker.getViewedPokemon()
 	local viewSlot
 	if mustViewOwn then
 		viewSlot = Utils.inlineIf(Battle.isViewingLeft, Battle.Combatants.LeftOwn, Battle.Combatants.RightOwn)
+		
 	else
 		viewSlot = Utils.inlineIf(Battle.isViewingLeft, Battle.Combatants.LeftOther, Battle.Combatants.RightOther)
 	end
-
+	
 	return Tracker.getPokemon(viewSlot, mustViewOwn)
 end
 
@@ -752,6 +755,7 @@ function Tracker.AutoSave.saveToFile()
 	if not Utils.isNilOrEmpty(Tracker.AutoSave.Tdat) then
 		Tracker.saveData(Tracker.AutoSave.Tdat)
 	else
+		print("2")
 		Tracker.saveData()
 	end
 end
