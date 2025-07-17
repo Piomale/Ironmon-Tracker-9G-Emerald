@@ -1,10 +1,10 @@
 Main = {}
 
-Main.Version = { major = "0", minor = "1", patch = "4" }
+Main.Version = { major = "0", minor = "5", patch = "1" }
 
 Main.CreditsList = { -- based on the PokemonBizhawkLua project by MKDasher
-	CreatedBy = "Besteon",
-	Contributors = { "UTDZac", "Fellshadow", "ninjafriend", "OnlySpaghettiCode", "Aeiry", "Amber Cyprian", "bdjeffyp", "thisisatest", "kittenchilly", "IMTYP0", "brdy", "Harkenn", "TheRealTaintedWolf", "eusebyo", "Kurumas", "davidhouweling", "AKD", "rcj001", "GB127", },
+	CreatedBy = "Umineko",
+	Contributors = { "Besteon", "UTDZac", "Fellshadow", "ninjafriend", "OnlySpaghettiCode", "Aeiry", "Amber Cyprian", "bdjeffyp", "thisisatest", "kittenchilly", "IMTYP0", "brdy", "Harkenn", "TheRealTaintedWolf", "eusebyo", "Kurumas", "davidhouweling", "AKD", "rcj001", "GB127", },
 }
 
 Main.EMU = {
