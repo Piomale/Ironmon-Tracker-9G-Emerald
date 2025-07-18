@@ -1,6 +1,6 @@
 Main = {}
 
-Main.Version = { major = "0", minor = "5", patch = "1" }
+Main.Version = { major = "0", minor = "5", patch = "2" }
 
 Main.CreditsList = { -- based on the PokemonBizhawkLua project by MKDasher
 	CreatedBy = "Umineko",
