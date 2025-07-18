@@ -75,7 +75,7 @@ Program = {
 		sizeofGameStat = 0x4,
 		sizeofLastAttackerMove = 0x2,
 		sizeofPokemonStruct = 0x64,
-		sizeofPokemonNickname = 0xA,
+		sizeofPokemonNickname = 0xC,
 	},
 	Values = {
 		ShinyOdds = 8, -- n/65536
@@ -711,13 +711,13 @@ function Program.updatePokemonTeams()
 	for i = 1, 6, 1 do
 		-- Lookup information on the player's Pokemon first
 		-- local personality = Memory.readdword(GameSettings.pstats + addressOffset)
-		local personality = Memory.readdword(GameSettings.pstats + addressOffset)
+		local personality = Memory.readdword(GameSettings.pstats + addressOffset, i)
 		if addressOffset == 0 then
 		end
 		local trainerID = Memory.readdword(GameSettings.pstats + addressOffset + 4)
 
 		if personality ~= 0 or trainerID ~= 0 then
-			local pokemon = Program.readNewPokemon(GameSettings.pstats + addressOffset, personality)
+			local pokemon = Program.readNewPokemon(GameSettings.pstats + addressOffset, personality, (i-1)*2)
 			if Program.validPokemonData(pokemon) then
 				Tracker.verifyDataForPlayer(pokemon.trainerID)
 
@@ -736,7 +736,7 @@ function Program.updatePokemonTeams()
 		
 		if personality ~= 0 or trainerID ~= 0 then
 			
-			local pokemon = Program.readNewPokemon(GameSettings.estats + addressOffset, personality)
+			local pokemon = Program.readNewPokemon(GameSettings.estats + addressOffset, personality, (i-1)*2+1)
 			if Program.validPokemonData(pokemon) then
 				-- Double-check a race condition where current PP values are wildly out of range if retrieved right before a battle begins
 				if not Battle.inActiveBattle() then
@@ -758,7 +758,7 @@ function Program.updatePokemonTeams()
 	end
 end
 
-function Program.readNewPokemon(startAddress, personality)
+function Program.readNewPokemon(startAddress, personality, numPkmn)
 	-- Pokemon Data structure: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_data_structure_(Generation_III)
 	local otid = Memory.readdword(startAddress + 4)
 	local magicword = Utils.bit_xor(personality, otid) -- The XOR encryption key for viewing the Pokemon data
@@ -783,14 +783,31 @@ function Program.readNewPokemon(startAddress, personality)
 	local aromateNature =  Utils.getbits(Memory.readbyte(startAddress + Program.Addresses.offsetAromate) , 3, 5)
 	nature = Utils.bit_xor(aromateNature,personality % 25)
 	local nickname = ""
-	for i=0, Program.Addresses.sizeofPokemonNickname - 1, 1 do
+	
+	
+	-- max 10 char dans la struct Pokemon https://github.com/Nax/emerald-em/blob/master/emerald/include/pokemon.h -> u8 nickname[min(10, POKEMON_NAME_LENGTH)];
+	for i=0, Program.Addresses.sizeofPokemonNickname - 3, 1 do
 		local charByte = Memory.readbyte(startAddress + 8 + i)
 		if charByte == Program.Addresses.nicknameCharEnd then break end -- end of sequence
 		nickname = nickname .. (GameSettings.GameCharMap[charByte] or Constants.HIDDEN_INFO)
 	end
-	
 	nickname = Utils.formatSpecialCharacters(nickname)
+		
+	local newNickname = ""
 
+	-- patch affreux qui ne fonctionne que en combat (permet de recuperer et garder le nom apres un premier combat)
+	if string.len(nickname) == 10  then
+		for i=1, Program.Addresses.sizeofPokemonNickname, 1 do
+			local charByte = Memory.readbyte(GameSettings.gBattleMons + 0x31 + 0x60 * numPkmn  + i)
+			if charByte == Program.Addresses.nicknameCharEnd then break end -- end of sequence
+			newNickname = newNickname .. (GameSettings.GameCharMap[charByte] or Constants.HIDDEN_INFO)
+		end
+		newNickname = Utils.formatSpecialCharacters(newNickname)
+		if string.sub(newNickname, 1, 10) == nickname then
+			nickname = newNickname
+		end
+	end
+	
 	-- Unused data memory reads
 	-- local effort3 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset + 8), magicword)
 	-- local misc3   = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + miscoffset + 8), magicword)
