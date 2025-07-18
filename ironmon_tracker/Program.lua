@@ -29,6 +29,7 @@ Program = {
 		offsetStarterMonChoiceRSE = 0x46,
 		offsetRepelStepCountFRLG = 0x40,
 		offsetRepelStepCountRSE = 0x42,
+		offsetAromate = 0x12,
 		offsetGrowthRateIndex = 0x13,
 		offsetMapHeaderLayoutId = 0xE, -- mapLayoutId
 		offsetPokemonGettingExp = 0x10, -- expGetterMonId
@@ -709,7 +710,10 @@ function Program.updatePokemonTeams()
 	local addressOffset = 0
 	for i = 1, 6, 1 do
 		-- Lookup information on the player's Pokemon first
+		-- local personality = Memory.readdword(GameSettings.pstats + addressOffset)
 		local personality = Memory.readdword(GameSettings.pstats + addressOffset)
+		if addressOffset == 0 then
+		end
 		local trainerID = Memory.readdword(GameSettings.pstats + addressOffset + 4)
 
 		if personality ~= 0 or trainerID ~= 0 then
@@ -776,6 +780,8 @@ function Program.readNewPokemon(startAddress, personality)
 	local effort2 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + effortoffset + 4), magicword)
 	local misc2 = Utils.bit_xor(Memory.readdword(startAddress + Program.Addresses.offsetPokemonSubstruct + miscoffset + 4), magicword)
 	
+	local aromateNature =  Utils.getbits(Memory.readbyte(startAddress + Program.Addresses.offsetAromate) , 3, 5)
+	nature = Utils.bit_xor(aromateNature,personality % 25)
 	local nickname = ""
 	for i=0, Program.Addresses.sizeofPokemonNickname - 1, 1 do
 		local charByte = Memory.readbyte(startAddress + 8 + i)
@@ -859,7 +865,7 @@ function Program.readNewPokemon(startAddress, personality)
 		friendship = Utils.getbits(growth3, 8, 8),
 		level = Utils.getbits(level_and_currenthp, 0, 8),
 		gender = MiscData.getMonGender(species, personality),
-		nature = personality % 25,
+		nature = nature,
 		isEgg = Utils.getbits(misc2, 30, 1), -- [0 or 1] to determine if mon is still an egg (1 if true)
 		isShiny = isShiny,
 		hasPokerus = hasPokerus, -- Not realistically available in FRLG
