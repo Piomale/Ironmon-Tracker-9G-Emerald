@@ -300,10 +300,10 @@ function StartupScreen.drawScreen()
 			messageColor = topBox.text
 		end
 
-		local trackerNotesLabel = string.format("%s:", Resources.StartupScreen.TrackedDataMsgLabel or "")
-		Drawing.drawText(topBox.x + 2, textLineY, trackerNotesLabel, topBox.text, topBox.shadow)
-		textLineY = textLineY + linespacing - 2
-		Drawing.drawText(topBox.x + 2, textLineY, Resources.StartupScreen[Tracker.LoadStatus] or "", messageColor, topBox.shadow)
+		--local trackerNotesLabel = string.format("%s:", Resources.StartupScreen.TrackedDataMsgLabel or "")
+		--Drawing.drawText(topBox.x + 2, textLineY, trackerNotesLabel, topBox.text, topBox.shadow)
+		--textLineY = textLineY + linespacing - 2
+		--Drawing.drawText(topBox.x + 2, textLineY, Resources.StartupScreen[Tracker.LoadStatus] or "", messageColor, topBox.shadow)
 	end
 
 	-- If Favorites are selected to be shown and no custom welcome message has been written, show game controls by default
