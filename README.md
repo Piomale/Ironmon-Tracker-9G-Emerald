@@ -1,6 +1,6 @@
 # Ironmon-Tracker-9G-Emerald
 
-Tracker pour la version 0.4 de https://github.com/Nax/emerald-em/tree/master
+Tracker pour la version 0.5 de https://github.com/Nax/emerald-em/tree/master
 
 ### Pour l'installation
   https://github.com/Piomale/Ironmon-Tracker-9G-Emerald/releases
